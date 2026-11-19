@@ -1,0 +1,26 @@
+name: report
+# Every evening at 21:00 WAT (20:00 UTC): Buffer metrics -> scoreboard.csv + Telegram summary.
+on:
+  schedule: [{ cron: "0 20 * * *" }]
+  workflow_dispatch:
+permissions: { contents: write }
+concurrency: { group: gta6-state, cancel-in-progress: false }
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node tools/cloud.mjs report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      - name: save state
+        run: |
+          git config user.name "gta6-bot"; git config user.email "gta6-bot@users.noreply.github.com"
+          git add -A scoreboard.csv drafts state
+          git diff --cached --quiet || git commit -m "report: metrics"
+          git pull --rebase --autostash -q && git push -q

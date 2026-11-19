@@ -1,0 +1,11 @@
+post_id,date,time,platform,pillar,format,hook,length_sec,credit,views_12h,views_24h,views_72h,likes,reposts_or_shares,replies_or_comments,saves_or_bookmarks,followers_at_read,test_name,notes
+L1,2026-11-18,15:40,x,official news,image,"GTA 6 is out now",,@RockstarGames,,,,,,,,0,,launch post
+L1-ig,2026-11-18,16:00,instagram,official news,image,"GTA 6 is out now",,@rockstargames,,,,,,,,0,,launch post
+V1,2026-11-18,16:35,tiktok+youtube,official news,video 9s,"GTA 6 IS OUT NOW",9,Rockstar Games,,,,,,,,0,,first video
+C1-tt,2026-11-18,22:20,tiktok,gameplay clip,video 18s blur,"SWAPPING COP CARS MID-CHASE IN GTA 6",18,GameV,,,,,,,,0,layout:blur,
+C1-yt,2026-11-18,22:20,youtube,gameplay clip,video 18s blur,"SWAPPING COP CARS MID-CHASE IN GTA 6",18,GameV,,,,,,,,0,layout:blur,
+C1-ig,2026-11-18,22:21,instagram,gameplay clip,video 18s blur,"SWAPPING COP CARS MID-CHASE IN GTA 6",18,GameV,,,,,,,,0,layout:blur,
+C2-tt,2026-11-19,00:16,tiktok,gameplay clip,video 20s full,"VICE CITY BEACH IN GTA 6 LOOKS UNREAL",20,GameV,,,,,,,,0,layout:full,
+C2-yt,2026-11-19,00:15,youtube,gameplay clip,video 20s full,"VICE CITY BEACH IN GTA 6 LOOKS UNREAL",20,GameV,,,,,,,,0,layout:full,
+C2-ig,2026-11-19,00:16,instagram,gameplay clip,video 20s full,"VICE CITY BEACH IN GTA 6 LOOKS UNREAL",20,GameV,,,,,,,,0,layout:full,
+C1-x,2026-11-19,08:50,x,gameplay clip,video 18s full,"SWAPPING COP CARS MID-CHASE IN GTA 6",18,GameV,,,,,,,,0,layout:full,

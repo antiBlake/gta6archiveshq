@@ -1,0 +1,7 @@
+.env
+.env.*
+media/
+tools/bin/
+logs/
+state/*.lock
+.DS_Store

@@ -1,0 +1,42 @@
+{
+  "id": "C2",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "media": "media/edits/C2_beach_full.mp4",
+  "captions": {
+    "x": "The beach in GTA 6 looks unreal 🌴\n\n🎥 GameV on YouTube",
+    "tiktok": "The beach in GTA 6 looks unreal 🌴 Look at the crowds 👀 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "The beach in GTA 6 looks unreal 🌴 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "The beach in GTA 6 looks unreal 🌴\n\nLook at the crowds 👀\n\n🎥 GameV on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "notes": "0:38-0:58 from GameV GTA 6 Ocean View Beach & Exploration (youtu.be/1pqen5CCWnI). Gameplay only, no story.",
+  "status": "posted_buffer;x_scheduled_13:00",
+  "sent_at": "18/11/2026, 22:18:50 WAT",
+  "message_id": 41,
+  "approved": "in chat 2026-11-18 22:25",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-18/C2_beach_full.mp4",
+  "buffer": {
+    "tiktok": {
+      "id": "6afe17d30a1fb75cd419b9e8",
+      "status": "scheduled",
+      "dueAt": "2026-11-18T23:15:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6afe17d4570d3cc01e6b96d8",
+      "status": "scheduled",
+      "dueAt": "2026-11-18T23:15:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6afe17d5a8bd8e4ffd1b423f",
+      "status": "scheduled",
+      "dueAt": "2026-11-18T23:15:00.000Z",
+      "mode": "at"
+    }
+  }
+}

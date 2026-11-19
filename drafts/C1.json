@@ -1,0 +1,43 @@
+{
+  "id": "C1",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "media": "media/edits/C1_copcar.mp4",
+  "captions": {
+    "x": "Wrecked your cop car in GTA 6? Just take another one 🚓\n\n🎥 GameV on YouTube",
+    "tiktok": "Wrecked your cop car? Just take another one 🚓 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Wrecked your cop car? Just take another one 🚓 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Wrecked your cop car? Just take another one 🚓\n\n🎥 GameV on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "notes": "18s from GameV 'Open World Police Chase' (youtu.be/9TLwyuGDSmI) 3:19-3:37. Gameplay only, no story. Hook: SWAPPING COP CARS MID-CHASE IN GTA 6.",
+  "status": "posted_all",
+  "sent_at": "18/11/2026, 21:25:07 WAT",
+  "message_id": 40,
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-18/C1_copcar.mp4",
+  "approved": "in chat 2026-11-18 22:25",
+  "buffer": {
+    "tiktok": {
+      "id": "6afe16970a1fb75cd4193bdc",
+      "status": "sending",
+      "dueAt": "2026-11-18T21:20:23.391Z",
+      "mode": "now"
+    },
+    "youtube": {
+      "id": "6afe16a2570d3cc01e6b0edf",
+      "status": "sent",
+      "dueAt": "2026-11-18T21:20:34.354Z",
+      "mode": "now"
+    },
+    "instagram": {
+      "id": "6afe16a5570d3cc01e6b0f88",
+      "status": "sending",
+      "dueAt": "2026-11-18T21:20:37.136Z",
+      "mode": "now"
+    }
+  },
+  "media_x": "media/edits/C1_copcar_full.mp4"
+}

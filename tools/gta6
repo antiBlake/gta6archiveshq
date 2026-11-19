@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Control the GTA6 Archives HQ automation.
+#   Cloud (GitHub Actions, runs with your Mac off): publishing, news watch, evening report.
+#   Mac (launchd, no AI): YouTube clipper — cuts "Most replayed" moments and sends them to Telegram.
+#
+#   gta6 start     turn the Mac clipper on (checks every 15 min, scans YouTube every 2 h)
+#   gta6 stop      turn the Mac clipper off
+#   gta6 status    clipper on/off + drafts waiting
+#   gta6 clip      scan YouTube now
+#   gta6 logs      last lines of the clipper log
+#   gta6 cloud     run the GitHub publisher now (gh workflow run tick)
+#   gta6 pause|resume   stop/restart publishing (same as /pause /resume in Telegram)
+# In Telegram: /status /pause /resume /clip, ✅/❌ on drafts, "hook S3: NEW TEXT".
+set -euo pipefail
+ROOT="$HOME/gta6archiveshq"
+JOB=com.gta6archiveshq.clipper
+PLIST="$HOME/Library/LaunchAgents/$JOB.plist"
+UID_=$(id -u)
+NODE="$HOME/.nvm/versions/node/v24.21.0/bin/node"
+cd "$ROOT"
+case "${1:-status}" in
+  start) launchctl bootout "gui/$UID_/$JOB" 2>/dev/null || true; launchctl bootstrap "gui/$UID_" "$PLIST"; echo "✅ clipper on (every 15 min check, YouTube scan every 2 h)";;
+  stop)  launchctl bootout "gui/$UID_/$JOB" 2>/dev/null || true; echo "⛔ clipper off (cloud publishing keeps running)";;
+  clip)  mkdir -p state; date > state/clip_request; "$NODE" tools/clipper.mjs;;
+  logs)  tail -n 40 logs/clipper.log 2>/dev/null || echo "no log yet";;
+  cloud) gh workflow run tick && echo "☁️ publisher started on GitHub";;
+  pause|resume)
+    git pull -q --rebase --autostash
+    if [ "$1" = pause ]; then date > state/paused; else rm -f state/paused; fi
+    git add -A state && git commit -qm "$1 publishing" && git push -q; echo "publishing ${1}d";;
+  status)
+    launchctl print "gui/$UID_/$JOB" >/dev/null 2>&1 && echo "✅ Mac clipper: on" || echo "⛔ Mac clipper: off"
+    [ -f state/paused ] && echo "⏸ publishing paused" || echo "▶️ publishing active (GitHub, every 30 min)"
+    echo "drafts waiting:"; "$NODE" tools/approve.mjs list | awk '$2=="sent"||$2=="approved"||$2=="rehook"||$2=="draft"' | cut -c1-80;;
+  *) sed -n '2,14p' "$0";;
+esac

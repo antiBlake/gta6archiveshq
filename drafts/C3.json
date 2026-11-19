@@ -1,0 +1,42 @@
+{
+  "id": "C3",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "media": "media/edits/C3_buggy_full.mp4",
+  "captions": {
+    "x": "Taking a beach buggy straight across the sand in GTA 6 🏖️\n\n🎥 GameV on YouTube",
+    "tiktok": "Taking a beach buggy straight across the sand in GTA 6 🏖️ No roads needed 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Taking a beach buggy straight across the sand in GTA 6 🏖️ 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Taking a beach buggy straight across the sand in GTA 6 🏖️\n\nNo roads needed\n\n🎥 GameV on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "notes": "3:33-3:55 from GameV GTA 6 Ocean View Beach & Exploration (youtu.be/1pqen5CCWnI). Gameplay only, no story.",
+  "status": "scheduled_all_11:00",
+  "sent_at": "18/11/2026, 22:19:09 WAT",
+  "message_id": 42,
+  "approved": "in chat 2026-11-18 22:25",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-18/C3_buggy_full.mp4",
+  "buffer": {
+    "tiktok": {
+      "id": "6afe17dfa8bd8e4ffd1b44b6",
+      "status": "scheduled",
+      "dueAt": "2026-11-19T10:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6afe17e00d8c064ce4d9055c",
+      "status": "scheduled",
+      "dueAt": "2026-11-19T10:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6afe17e16fadb4be71192db5",
+      "status": "scheduled",
+      "dueAt": "2026-11-19T10:00:00.000Z",
+      "mode": "at"
+    }
+  }
+}

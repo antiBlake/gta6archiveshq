@@ -90,6 +90,8 @@ async function scan() {
   const channels = readJSON(join(ROOT, 'channels.json'), []);
   const seenFile = join(STATE, 'yt_seen.json');
   const seen = new Set(readJSON(seenFile, []));
+  const pendingFile = join(STATE, 'yt_pending.json');
+  const pending = readJSON(pendingFile, {}); // video id -> last time we checked it for "Most replayed" data
   const all = drafts();
   const taken = new Set(all.map((d) => d.slot).filter(Boolean));
   let made = 0;
@@ -101,13 +103,14 @@ async function scan() {
     for (const e of entries) {
       if (made >= MAX_NEW) break;
       if (seen.has(e.id) || !/GTA ?(6|VI)|Grand Theft Auto VI/i.test(e.title ?? '')) continue;
+      if (pending[e.id] && Date.now() - new Date(pending[e.id]) < 6 * 3600_000) continue; // rechecked at most every 6 h
       let info;
       try { info = JSON.parse(sh(join(BIN, 'yt-dlp'), ['-j', '--no-warnings', `https://www.youtube.com/watch?v=${e.id}`])); }
       catch (err) { log(`${e.id}: info failed (live or private?)`); continue; }
       const ageH = (Date.now() / 1000 - (info.timestamp ?? info.release_timestamp ?? 0)) / 3600;
       const hm = (info.heatmap ?? []).filter((h) => h.start_time > 30 && h.end_time < info.duration - 30);
-      if (!hm.length) { if (ageH > 72) seen.add(e.id); log(`${e.id}: no "Most replayed" data yet (${Math.round(ageH)} h old)`); continue; }
-      seen.add(e.id);
+      if (!hm.length) { if (ageH > 72) seen.add(e.id); else pending[e.id] = new Date().toISOString(); log(`${e.id}: no "Most replayed" data yet (${Math.round(ageH)} h old)`); continue; }
+      seen.add(e.id); delete pending[e.id];
       const peak = hm.reduce((a, b) => (b.value > a.value ? b : a));
       const mid = (peak.start_time + peak.end_time) / 2;
       const start = Math.max(0, Math.round(mid - 12)), end = Math.min(info.duration, Math.round(mid + 10));
@@ -141,6 +144,7 @@ async function scan() {
     }
   }
   writeFileSync(seenFile, JSON.stringify([...seen].slice(-2000)));
+  writeFileSync(pendingFile, JSON.stringify(pending));
   writeFileSync(join(STATE, 'last_scan'), new Date().toISOString());
   return made;
 }

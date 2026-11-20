@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-21T09:00:00+01:00",
   "credit": "Jynxzi",
   "category": "streamer",
@@ -34,5 +34,26 @@
   "notes": "Twitch clip of Jynxzi (6085 views, 30s): https://www.twitch.tv/jynxzi/clip/RamshackleLaconicLapwingSpicyBoy-vXH5sbEmR5KAzDO7 — check for story spoilers. Change the on-screen text with: hook S3: NEW TEXT (re-rendered by the Mac).",
   "sent_at": "20/11/2026, 15:45:22 WAT",
   "message_id": 61,
-  "auto_approved": true
+  "auto_approved": true,
+  "buffer": {
+    "tiktok": {
+      "id": "6b005f297efc64d5e42a7be7",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T08:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b005f2a44831c50e4d33cda",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T08:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b005f2a77e195b7220e9bd5",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T08:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

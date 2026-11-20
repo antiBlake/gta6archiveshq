@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "slot": "2026-11-20T23:00:00+01:00",
   "credit": "IShowSpeed",
   "category": "streamer",
@@ -34,5 +34,23 @@
   "notes": "Twitch clip of IShowSpeed (13310 views, 38s): https://www.twitch.tv/ishowspeed/clip/OnerousEncouragingKeyboardOSkomodo-4rg8jTATQ5xQiW3R — check for story spoilers. Change the on-screen text with: hook S2: NEW TEXT (re-rendered by the Mac).",
   "sent_at": "20/11/2026, 15:43:28 WAT",
   "message_id": 60,
-  "auto_approved": true
+  "auto_approved": true,
+  "buffer": {
+    "tiktok": {
+      "id": "6b005f26234b6bb6eea51db0",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T22:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+    },
+    "instagram": {
+      "id": "6b005f277efc64d5e42a7bb7",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T22:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

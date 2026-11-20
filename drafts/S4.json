@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "slot": "2026-11-21T11:00:00+01:00",
   "credit": "Lacy",
   "category": "streamer",
@@ -34,5 +34,23 @@
   "notes": "Twitch clip of Lacy (5718 views, 60s): https://www.twitch.tv/lacy/clip/TiredDeafJuiceUncleNox-CD_q5QQDwhv_jCLj — check for story spoilers. Change the on-screen text with: hook S4: NEW TEXT (re-rendered by the Mac).",
   "sent_at": "20/11/2026, 15:49:38 WAT",
   "message_id": 63,
-  "auto_approved": true
+  "auto_approved": true,
+  "buffer": {
+    "tiktok": {
+      "id": "6b005f2c77e195b7220e9c3e",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T10:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+    },
+    "instagram": {
+      "id": "6b005f2dfc5b97f0f814f8a9",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

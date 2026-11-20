@@ -17,3 +17,8 @@
 | 2026-11-19 | 08:50 | X | C1 cop car swap | C1_copcar_full | GameV | x.com/GTA6archiveshq |
 | 2026-11-19 | 11:00 (sched) | TikTok/Shorts/Reels + X | C3 buggy | C3_buggy_full | GameV | Buffer + X scheduler |
 | 2026-11-19 | 13:00 (sched) | X | C2 beach | C2_beach_full | GameV | X scheduler |
+| 20/11/2026, 15:54:29 | 2026-11-20T21:00:00+01:00 | tiktok+youtube+instagram (GitHub) | xQc playing GTA 6 👀 "gta6 review so far" | https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S1.mp4 | xQc | ERROR |
+| 20/11/2026, 15:54:31 | 2026-11-20T23:00:00+01:00 | tiktok+youtube+instagram (GitHub) | IShowSpeed playing GTA 6 👀 "GTAXXO" | https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S2.mp4 | IShowSpeed | ERROR |
+| 20/11/2026, 15:54:34 | 2026-11-21T09:00:00+01:00 | tiktok+youtube+instagram (GitHub) | Jynxzi playing GTA 6 👀 "jump scare" | https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S3.mp4 | Jynxzi | ok |
+| 20/11/2026, 15:54:37 | 2026-11-21T11:00:00+01:00 | tiktok+youtube+instagram (GitHub) | Lacy playing GTA 6 👀 "got caught" | https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S4.mp4 | Lacy | ERROR |
+| 20/11/2026, 15:54:40 | 2026-11-21T13:00:00+01:00 | tiktok+youtube+instagram (GitHub) | GTA 6 tip: how to beat Clear Skies ✅ Save this for later | https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/T5.mp4 | GTA Series Videos | ERROR |

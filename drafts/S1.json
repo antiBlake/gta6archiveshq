@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "slot": "2026-11-20T21:00:00+01:00",
   "credit": "xQc",
   "category": "streamer",
@@ -34,5 +34,23 @@
   "notes": "Twitch clip of xQc (16753 views, 60s): https://www.twitch.tv/xqc/clip/FurryLittleBunnyCoolStoryBob-_J3RtuezOHW-UCWQ — check for story spoilers. Change the on-screen text with: hook S1: NEW TEXT (re-rendered by the Mac).",
   "sent_at": "20/11/2026, 15:40:34 WAT",
   "message_id": 59,
-  "auto_approved": true
+  "auto_approved": true,
+  "buffer": {
+    "tiktok": {
+      "id": "6b005f23234b6bb6eea51ca7",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T20:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+    },
+    "instagram": {
+      "id": "6b005f2544831c50e4d33c25",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T20:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

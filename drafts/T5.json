@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "publish_error",
   "slot": "2026-11-21T13:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -36,5 +36,24 @@
     "possible story spoiler",
     "found by YouTube search: original creator not verified",
     "mission guide: may show story content"
-  ]
+  ],
+  "decided_at": "20/11/2026, 15:54:25 WAT",
+  "buffer": {
+    "tiktok": {
+      "id": "6b005f2e44831c50e4d33df3",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T12:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+    },
+    "instagram": {
+      "id": "6b005f305d9549971cb478c3",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T12:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

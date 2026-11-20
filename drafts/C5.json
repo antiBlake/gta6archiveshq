@@ -1,0 +1,35 @@
+{
+  "id": "C5",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-20T19:00:00+01:00",
+  "credit": "GameV",
+  "category": "creator",
+  "media": "media/edits/C5.mp4",
+  "media_x": "media/edits/C5_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/C5.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/C5_x.mp4",
+  "hook": "VS GTA 5 VS GTA 4",
+  "captions": {
+    "x": "vs GTA 5 vs GTA 4 in GTA 6 🎮\n\n🎥 GameV on YouTube",
+    "tiktok": "vs GTA 5 vs GTA 4 in GTA 6 🎮 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "vs GTA 5 vs GTA 4 in GTA 6 🎮 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "vs GTA 5 vs GTA 4 in GTA 6 🎮\n\n🎥 GameV on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/C5_SQEAHNX7hHc.mp4",
+    "start": 0,
+    "end": 20,
+    "credit": "GameV",
+    "caption": "",
+    "url": "https://www.youtube.com/watch?v=SQEAHNX7hHc&t=584s"
+  },
+  "notes": "creator clip, picked by loudest 20 s of audio (584-604s) from GameV: https://youtu.be/SQEAHNX7hHc?t=584. Check for story spoilers. Change the on-screen text with: hook C5: NEW TEXT",
+  "sent_at": "20/11/2026, 14:56:37 WAT",
+  "message_id": 48
+}

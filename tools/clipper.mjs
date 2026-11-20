@@ -36,9 +36,11 @@ function sync(msg) {
 }
 
 function cleanTitle(t) {
-  return t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}️]/gu, '').replace(/\[[^\]]*\]|\([^)]*\)|#\S+/g, '')
-    .split(/\s[|–-]\s/)[0].replace(/\b(GTA ?(6|VI)|Grand Theft Auto ?(6|VI)?|PS5( Pro)?|4K|60 ?FPS|Gameplay|Walkthrough|Part \d+)\b/gi, '')
-    .replace(/\s{2,}/g, ' ').replace(/^[\s:!,.-]+|[\s:,.-]+$/g, '').trim();
+  let x = t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\uFE0F]/gu, '').replace(/\[[^\]]*\]|\([^)]*\)|#\S+/g, '');
+  x = x.split(/\s[|–—]\s|\s-\s/)[0];                                   // keep the main part of the title
+  x = x.replace(/\b(Grand Theft Auto ?(VI|6)|GTA ?VI|GTA6)\b/gi, 'GTA 6')
+       .replace(/\b(PS5( Pro)?|Xbox Series [XS|]+|4K|8K|60 ?FPS|HDR|Ultra|Max Settings|Gameplay Walkthrough|Walkthrough|Part \d+|Full Game|No Commentary)\b/gi, '');
+  return x.replace(/\s{2,}/g, ' ').replace(/^[\s:!,.-]+|[\s:,.-]+$/g, '').trim();
 }
 
 function render(src, start, end, hook, credit, out, caption) {
@@ -86,7 +88,15 @@ async function rehooks() {
 }
 
 // ---------- finding moments without AI ----------
-const YT = (args) => sh(join(BIN, 'yt-dlp'), ['--no-warnings', '--socket-timeout', '20', ...args]);
+function YT(args, tries = 3) {
+  for (let i = 1; ; i++) {
+    try { return sh(join(BIN, 'yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '5', ...args]); }
+    catch (e) {
+      if (i >= tries || !/resolve|timed out|Temporary failure|Connection reset/i.test(e.message)) throw e;
+      execFileSync('sleep', [String(15 * i)]); // network blip: wait and retry
+    }
+  }
+}
 
 // Loudest 20-second windows of the audio (a streamer's biggest reaction, or the action peak in gameplay).
 function loudestWindows(videoId, duration, count = 2) {
@@ -123,8 +133,8 @@ function pickMoments(info, type) {
 
 const TEMPLATES = {
   streamer: (ch, title) => ({ hook: `${ch.name} in GTA 6`, caption: title.slice(0, 40), line: `${ch.name} playing GTA 6 👀${title ? ` ${title}` : ''}`, prefix: 'S' }),
-  creator: (ch, title) => ({ hook: title || 'This moment in GTA 6', caption: '', line: `${title || 'This moment'} in GTA 6 🎮`, prefix: 'C' }),
-  guide: (ch, title) => ({ hook: `HOW TO: ${title || 'this mission'}`, caption: 'GTA 6 mission tip', line: `GTA 6 tip: ${title || 'mission guide'} ✅ Save this for later`, prefix: 'T' }),
+  creator: (ch, title) => ({ hook: title || 'This moment in GTA 6', caption: '', line: /GTA 6/i.test(title) ? `${title} 🎮` : `${title || 'This moment'} in GTA 6 🎮`, prefix: 'C' }),
+  guide: (ch, title) => ({ hook: `HOW TO: ${title.replace(/GTA 6/gi, '').replace(/(mission )?guide:?|walkthrough:?/gi, '').replace(/^\s*how to\s*/i, '').replace(/\s+in\s*$/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s:,-]+|[\s:,-]+$/g, '') || 'this mission'}`, caption: 'GTA 6 mission tip', line: `GTA 6 tip: ${title || 'mission guide'} ✅ Save this for later`, prefix: 'T' }),
 };
 
 // ---------- scan sources for new uploads ----------
@@ -138,7 +148,7 @@ async function scan() {
   let made = 0;
   for (const src0 of sources) {
     if (made >= MAX_NEW) break;
-    const listUrl = src0.search ? `ytsearchdate15:${src0.search}` : src0.youtube;
+    const listUrl = src0.search ? `https://www.youtube.com/results?search_query=${encodeURIComponent(src0.search)}&sp=CAI%253D` : src0.youtube;
     let entries = [];
     try { entries = JSON.parse(YT(['--flat-playlist', '-J', '--playlist-end', '10', listUrl])).entries ?? []; }
     catch (e) { log(`${src0.name}: list failed: ${e.message.split('\n')[0]}`); continue; }

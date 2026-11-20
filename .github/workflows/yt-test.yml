@@ -9,8 +9,9 @@ jobs:
       - run: |
           set +e
           curl -sSL -o yt-dlp https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux && chmod +x yt-dlp
-          echo "== Twitch top clips (GTA VI, 24h)"
-          ./yt-dlp --no-warnings --flat-playlist --playlist-end 3 --print "%(id)s | %(title)s | %(webpage_url)s" "https://www.twitch.tv/directory/category/grand-theft-auto-vi/clips?range=24hr"
-          U=$(./yt-dlp --no-warnings --flat-playlist --playlist-end 1 --print "%(url)s" "https://www.twitch.tv/directory/category/grand-theft-auto-vi/clips?range=24hr")
-          echo "== download $U"; ./yt-dlp --no-warnings -j "$U" | head -c 300; echo
-          ./yt-dlp --no-warnings -o tw.mp4 "$U" | tail -2; ls -la tw.mp4
+          for ch in kaicenat xqc ishowspeed; do
+            echo "== $ch clips (24h)"
+            ./yt-dlp --no-warnings --flat-playlist --playlist-end 3 --print "%(title)s | %(url)s" "https://www.twitch.tv/$ch/clips?filter=clips&range=24hr"
+          done
+          U=$(./yt-dlp --no-warnings --flat-playlist --playlist-end 1 --print "%(url)s" "https://www.twitch.tv/kaicenat/clips?filter=clips&range=24hr")
+          echo "== download $U"; ./yt-dlp --no-warnings -o tw.mp4 "$U" | tail -1; ls -la tw.mp4

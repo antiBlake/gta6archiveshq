@@ -63,7 +63,7 @@ for (const { st, url, info } of candidates.slice(0, MAX_NEW)) {
   const d = {
     id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: st.name, category: 'streamer',
     media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
-    hook, captions: captionsFor({ ...ch, name: `${st.name} (twitch.tv/${st.twitch})` }, line),
+    hook, captions: captionsFor({ ...ch, platform: 'Twitch' }, line),
     source: { file: src, start: 0, end, credit, caption: clipTitle, url, twitch: st.twitch, views: info.view_count },
     notes: `Twitch clip of ${st.name} (${info.view_count} views, ${info.duration}s): ${url} — check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT (re-rendered by the Mac).`,
   };

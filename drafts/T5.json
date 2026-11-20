@@ -6,8 +6,8 @@
     "youtube",
     "instagram"
   ],
-  "status": "publish_error",
-  "slot": "2026-11-21T13:00:00+01:00",
+  "status": "published_buffer",
+  "slot": "2026-11-21T15:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
   "media": "media/edits/T5.mp4",
@@ -42,16 +42,16 @@
     "tiktok": {
       "id": "6b005f2e44831c50e4d33df3",
       "status": "scheduled",
-      "dueAt": "2026-11-21T12:00:00.000Z",
+      "dueAt": "2026-11-21T14:00:00.000Z",
       "mode": "at"
     },
     "youtube": {
-      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+      "skipped": "YouTube daily limit (2/day)"
     },
     "instagram": {
       "id": "6b005f305d9549971cb478c3",
       "status": "scheduled",
-      "dueAt": "2026-11-21T12:00:00.000Z",
+      "dueAt": "2026-11-21T14:00:00.000Z",
       "mode": "at"
     }
   },

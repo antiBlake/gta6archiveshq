@@ -32,8 +32,11 @@ export function cleanTitle(t) {
 
 export function render(src, start, end, hook, credit, out, caption) {
   sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption]);
+  // X copy must stay under 10 MB: pick the video bitrate from the clip length
+  const dur = Math.max(1, Number(end) - Number(start));
+  const kbps = Math.max(800, Math.min(3200, Math.floor((9 * 8 * 1000) / dur) - 160));
   const xOut = out.replace(/\.mp4$/, '_x.mp4');
-  sh(tool('ffmpeg'), ['-hide_banner', '-loglevel', 'error', '-y', '-i', out, '-c:v', 'libx264', '-b:v', '3200k', '-maxrate', '3600k', '-bufsize', '7200k', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', xOut]);
+  sh(tool('ffmpeg'), ['-hide_banner', '-loglevel', 'error', '-y', '-i', out, '-c:v', 'libx264', '-b:v', `${kbps}k`, '-maxrate', `${Math.round(kbps * 1.1)}k`, '-bufsize', `${kbps * 2}k`, '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', xOut]);
   return xOut;
 }
 
@@ -49,7 +52,7 @@ export function nextSlot(taken) {
 }
 
 export function captionsFor(ch, line) {
-  const tag = (p) => (ch.handles?.[p] ? `@${ch.handles[p].replace(/^@/, '')}` : `${ch.name} on YouTube`);
+  const tag = (p) => (ch.handles?.[p] ? `@${ch.handles[p].replace(/^@/, '')}` : `${ch.name} on ${ch.platform ?? 'YouTube'}`);
   return {
     x: `${line}\n\n🎥 ${tag('x')}`,
     tiktok: `${line} 🎥 ${tag('tiktok')} #GTA6 #GTAVI #ViceCity`,

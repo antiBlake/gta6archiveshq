@@ -205,3 +205,9 @@ if (requested || Date.now() - last > SCAN_EVERY_MS) {
   log(`scan done: ${n} new clip(s)`);
 }
 sync('clipper: drafts and state');
+// GitHub delays scheduled runs on quiet repos; while the Mac is online, start the publisher every 30 min ourselves.
+const kick = join(STATE, '.last_kick');
+if (!existsSync(kick) || Date.now() - new Date(readFileSync(kick, 'utf8')) > 28 * 60_000) {
+  try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(kick, new Date().toISOString()); log('started GitHub publisher'); }
+  catch (e) { log(`could not start GitHub publisher: ${e.message.split('\n')[0]}`); }
+}

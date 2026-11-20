@@ -5,3 +5,4 @@ tools/bin/
 logs/
 state/*.lock
 .DS_Store
+state/.last_kick

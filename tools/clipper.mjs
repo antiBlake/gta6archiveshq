@@ -21,7 +21,7 @@ function sync(msg) {
   try {
     git('add', '-A', 'drafts', 'state', 'log.md', 'scoreboard.csv', 'channels.json');
     if (git('status', '--porcelain', 'drafts', 'state', 'log.md', 'scoreboard.csv', 'channels.json').trim()) git('commit', '-m', msg);
-    git('pull', '--rebase', '--autostash', '-q');
+    git('pull', '--rebase', '--autostash', '-X', 'theirs', '-q'); // on a clash, keep this run's record of what it did
     git('push', '-q');
   } catch (e) { log(`git sync failed: ${e.message.split('\n')[0]}`); }
 }

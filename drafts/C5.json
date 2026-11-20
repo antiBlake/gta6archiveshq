@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-20T19:00:00+01:00",
   "credit": "GameV",
   "category": "creator",
@@ -37,5 +37,26 @@
     "possible story spoiler",
     "link or @mention in source title"
   ],
-  "auto_approved": true
+  "auto_approved": true,
+  "x_status": "scheduled_x",
+  "buffer": {
+    "instagram": {
+      "id": "6b005e1afc5b97f0f81482a3",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T18:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b005e1977e195b7220e215c",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T18:00:00.000Z",
+      "mode": "at"
+    },
+    "tiktok": {
+      "id": "6b005e1977e195b7220e2115",
+      "status": "scheduled",
+      "dueAt": "2026-11-20T18:00:00.000Z",
+      "mode": "at"
+    }
+  }
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "published_buffer",
   "slot": "2026-11-20T21:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -36,5 +36,26 @@
     "possible story spoiler",
     "found by YouTube search: original creator not verified",
     "mission guide: may show story content"
-  ]
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b005e1e7efc64d5e42a089a",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T10:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b005e1d7efc64d5e42a0851",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T10:00:00.000Z",
+      "mode": "at"
+    },
+    "tiktok": {
+      "id": "6b005e1d5d9549971cb40e0e",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

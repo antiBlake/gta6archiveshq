@@ -23,4 +23,4 @@ jobs:
           git config user.name "gta6-bot"; git config user.email "gta6-bot@users.noreply.github.com"
           git add -A drafts state log.md scoreboard.csv
           git diff --cached --quiet || git commit -m "tick: state"
-          git pull --rebase --autostash -q && git push -q
+          git pull --rebase --autostash -X theirs -q && git push -q

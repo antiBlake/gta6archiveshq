@@ -31,5 +31,10 @@
   },
   "notes": "guide clip, picked by start of the guide (after intro) (87-115s) from GTA Series Videos: https://youtu.be/HKvWN48ln8A?t=87 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T5: NEW TEXT",
   "sent_at": "20/11/2026, 15:52:12 WAT",
-  "message_id": 64
+  "message_id": 64,
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ]
 }

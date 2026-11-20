@@ -1,0 +1,13 @@
+name: yt-test
+# One-off: can GitHub's servers read and download YouTube / Twitch?
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - run: |
+          curl -sSL -o yt-dlp https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux && chmod +x yt-dlp
+          echo "== YouTube metadata"; ./yt-dlp -j --no-warnings https://www.youtube.com/watch?v=9TLwyuGDSmI 2>&1 | head -c 200; echo
+          echo "== YouTube 10s download"; ./yt-dlp --no-warnings --download-sections "*60-70" -f "b[height<=720]" -o yt.mp4 https://www.youtube.com/watch?v=9TLwyuGDSmI 2>&1 | tail -3; ls -la yt.mp4 2>&1
+          echo "== Twitch clips page"; ./yt-dlp -j --no-warnings --flat-playlist --playlist-end 2 "https://www.twitch.tv/directory/category/grand-theft-auto-vi/clips?range=24hr" 2>&1 | head -c 300; echo

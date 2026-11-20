@@ -36,11 +36,14 @@ function sync(msg) {
 }
 
 function cleanTitle(t) {
+  const mission = t.match(/Mission\s*#?\s*\d+\s*[-–—:]\s*([^|\[(]+)/i);         // "Mission #3 - Gear Up (…)" -> "Mission: Gear Up"
+  if (mission) return `Mission: ${mission[1].replace(/\s{2,}/g, ' ').trim()}`;
   let x = t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\uFE0F]/gu, '').replace(/\[[^\]]*\]|\([^)]*\)|#\S+/g, '');
-  x = x.split(/\s[|–—]\s|\s-\s/)[0];                                   // keep the main part of the title
   x = x.replace(/\b(Grand Theft Auto ?(VI|6)|GTA ?VI|GTA6)\b/gi, 'GTA 6')
        .replace(/\b(PS5( Pro)?|Xbox Series [XS|]+|4K|8K|60 ?FPS|HDR|Ultra|Max Settings|Gameplay Walkthrough|Walkthrough|Part \d+|Full Game|No Commentary)\b/gi, '');
-  return x.replace(/\s{2,}/g, ' ').replace(/^[\s:!,.-]+|[\s:,.-]+$/g, '').trim();
+  // keep the most meaningful part of "A - B | C" titles (not a bare "GTA 6")
+  const parts = x.split(/\s[|–—]\s|\s-\s/).map((p) => p.replace(/\s{2,}/g, ' ').replace(/^[\s:!,.-]+|[\s:,.-]+$/g, '').trim()).filter((p) => p && !/^GTA 6$/i.test(p));
+  return parts[0] ?? '';
 }
 
 function render(src, start, end, hook, credit, out, caption) {
@@ -134,7 +137,7 @@ function pickMoments(info, type) {
 const TEMPLATES = {
   streamer: (ch, title) => ({ hook: `${ch.name} in GTA 6`, caption: title.slice(0, 40), line: `${ch.name} playing GTA 6 👀${title ? ` ${title}` : ''}`, prefix: 'S' }),
   creator: (ch, title) => ({ hook: title || 'This moment in GTA 6', caption: '', line: /GTA 6/i.test(title) ? `${title} 🎮` : `${title || 'This moment'} in GTA 6 🎮`, prefix: 'C' }),
-  guide: (ch, title) => ({ hook: `HOW TO: ${title.replace(/GTA 6/gi, '').replace(/(mission )?guide:?|walkthrough:?/gi, '').replace(/^\s*how to\s*/i, '').replace(/\s+in\s*$/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s:,-]+|[\s:,-]+$/g, '') || 'this mission'}`, caption: 'GTA 6 mission tip', line: `GTA 6 tip: ${title || 'mission guide'} ✅ Save this for later`, prefix: 'T' }),
+  guide: (ch, title) => ({ hook: /^Mission: /.test(title) ? `HOW TO ${title.replace(/^Mission: /, 'BEAT ')}` : /tips|things|how to|guide/i.test(title) ? title : `HOW TO: ${title || 'this mission'}`, caption: 'GTA 6 mission tip', line: `GTA 6 tip: ${title.replace(/^Mission: /, 'how to beat ') || 'mission guide'} ✅ Save this for later\n⚠️ Mission spoilers`, prefix: 'T' }),
 };
 
 // ---------- scan sources for new uploads ----------
@@ -202,6 +205,14 @@ async function scan() {
 }
 
 import { lookup } from 'node:dns/promises';
+const LOCK = join(STATE, 'clipper.lock');
+if (existsSync(LOCK)) {
+  const pid = parseInt(readFileSync(LOCK, 'utf8'));
+  let alive = false; try { process.kill(pid, 0); alive = true; } catch {}
+  if (alive) { log(`another clipper run (pid ${pid}) is still working; skipping`); process.exit(0); }
+}
+writeFileSync(LOCK, String(process.pid));
+process.on('exit', () => rmSync(LOCK, { force: true }));
 const online = await Promise.race([lookup('www.youtube.com').then(() => true, () => false), new Promise((r) => setTimeout(() => r(false), 8000))]);
 if (!online) { log('offline (cannot resolve www.youtube.com): turn on the VPN / check Wi-Fi. Skipping this run.'); process.exit(0); }
 writeFileSync(join(STATE, 'last_alive'), new Date().toISOString());

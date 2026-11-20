@@ -1,0 +1,37 @@
+{
+  "id": "S4",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-21T11:00:00+01:00",
+  "credit": "Lacy",
+  "category": "streamer",
+  "media": "media/edits/S4.mp4",
+  "media_x": "media/edits/S4_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S4.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S4_x.mp4",
+  "hook": "LACY IN GTA 6",
+  "captions": {
+    "x": "Lacy playing GTA 6 👀 \"got caught\"\n\n🎥 Lacy (twitch.tv/lacy) on YouTube",
+    "tiktok": "Lacy playing GTA 6 👀 \"got caught\" 🎥 Lacy (twitch.tv/lacy) on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lacy playing GTA 6 👀 \"got caught\" 🎥 Lacy (twitch.tv/lacy) on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lacy playing GTA 6 👀 \"got caught\"\n\n🎥 Lacy (twitch.tv/lacy) on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S4_twitch.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/lacy",
+    "caption": "got caught",
+    "url": "https://www.twitch.tv/lacy/clip/TiredDeafJuiceUncleNox-CD_q5QQDwhv_jCLj",
+    "twitch": "lacy",
+    "views": 5718
+  },
+  "notes": "Twitch clip of Lacy (5718 views, 60s): https://www.twitch.tv/lacy/clip/TiredDeafJuiceUncleNox-CD_q5QQDwhv_jCLj — check for story spoilers. Change the on-screen text with: hook S4: NEW TEXT (re-rendered by the Mac).",
+  "sent_at": "20/11/2026, 15:49:38 WAT",
+  "message_id": 63
+}

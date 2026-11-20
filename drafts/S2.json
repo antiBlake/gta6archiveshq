@@ -1,0 +1,37 @@
+{
+  "id": "S2",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-20T23:00:00+01:00",
+  "credit": "IShowSpeed",
+  "category": "streamer",
+  "media": "media/edits/S2.mp4",
+  "media_x": "media/edits/S2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S2_x.mp4",
+  "hook": "ISHOWSPEED IN GTA 6",
+  "captions": {
+    "x": "IShowSpeed playing GTA 6 👀 \"GTAXXO\"\n\n🎥 IShowSpeed (twitch.tv/ishowspeed) on YouTube",
+    "tiktok": "IShowSpeed playing GTA 6 👀 \"GTAXXO\" 🎥 IShowSpeed (twitch.tv/ishowspeed) on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "IShowSpeed playing GTA 6 👀 \"GTAXXO\" 🎥 IShowSpeed (twitch.tv/ishowspeed) on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "IShowSpeed playing GTA 6 👀 \"GTAXXO\"\n\n🎥 IShowSpeed (twitch.tv/ishowspeed) on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S2_twitch.mp4",
+    "start": 0,
+    "end": 38,
+    "credit": "twitch.tv/ishowspeed",
+    "caption": "GTAXXO",
+    "url": "https://www.twitch.tv/ishowspeed/clip/OnerousEncouragingKeyboardOSkomodo-4rg8jTATQ5xQiW3R",
+    "twitch": "ishowspeed",
+    "views": 13310
+  },
+  "notes": "Twitch clip of IShowSpeed (13310 views, 38s): https://www.twitch.tv/ishowspeed/clip/OnerousEncouragingKeyboardOSkomodo-4rg8jTATQ5xQiW3R — check for story spoilers. Change the on-screen text with: hook S2: NEW TEXT (re-rendered by the Mac).",
+  "sent_at": "20/11/2026, 15:43:28 WAT",
+  "message_id": 60
+}

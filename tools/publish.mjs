@@ -114,6 +114,10 @@ async function publish(id, mode, at) {
     if (r.__typename === 'PostActionSuccess') {
       d.buffer[service] = { id: r.post.id, status: r.post.status, dueAt: r.post.dueAt, mode };
       console.log(`✓ ${service}: ${r.post.status} ${r.post.dueAt ?? ''} (post ${r.post.id})`);
+    } else if (r.__typename === 'LimitReachedError' && service === 'youtube') {
+      // YouTube allows Buffer only 2 Shorts a day: the first two clips of the day get YouTube, the rest skip it.
+      d.buffer[service] = { skipped: 'YouTube daily limit (2/day)' };
+      console.log(`– youtube: skipped, daily limit reached`);
     } else {
       d.buffer[service] = { error: `${r.__typename}: ${r.message}` };
       console.log(`✗ ${service}: ${r.__typename}: ${r.message}`);

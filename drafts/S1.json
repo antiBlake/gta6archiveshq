@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "publish_error",
+  "status": "published_buffer",
   "slot": "2026-11-20T21:00:00+01:00",
   "credit": "xQc",
   "category": "streamer",
@@ -43,7 +43,7 @@
       "mode": "at"
     },
     "youtube": {
-      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+      "skipped": "YouTube daily limit (2/day)"
     },
     "instagram": {
       "id": "6b005f2544831c50e4d33c25",

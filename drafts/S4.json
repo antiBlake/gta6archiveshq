@@ -6,8 +6,8 @@
     "youtube",
     "instagram"
   ],
-  "status": "publish_error",
-  "slot": "2026-11-21T11:00:00+01:00",
+  "status": "published_buffer",
+  "slot": "2026-11-21T13:00:00+01:00",
   "credit": "Lacy",
   "category": "streamer",
   "media": "media/edits/S4.mp4",
@@ -39,16 +39,16 @@
     "tiktok": {
       "id": "6b005f2c77e195b7220e9c3e",
       "status": "scheduled",
-      "dueAt": "2026-11-21T10:00:00.000Z",
+      "dueAt": "2026-11-21T12:00:00.000Z",
       "mode": "at"
     },
     "youtube": {
-      "error": "LimitReachedError: You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+      "skipped": "YouTube daily limit (2/day)"
     },
     "instagram": {
       "id": "6b005f2dfc5b97f0f814f8a9",
       "status": "scheduled",
-      "dueAt": "2026-11-21T10:00:00.000Z",
+      "dueAt": "2026-11-21T12:00:00.000Z",
       "mode": "at"
     }
   },

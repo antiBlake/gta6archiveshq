@@ -3,13 +3,14 @@
   "platforms": [
     "x"
   ],
-  "status": "approved",
+  "status": "skipped",
   "credit": "Xbox Wire",
   "captions": {
     "x": "GTA 6 news: Grand Theft Auto VI is Out Now\n\nSource: Xbox Wire 🔗 https://news.xbox.com/en-us/2026/11/19/grand-theft-auto-vi-is-out-now/"
   },
-  "notes": "Official source (Xbox Wire). Check the article before approving. https://news.xbox.com/en-us/2026/11/19/grand-theft-auto-vi-is-out-now/",
+  "notes": "Official source (Xbox Wire). Check the article before approving. https://news.xbox.com/en-us/2026/11/19/grand-theft-auto-vi-is-out-now/ | Skipped 2026-11-20: launch news is 2 days old.",
   "sent_at": "19/11/2026, 19:04:44 WAT",
   "message_id": 45,
-  "auto_approved": true
+  "auto_approved": true,
+  "x_status": "skipped"
 }

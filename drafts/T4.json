@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "draft",
+  "status": "sent",
   "slot": "2026-11-21T11:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -29,5 +29,7 @@
     "caption": "GTA 6 mission tip",
     "url": "https://www.youtube.com/watch?v=Lb6JyzX5gho&t=19s"
   },
-  "notes": "guide clip, picked by start of the guide (after intro) (19-47s) from GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=19 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T4: NEW TEXT"
+  "notes": "guide clip, picked by start of the guide (after intro) (19-47s) from GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=19 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T4: NEW TEXT",
+  "sent_at": "20/11/2026, 15:47:48 WAT",
+  "message_id": 62
 }

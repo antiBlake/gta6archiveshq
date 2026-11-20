@@ -1,0 +1,36 @@
+{
+  "id": "S5",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-21T17:00:00+01:00",
+  "credit": "Kai Cenat",
+  "category": "streamer",
+  "media": "media/edits/S5.mp4",
+  "media_x": "media/edits/S5_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S5.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S5_x.mp4",
+  "hook": "KAI CENAT IN GTA 6",
+  "captions": {
+    "x": "Kai Cenat playing GTA 6 👀 \"kkkkkkkkkkkkk\"\n\n🎥 Kai Cenat on Twitch",
+    "tiktok": "Kai Cenat playing GTA 6 👀 \"kkkkkkkkkkkkk\" 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Kai Cenat playing GTA 6 👀 \"kkkkkkkkkkkkk\" 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Kai Cenat playing GTA 6 👀 \"kkkkkkkkkkkkk\"\n\n🎥 Kai Cenat on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S5_twitch.mp4",
+    "start": 0,
+    "end": 30,
+    "credit": "twitch.tv/kaicenat",
+    "caption": "kkkkkkkkkkkkk",
+    "url": "https://www.twitch.tv/kaicenat/clip/LovelyImportantAlfalfaLitty-TvWeJzP9zG95rT47",
+    "twitch": "kaicenat",
+    "views": 5590
+  },
+  "notes": "Twitch clip of Kai Cenat (5590 views, 30s): https://www.twitch.tv/kaicenat/clip/LovelyImportantAlfalfaLitty-TvWeJzP9zG95rT47 — check for story spoilers. Change the on-screen text with: hook S5: NEW TEXT (re-rendered by the Mac).",
+  "auto_approved": true
+}

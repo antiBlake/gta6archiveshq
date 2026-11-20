@@ -1,0 +1,36 @@
+{
+  "id": "S6",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-21T19:00:00+01:00",
+  "credit": "xQc",
+  "category": "streamer",
+  "media": "media/edits/S6.mp4",
+  "media_x": "media/edits/S6_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S6.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/S6_x.mp4",
+  "hook": "XQC IN GTA 6",
+  "captions": {
+    "x": "xQc playing GTA 6 👀 \"xQc refuses to leave the club in GTA 6\"\n\n🎥 xQc on Twitch",
+    "tiktok": "xQc playing GTA 6 👀 \"xQc refuses to leave the club in GTA 6\" 🎥 xQc on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "xQc playing GTA 6 👀 \"xQc refuses to leave the club in GTA 6\" 🎥 xQc on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "xQc playing GTA 6 👀 \"xQc refuses to leave the club in GTA 6\"\n\n🎥 xQc on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S6_twitch.mp4",
+    "start": 0,
+    "end": 59,
+    "credit": "twitch.tv/xqc",
+    "caption": "xQc refuses to leave the club in GTA 6",
+    "url": "https://www.twitch.tv/xqc/clip/ArborealVictoriousSnailDatSheffy-LUDJxQAqZjCXFVjP",
+    "twitch": "xqc",
+    "views": 3879
+  },
+  "notes": "Twitch clip of xQc (3879 views, 59s): https://www.twitch.tv/xqc/clip/ArborealVictoriousSnailDatSheffy-LUDJxQAqZjCXFVjP — check for story spoilers. Change the on-screen text with: hook S6: NEW TEXT (re-rendered by the Mac).",
+  "auto_approved": true
+}

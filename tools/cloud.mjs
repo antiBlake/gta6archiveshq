@@ -53,8 +53,7 @@ function publishApproved() {
       after.status = failed.length ? 'publish_error' : 'published_buffer';
       saveDraft(after);
       appendFileSync(join(ROOT, 'log.md'), `| ${wat()} | ${when[0] === '--at' ? d.slot : 'now'} | ${buf.join('+')} (GitHub) | ${(d.captions.x ?? '').split('\n')[0]} | ${d.media_url ?? ''} | ${d.credit ?? ''} | ${failed.length ? 'ERROR' : 'ok'} |\n`);
-      telegram(failed.length ? `⚠️ ${d.id} failed: ${failed.map(([s, v]) => `${s}: ${v.error}`).join('; ')}`
-        : `🚀 ${d.id} ${when[0] === '--at' ? `scheduled for ${new Date(d.slot).toLocaleString('en-GB', { timeZone: 'Africa/Lagos' })}` : 'published'} on ${buf.join(', ')}.${d.platforms.includes('x') ? ' X version queued: Claude will ask you before posting it.' : ''}`);
+      if (failed.length) telegram(`⚠️ ${d.id} failed: ${failed.map(([s, v]) => `${s}: ${v.error}`).join('; ')}`);
     } catch (e) { log(`publish ${d.id} failed: ${e.message.split('\n')[0]}`); }
   }
 }

@@ -118,7 +118,13 @@ async function poll() {
       d.status = verdict === 'ok' ? 'approved' : 'rejected';
       d.decided_at = stamp();
       save(d);
-      const note = verdict === 'ok' ? '✅ Approved — posting next' : '❌ Rejected';
+      if (verdict === 'ok' && d.channel_url) { // approving a creator once makes their future clips auto-approve
+        mkdirSync(STATE, { recursive: true });
+        const tf = join(STATE, 'trusted.json');
+        const t = new Set(existsSync(tf) ? JSON.parse(readFileSync(tf, 'utf8')) : []);
+        t.add(d.channel_url); writeFileSync(tf, JSON.stringify([...t], null, 2));
+      }
+      const note = verdict === 'ok' ? '✅ Approved — posts at its slot' : '❌ Rejected';
       await call('answerCallbackQuery', { callback_query_id: q.id, text: note }).catch(() => {});
       await call('editMessageReplyMarkup', { chat_id: CHAT, message_id: q.message.message_id, reply_markup: { inline_keyboard: [[{ text: note, callback_data: 'gta:done' }]] } }).catch(() => {});
       console.log(`${id}: ${d.status}`);

@@ -8,6 +8,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT } from './lib/env.mjs';
 import { upload } from './publish.mjs';
+import { riskReasons } from './lib/risk.mjs';
 import { STATE, log, sh, readJSON, drafts, saveDraft, tool, render, nextSlot, captionsFor } from './lib/clips.mjs';
 
 const MAX_NEW = Number(process.env.MAX_NEW ?? 4);   // clips per run
@@ -66,9 +67,12 @@ for (const { st, url, info } of candidates.slice(0, MAX_NEW)) {
     source: { file: src, start: 0, end, credit, caption: clipTitle, url, twitch: st.twitch, views: info.view_count },
     notes: `Twitch clip of ${st.name} (${info.view_count} views, ${info.duration}s): ${url} — check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT (re-rendered by the Mac).`,
   };
+  const reasons = riskReasons({ title: info.title, hook, caption: clipTitle, category: 'streamer' });
+  if (reasons.length) { d.flags = reasons; d.notes = `⚠️ Flagged: ${reasons.join('; ')}.\n${d.notes}`; }
+  else Object.assign(d, { status: 'approved', auto_approved: true });
   saveDraft(d); all.push(d);
-  sh(process.execPath, ['tools/approve.mjs', 'send', id]);
-  log(`${id}: ${st.name} "${clipTitle}" (${info.view_count} views) → slot ${slot}`);
+  if (reasons.length) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+  log(`${id}: ${st.name} "${clipTitle}" (${info.view_count} views) → slot ${slot}, ${reasons.length ? `flagged: ${reasons.join('; ')}` : 'auto-approved'}`);
   made++;
 }
 writeFileSync(seenFile, JSON.stringify([...seen].slice(-3000)));

@@ -12,8 +12,7 @@
 ## Owner
 - Time zone: **WAT (Africa/Lagos, UTC+1)**. All schedule times below are WAT.
 - Approval windows: **07:00 morning** and **evening**.
-- Approvals: Telegram (✅/❌ on each draft). Week 1 (until 2026-11-25): **everything** needs approval.
-  After that: only unusual posts, rumors, or anything that could read as official.
+- Approvals (owner rule changed 2026-11-20): **auto-approve everything**; only posts flagged by tools/lib/risk.mjs (leaks, exploits, sexual content, spoilers, slurs, sensitive topics, official/rumor wording, unverified search creators, mission guides) go to Telegram for ✅/❌. Approving a flagged creator once trusts that channel (state/trusted.json).
 - Never pay, upgrade, or add a card without asking.
 
 ## Tools

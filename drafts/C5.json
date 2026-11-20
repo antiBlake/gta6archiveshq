@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "approved",
   "slot": "2026-11-20T19:00:00+01:00",
   "credit": "GameV",
   "category": "creator",
@@ -32,5 +32,10 @@
   "notes": "creator clip, picked by loudest 20 s of audio (584-604s) from GameV: https://youtu.be/SQEAHNX7hHc?t=584. Check for story spoilers. Change the on-screen text with: hook C5: NEW TEXT",
   "sent_at": "20/11/2026, 14:59:14 WAT",
   "message_id": 50,
-  "version": 2
+  "version": 2,
+  "flags": [
+    "possible story spoiler",
+    "link or @mention in source title"
+  ],
+  "auto_approved": true
 }

@@ -11,6 +11,7 @@ import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { ROOT } from './lib/env.mjs';
 import { upload } from './publish.mjs';
+import { riskReasons } from './lib/risk.mjs';
 import { BIN, STATE, DRAFTS, SLOTS, log, sh, git, readJSON, drafts, saveDraft, tool, cleanTitle, render, nextSlot, captionsFor } from './lib/clips.mjs';
 
 const SCAN_EVERY_MS = 2 * 60 * 60 * 1000;
@@ -146,9 +147,15 @@ async function scan() {
           source: { file: src, start: 0, end: len, credit, caption: tpl.caption, url: `https://www.youtube.com/watch?v=${e.id}&t=${m.start}s` },
           notes: `${ch.type} clip, picked by ${m.how} (${m.start}-${m.end}s) from ${ch.name}: https://youtu.be/${e.id}?t=${m.start}${src0.search ? ' — found by search: check this is the ORIGINAL creator' : ''}. Check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT`,
         };
+        d.channel_url = info.channel_url;
+        const trusted = new Set(readJSON(join(STATE, 'trusted.json'), []));
+        const reasons = riskReasons({ title: info.title, hook, caption: tpl.caption, foundBySearch: !!src0.search && !trusted.has(info.channel_url), category: ch.type });
+        if (reasons.length) { d.flags = reasons; d.notes = `⚠️ Flagged: ${reasons.join('; ')}.\n${d.notes}`; }
+        else Object.assign(d, { status: 'approved', auto_approved: true });
         saveDraft(d);
         all.push(d);
-        sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+        if (reasons.length) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+        log(`${id}: ${reasons.length ? `flagged (${reasons.join('; ')}) → Telegram` : 'auto-approved'}`);
         made++; perSource++;
       }
     }

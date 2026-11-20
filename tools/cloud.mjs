@@ -108,10 +108,23 @@ async function report() {
   await telegram([`📊 Daily report (${wat()})`, ...(lines.length ? lines : ['No metrics yet.']), '', `X posts waiting for you + Claude: ${pendingX.join(', ') || 'none'}`].join('\n'));
 }
 
+// ---------- Mac watchdog: tell the owner when the clipper has gone quiet ----------
+async function macWatchdog() {
+  const f = join(STATE, 'last_alive'), sent = join(STATE, 'watchdog_sent');
+  if (!existsSync(f)) return;
+  const quietH = (Date.now() - new Date(readFileSync(f, 'utf8'))) / 3600_000;
+  const lastSent = existsSync(sent) ? new Date(readFileSync(sent, 'utf8')) : new Date(0);
+  if (quietH > 4 && Date.now() - lastSent > 8 * 3600_000) {
+    await telegram(`💤 Your Mac clipper hasn't been online for ${Math.round(quietH)} h, so no new clips are being made. Wake the Mac, keep it plugged in and turn the VPN on. (Approved posts still publish from GitHub.)`);
+    writeFileSync(sent, new Date().toISOString());
+  }
+}
+
 const mode = process.argv[2] ?? 'tick';
 if (mode === 'tick') {
   try { log(node(['tools/approve.mjs', 'poll'])); } catch (e) { log(`poll failed: ${e.message.split('\n')[0]}`); }
   publishApproved();
   await newsWatch();
+  await macWatchdog();
 } else if (mode === 'report') await report();
 log('done');

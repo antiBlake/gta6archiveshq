@@ -16,8 +16,8 @@ const BIN = join(ROOT, 'tools', 'bin');
 const STATE = join(ROOT, 'state');
 const DRAFTS = join(ROOT, 'drafts');
 const SCAN_EVERY_MS = 2 * 60 * 60 * 1000;
-const MAX_NEW = 3;
-const SLOTS = ['11:00', '13:00', '16:00', '18:30', '21:00']; // WAT (UTC+1)
+const MAX_NEW = 6;
+const SLOTS = ['09:00', '11:00', '13:00', '15:00', '17:00', '19:00', '21:00', '23:00']; // WAT (UTC+1): up to 8 clips a day
 mkdirSync(STATE, { recursive: true });
 const log = (m) => console.log(`[${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Lagos' })}] ${m}`);
 const sh = (cmd, args, opts = {}) => execFileSync(cmd, args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, timeout: 900_000, ...opts });
@@ -85,70 +85,116 @@ async function rehooks() {
   }
 }
 
-// ---------- scan channels for new uploads ----------
+// ---------- finding moments without AI ----------
+const YT = (args) => sh(join(BIN, 'yt-dlp'), ['--no-warnings', '--socket-timeout', '20', ...args]);
+
+// Loudest 20-second windows of the audio (a streamer's biggest reaction, or the action peak in gameplay).
+function loudestWindows(videoId, duration, count = 2) {
+  const audio = join(ROOT, 'media', 'work', `${videoId}.m4a`);
+  mkdirSync(join(ROOT, 'media', 'work'), { recursive: true });
+  try {
+    YT(['-q', '-f', 'ba[abr<=80]/ba', '-o', audio, `https://www.youtube.com/watch?v=${videoId}`]);
+    const out = sh(join(BIN, 'ffmpeg'), ['-hide_banner', '-nostats', '-i', audio, '-af', 'asetnsamples=n=44100,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-', '-f', 'null', '-'], { stdio: ['ignore', 'pipe', 'ignore'] });
+    const rms = [...out.matchAll(/RMS_level=(-?[\d.]+|-inf)/g)].map((m) => (m[1] === '-inf' ? -90 : parseFloat(m[1])));
+    const W = 20, lo = Math.min(90, Math.floor(duration * 0.1)), hi = Math.max(lo + W, rms.length - 60);
+    const windows = [];
+    for (let t = lo; t + W <= hi; t += 2) windows.push({ t, v: rms.slice(t, t + W).reduce((a, b) => a + b, 0) / W });
+    windows.sort((a, b) => b.v - a.v);
+    const picks = [];
+    for (const w of windows) { if (picks.every((p) => Math.abs(p.t - w.t) > 180)) picks.push(w); if (picks.length >= count) break; }
+    return picks.map((p) => ({ start: p.t, end: p.t + W, how: 'loudest 20 s of audio' }));
+  } catch (e) { log(`${videoId}: audio scan failed: ${e.message.split('\n')[0]}`); return []; }
+  finally { rmSync(audio, { force: true }); }
+}
+
+function pickMoments(info, type) {
+  const hm = (info.heatmap ?? []).filter((h) => h.start_time > 30 && h.end_time < info.duration - 30).sort((a, b) => b.value - a.value);
+  if (hm.length) {
+    const picks = [];
+    for (const h of hm) { const mid = (h.start_time + h.end_time) / 2; if (picks.every((p) => Math.abs(p.mid - mid) > 120)) picks.push({ mid }); if (picks.length >= 2) break; }
+    return picks.map(({ mid }) => ({ start: Math.max(0, Math.round(mid - 12)), end: Math.min(info.duration, Math.round(mid + 10)), how: 'YouTube "Most replayed"' }));
+  }
+  if (type === 'guide') { // guides usually explain the key step early: take 28 s after the intro
+    const s0 = Math.min(Math.max(10, Math.round(info.duration * 0.05)), Math.max(0, info.duration - 30));
+    return [{ start: s0, end: Math.min(info.duration, s0 + 28), how: 'start of the guide (after intro)' }];
+  }
+  return loudestWindows(info.id, info.duration, 2);
+}
+
+const TEMPLATES = {
+  streamer: (ch, title) => ({ hook: `${ch.name} in GTA 6`, caption: title.slice(0, 40), line: `${ch.name} playing GTA 6 👀${title ? ` ${title}` : ''}`, prefix: 'S' }),
+  creator: (ch, title) => ({ hook: title || 'This moment in GTA 6', caption: '', line: `${title || 'This moment'} in GTA 6 🎮`, prefix: 'C' }),
+  guide: (ch, title) => ({ hook: `HOW TO: ${title || 'this mission'}`, caption: 'GTA 6 mission tip', line: `GTA 6 tip: ${title || 'mission guide'} ✅ Save this for later`, prefix: 'T' }),
+};
+
+// ---------- scan sources for new uploads ----------
 async function scan() {
-  const channels = readJSON(join(ROOT, 'channels.json'), []);
+  const sources = readJSON(join(ROOT, 'channels.json'), []);
   const seenFile = join(STATE, 'yt_seen.json');
   const seen = new Set(readJSON(seenFile, []));
-  const pendingFile = join(STATE, 'yt_pending.json');
-  const pending = readJSON(pendingFile, {}); // video id -> last time we checked it for "Most replayed" data
   const all = drafts();
   const taken = new Set(all.map((d) => d.slot).filter(Boolean));
+  const nextId = (prefix) => `${prefix}${Math.max(0, ...all.filter((d) => d.id.startsWith(prefix)).map((d) => parseInt(d.id.slice(1)) || 0)) + 1}`;
   let made = 0;
-  for (const ch of channels) {
+  for (const src0 of sources) {
     if (made >= MAX_NEW) break;
+    const listUrl = src0.search ? `ytsearchdate15:${src0.search}` : src0.youtube;
     let entries = [];
-    try { entries = JSON.parse(sh(join(BIN, 'yt-dlp'), ['--flat-playlist', '-J', '--playlist-end', '8', '--no-warnings', ch.youtube])).entries ?? []; }
-    catch (e) { log(`${ch.name}: list failed: ${e.message.split('\n')[0]}`); continue; }
+    try { entries = JSON.parse(YT(['--flat-playlist', '-J', '--playlist-end', '10', listUrl])).entries ?? []; }
+    catch (e) { log(`${src0.name}: list failed: ${e.message.split('\n')[0]}`); continue; }
+    let perSource = 0;
     for (const e of entries) {
-      if (made >= MAX_NEW) break;
+      if (made >= MAX_NEW || perSource >= (src0.max ?? 2)) break;
       if (seen.has(e.id) || !/GTA ?(6|VI)|Grand Theft Auto VI/i.test(e.title ?? '')) continue;
-      if (pending[e.id] && Date.now() - new Date(pending[e.id]) < 6 * 3600_000) continue; // rechecked at most every 6 h
+      if (src0.exclude && new RegExp(src0.exclude, 'i').test(e.title ?? '')) { seen.add(e.id); continue; }
       let info;
-      try { info = JSON.parse(sh(join(BIN, 'yt-dlp'), ['-j', '--no-warnings', `https://www.youtube.com/watch?v=${e.id}`])); }
+      try { info = JSON.parse(YT(['-j', `https://www.youtube.com/watch?v=${e.id}`])); }
       catch (err) { log(`${e.id}: info failed (live or private?)`); continue; }
-      const ageH = (Date.now() / 1000 - (info.timestamp ?? info.release_timestamp ?? 0)) / 3600;
-      const hm = (info.heatmap ?? []).filter((h) => h.start_time > 30 && h.end_time < info.duration - 30);
-      if (!hm.length) { if (ageH > 72) seen.add(e.id); else pending[e.id] = new Date().toISOString(); log(`${e.id}: no "Most replayed" data yet (${Math.round(ageH)} h old)`); continue; }
-      seen.add(e.id); delete pending[e.id];
-      const peak = hm.reduce((a, b) => (b.value > a.value ? b : a));
-      const mid = (peak.start_time + peak.end_time) / 2;
-      const start = Math.max(0, Math.round(mid - 12)), end = Math.min(info.duration, Math.round(mid + 10));
-      const prefix = ch.type === 'streamer' ? 'S' : 'C';
-      const id = `${prefix}${Math.max(0, ...all.filter((d) => d.id.startsWith(prefix)).map((d) => parseInt(d.id.slice(1)) || 0)) + 1 + made}`;
-      const src = `media/raw/${id}_${e.id}.mp4`;
-      log(`${id}: ${ch.name} "${info.title}" peak ${start}-${end}s`);
-      try {
-        sh(join(BIN, 'yt-dlp'), ['-q', '--no-warnings', '--ffmpeg-location', BIN, '--download-sections', `*${start}-${end}`, '--force-keyframes-at-cuts',
-          '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]', '--merge-output-format', 'mp4', '-o', src, `https://www.youtube.com/watch?v=${e.id}`]);
-      } catch (err) { log(`${id}: download failed: ${err.message.split('\n')[0]}`); continue; }
+      if (info.is_live || info.live_status === 'is_live' || !info.duration || info.duration < 45) { if (!info.is_live) seen.add(e.id); continue; }
+      seen.add(e.id);
+      // Search results: credit the actual uploader of that video.
+      const ch = src0.search ? { name: info.channel ?? info.uploader, type: src0.type, handles: {}, youtube: info.channel_url } : src0;
+      const t = TEMPLATES[ch.type] ?? TEMPLATES.creator;
       const title = cleanTitle(info.title);
-      const hook = (ch.type === 'streamer' ? `${ch.name} in GTA 6` : (title || 'This moment in GTA 6')).toUpperCase().slice(0, 48);
-      const caption = ch.type === 'streamer' ? title.slice(0, 40) : '';
-      const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
-      const out = `media/edits/${id}.mp4`;
-      const xOut = render(src, 0, end - start, hook, credit, out, caption);
-      const slot = nextSlot(taken); taken.add(slot);
-      const line = ch.type === 'streamer' ? `${ch.name} playing GTA 6 👀${title ? ` ${title}` : ''}` : `${title || 'This moment'} in GTA 6 🎮`;
-      const d = {
-        id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: ch.name,
-        media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
-        hook, captions: captionsFor(ch, line),
-        source: { file: src, start: 0, end: end - start, credit, caption, url: `https://www.youtube.com/watch?v=${e.id}&t=${start}s` },
-        notes: `Auto-picked from YouTube "Most replayed" (${start}-${end}s) of ${ch.name}: https://youtu.be/${e.id}?t=${start} — check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT`,
-      };
-      saveDraft(d);
-      all.push(d);
-      sh(process.execPath, ['tools/approve.mjs', 'send', id]);
-      made++;
+      for (const m of pickMoments(info, ch.type)) {
+        if (made >= MAX_NEW) break;
+        const tpl = t(ch, title);
+        const id = nextId(tpl.prefix);
+        const src = `media/raw/${id}_${e.id}.mp4`;
+        log(`${id}: ${ch.name} "${info.title}" ${m.start}-${m.end}s (${m.how})`);
+        try {
+          YT(['-q', '--ffmpeg-location', BIN, '--download-sections', `*${m.start}-${m.end}`, '--force-keyframes-at-cuts',
+            '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]', '--merge-output-format', 'mp4', '-o', src, `https://www.youtube.com/watch?v=${e.id}`]);
+        } catch (err) { log(`${id}: download failed: ${err.message.split('\n')[0]}`); continue; }
+        const hook = tpl.hook.toUpperCase().slice(0, 48);
+        const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
+        const out = `media/edits/${id}.mp4`;
+        const len = m.end - m.start;
+        const xOut = render(src, 0, len, hook, credit, out, tpl.caption);
+        const slot = nextSlot(taken); taken.add(slot);
+        const d = {
+          id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: ch.name, category: ch.type,
+          media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
+          hook, captions: captionsFor(ch, tpl.line),
+          source: { file: src, start: 0, end: len, credit, caption: tpl.caption, url: `https://www.youtube.com/watch?v=${e.id}&t=${m.start}s` },
+          notes: `${ch.type} clip, picked by ${m.how} (${m.start}-${m.end}s) from ${ch.name}: https://youtu.be/${e.id}?t=${m.start}${src0.search ? ' — found by search: check this is the ORIGINAL creator' : ''}. Check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT`,
+        };
+        saveDraft(d);
+        all.push(d);
+        sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+        made++; perSource++;
+      }
     }
   }
-  writeFileSync(seenFile, JSON.stringify([...seen].slice(-2000)));
-  writeFileSync(pendingFile, JSON.stringify(pending));
+  writeFileSync(seenFile, JSON.stringify([...seen].slice(-3000)));
   writeFileSync(join(STATE, 'last_scan'), new Date().toISOString());
   return made;
 }
 
+import { lookup } from 'node:dns/promises';
+const online = await Promise.race([lookup('www.youtube.com').then(() => true, () => false), new Promise((r) => setTimeout(() => r(false), 8000))]);
+if (!online) { log('offline (cannot resolve www.youtube.com): turn on the VPN / check Wi-Fi. Skipping this run.'); process.exit(0); }
+writeFileSync(join(STATE, 'last_alive'), new Date().toISOString());
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
 await rehooks();
 const last = existsSync(join(STATE, 'last_scan')) ? new Date(readFileSync(join(STATE, 'last_scan'), 'utf8')) : new Date(0);

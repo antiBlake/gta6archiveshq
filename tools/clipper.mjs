@@ -6,25 +6,15 @@
 //  - Any time: re-renders clips whose hook you changed with "hook <id>: NEW TEXT".
 // State is shared with GitHub Actions through the git repo (pull before, push after).
 
-import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { ROOT } from './lib/env.mjs';
 import { upload } from './publish.mjs';
+import { BIN, STATE, DRAFTS, SLOTS, log, sh, git, readJSON, drafts, saveDraft, tool, cleanTitle, render, nextSlot, captionsFor } from './lib/clips.mjs';
 
-const BIN = join(ROOT, 'tools', 'bin');
-const STATE = join(ROOT, 'state');
-const DRAFTS = join(ROOT, 'drafts');
 const SCAN_EVERY_MS = 2 * 60 * 60 * 1000;
 const MAX_NEW = 6;
-const SLOTS = ['09:00', '11:00', '13:00', '15:00', '17:00', '19:00', '21:00', '23:00']; // WAT (UTC+1): up to 8 clips a day
-mkdirSync(STATE, { recursive: true });
-const log = (m) => console.log(`[${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Lagos' })}] ${m}`);
-const sh = (cmd, args, opts = {}) => execFileSync(cmd, args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, timeout: 900_000, ...opts });
-const git = (...a) => sh('git', a);
-const readJSON = (f, dflt) => (existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : dflt);
-const drafts = () => readdirSync(DRAFTS).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(join(DRAFTS, f), 'utf8')));
-const saveDraft = (d) => writeFileSync(join(DRAFTS, `${d.id}.json`), JSON.stringify(d, null, 2) + '\n');
 
 function sync(msg) {
   try {
@@ -35,49 +25,13 @@ function sync(msg) {
   } catch (e) { log(`git sync failed: ${e.message.split('\n')[0]}`); }
 }
 
-function cleanTitle(t) {
-  const mission = t.match(/Mission\s*#?\s*\d+\s*[-–—:]\s*([^|\[(]+)/i);         // "Mission #3 - Gear Up (…)" -> "Mission: Gear Up"
-  if (mission) return `Mission: ${mission[1].replace(/\s{2,}/g, ' ').trim()}`;
-  let x = t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\uFE0F]/gu, '').replace(/\[[^\]]*\]|\([^)]*\)|#\S+/g, '');
-  x = x.replace(/\b(Grand Theft Auto ?(VI|6)|GTA ?VI|GTA6)\b/gi, 'GTA 6')
-       .replace(/\b(PS5( Pro)?|Xbox Series [XS|]+|4K|8K|60 ?FPS|HDR|Ultra|Max Settings|Gameplay Walkthrough|Walkthrough|Part \d+|Full Game|No Commentary)\b/gi, '');
-  // keep the most meaningful part of "A - B | C" titles (not a bare "GTA 6")
-  const parts = x.split(/\s[|–—]\s|\s-\s/).map((p) => p.replace(/\s{2,}/g, ' ').replace(/^[\s:!,.-]+|[\s:,.-]+$/g, '').trim()).filter((p) => p && !/^GTA 6$/i.test(p));
-  return parts[0] ?? '';
-}
-
-function render(src, start, end, hook, credit, out, caption) {
-  sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption]);
-  const xOut = out.replace(/\.mp4$/, '_x.mp4');
-  sh(join(BIN, 'ffmpeg'), ['-hide_banner', '-loglevel', 'error', '-y', '-i', out, '-c:v', 'libx264', '-b:v', '3200k', '-maxrate', '3600k', '-bufsize', '7200k', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', xOut]);
-  return xOut;
-}
-
-function nextSlot(taken) {
-  for (let day = 0; day < 4; day++) {
-    for (const s of SLOTS) {
-      const d = new Date(Date.now() + day * 86400000);
-      const iso = `${d.toLocaleDateString('en-CA', { timeZone: 'Africa/Lagos' })}T${s}:00+01:00`;
-      if (new Date(iso) > new Date(Date.now() + 60 * 60_000) && !taken.has(iso)) return iso;
-    }
-  }
-  return null;
-}
-
-function captionsFor(ch, line) {
-  const tag = (p) => (ch.handles?.[p] ? `@${ch.handles[p].replace(/^@/, '')}` : `${ch.name} on YouTube`);
-  return {
-    x: `${line}\n\n🎥 ${tag('x')}`,
-    tiktok: `${line} 🎥 ${tag('tiktok')} #GTA6 #GTAVI #ViceCity`,
-    youtube: `${line} 🎥 ${tag('youtube')} #GTA6 #GTAVI #ViceCity`,
-    instagram: `${line}\n\n🎥 ${tag('instagram')}\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto`,
-  };
-}
-
 // ---------- re-render clips with a new hook ----------
 async function rehooks() {
   for (const d of drafts().filter((x) => x.status === 'rehook' && x.source)) {
     const s = d.source;
+    if (!existsSync(join(ROOT, s.file)) && /twitch\.tv/.test(s.url ?? '')) {   // made in the cloud: fetch the Twitch clip again
+      try { YT(['-q', '-f', 'best[height<=1080]/best', '-o', s.file, s.url]); } catch (e) { log(`${d.id}: could not re-download ${s.url}`); }
+    }
     if (!existsSync(join(ROOT, s.file))) { log(`${d.id}: source ${s.file} missing, cannot re-render`); continue; }
     const v = (d.version ?? 1) + 1;
     const out = `media/edits/${d.id}_v${v}.mp4`;
@@ -93,7 +47,7 @@ async function rehooks() {
 // ---------- finding moments without AI ----------
 function YT(args, tries = 3) {
   for (let i = 1; ; i++) {
-    try { return sh(join(BIN, 'yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '5', ...args]); }
+    try { return sh(tool('yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '5', ...args]); }
     catch (e) {
       if (i >= tries || !/resolve|timed out|Temporary failure|Connection reset/i.test(e.message)) throw e;
       execFileSync('sleep', [String(15 * i)]); // network blip: wait and retry
@@ -107,7 +61,7 @@ function loudestWindows(videoId, duration, count = 2) {
   mkdirSync(join(ROOT, 'media', 'work'), { recursive: true });
   try {
     YT(['-q', '-f', 'ba[abr<=80]/ba', '-o', audio, `https://www.youtube.com/watch?v=${videoId}`]);
-    const out = sh(join(BIN, 'ffmpeg'), ['-hide_banner', '-nostats', '-i', audio, '-af', 'asetnsamples=n=44100,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-', '-f', 'null', '-'], { stdio: ['ignore', 'pipe', 'ignore'] });
+    const out = sh(tool('ffmpeg'), ['-hide_banner', '-nostats', '-i', audio, '-af', 'asetnsamples=n=44100,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-', '-f', 'null', '-'], { stdio: ['ignore', 'pipe', 'ignore'] });
     const rms = [...out.matchAll(/RMS_level=(-?[\d.]+|-inf)/g)].map((m) => (m[1] === '-inf' ? -90 : parseFloat(m[1])));
     const W = 20, lo = Math.min(90, Math.floor(duration * 0.1)), hi = Math.max(lo + W, rms.length - 60);
     const windows = [];
@@ -142,7 +96,7 @@ const TEMPLATES = {
 
 // ---------- scan sources for new uploads ----------
 async function scan() {
-  const sources = readJSON(join(ROOT, 'channels.json'), []);
+  const sources = readJSON(join(ROOT, 'channels.json'), []).filter((c) => c.youtube || c.search); // Twitch streamers are clipped in the cloud
   const seenFile = join(STATE, 'yt_seen.json');
   const seen = new Set(readJSON(seenFile, []));
   const all = drafts();

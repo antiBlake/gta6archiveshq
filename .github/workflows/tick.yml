@@ -1,7 +1,7 @@
 name: tick
 # Every 30 min: Telegram taps/commands -> publish approved posts via Buffer -> official news check.
 on:
-  schedule: [{ cron: "*/30 * * * *" }]
+  schedule: [{ cron: "7 * * * *" }]  # hourly; the Mac also starts it every 30 min while online
   workflow_dispatch:
 permissions: { contents: write }
 concurrency: { group: gta6-state, cancel-in-progress: false }

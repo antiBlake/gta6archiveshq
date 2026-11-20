@@ -22,6 +22,8 @@ CAPTION=${7:-}
 
 FONT_BOLD="/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 FONT="/System/Library/Fonts/Supplemental/Arial.ttf"
+# GitHub's Linux runners have no Arial: use DejaVu Sans (apt: fonts-dejavu-core)
+if [ ! -f "$FONT_BOLD" ]; then FONT_BOLD=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf; FONT=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf; fi
 
 # Text goes through files so quotes, colons and emoji never break the filter.
 TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT

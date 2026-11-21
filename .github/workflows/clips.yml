@@ -1,5 +1,5 @@
 name: clips
-# Every 3 h: streamer moments from Twitch (cloud, Mac not needed) -> Telegram for approval.
+# Every 3 h: streamer moments from Twitch, judged and captioned by free Gemini (cloud, Mac not needed).
 on:
   schedule: [{ cron: "23 */3 * * *" }]
   workflow_dispatch:
@@ -24,6 +24,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: save state
         run: |
           git config user.name "gta6-bot"; git config user.email "gta6-bot@users.noreply.github.com"

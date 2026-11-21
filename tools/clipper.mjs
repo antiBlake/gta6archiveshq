@@ -12,6 +12,8 @@ import { execFileSync } from 'node:child_process';
 import { ROOT } from './lib/env.mjs';
 import { upload } from './publish.mjs';
 import { riskReasons } from './lib/risk.mjs';
+import { judgeClip, decide } from './lib/gemini.mjs';
+import { env } from './lib/env.mjs';
 import { BIN, STATE, DRAFTS, SLOTS, log, sh, git, readJSON, drafts, saveDraft, tool, cleanTitle, render, nextSlot, captionsFor } from './lib/clips.mjs';
 
 const SCAN_EVERY_MS = 2 * 60 * 60 * 1000;
@@ -31,13 +33,14 @@ async function rehooks() {
   for (const d of drafts().filter((x) => x.status === 'rehook' && x.source)) {
     const s = d.source;
     if (!existsSync(join(ROOT, s.file)) && /twitch\.tv/.test(s.url ?? '')) {   // made in the cloud: fetch the Twitch clip again
-      try { YT(['-q', '-f', 'best[height<=1080]/best', '-o', s.file, s.url]); } catch (e) { log(`${d.id}: could not re-download ${s.url}`); }
+      const fmt = s.layout?.layout === 'portrait' ? 'portrait-1296/portrait-1080/portrait-720' : '1080/720/best[height<=1080]/best';
+      try { YT(['-q', '-f', fmt, '-o', s.file, s.url]); } catch (e) { log(`${d.id}: could not re-download ${s.url}`); }
     }
     if (!existsSync(join(ROOT, s.file))) { log(`${d.id}: source ${s.file} missing, cannot re-render`); continue; }
     const v = (d.version ?? 1) + 1;
     const out = `media/edits/${d.id}_v${v}.mp4`;
     log(`${d.id}: re-rendering with hook "${d.hook_request}"`);
-    const xOut = render(s.file, s.start, s.end, d.hook_request, s.credit, out, s.caption ?? '');
+    const xOut = render(s.file, s.start, s.end, d.hook_request, s.credit, out, s.caption ?? '', s.layout ?? {});
     Object.assign(d, { media: out, media_x: xOut, version: v, hook: d.hook_request, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url });
     delete d.hook_request;
     saveDraft(d);
@@ -97,6 +100,7 @@ const TEMPLATES = {
 
 // ---------- scan sources for new uploads ----------
 async function scan() {
+  if (!env.GEMINI_API_KEY) { log('GEMINI_API_KEY missing: not making clips (quality/safety check required)'); return 0; }
   const sources = readJSON(join(ROOT, 'channels.json'), []).filter((c) => c.youtube || c.search); // Twitch streamers are clipped in the cloud
   const seenFile = join(STATE, 'yt_seen.json');
   const seen = new Set(readJSON(seenFile, []));
@@ -128,34 +132,47 @@ async function scan() {
         if (made >= MAX_NEW) break;
         const tpl = t(ch, title);
         const id = nextId(tpl.prefix);
+        // download a wider window so Gemini can pick a complete moment inside it
+        const w0 = Math.max(0, ch.type === 'guide' ? m.start : Math.round((m.start + m.end) / 2) - 35);
+        const w1 = Math.min(info.duration, ch.type === 'guide' ? m.start + 90 : w0 + 70);
         const src = `media/raw/${id}_${e.id}.mp4`;
-        log(`${id}: ${ch.name} "${info.title}" ${m.start}-${m.end}s (${m.how})`);
+        log(`${id}: ${ch.name} "${info.title}" window ${w0}-${w1}s (${m.how})`);
         try {
-          YT(['-q', '--ffmpeg-location', BIN, '--download-sections', `*${m.start}-${m.end}`, '--force-keyframes-at-cuts',
+          YT(['-q', '--ffmpeg-location', BIN, '--download-sections', `*${w0}-${w1}`, '--force-keyframes-at-cuts',
             '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]', '--merge-output-format', 'mp4', '-o', src, `https://www.youtube.com/watch?v=${e.id}`]);
         } catch (err) { log(`${id}: download failed: ${err.message.split('\n')[0]}`); continue; }
-        const hook = tpl.hook.toUpperCase().slice(0, 48);
+        let v;
+        try { v = await judgeClip(join(ROOT, src), { who: ch.name, kind: ch.type === 'guide' ? 'GTA 6 mission guide / tips video (make it a useful how-to tip)' : ch.type === 'streamer' ? 'streamer video' : 'gameplay video', title: info.title, duration: w1 - w0, layout: 'landscape 16:9 YouTube video' }); }
+        catch (err) { log(`${id}: Gemini failed: ${err.message}`); continue; }
+        const verdict = decide(v);
+        if (verdict.action === 'discard') { log(`✗ ${id} dropped (${verdict.why}) — ${v.what_happens}`); rmSync(join(ROOT, src), { force: true }); continue; }
+        const len = w1 - w0;
+        const start = Math.max(0, Math.min(v.trim_start ?? 0, len - 6)), end = Math.min(len, Math.max(start + 6, v.trim_end ?? len));
+        const layout = v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
+        const hook = (v.hook || tpl.hook).toUpperCase().slice(0, 48);
         const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
         const out = `media/edits/${id}.mp4`;
-        const len = m.end - m.start;
-        const xOut = render(src, 0, len, hook, credit, out, tpl.caption);
+        const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', layout);
         const slot = nextSlot(taken); taken.add(slot);
+        const post = ch.type === 'guide' ? `${v.post_caption}\n⚠️ Mission spoilers` : v.post_caption;
         const d = {
           id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: ch.name, category: ch.type,
           media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
-          hook, captions: captionsFor(ch, tpl.line),
-          source: { file: src, start: 0, end: len, credit, caption: tpl.caption, url: `https://www.youtube.com/watch?v=${e.id}&t=${m.start}s` },
-          notes: `${ch.type} clip, picked by ${m.how} (${m.start}-${m.end}s) from ${ch.name}: https://youtu.be/${e.id}?t=${m.start}${src0.search ? ' — found by search: check this is the ORIGINAL creator' : ''}. Check for story spoilers. Change the on-screen text with: hook ${id}: NEW TEXT`,
+          hook, captions: captionsFor(ch, post),
+          judge: { quality: v.quality, confidence: v.confidence, reasons: v.reject_reasons, what: v.what_happens, model: v.model, layout: layout.layout },
+          source: { file: src, start, end, credit, caption: v.on_screen_caption, layout, url: `https://www.youtube.com/watch?v=${e.id}&t=${w0 + Math.round(start)}s` },
+          notes: `${verdict.why}. ${v.what_happens} From ${ch.name}: https://youtu.be/${e.id}?t=${w0 + Math.round(start)}${src0.search ? ' (found by search)' : ''}. Change the on-screen hook with: hook ${id}: NEW TEXT`,
         };
         d.channel_url = info.channel_url;
         const trusted = new Set(readJSON(join(STATE, 'trusted.json'), []));
-        const reasons = riskReasons({ title: info.title, hook, caption: tpl.caption, foundBySearch: !!src0.search && !trusted.has(info.channel_url), category: ch.type });
-        if (reasons.length) { d.flags = reasons; d.notes = `⚠️ Flagged: ${reasons.join('; ')}.\n${d.notes}`; }
+        const reasons = riskReasons({ title: info.title, hook, caption: `${v.on_screen_caption} ${v.post_caption}`, foundBySearch: !!src0.search && !trusted.has(info.channel_url), category: ch.type });
+        const auto = verdict.action === 'auto' && !reasons.length;
+        if (!auto) { d.flags = [...reasons, ...(verdict.action === 'review' ? [verdict.why] : [])]; d.notes = `⚠️ Check: ${d.flags.join('; ')}.\n${d.notes}`; }
         else Object.assign(d, { status: 'approved', auto_approved: true });
         saveDraft(d);
         all.push(d);
-        if (reasons.length) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
-        log(`${id}: ${reasons.length ? `flagged (${reasons.join('; ')}) → Telegram` : 'auto-approved'}`);
+        if (!auto) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+        log(`${auto ? '✓ auto' : '? review'} ${id} [${layout.layout}] "${hook}" q${v.quality}`);
         made++; perSource++;
       }
     }

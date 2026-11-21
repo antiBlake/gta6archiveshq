@@ -96,7 +96,7 @@ async function publish(id, mode, at) {
   const media = d.media_url ? { url: d.media_url, kind: isVid(d.media_url) ? 'video' : 'image' } : d.media ? await upload(d.media) : null;
   d.media_url = media?.url;
   d.buffer = d.buffer ?? {};
-  for (const service of d.platforms.filter((s) => CHANNELS[s])) {
+  for (const service of (d.publish_platforms ?? d.platforms).filter((s) => CHANNELS[s])) {
     if (!media && service !== 'instagram') { console.log(`skip ${service}: needs media`); continue; }
     const input = {
       channelId: CHANNELS[service],

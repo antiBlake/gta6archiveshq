@@ -7,7 +7,7 @@ import { ROOT } from './env.mjs';
 export const BIN = join(ROOT, 'tools', 'bin');
 export const STATE = join(ROOT, 'state');
 export const DRAFTS = join(ROOT, 'drafts');
-export const SLOTS = ['09:00', '11:00', '13:00', '15:00', '17:00', '19:00', '21:00', '23:00']; // WAT (UTC+1): up to 8 clips a day
+export const SLOTS = Array.from({ length: 16 }, (_, i) => `${String(8 + i).padStart(2, '0')}:00`); // hourly 08:00–23:00 WAT
 mkdirSync(STATE, { recursive: true });
 export const log = (m) => console.log(`[${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Lagos' })}] ${m}`);
 export const sh = (cmd, args, opts = {}) => execFileSync(cmd, args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, timeout: 900_000, ...opts });
@@ -47,7 +47,7 @@ export function nextSlot(taken) {
     for (const s of SLOTS) {
       const d = new Date(Date.now() + day * 86400000);
       const iso = `${d.toLocaleDateString('en-CA', { timeZone: 'Africa/Lagos' })}T${s}:00+01:00`;
-      if (new Date(iso) > new Date(Date.now() + 60 * 60_000) && !taken.has(iso)) return iso;
+      if (new Date(iso) > new Date(Date.now() + 45 * 60_000) && !taken.has(iso)) return iso;
     }
   }
   return null;

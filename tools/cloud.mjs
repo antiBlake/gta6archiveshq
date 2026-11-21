@@ -38,12 +38,24 @@ async function buffer(query, variables) {
 // ---------- publish approved drafts ----------
 function publishApproved() {
   if (existsSync(join(STATE, 'paused'))) return log('paused: not publishing');
-  for (const d of drafts().filter((x) => x.status === 'approved')) {
-    const buf = d.platforms.filter((p) => p !== 'x');
-    if (!buf.length) { // X-only post (e.g. news): queue for Claude + owner
-      Object.assign(d, { status: 'queued_x', x_status: 'pending' }); saveDraft(d);
-      log(`${d.id}: X-only, queued`); continue;
+  const CAPS = { tiktok: 15, instagram: 5, youtube: 2 };   // per day (WAT); YouTube = channel limit
+  const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
+  const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
+  for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if (b.id) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
+  const due = drafts().filter((x) => x.status === 'approved' && (!x.slot || new Date(x.slot) <= new Date(Date.now() + 75 * 60_000)))
+    .sort((a, b) => (b.judge?.quality ?? 6) - (a.judge?.quality ?? 6));   // best clips claim Instagram/YouTube first
+  for (const d of due) {
+    const day = dayOf(d.slot);
+    d.publish_platforms = d.platforms.filter((p) => p !== 'x' && (!CAPS[p] || (used[`${day}|${p}`] ?? 0) < CAPS[p]
+      && !(p !== 'tiktok' && (d.judge?.quality ?? 7) < 7)));               // Instagram/YouTube only for strong clips
+    for (const p of d.publish_platforms) used[`${day}|${p}`] = (used[`${day}|${p}`] ?? 0) + 1;
+    const buf = d.publish_platforms;
+    if (!buf.length) {
+      if (d.platforms.every((p) => p === 'x')) Object.assign(d, { status: 'queued_x', x_status: 'pending' });   // X-only (e.g. news)
+      else Object.assign(d, { status: 'over_daily_caps', x_status: 'pending' });                              // all of today's platform slots used
+      saveDraft(d); log(`${d.id}: ${d.status}`); continue;
     }
+    saveDraft(d);
     const slot = d.slot ? new Date(d.slot) : null;
     const when = slot && slot > new Date(Date.now() + 5 * 60_000) ? ['--at', d.slot] : ['--now'];
     try {

@@ -1,12 +1,113 @@
 [
-  { "name": "Kai Cenat", "type": "streamer", "twitch": "kaicenat", "handles": {} },
-  { "name": "xQc", "type": "streamer", "twitch": "xqc", "handles": {} },
-  { "name": "IShowSpeed", "type": "streamer", "twitch": "ishowspeed", "handles": {} },
-  { "name": "Lacy", "type": "streamer", "twitch": "lacy", "handles": {} },
-  { "name": "NICKMERCS", "type": "streamer", "twitch": "nickmercs", "handles": {} },
-  { "name": "Jynxzi", "type": "streamer", "twitch": "jynxzi", "handles": {} },
-  { "name": "Mission guides", "type": "guide", "search": "GTA 6 mission guide", "max": 3, "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download" },
-  { "name": "How-to tips", "type": "guide", "search": "GTA 6 how to complete mission tips", "max": 2, "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download" },
-  { "name": "Funny moments", "type": "creator", "search": "GTA 6 funny moments gameplay", "max": 2, "exclude": "leak|compilation|mods|mod |glitch|exploit|reupload" },
-  { "name": "GameV", "type": "creator", "youtube": "https://www.youtube.com/@GameV/videos", "handles": {} }
+  {
+    "name": "Kai Cenat",
+    "type": "streamer",
+    "twitch": "kaicenat",
+    "handles": {}
+  },
+  {
+    "name": "xQc",
+    "type": "streamer",
+    "twitch": "xqc",
+    "handles": {}
+  },
+  {
+    "name": "IShowSpeed",
+    "type": "streamer",
+    "twitch": "ishowspeed",
+    "handles": {}
+  },
+  {
+    "name": "Lacy",
+    "type": "streamer",
+    "twitch": "lacy",
+    "handles": {}
+  },
+  {
+    "name": "NICKMERCS",
+    "type": "streamer",
+    "twitch": "nickmercs",
+    "handles": {}
+  },
+  {
+    "name": "Jynxzi",
+    "type": "streamer",
+    "twitch": "jynxzi",
+    "handles": {}
+  },
+  {
+    "name": "summit1g",
+    "type": "streamer",
+    "twitch": "summit1g",
+    "handles": {}
+  },
+  {
+    "name": "CaseOh",
+    "type": "streamer",
+    "twitch": "caseoh_",
+    "handles": {}
+  },
+  {
+    "name": "Sketch",
+    "type": "streamer",
+    "twitch": "sketch",
+    "handles": {}
+  },
+  {
+    "name": "Zack (Asmongold)",
+    "type": "streamer",
+    "twitch": "zackrawrr",
+    "handles": {}
+  },
+  {
+    "name": "shroud",
+    "type": "streamer",
+    "twitch": "shroud",
+    "handles": {}
+  },
+  {
+    "name": "Moistcr1tikal",
+    "type": "streamer",
+    "twitch": "moistcr1tikal",
+    "handles": {}
+  },
+  {
+    "name": "Tarik",
+    "type": "streamer",
+    "twitch": "tarik",
+    "handles": {}
+  },
+  {
+    "name": "Ludwig",
+    "type": "streamer",
+    "twitch": "ludwig",
+    "handles": {}
+  },
+  {
+    "name": "Mission guides",
+    "type": "guide",
+    "search": "GTA 6 mission guide",
+    "max": 3,
+    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download"
+  },
+  {
+    "name": "How-to tips",
+    "type": "guide",
+    "search": "GTA 6 how to complete mission tips",
+    "max": 2,
+    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download"
+  },
+  {
+    "name": "Funny moments",
+    "type": "creator",
+    "search": "GTA 6 funny moments gameplay",
+    "max": 2,
+    "exclude": "leak|compilation|mods|mod |glitch|exploit|reupload"
+  },
+  {
+    "name": "GameV",
+    "type": "creator",
+    "youtube": "https://www.youtube.com/@GameV/videos",
+    "handles": {}
+  }
 ]

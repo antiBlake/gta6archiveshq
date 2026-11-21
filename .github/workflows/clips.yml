@@ -1,7 +1,7 @@
 name: clips
-# Every 3 h: streamer moments from Twitch, judged and captioned by free Gemini (cloud, Mac not needed).
+# Every 2 h: streamer moments from Twitch, judged and captioned by free Gemini (cloud, Mac not needed).
 on:
-  schedule: [{ cron: "23 */3 * * *" }]
+  schedule: [{ cron: "23 */2 * * *" }]
   workflow_dispatch:
 permissions: { contents: write }
 concurrency: { group: gta6-state, cancel-in-progress: false }

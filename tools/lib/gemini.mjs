@@ -7,14 +7,17 @@ const API = 'https://generativelanguage.googleapis.com';
 const key = () => { if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY missing'); return env.GEMINI_API_KEY; };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-let MODEL = env.GEMINI_MODEL;
-async function model() {
-  if (MODEL) return MODEL;
+// Free models to try in order; when one is overloaded (503) or rate-limited (429) the next one is used.
+const PREFERRED = ['gemini-2.5-flash', 'gemini-flash-latest', 'gemini-3-flash-preview', 'gemini-2.5-flash-lite', 'gemini-flash-lite-latest'];
+let MODELS;
+async function models() {
+  if (MODELS) return MODELS;
+  if (env.GEMINI_MODEL) return (MODELS = [env.GEMINI_MODEL]);
   const res = await (await fetch(`${API}/v1beta/models?pageSize=200&key=${key()}`)).json();
-  const flash = (res.models ?? []).filter((m) => /gemini-[\d.]+-flash(?!.*(lite|tts|image|live|audio|exp|preview|thinking))/.test(m.name) && m.supportedGenerationMethods?.includes('generateContent'))
-    .map((m) => m.name.replace('models/', '')).sort((a, b) => parseFloat(b.match(/[\d.]+/)) - parseFloat(a.match(/[\d.]+/)));
-  MODEL = flash[0] ?? 'gemini-2.5-flash';
-  return MODEL;
+  const have = new Set((res.models ?? []).filter((m) => m.supportedGenerationMethods?.includes('generateContent')).map((m) => m.name.replace('models/', '')));
+  MODELS = PREFERRED.filter((m) => have.has(m));
+  if (!MODELS.length) MODELS = ['gemini-2.5-flash'];
+  return MODELS;
 }
 
 async function uploadVideo(path) {
@@ -57,6 +60,8 @@ export async function judgeClip(path, ctx) {
   const prompt = `You review clips for "GTA6 Archives HQ", a faceless GTA 6 fan page posting 9:16 shorts on TikTok, Instagram Reels, YouTube Shorts and X.
 Clip: ${ctx.kind} by ${ctx.who}. Original title: "${ctx.title}". Length ${Math.round(ctx.duration)} s. Source frame is ${ctx.layout}.
 
+Facts: GTA 6 (Grand Theft Auto VI) was RELEASED on 19 November 2026 on PS5 and Xbox Series X|S and people are playing it now. Never call it upcoming or unreleased. ${ctx.kind.includes('Twitch') ? 'Twitch has already confirmed this clip is from GTA 6.' : ''}
+
 Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and prepare it:
 - keep=false if it shows sexual content or nudity (strip clubs, close-ups of bodies, lap dances), major story spoilers (story cutscenes, character deaths, endings), slurs, real-world violence, leaks/exploits/glitches, is not GTA 6, is mostly menus/loading, blurry, or is just someone talking with no interesting gameplay or reaction.
 - quality 1-10: how likely viewers stop scrolling and watch to the end (funny reaction, wild chase, crash, hidden detail, impressive graphics, useful tip). 7+ means a strong post.
@@ -68,23 +73,28 @@ Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and pr
 - what_happens: one plain sentence describing the clip.
 Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;
   const body = { contents: [{ parts: [{ file_data: { mime_type: 'video/mp4', file_uri: file.uri } }, { text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: SCHEMA, temperature: 0.6 } };
-  for (let i = 1; ; i++) {
-    const res = await fetch(`${API}/v1beta/models/${await model()}:generateContent?key=${key()}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(180_000) });
-    const data = await res.json();
-    if (res.ok) {
-      fetch(`${API}/v1beta/${file.name}?key=${key()}`, { method: 'DELETE' }).catch(() => {});
-      const v = JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}');
-      v.model = MODEL;
-      return v;
+  let lastErr = '';
+  for (const m of await models()) {
+    for (let i = 1; i <= 2; i++) {
+      const res = await fetch(`${API}/v1beta/models/${m}:generateContent?key=${key()}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(180_000) });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        fetch(`${API}/v1beta/${file.name}?key=${key()}`, { method: 'DELETE' }).catch(() => {});
+        const v = JSON.parse(data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}');
+        v.model = m;
+        return v;
+      }
+      lastErr = `${m} ${res.status}: ${data.error?.message ?? ''}`.slice(0, 200);
+      if (res.status === 503 || res.status === 429 || res.status >= 500) { await sleep(8000 * i); continue; } // busy: retry once, then next model
+      break; // other errors (e.g. model can't read video): try next model
     }
-    if ((res.status === 429 || res.status >= 500) && i < 4) { await sleep(20_000 * i); continue; } // free-tier rate limit: wait
-    throw new Error(`Gemini ${res.status}: ${JSON.stringify(data).slice(0, 300)}`);
   }
+  throw new Error(`all Gemini models failed — last: ${lastErr}`);
 }
 
 /** Turns a verdict into an action: 'discard' | 'auto' | 'review' (send to Telegram) */
 export function decide(v) {
-  const hard = ['sexual_or_nudity', 'slur_or_hate', 'real_world_violence', 'leak_or_exploit', 'not_gta6'];
+  const hard = ['sexual_or_nudity', 'slur_or_hate', 'real_world_violence', 'leak_or_exploit'];
   if (!v || v.reject_reasons?.some((r) => hard.includes(r))) return { action: 'discard', why: (v?.reject_reasons ?? ['no verdict']).join(', ') };
   if (!v.keep || v.quality < 5) return { action: 'discard', why: `weak clip (quality ${v.quality}${v.reject_reasons?.length ? `, ${v.reject_reasons.join(', ')}` : ''})` };
   if (v.quality >= 7 && v.confidence >= 0.7 && !v.reject_reasons?.length) return { action: 'auto', why: `quality ${v.quality}/10` };

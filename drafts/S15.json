@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "rehook",
   "auto_approved": true,
   "slot": "2026-11-21T20:00:00+01:00",
   "credit": "Ludwig",
@@ -43,5 +43,6 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 9/10. Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off. Source: https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7 (857 views). Change the on-screen hook with: hook S15: NEW TEXT"
+  "notes": "quality 9/10. Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off. Source: https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7 (857 views). Change the on-screen hook with: hook S15: NEW TEXT",
+  "hook_request": "HE SPOKE TOO SOON"
 }

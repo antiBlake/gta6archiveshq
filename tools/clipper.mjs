@@ -43,6 +43,7 @@ async function rehooks() {
     const xOut = render(s.file, s.start, s.end, d.hook_request, s.credit, out, s.caption ?? '', s.layout ?? {});
     Object.assign(d, { media: out, media_x: xOut, version: v, hook: d.hook_request, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url });
     delete d.hook_request;
+    if (d.auto_approved || d.keep_approved) { d.status = 'approved'; delete d.keep_approved; saveDraft(d); continue; } // fix-only re-render: stays approved
     saveDraft(d);
     sh(process.execPath, ['tools/approve.mjs', 'send', d.id]);
   }

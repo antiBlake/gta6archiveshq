@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "rehook",
   "auto_approved": true,
   "slot": "2026-11-21T18:00:00+01:00",
   "credit": "CaseOh",
@@ -43,5 +43,6 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 9/10. CaseOh plays as Lucia and throws NPCs off a highway bridge after they tried to prank her. Source: https://www.twitch.tv/caseoh_/clip/EvilChillyKleeKeepo-uq_TPadcMek2sAdf (8936 views). Change the on-screen hook with: hook S14: NEW TEXT"
+  "notes": "quality 9/10. CaseOh plays as Lucia and throws NPCs off a highway bridge after they tried to prank her. Source: https://www.twitch.tv/caseoh_/clip/EvilChillyKleeKeepo-uq_TPadcMek2sAdf (8936 views). Change the on-screen hook with: hook S14: NEW TEXT",
+  "hook_request": "HE PLAYED THE BRIDGE GAME"
 }

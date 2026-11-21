@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "rehook",
   "auto_approved": true,
   "slot": "2026-11-21T22:00:00+01:00",
   "credit": "Ludwig",
@@ -43,5 +43,6 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 7/10. Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion. Source: https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE (660 views). Change the on-screen hook with: hook S16: NEW TEXT"
+  "notes": "quality 7/10. Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion. Source: https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE (660 views). Change the on-screen hook with: hook S16: NEW TEXT",
+  "hook_request": "GTA 6 IS DANGEROUS FOR LONELY PEOPLE"
 }

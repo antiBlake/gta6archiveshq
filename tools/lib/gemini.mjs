@@ -67,8 +67,8 @@ Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and pr
 - quality 1-10: how likely viewers stop scrolling and watch to the end (funny reaction, wild chase, crash, hidden detail, impressive graphics, useful tip). 7+ means a strong post.
 - trim_start/trim_end (seconds, within the clip): the most complete moment, 8-45 s: start at the setup, end right after the payoff. Never cut mid-sentence or mid-action.
 - facecam_box: only if a streamer's webcam is visible inside a landscape frame, give its box as fractions of the frame (x,y,w,h). Otherwise null.
-- hook: on-screen text, UPPERCASE, max 38 characters, creates curiosity about what happens (e.g. "HE DID NOT SEE THIS COMING", "THE COPS NEVER CAUGHT HIM"). Must be true to the clip.
-- on_screen_caption: max 32 characters, adds context or a punchline, sentence case.
+- hook: on-screen text, UPPERCASE, max 38 characters, NO emoji, creates curiosity about what happens (e.g. "HE DID NOT SEE THIS COMING", "THE COPS NEVER CAUGHT HIM"). Must be true to the clip.
+- on_screen_caption: max 32 characters, NO emoji, adds context or a punchline, sentence case.
 - post_caption: 1-2 short punchy sentences (max 140 characters) with exactly one emoji, written for a worldwide audience, ${ctx.who !== 'unknown' ? `naming ${ctx.who}` : ''}. No hashtags, no @handles, no links, no countries or cities, never claim it is official Rockstar news, no invented facts.
 - what_happens: one plain sentence describing the clip.
 Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;

@@ -123,7 +123,7 @@ async function publish(id, mode, at) {
       console.log(`✗ ${service}: ${r.__typename}: ${r.message}`);
     }
   }
-  if (d.platforms.includes('x') && d.x_status !== 'posted') { d.x_status = 'pending'; console.log(`X queued for Claude + owner: ${d.id}`); }
+  if (d.platforms.includes('x') && !d.x_status) { d.x_status = 'pending'; console.log(`X queued for Claude + owner: ${d.id}`); }
   writeFileSync(p, JSON.stringify(d, null, 2) + '\n');
 }
 

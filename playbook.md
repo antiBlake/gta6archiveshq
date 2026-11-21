@@ -57,4 +57,4 @@ Quality beats volume. Skip a slot rather than post something weak or unverified.
 ## Clip quality system (2026-11-21 redesign)
 - Free Gemini watches every clip (tools/lib/gemini.mjs): drops sexual/hateful/leak content and weak clips (<5/10), auto-approves 7+/10 with no doubts, sends the rest to Telegram. It also picks the complete moment, finds the streamer webcam, and writes hook + on-screen caption + post caption.
 - Layouts: Twitch portrait clip as is (camera on top) > camera stacked over gameplay > full-screen gameplay. Fades in/out.
-- Hourly slots 08:00–23:00 WAT. Daily caps: TikTok 15, Instagram 5, YouTube 2 (best-scored clips get IG/YouTube). Clips go to Buffer ~1 h before their slot (free plan queue = 10).
+- Hourly slots 08:00–23:00 WAT. Daily caps: TikTok 15, Instagram 5, YouTube 8 (channel verified 2026-11-21) (best-scored clips get IG/YouTube). Clips go to Buffer ~1 h before their slot (free plan queue = 10).

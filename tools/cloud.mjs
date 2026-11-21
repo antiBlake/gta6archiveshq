@@ -38,7 +38,7 @@ async function buffer(query, variables) {
 // ---------- publish approved drafts ----------
 function publishApproved() {
   if (existsSync(join(STATE, 'paused'))) return log('paused: not publishing');
-  const CAPS = { tiktok: 15, instagram: 5, youtube: 2 };   // per day (WAT); YouTube = channel limit
+  const CAPS = { tiktok: 15, instagram: 5, youtube: 8 };   // per day (WAT); YouTube channel phone-verified 2026-11-21
   const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
   for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if (b.id) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }

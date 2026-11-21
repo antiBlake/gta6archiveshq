@@ -6,15 +6,15 @@
     "youtube",
     "instagram"
   ],
-  "status": "rehook",
+  "status": "approved",
   "auto_approved": true,
   "slot": "2026-11-21T22:00:00+01:00",
   "credit": "Ludwig",
   "category": "streamer",
-  "media": "media/edits/S16.mp4",
-  "media_x": "media/edits/S16_x.mp4",
-  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16.mp4",
-  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16_x.mp4",
+  "media": "media/edits/S16_v2.mp4",
+  "media_x": "media/edits/S16_v2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16_v2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16_v2_x.mp4",
   "hook": "GTA 6 IS DANGEROUS FOR LONELY PEOPLE",
   "captions": {
     "x": "Ludwig reacts to the incredible level of detail in GTA 6. This game is getting way too immersive 😳\n\n🎥 Ludwig on Twitch",
@@ -44,5 +44,5 @@
     }
   },
   "notes": "quality 7/10. Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion. Source: https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE (660 views). Change the on-screen hook with: hook S16: NEW TEXT",
-  "hook_request": "GTA 6 IS DANGEROUS FOR LONELY PEOPLE"
+  "version": 2
 }

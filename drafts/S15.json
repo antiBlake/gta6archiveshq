@@ -6,15 +6,15 @@
     "youtube",
     "instagram"
   ],
-  "status": "rehook",
+  "status": "approved",
   "auto_approved": true,
   "slot": "2026-11-21T20:00:00+01:00",
   "credit": "Ludwig",
   "category": "streamer",
-  "media": "media/edits/S15.mp4",
-  "media_x": "media/edits/S15_x.mp4",
-  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15.mp4",
-  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15_x.mp4",
+  "media": "media/edits/S15_v2.mp4",
+  "media_x": "media/edits/S15_v2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15_v2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15_v2_x.mp4",
   "hook": "HE SPOKE TOO SOON",
   "captions": {
     "x": "Ludwig claims to be the best driver in GTA 6 right before an embarrassing crash 😂\n\n🎥 Ludwig on Twitch",
@@ -44,5 +44,5 @@
     }
   },
   "notes": "quality 9/10. Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off. Source: https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7 (857 views). Change the on-screen hook with: hook S15: NEW TEXT",
-  "hook_request": "HE SPOKE TOO SOON"
+  "version": 2
 }

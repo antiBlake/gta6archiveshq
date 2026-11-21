@@ -1,0 +1,47 @@
+{
+  "id": "S18",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-22T10:00:00+01:00",
+  "credit": "Lacy",
+  "category": "streamer",
+  "media": "media/edits/S18.mp4",
+  "media_x": "media/edits/S18_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S18.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S18_x.mp4",
+  "hook": "THIS NPC HAD ENOUGH",
+  "captions": {
+    "x": "Lacy watches a valet quit on the spot after dealing with a rude customer. 😲\n\n🎥 Lacy on Twitch",
+    "tiktok": "Lacy watches a valet quit on the spot after dealing with a rude customer. 😲 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lacy watches a valet quit on the spot after dealing with a rude customer. 😲 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lacy watches a valet quit on the spot after dealing with a rude customer. 😲\n\n🎥 Lacy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Lacy witnesses a valet quit his job after being berated by a rude NPC outside a hotel.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_1856203793.mp4",
+    "start": 0,
+    "end": 18,
+    "credit": "twitch.tv/lacy",
+    "caption": "Lacy witnesses a valet quit",
+    "url": "https://www.twitch.tv/lacy/clip/CrunchyFrigidBasenjiBuddhaBar-YfaqN-_QU8RpMv8b",
+    "twitch": "lacy",
+    "views": 354,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 7/10. Lacy witnesses a valet quit his job after being berated by a rude NPC outside a hotel. Source: https://www.twitch.tv/lacy/clip/CrunchyFrigidBasenjiBuddhaBar-YfaqN-_QU8RpMv8b (354 views). Change the on-screen hook with: hook S18: NEW TEXT"
+}

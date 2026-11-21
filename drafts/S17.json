@@ -1,0 +1,49 @@
+{
+  "id": "S17",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "auto_approved": false,
+  "slot": "2026-11-22T08:00:00+01:00",
+  "credit": "Lacy",
+  "category": "streamer",
+  "media": "media/edits/S17.mp4",
+  "media_x": "media/edits/S17_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S17.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S17_x.mp4",
+  "hook": "HE TRIED TO DRIFT IN STYLE",
+  "captions": {
+    "x": "Lacy shows off his riding skills during a night mission in the city. 🏍️\n\n🎥 Lacy on Twitch",
+    "tiktok": "Lacy shows off his riding skills during a night mission in the city. 🏍️ 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lacy shows off his riding skills during a night mission in the city. 🏍️ 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lacy shows off his riding skills during a night mission in the city. 🏍️\n\n🎥 Lacy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 6,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Lacy attempts to perform a stylish drift on a motorcycle at night while characters discuss their next mission objective.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_1748454861.mp4",
+    "start": 0,
+    "end": 16,
+    "credit": "twitch.tv/lacy",
+    "caption": "Lacy's midnight drift",
+    "url": "https://www.twitch.tv/lacy/clip/EndearingNimblePassionfruitChocolateRain-01jh1UKyjqi850ol",
+    "twitch": "lacy",
+    "views": 531,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 6/10, confidence 0.9. Lacy attempts to perform a stylish drift on a motorcycle at night while characters discuss their next mission objective. Source: https://www.twitch.tv/lacy/clip/EndearingNimblePassionfruitChocolateRain-01jh1UKyjqi850ol (531 views). Change the on-screen hook with: hook S17: NEW TEXT",
+  "sent_at": "21/11/2026, 20:35:59 WAT",
+  "message_id": 82
+}

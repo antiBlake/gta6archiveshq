@@ -1,0 +1,47 @@
+{
+  "id": "S13",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-21T16:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S13.mp4",
+  "media_x": "media/edits/S13_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S13.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S13_x.mp4",
+  "hook": "CASEOH VS BRIDGE TROLLS",
+  "captions": {
+    "x": "CaseOh teaches these NPCs a lesson after they threw objects at his car. 😂\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh teaches these NPCs a lesson after they threw objects at his car. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh teaches these NPCs a lesson after they threw objects at his car. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh teaches these NPCs a lesson after they threw objects at his car. 😂\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "CaseOh confronts and fights a group of NPCs who were throwing objects from a highway overpass in GTA 6.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_339525772.mp4",
+    "start": 8.5,
+    "end": 58.5,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "He taught them a lesson",
+    "url": "https://www.twitch.tv/caseoh_/clip/ResoluteCrazyPistachioPrimeMe-FgUccHgoroOQYUJB",
+    "twitch": "caseoh_",
+    "views": 19719,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 8/10. CaseOh confronts and fights a group of NPCs who were throwing objects from a highway overpass in GTA 6. Source: https://www.twitch.tv/caseoh_/clip/ResoluteCrazyPistachioPrimeMe-FgUccHgoroOQYUJB (19719 views). Change the on-screen hook with: hook S13: NEW TEXT"
+}

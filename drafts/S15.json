@@ -1,0 +1,47 @@
+{
+  "id": "S15",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-21T20:00:00+01:00",
+  "credit": "Ludwig",
+  "category": "streamer",
+  "media": "media/edits/S15.mp4",
+  "media_x": "media/edits/S15_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S15_x.mp4",
+  "hook": "HE SPOKE TOO SOON",
+  "captions": {
+    "x": "Ludwig claims to be the best driver in GTA 6 right before an embarrassing crash 😂\n\n🎥 Ludwig on Twitch",
+    "tiktok": "Ludwig claims to be the best driver in GTA 6 right before an embarrassing crash 😂 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Ludwig claims to be the best driver in GTA 6 right before an embarrassing crash 😂 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Ludwig claims to be the best driver in GTA 6 right before an embarrassing crash 😂\n\n🎥 Ludwig on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 1,
+    "reasons": [],
+    "what": "Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_2414496290.mp4",
+    "start": 0,
+    "end": 28,
+    "credit": "twitch.tv/ludwig",
+    "caption": "Ludwig is the best driver",
+    "url": "https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7",
+    "twitch": "ludwig",
+    "views": 857,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 9/10. Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off. Source: https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7 (857 views). Change the on-screen hook with: hook S15: NEW TEXT"
+}

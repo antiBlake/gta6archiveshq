@@ -1,0 +1,47 @@
+{
+  "id": "S16",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-21T22:00:00+01:00",
+  "credit": "Ludwig",
+  "category": "streamer",
+  "media": "media/edits/S16.mp4",
+  "media_x": "media/edits/S16_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S16_x.mp4",
+  "hook": "GTA 6 IS DANGEROUS FOR LONELY PEOPLE",
+  "captions": {
+    "x": "Ludwig reacts to the incredible level of detail in GTA 6. This game is getting way too immersive 😳\n\n🎥 Ludwig on Twitch",
+    "tiktok": "Ludwig reacts to the incredible level of detail in GTA 6. This game is getting way too immersive 😳 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Ludwig reacts to the incredible level of detail in GTA 6. This game is getting way too immersive 😳 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Ludwig reacts to the incredible level of detail in GTA 6. This game is getting way too immersive 😳\n\n🎥 Ludwig on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_2038803803.mp4",
+    "start": 0,
+    "end": 41,
+    "credit": "twitch.tv/ludwig",
+    "caption": "Ludwig's take on the realism",
+    "url": "https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE",
+    "twitch": "ludwig",
+    "views": 660,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 7/10. Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion. Source: https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE (660 views). Change the on-screen hook with: hook S16: NEW TEXT"
+}

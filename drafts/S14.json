@@ -1,0 +1,47 @@
+{
+  "id": "S14",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-21T18:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S14.mp4",
+  "media_x": "media/edits/S14_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S14.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S14_x.mp4",
+  "hook": "HE PLAYED THE BRIDGE GAME",
+  "captions": {
+    "x": "CaseOh shows these NPCs exactly what happens when you mess with Lucia on a bridge. 🌉\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh shows these NPCs exactly what happens when you mess with Lucia on a bridge. 🌉 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh shows these NPCs exactly what happens when you mess with Lucia on a bridge. 🌉 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh shows these NPCs exactly what happens when you mess with Lucia on a bridge. 🌉\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CaseOh plays as Lucia and throws NPCs off a highway bridge after they tried to prank her.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_4107878524.mp4",
+    "start": 35,
+    "end": 59,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "CaseOh is ruthless in GTA 6",
+    "url": "https://www.twitch.tv/caseoh_/clip/EvilChillyKleeKeepo-uq_TPadcMek2sAdf",
+    "twitch": "caseoh_",
+    "views": 8936,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 9/10. CaseOh plays as Lucia and throws NPCs off a highway bridge after they tried to prank her. Source: https://www.twitch.tv/caseoh_/clip/EvilChillyKleeKeepo-uq_TPadcMek2sAdf (8936 views). Change the on-screen hook with: hook S14: NEW TEXT"
+}

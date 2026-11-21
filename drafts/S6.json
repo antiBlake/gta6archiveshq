@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-21T19:00:00+01:00",
   "credit": "xQc",
   "category": "streamer",
@@ -32,5 +32,23 @@
     "views": 3879
   },
   "notes": "Twitch clip of xQc (3879 views, 59s): https://www.twitch.tv/xqc/clip/ArborealVictoriousSnailDatSheffy-LUDJxQAqZjCXFVjP — check for story spoilers. Change the on-screen text with: hook S6: NEW TEXT (re-rendered by the Mac).",
-  "auto_approved": true
+  "auto_approved": true,
+  "buffer": {
+    "tiktok": {
+      "id": "6b0115df5102766245f3d773",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T18:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "skipped": "YouTube daily limit (2/day)"
+    },
+    "instagram": {
+      "id": "6b0115e09ffbc8503cf71122",
+      "status": "scheduled",
+      "dueAt": "2026-11-21T18:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

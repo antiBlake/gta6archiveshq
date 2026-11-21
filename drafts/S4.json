@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "published_buffer",
+  "status": "pulled",
   "slot": "2026-11-21T13:00:00+01:00",
   "credit": "Lacy",
   "category": "streamer",
@@ -31,7 +31,7 @@
     "twitch": "lacy",
     "views": 5718
   },
-  "notes": "Twitch clip of Lacy (5718 views, 60s): https://www.twitch.tv/lacy/clip/TiredDeafJuiceUncleNox-CD_q5QQDwhv_jCLj — check for story spoilers. Change the on-screen text with: hook S4: NEW TEXT (re-rendered by the Mac).",
+  "notes": "PULLED 2026-11-21: sexual content close-up (strip club). Twitch clip of Lacy (5718 views, 60s): https://www.twitch.tv/lacy/clip/TiredDeafJuiceUncleNox-CD_q5QQDwhv_jCLj — check for story spoilers. Change the on-screen text with: hook S4: NEW TEXT (re-rendered by the Mac).",
   "sent_at": "20/11/2026, 15:49:38 WAT",
   "message_id": 63,
   "auto_approved": true,
@@ -40,7 +40,8 @@
       "id": "6b005f2c77e195b7220e9c3e",
       "status": "scheduled",
       "dueAt": "2026-11-21T12:00:00.000Z",
-      "mode": "at"
+      "mode": "at",
+      "deleted": true
     },
     "youtube": {
       "skipped": "YouTube daily limit (2/day)"
@@ -49,8 +50,9 @@
       "id": "6b005f2dfc5b97f0f814f8a9",
       "status": "scheduled",
       "dueAt": "2026-11-21T12:00:00.000Z",
-      "mode": "at"
+      "mode": "at",
+      "deleted": true
     }
   },
-  "x_status": "pending"
+  "x_status": "skipped"
 }

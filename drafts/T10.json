@@ -1,0 +1,41 @@
+{
+  "id": "T10",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T17:00:00+01:00",
+  "credit": "KhrazeGaming",
+  "category": "guide",
+  "media": "media/edits/T10.mp4",
+  "media_x": "media/edits/T10_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T10.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T10_x.mp4",
+  "hook": "HOW TO: WARNING! DON'T FINISH CHAPTER 1 YET IN G",
+  "captions": {
+    "x": "GTA 6 tip: Warning! Don't Finish Chapter 1 Yet in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 KhrazeGaming on YouTube",
+    "tiktok": "GTA 6 tip: Warning! Don't Finish Chapter 1 Yet in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers 🎥 KhrazeGaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "GTA 6 tip: Warning! Don't Finish Chapter 1 Yet in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers 🎥 KhrazeGaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "GTA 6 tip: Warning! Don't Finish Chapter 1 Yet in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 KhrazeGaming on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/T10_IHUKoWHts3E.mp4",
+    "start": 0,
+    "end": 28,
+    "credit": "KhrazeGaming",
+    "caption": "GTA 6 mission tip",
+    "url": "https://www.youtube.com/watch?v=IHUKoWHts3E&t=45s"
+  },
+  "notes": "⚠️ Flagged: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nguide clip, picked by start of the guide (after intro) (45-73s) from KhrazeGaming: https://youtu.be/IHUKoWHts3E?t=45 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T10: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCFXUSG_393wZJaRTErU6Pjw",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "21/11/2026, 12:21:41 WAT",
+  "message_id": 76
+}

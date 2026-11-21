@@ -1,0 +1,41 @@
+{
+  "id": "T9",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-21T21:00:00+01:00",
+  "credit": "GTA Series Videos",
+  "category": "guide",
+  "media": "media/edits/T9.mp4",
+  "media_x": "media/edits/T9_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/T9.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-20/T9_x.mp4",
+  "hook": "HOW TO BEAT GEAR UP",
+  "captions": {
+    "x": "GTA 6 tip: how to beat Gear Up ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube",
+    "tiktok": "GTA 6 tip: how to beat Gear Up ✅ Save this for later\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "GTA 6 tip: how to beat Gear Up ✅ Save this for later\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "GTA 6 tip: how to beat Gear Up ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/T9_Lb6JyzX5gho.mp4",
+    "start": 0,
+    "end": 28,
+    "credit": "GTA Series Videos",
+    "caption": "GTA 6 mission tip",
+    "url": "https://www.youtube.com/watch?v=Lb6JyzX5gho&t=19s"
+  },
+  "notes": "⚠️ Flagged: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nguide clip, picked by start of the guide (after intro) (19-47s) from GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=19 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T9: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCuWcjpKbIDAbZfHoru1toFg",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "20/11/2026, 20:33:55 WAT",
+  "message_id": 72
+}

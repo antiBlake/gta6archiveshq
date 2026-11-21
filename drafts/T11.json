@@ -1,0 +1,41 @@
+{
+  "id": "T11",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T19:00:00+01:00",
+  "credit": "Jay Dunna ",
+  "category": "guide",
+  "media": "media/edits/T11.mp4",
+  "media_x": "media/edits/T11_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T11.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T11_x.mp4",
+  "hook": "HOW TO: EVERYTHING YOU SHOULD DO BEFORE ENDING C",
+  "captions": {
+    "x": "GTA 6 tip: EVERYTHING You Should Do Before ENDING CHAPTER 1 in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 Jay Dunna  on YouTube",
+    "tiktok": "GTA 6 tip: EVERYTHING You Should Do Before ENDING CHAPTER 1 in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers 🎥 Jay Dunna  on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "GTA 6 tip: EVERYTHING You Should Do Before ENDING CHAPTER 1 in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers 🎥 Jay Dunna  on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "GTA 6 tip: EVERYTHING You Should Do Before ENDING CHAPTER 1 in GTA 6 ✅ Save this for later\n⚠️ Mission spoilers\n\n🎥 Jay Dunna  on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/T11_bCOiv__VCuo.mp4",
+    "start": 0,
+    "end": 28,
+    "credit": "Jay Dunna ",
+    "caption": "GTA 6 mission tip",
+    "url": "https://www.youtube.com/watch?v=bCOiv__VCuo&t=14s"
+  },
+  "notes": "⚠️ Flagged: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nguide clip, picked by start of the guide (after intro) (14-42s) from Jay Dunna : https://youtu.be/bCOiv__VCuo?t=14 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T11: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCaNmoqlzLZ2Pg8NJuMGXrjg",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "21/11/2026, 12:26:38 WAT",
+  "message_id": 77
+}

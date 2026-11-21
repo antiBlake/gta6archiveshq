@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "superseded",
   "slot": "2026-11-21T19:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -29,7 +29,7 @@
     "caption": "GTA 6 mission tip",
     "url": "https://www.youtube.com/watch?v=Lb6JyzX5gho&t=19s"
   },
-  "notes": "⚠️ Flagged: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nguide clip, picked by start of the guide (after intro) (19-47s) from GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=19 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T8: NEW TEXT",
+  "notes": "Retired 2026-11-21: made by the old system (no facecam check, template captions). ⚠️ Flagged: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nguide clip, picked by start of the guide (after intro) (19-47s) from GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=19 — found by search: check this is the ORIGINAL creator. Check for story spoilers. Change the on-screen text with: hook T8: NEW TEXT",
   "channel_url": "https://www.youtube.com/channel/UCuWcjpKbIDAbZfHoru1toFg",
   "flags": [
     "possible story spoiler",
@@ -37,5 +37,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "20/11/2026, 20:07:06 WAT",
-  "message_id": 71
+  "message_id": 71,
+  "x_status": "skipped"
 }

@@ -44,5 +44,6 @@
     }
   },
   "notes": "quality 9/10. Ludwig claims to be an excellent driver in GTA 6 right before immediately crashing his motorcycle and flying off. Source: https://www.twitch.tv/ludwig/clip/CuriousVainSlothHassanChop-E5Rq3h3BSwE2JiR7 (857 views). Change the on-screen hook with: hook S15: NEW TEXT",
-  "version": 2
+  "version": 2,
+  "x_status": "scheduled_x"
 }

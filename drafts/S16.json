@@ -44,5 +44,6 @@
     }
   },
   "notes": "quality 7/10. Ludwig explores NPC interactions in GTA 6 and reflects on the game's intense level of immersion. Source: https://www.twitch.tv/ludwig/clip/DistinctReliableChowderBCouch-PUUYSqjaldNsYPSE (660 views). Change the on-screen hook with: hook S16: NEW TEXT",
-  "version": 2
+  "version": 2,
+  "x_status": "scheduled_x"
 }

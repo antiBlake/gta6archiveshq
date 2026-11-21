@@ -44,5 +44,6 @@
     }
   },
   "notes": "quality 8/10. CaseOh confronts and fights a group of NPCs who were throwing objects from a highway overpass in GTA 6. Source: https://www.twitch.tv/caseoh_/clip/ResoluteCrazyPistachioPrimeMe-FgUccHgoroOQYUJB (19719 views). Change the on-screen hook with: hook S13: NEW TEXT",
-  "version": 2
+  "version": 2,
+  "x_status": "scheduled_x"
 }

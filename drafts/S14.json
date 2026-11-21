@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-21T18:00:00+01:00",
   "credit": "CaseOh",
@@ -45,5 +45,23 @@
   },
   "notes": "quality 9/10. CaseOh plays as Lucia and throws NPCs off a highway bridge after they tried to prank her. Source: https://www.twitch.tv/caseoh_/clip/EvilChillyKleeKeepo-uq_TPadcMek2sAdf (8936 views). Change the on-screen hook with: hook S14: NEW TEXT",
   "version": 2,
-  "x_status": "scheduled_x"
+  "x_status": "scheduled_x",
+  "publish_platforms": [
+    "tiktok",
+    "youtube"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b01f4b9d5eabfb8cc57bc94",
+      "status": "sending",
+      "dueAt": "2026-11-21T19:44:57.726Z",
+      "mode": "now"
+    },
+    "youtube": {
+      "id": "6b01f4c40247969092f9d55f",
+      "status": "sent",
+      "dueAt": "2026-11-21T19:45:08.663Z",
+      "mode": "now"
+    }
+  }
 }

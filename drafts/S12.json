@@ -1,0 +1,36 @@
+{
+  "id": "S12",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-22T15:00:00+01:00",
+  "credit": "IShowSpeed",
+  "category": "streamer",
+  "media": "media/edits/S12.mp4",
+  "media_x": "media/edits/S12_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S12.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S12_x.mp4",
+  "hook": "ISHOWSPEED IN GTA 6",
+  "captions": {
+    "x": "IShowSpeed playing GTA 6 👀 \"niko belic\"\n\n🎥 IShowSpeed on Twitch",
+    "tiktok": "IShowSpeed playing GTA 6 👀 \"niko belic\" 🎥 IShowSpeed on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "IShowSpeed playing GTA 6 👀 \"niko belic\" 🎥 IShowSpeed on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "IShowSpeed playing GTA 6 👀 \"niko belic\"\n\n🎥 IShowSpeed on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S12_twitch.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/ishowspeed",
+    "caption": "niko belic",
+    "url": "https://www.twitch.tv/ishowspeed/clip/CrowdedEsteemedPigeonDatBoi-GJD-l8MPsVSh4KXI",
+    "twitch": "ishowspeed",
+    "views": 1057
+  },
+  "notes": "Twitch clip of IShowSpeed (1057 views, 60s): https://www.twitch.tv/ishowspeed/clip/CrowdedEsteemedPigeonDatBoi-GJD-l8MPsVSh4KXI — check for story spoilers. Change the on-screen text with: hook S12: NEW TEXT (re-rendered by the Mac).",
+  "auto_approved": true
+}

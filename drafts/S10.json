@@ -1,0 +1,36 @@
+{
+  "id": "S10",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-22T11:00:00+01:00",
+  "credit": "xQc",
+  "category": "streamer",
+  "media": "media/edits/S10.mp4",
+  "media_x": "media/edits/S10_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S10.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/S10_x.mp4",
+  "hook": "XQC IN GTA 6",
+  "captions": {
+    "x": "xQc playing GTA 6 👀 \"xQc on GTA VI: “You always find somethin\"\n\n🎥 xQc on Twitch",
+    "tiktok": "xQc playing GTA 6 👀 \"xQc on GTA VI: “You always find somethin\" 🎥 xQc on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "xQc playing GTA 6 👀 \"xQc on GTA VI: “You always find somethin\" 🎥 xQc on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "xQc playing GTA 6 👀 \"xQc on GTA VI: “You always find somethin\"\n\n🎥 xQc on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "source": {
+    "file": "media/raw/S10_twitch.mp4",
+    "start": 0,
+    "end": 28,
+    "credit": "twitch.tv/xqc",
+    "caption": "xQc on GTA VI: “You always find somethin",
+    "url": "https://www.twitch.tv/xqc/clip/GentleDoubtfulHawkCoolCat-sMpS9-0zBnjb9xM-",
+    "twitch": "xqc",
+    "views": 1129
+  },
+  "notes": "Twitch clip of xQc (1129 views, 28s): https://www.twitch.tv/xqc/clip/GentleDoubtfulHawkCoolCat-sMpS9-0zBnjb9xM- — check for story spoilers. Change the on-screen text with: hook S10: NEW TEXT (re-rendered by the Mac).",
+  "auto_approved": true
+}

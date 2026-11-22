@@ -81,7 +81,7 @@ FILTER="$BASEV$HOOKF
 mkdir -p "$(dirname "$OUT")"
 ffmpeg -hide_banner -loglevel error -y -ss "$START" -to "$END" -i "$IN" \
   -filter_complex "$FILTER" -map "[v]" -map 0:a? -af "afade=t=in:st=0:d=0.3,afade=t=out:st=$(awk -v d="$DUR_IN" 'BEGIN{printf "%.2f", (d>1?d-0.45:0)}'):d=0.45" \
-  -c:v libx264 -preset slow -crf 17 -profile:v high -fps_mode passthrough \
+  -c:v libx264 -preset slow -crf 18 -maxrate 6M -bufsize 12M -profile:v high -fps_mode passthrough \
   -c:a aac -b:a 192k -ar 48000 -movflags +faststart "$OUT"
 
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$OUT")

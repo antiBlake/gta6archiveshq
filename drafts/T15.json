@@ -1,0 +1,51 @@
+{
+  "id": "T15",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T23:00:00+01:00",
+  "credit": "MKIceAndFire",
+  "category": "guide",
+  "media": "media/edits/T15.mp4",
+  "media_x": "media/edits/T15_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T15.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T15_x.mp4",
+  "hook": "HOW TO CALL A TAXI IN GTA 6",
+  "captions": {
+    "x": "Need a lift? Here is how you can easily call a taxi in GTA 6. Thanks to MKIceAndFire for the footage! 🚕\n⚠️ Mission spoilers\n\n🎥 MKIceAndFire on YouTube",
+    "tiktok": "Need a lift? Here is how you can easily call a taxi in GTA 6. Thanks to MKIceAndFire for the footage! 🚕\n⚠️ Mission spoilers 🎥 MKIceAndFire on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Need a lift? Here is how you can easily call a taxi in GTA 6. Thanks to MKIceAndFire for the footage! 🚕\n⚠️ Mission spoilers 🎥 MKIceAndFire on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Need a lift? Here is how you can easily call a taxi in GTA 6. Thanks to MKIceAndFire for the footage! 🚕\n⚠️ Mission spoilers\n\n🎥 MKIceAndFire on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "The player uses the in-game phone to call Paradise Taxi and gets a ride.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T15_R97EoVD1nr4.mp4",
+    "start": 15,
+    "end": 54,
+    "credit": "MKIceAndFire",
+    "caption": "Quick travel made easy",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=R97EoVD1nr4&t=5234s"
+  },
+  "notes": "⚠️ Check: found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 7/10. The player uses the in-game phone to call Paradise Taxi and gets a ride. From MKIceAndFire: https://youtu.be/R97EoVD1nr4?t=5234 (found by search). Change the on-screen hook with: hook T15: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UC1bwliGvJogr7cWK0nT2Eag",
+  "flags": [
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "22/11/2026, 22:01:00 WAT",
+  "message_id": 91
+}

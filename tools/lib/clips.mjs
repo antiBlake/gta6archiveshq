@@ -36,7 +36,7 @@ export const plainText = (t) => String(t ?? '').normalize('NFKC').replace(/[^\p{
 export function render(src, start, end, hook, credit, out, caption, opts = {}) {
   hook = plainText(hook); caption = plainText(caption); credit = plainText(credit);
   // opts: { layout: 'full'|'portrait'|'stack', cam: {x,y,w,h}, focus: 0..1 }
-  const envx = { ...process.env, LAYOUT: opts.layout ?? 'full', FOCUS: String(opts.focus ?? 0.5), ...(opts.cam ? { CAM: [opts.cam.x, opts.cam.y, opts.cam.w, opts.cam.h].map((n) => Math.min(1, Math.max(0, n)).toFixed(3)).join(',') } : {}) };
+  const envx = { ...process.env, LAYOUT: opts.layout ?? 'full', FOCUS: String(opts.focus ?? 0.5), ...(opts.hookY ? { HOOK_Y: String(opts.hookY) } : {}), ...(opts.cam ? { CAM: [opts.cam.x, opts.cam.y, opts.cam.w, opts.cam.h].map((n) => Math.min(1, Math.max(0, n)).toFixed(3)).join(',') } : {}) };
   sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption], { env: envx });
   // X copy must stay under 10 MB: pick the video bitrate from the clip length
   const dur = Math.max(1, Number(end) - Number(start));

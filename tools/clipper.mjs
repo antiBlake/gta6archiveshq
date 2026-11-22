@@ -49,6 +49,61 @@ async function rehooks() {
   }
 }
 
+// ---------- link queue: viral posts from X / Instagram / TikTok added by the owner (Telegram "add <url>") or Claude ----------
+async function processQueue() {
+  const qf = join(STATE, 'link_queue.json');
+  const q = readJSON(qf, []);
+  const todo = q.filter((x) => !x.done);
+  if (!todo.length) return 0;
+  const all = drafts();
+  const taken = new Set(all.map((d) => d.slot).filter(Boolean));
+  let made = 0;
+  for (const item of todo.slice(0, 4)) {
+    item.done = new Date().toISOString();
+    let info;
+    try { info = JSON.parse(YT(['-j', item.url])); } catch (e) { item.result = `info failed: ${e.message.split('\n')[0].slice(0, 120)}`; continue; }
+    const id = `V${Math.max(0, ...all.filter((d) => /^V\d+$/.test(d.id)).map((d) => parseInt(d.id.slice(1)))) + 1}`;
+    const src = `media/raw/${id}.mp4`;
+    try { YT(['-q', '--ffmpeg-location', BIN, '-f', 'bv*+ba/b', '-S', 'res,fps', '--merge-output-format', 'mp4', '-o', src, item.url]); }
+    catch (e) { item.result = 'download failed'; continue; }
+    const platform = /x\.com|twitter\.com/.test(item.url) ? 'X' : /instagram/.test(item.url) ? 'Instagram' : /tiktok/.test(item.url) ? 'TikTok' : 'YouTube';
+    const who = info.uploader ?? info.channel ?? 'unknown';
+    const handle = info.uploader_id && !/^\d+$/.test(info.uploader_id) ? info.uploader_id.replace(/^@/, '') : null;
+    let v;
+    try { v = await judgeClip(join(ROOT, src), { who, kind: `viral ${platform} post (credit the creator)`, title: (info.title ?? info.description ?? '').slice(0, 200), duration: info.duration ?? 30, layout: info.height > info.width ? 'vertical 9:16 video (may already have its own text)' : 'landscape 16:9 video' }); }
+    catch (e) { item.result = `Gemini failed: ${e.message.slice(0, 120)}`; continue; }
+    const verdict = decide(v);
+    if (verdict.action === 'discard') { item.result = `dropped: ${verdict.why}`; rmSync(join(ROOT, src), { force: true }); log(`✗ ${id} ${item.url} dropped (${verdict.why})`); continue; }
+    const vertical = info.height > info.width;
+    const dur = info.duration ?? 30;
+    const start = dur <= 90 ? 0 : Math.max(0, v.trim_start ?? 0), end = dur <= 90 ? dur : Math.min(dur, Math.max(start + 15, v.trim_end ?? dur));
+    const layout = vertical ? { layout: 'portrait' } : v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
+    const credit = handle ? `@${handle}` : who;
+    const out = `media/edits/${id}.mp4`;
+    // vertical posts usually carry their own text: only add the credit line, no hook
+    const xOut = render(src, start, end, vertical ? '' : v.hook, credit, out, vertical ? '' : v.on_screen_caption, { ...layout, ...(vertical ? { hookY: 1330 } : {}) });
+    const slot = nextSlot(taken, 'odd'); taken.add(slot);
+    const ch = { name: who, handles: platform === 'X' && handle ? { x: handle } : {}, platform: platform === 'X' && handle ? `X (@${handle})` : platform };
+    const d = {
+      id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: who, category: 'viral',
+      media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
+      hook: v.hook, captions: captionsFor(ch, v.post_caption),
+      judge: { quality: v.quality, confidence: v.confidence, reasons: v.reject_reasons, what: v.what_happens, model: v.model, layout: layout.layout },
+      source: { file: src, start, end, credit, caption: v.on_screen_caption, layout, url: item.url, likes: info.like_count, views: info.view_count },
+      notes: `Viral ${platform} post by ${who}${handle ? ` (@${handle})` : ''}, ${info.like_count ?? '?'} likes. ${verdict.why}. ${v.what_happens} ${item.url}`,
+    };
+    const auto = verdict.action === 'auto';
+    if (auto) Object.assign(d, { status: 'approved', auto_approved: true });
+    saveDraft(d); all.push(d);
+    if (!auto) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
+    item.result = `${id} ${auto ? 'auto-approved' : 'sent for review'} (${slot})`;
+    log(`${auto ? '✓ auto' : '? review'} ${id} ${who} [${layout.layout}] q${v.quality} → ${slot}`);
+    made++;
+  }
+  writeFileSync(qf, JSON.stringify(q, null, 2));
+  return made;
+}
+
 // ---------- finding moments without AI ----------
 function YT(args, tries = 3) {
   for (let i = 1; ; i++) {
@@ -203,6 +258,7 @@ if (!existsSync(KICK) || Date.now() - new Date(readFileSync(KICK, 'utf8')) > 28 
 }
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
 await rehooks();
+if (env.GEMINI_API_KEY) log(`link queue: ${await processQueue()} new clip(s)`);
 const last = existsSync(join(STATE, 'last_scan')) ? new Date(readFileSync(join(STATE, 'last_scan'), 'utf8')) : new Date(0);
 const requested = existsSync(join(STATE, 'clip_request'));
 if (requested || Date.now() - last > SCAN_EVERY_MS) {

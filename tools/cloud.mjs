@@ -38,7 +38,7 @@ async function buffer(query, variables) {
 // ---------- publish approved drafts ----------
 function publishApproved() {
   if (existsSync(join(STATE, 'paused'))) return log('paused: not publishing');
-  const CAPS = { tiktok: 15, instagram: 5, youtube: 8 };   // per day (WAT); YouTube channel phone-verified 2026-11-21
+  const CAPS = { tiktok: 16, instagram: 16, youtube: 8 };   // per day (WAT); YouTube channel phone-verified 2026-11-21
   const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
   for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if (b.id && !b.deleted && !['pulled', 'superseded'].includes(x.status)) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
@@ -47,7 +47,7 @@ function publishApproved() {
   for (const d of due) {
     const day = dayOf(d.slot);
     d.publish_platforms = d.platforms.filter((p) => p !== 'x' && (!CAPS[p] || (used[`${day}|${p}`] ?? 0) < CAPS[p]
-      && !(p !== 'tiktok' && (d.judge?.quality ?? 7) < 7)));               // Instagram/YouTube only for strong clips
+      && !(p === 'youtube' && (d.judge?.quality ?? 7) < 8)));              // YouTube (best engagement, ~1-2/day via Buffer): only the strongest clips
     for (const p of d.publish_platforms) used[`${day}|${p}`] = (used[`${day}|${p}`] ?? 0) + 1;
     const buf = d.publish_platforms;
     if (!buf.length) {

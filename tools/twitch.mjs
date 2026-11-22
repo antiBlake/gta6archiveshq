@@ -53,9 +53,9 @@ const taken = new Set(all.map((d) => d.slot).filter(Boolean));
 let made = 0, judged = 0;
 for (const { st, url, info } of candidates) {
   if (made >= MAX_NEW || judged >= MAX_JUDGED) break;
-  const portrait = (info.formats ?? []).map((f) => f.format_id).filter((id) => /^portrait-(1296|1080|720)$/.test(id)).sort((a, b) => parseInt(b.split('-')[1]) - parseInt(a.split('-')[1]))[0];
+  const portrait = null; // owner wants the game bigger than Twitch's 50/50 portrait: use the landscape clip + our 30/70 camera stack
   const src = `media/raw/tw_${info.id}.mp4`;
-  try { YT(['-q', '-f', portrait ?? '1080/720/best[height<=1080]/best', '-o', src, url]); } catch { log(`${info.id}: download failed`); continue; }
+  try { YT(['-q', '-f', 'bv*[height<=1080]+ba/1080p60/1080/best[height<=1080]/best', '-S', 'res,fps', '-o', src, url]); } catch { log(`${info.id}: download failed`); continue; }
 
   let v;
   try {
@@ -67,8 +67,8 @@ for (const { st, url, info } of candidates) {
   if (verdict.action === 'discard') { log(`✗ ${st.name} "${info.title}": dropped (${verdict.why}) — ${v.what_happens}`); rmSync(join(ROOT, src), { force: true }); continue; }
 
   const id = `S${Math.max(0, ...all.filter((d) => /^S\d+$/.test(d.id)).map((d) => parseInt(d.id.slice(1)))) + 1}`;
-  const start = Math.max(0, Math.min(v.trim_start ?? 0, info.duration - 6));
-  const end = Math.min(info.duration, Math.max(start + 6, v.trim_end ?? info.duration));
+  // Owner: complete length. Keep the whole Twitch clip (viewers already trimmed it to the moment).
+  const start = 0, end = info.duration;
   const layout = portrait ? { layout: 'portrait' } : v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
   const credit = st.handles?.tiktok ? `@${st.handles.tiktok.replace(/^@/, '')}` : `twitch.tv/${st.twitch}`;
   const out = `media/edits/${id}.mp4`;

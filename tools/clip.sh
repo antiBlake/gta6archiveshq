@@ -45,14 +45,14 @@ DUR_IN=$(awk -v s="$START" -v e="$END" 'function t(x, a,n){n=split(x,a,":");retu
 FADE="fade=t=in:st=0:d=0.3,fade=t=out:st=$(awk -v d="$DUR_IN" 'BEGIN{printf "%.2f", (d>1?d-0.45:0)}'):d=0.45"
 if [ "$LAYOUT" = "portrait" ]; then
   BASEV="[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,$FADE[v1];"
-  HOOK_Y=${HOOK_Y:-820}; CAP_Y=$((HOOK_Y + 190)); CRED_Y=$((HOOK_Y + 280)); BOX=1
+  HOOK_Y=${HOOK_Y:-820}; CAP_Y=$((HOOK_Y + 170)); CRED_Y=$((HOOK_Y + 245)); BOX=0
 elif [ "$LAYOUT" = "stack" ]; then
   IFS=, read -r CX CY CW CH <<< "${CAM:?CAM=x,y,w,h needed for LAYOUT=stack}"
   BASEV="[0:v]split=2[c][g];
-[c]crop=iw*$CW:ih*$CH:iw*$CX:ih*$CY,scale=1080:760:force_original_aspect_ratio=increase,crop=1080:760[cam];
-[g]scale=-2:1160,crop=1080:1160:(iw-1080)*$FOCUS:0[game];
+[c]crop=iw*$CW:ih*$CH:iw*$CX:ih*$CY,scale=1080:600:force_original_aspect_ratio=increase,crop=1080:600[cam];
+[g]scale=-2:1320,crop=1080:1320:(iw-1080)*$FOCUS:0[game];
 [cam][game]vstack=inputs=2,$FADE[v1];"
-  HOOK_Y=${HOOK_Y:-640}; CAP_Y=$((HOOK_Y + 190)); CRED_Y=$((HOOK_Y + 280)); BOX=1
+  HOOK_Y=${HOOK_Y:-560}; CAP_Y=$((HOOK_Y + 170)); CRED_Y=$((HOOK_Y + 245)); BOX=0
 elif [ "$LAYOUT" = "blur" ]; then
   BASEV="[0:v]split=2[bg][fg];
 [bg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.15[bgb];
@@ -62,20 +62,20 @@ elif [ "$LAYOUT" = "blur" ]; then
 else
   BASEV="[0:v]scale=-2:1920,crop=1080:1920:(iw-1080)*$FOCUS:0,$FADE[v1];"
   # Text stays inside the area TikTok/Reels/Shorts don't cover with their own buttons and captions.
-  HOOK_Y=250; CAP_Y=440; CRED_Y=530; BOX=1
+  HOOK_Y=${HOOK_Y:-700}; CAP_Y=$((HOOK_Y + 170)); CRED_Y=$((HOOK_Y + 245)); BOX=0
 fi
 BOXOPT="box=$BOX:boxcolor=black@0.45:boxborderw=16"
 
 FILTER="$BASEV
-[v1]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/hook.txt':fontsize=72:fontcolor=white:borderw=6:bordercolor=black:line_spacing=12:$BOXOPT:x=(w-text_w)/2:y=$HOOK_Y[v2];
-[v2]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/caption.txt':fontsize=54:fontcolor=white:borderw=5:bordercolor=black:line_spacing=10:$BOXOPT:x=(w-text_w)/2:y=$CAP_Y[v3];
-[v3]drawtext=fontfile='$FONT':textfile='$TMP/credit.txt':fontsize=40:fontcolor=white@0.95:borderw=3:bordercolor=black:x=(w-text_w)/2:y=$CRED_Y,fps=30,format=yuv420p[v]"
+[v1]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/hook.txt':fontsize=76:fontcolor=white:borderw=8:bordercolor=black:line_spacing=10:$BOXOPT:x=(w-text_w)/2:y=$HOOK_Y[v2];
+[v2]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/caption.txt':fontsize=54:fontcolor=white:borderw=6:bordercolor=black:line_spacing=8:$BOXOPT:x=(w-text_w)/2:y=$CAP_Y[v3];
+[v3]drawtext=fontfile='$FONT':textfile='$TMP/credit.txt':fontsize=40:fontcolor=white:borderw=4:bordercolor=black:x=(w-text_w)/2:y=$CRED_Y,format=yuv420p[v]"
 
 mkdir -p "$(dirname "$OUT")"
 ffmpeg -hide_banner -loglevel error -y -ss "$START" -to "$END" -i "$IN" \
   -filter_complex "$FILTER" -map "[v]" -map 0:a? -af "afade=t=in:st=0:d=0.3,afade=t=out:st=$(awk -v d="$DUR_IN" 'BEGIN{printf "%.2f", (d>1?d-0.45:0)}'):d=0.45" \
-  -c:v libx264 -preset medium -crf 20 -profile:v high \
-  -c:a aac -b:a 160k -ar 48000 -movflags +faststart "$OUT"
+  -c:v libx264 -preset slow -crf 17 -profile:v high -fps_mode passthrough \
+  -c:a aac -b:a 192k -ar 48000 -movflags +faststart "$OUT"
 
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$OUT")
 echo "✓ $OUT  (${DUR%.*}s, 1080x1920)"

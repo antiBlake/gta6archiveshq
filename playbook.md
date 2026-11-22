@@ -58,3 +58,9 @@ Quality beats volume. Skip a slot rather than post something weak or unverified.
 - Free Gemini watches every clip (tools/lib/gemini.mjs): drops sexual/hateful/leak content and weak clips (<5/10), auto-approves 7+/10 with no doubts, sends the rest to Telegram. It also picks the complete moment, finds the streamer webcam, and writes hook + on-screen caption + post caption.
 - Layouts: Twitch portrait clip as is (camera on top) > camera stacked over gameplay > full-screen gameplay. Fades in/out.
 - Hourly slots 08:00–23:00 WAT. Daily caps: TikTok 15, Instagram 5, YouTube 8 (channel verified 2026-11-21) (best-scored clips get IG/YouTube). Clips go to Buffer ~1 h before their slot (free plan queue = 10).
+
+## 2026-11-22 owner changes
+- Text: white with thick black outline, no box, in the middle band (on the camera/game seam), never over faces or the main action.
+- Streamer clips: camera ~30% top, game ~70% (not Twitch's 50/50 portrait). Best source quality, original frame rate, whole Twitch clip.
+- Instagram and TikTok: one video per hour (08:00–23:00). YouTube Shorts get the best engagement (top 3: C5 1.7K, S14 1.5K, S15 1.2K views): give YouTube the strongest clips (quality 8+).
+- New source: viral X / Instagram / TikTok posts with good engagement (state/link_queue.json; Telegram "add <url>"), credited to the original creator.

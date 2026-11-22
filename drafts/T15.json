@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "published_buffer",
   "slot": "2026-11-22T23:00:00+01:00",
   "credit": "MKIceAndFire",
   "category": "guide",
@@ -47,5 +47,32 @@
     "mission guide: may show story content"
   ],
   "sent_at": "22/11/2026, 22:01:00 WAT",
-  "message_id": 91
+  "message_id": 91,
+  "decided_at": "22/11/2026, 22:42:24 WAT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0361c2cc364169c1898df0",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T22:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b0361c3d5eabfb8cce09e18",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T22:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0361c4d864a01105f9d2ab",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T22:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

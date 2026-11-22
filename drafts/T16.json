@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "approved",
   "slot": "2026-11-23T09:00:00+01:00",
   "credit": "Jay Dunna ",
   "category": "guide",
@@ -48,5 +48,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "22/11/2026, 22:21:45 WAT",
-  "message_id": 92
+  "message_id": 92,
+  "decided_at": "22/11/2026, 22:42:24 WAT"
 }

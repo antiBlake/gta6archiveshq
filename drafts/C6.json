@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-22T15:00:00+01:00",
   "credit": "GameV",
   "category": "creator",
@@ -42,5 +42,31 @@
   },
   "notes": "quality 8/10. A pilot maneuvers a jet through narrow city gaps and under bridges while evading a five-star police pursuit. From GameV: https://youtu.be/RGF_AhHa2kw?t=223. Change the on-screen hook with: hook C6: NEW TEXT",
   "channel_url": "https://www.youtube.com/channel/UCAvRtPIFFbnfLHswfRS6zhQ",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b02cf53d864a01105b9c899",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T14:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b02cf54c72676f5e922abb4",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T14:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b02cf55d5eabfb8cca1a65f",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-22T13:00:00+01:00",
   "credit": "Lacy",
@@ -43,5 +43,28 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 7/10. Lacy witnesses a valet quit his job after being berated by a rude NPC outside a hotel. Source: https://www.twitch.tv/lacy/clip/CrunchyFrigidBasenjiBuddhaBar-YfaqN-_QU8RpMv8b (354 views). Change the on-screen hook with: hook S18: NEW TEXT"
+  "notes": "quality 7/10. Lacy witnesses a valet quit his job after being berated by a rude NPC outside a hotel. Source: https://www.twitch.tv/lacy/clip/CrunchyFrigidBasenjiBuddhaBar-YfaqN-_QU8RpMv8b (354 views). Change the on-screen hook with: hook S18: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b02cf560247969092441040",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T12:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "skipped": "YouTube daily limit (2/day)"
+    },
+    "instagram": {
+      "id": "6b02cf57cc364169c14a6d5d",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T12:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

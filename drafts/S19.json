@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-22T14:00:00+01:00",
   "credit": "Ludwig",
@@ -43,5 +43,31 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 9/10. Ludwig watches in shock and hysterics as traffic AI repeatedly runs over a knocked-down pedestrian in chaotic succession. Source: https://www.twitch.tv/ludwig/clip/HeadstrongMiniatureMeerkatChefFrank-nbtWhXGIzTSMRThf (1191 views). Change the on-screen hook with: hook S19: NEW TEXT"
+  "notes": "quality 9/10. Ludwig watches in shock and hysterics as traffic AI repeatedly runs over a knocked-down pedestrian in chaotic succession. Source: https://www.twitch.tv/ludwig/clip/HeadstrongMiniatureMeerkatChefFrank-nbtWhXGIzTSMRThf (1191 views). Change the on-screen hook with: hook S19: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b02cf51cc364169c14a6ab7",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T13:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "id": "6b02cf51846b0ee9077de92c",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T13:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b02cf520247969092440eb0",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-22T16:00:00+01:00",
   "credit": "Lacy",
@@ -43,5 +43,28 @@
       "layout": "portrait"
     }
   },
-  "notes": "quality 7/10. Lacy agrees to restart his entire GTA 6 playthrough after a viewer says they missed his stream marathon. Source: https://www.twitch.tv/lacy/clip/OilyKawaiiSnoodDerp-tzsXCiXagywtBJNq (1505 views). Change the on-screen hook with: hook S20: NEW TEXT"
+  "notes": "quality 7/10. Lacy agrees to restart his entire GTA 6 playthrough after a viewer says they missed his stream marathon. Source: https://www.twitch.tv/lacy/clip/OilyKawaiiSnoodDerp-tzsXCiXagywtBJNq (1505 views). Change the on-screen hook with: hook S20: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b02cf59d5eabfb8cca1a7fc",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T15:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "skipped": "YouTube daily limit (2/day)"
+    },
+    "instagram": {
+      "id": "6b02cf5ac72676f5e922ad4e",
+      "status": "scheduled",
+      "dueAt": "2026-11-22T15:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

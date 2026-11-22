@@ -1,0 +1,47 @@
+{
+  "id": "S19",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-22T12:00:00+01:00",
+  "credit": "Ludwig",
+  "category": "streamer",
+  "media": "media/edits/S19.mp4",
+  "media_x": "media/edits/S19_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S19.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S19_x.mp4",
+  "hook": "THE TRAFFIC AI COMPLETELY BROKE",
+  "captions": {
+    "x": "Ludwig could not believe what happened to this NPC in GTA 6 💀\n\n🎥 Ludwig on Twitch",
+    "tiktok": "Ludwig could not believe what happened to this NPC in GTA 6 💀 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Ludwig could not believe what happened to this NPC in GTA 6 💀 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Ludwig could not believe what happened to this NPC in GTA 6 💀\n\n🎥 Ludwig on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Ludwig watches in shock and hysterics as traffic AI repeatedly runs over a knocked-down pedestrian in chaotic succession.",
+    "model": "gemini-flash-latest",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_2726132418.mp4",
+    "start": 3.5,
+    "end": 37,
+    "credit": "twitch.tv/ludwig",
+    "caption": "He kept getting run over",
+    "url": "https://www.twitch.tv/ludwig/clip/HeadstrongMiniatureMeerkatChefFrank-nbtWhXGIzTSMRThf",
+    "twitch": "ludwig",
+    "views": 1191,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 9/10. Ludwig watches in shock and hysterics as traffic AI repeatedly runs over a knocked-down pedestrian in chaotic succession. Source: https://www.twitch.tv/ludwig/clip/HeadstrongMiniatureMeerkatChefFrank-nbtWhXGIzTSMRThf (1191 views). Change the on-screen hook with: hook S19: NEW TEXT"
+}

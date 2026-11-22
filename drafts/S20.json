@@ -1,0 +1,47 @@
+{
+  "id": "S20",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-22T14:00:00+01:00",
+  "credit": "Lacy",
+  "category": "streamer",
+  "media": "media/edits/S20.mp4",
+  "media_x": "media/edits/S20_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S20.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S20_x.mp4",
+  "hook": "HE ACTUALLY RESTARTED THE GAME",
+  "captions": {
+    "x": "Lacy really restarted his 90-hour GTA 6 playthrough just because one fan asked. 🎮\n\n🎥 Lacy on Twitch",
+    "tiktok": "Lacy really restarted his 90-hour GTA 6 playthrough just because one fan asked. 🎮 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lacy really restarted his 90-hour GTA 6 playthrough just because one fan asked. 🎮 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lacy really restarted his 90-hour GTA 6 playthrough just because one fan asked. 🎮\n\n🎥 Lacy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Lacy agrees to restart his entire GTA 6 playthrough after a viewer says they missed his stream marathon.",
+    "model": "gemini-3-flash-preview",
+    "layout": "portrait"
+  },
+  "source": {
+    "file": "media/raw/tw_3279286950.mp4",
+    "start": 0,
+    "end": 32,
+    "credit": "twitch.tv/lacy",
+    "caption": "Lacy restarts GTA 6 for one fan",
+    "url": "https://www.twitch.tv/lacy/clip/OilyKawaiiSnoodDerp-tzsXCiXagywtBJNq",
+    "twitch": "lacy",
+    "views": 1505,
+    "layout": {
+      "layout": "portrait"
+    }
+  },
+  "notes": "quality 7/10. Lacy agrees to restart his entire GTA 6 playthrough after a viewer says they missed his stream marathon. Source: https://www.twitch.tv/lacy/clip/OilyKawaiiSnoodDerp-tzsXCiXagywtBJNq (1505 views). Change the on-screen hook with: hook S20: NEW TEXT"
+}

@@ -70,7 +70,7 @@ async function auth() {
       const q = new URL(req.url, redirect).searchParams;
       res.end(q.get('code') ? 'YouTube connected. You can close this tab.' : `Sign-in failed: ${q.get('error')}`);
       srv.close(); q.get('code') ? resolve(q.get('code')) : reject(new Error(q.get('error')));
-    }).listen(port, '127.0.0.1', () => { console.log(`Opening Google sign-in… pick the account that owns the YouTube channel.\n${url}`); try { execFileSync('open', [url]); } catch {} });
+    }).listen(port, '127.0.0.1', () => { console.log(`Opening Google sign-in… pick the account that owns the YouTube channel.\n${url}`); try { if (!process.env.NO_OPEN) execFileSync('open', [url]); } catch {} });
   });
   const r = await (await fetch('https://oauth2.googleapis.com/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ code, client_id: c.id, client_secret: c.secret, redirect_uri: redirect, grant_type: 'authorization_code' }) })).json();

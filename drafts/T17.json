@@ -1,0 +1,52 @@
+{
+  "id": "T17",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-23T11:00:00+01:00",
+  "credit": "GTA Series Videos",
+  "category": "guide",
+  "media": "media/edits/T17.mp4",
+  "media_x": "media/edits/T17_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T17.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T17_x.mp4",
+  "hook": "EASY UNDERWATER MONEY LOCATION",
+  "captions": {
+    "x": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube",
+    "tiktok": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "The player character dives underwater to a sunken boat, opens a compartment to retrieve a package worth $1,200, and swims back up.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T17_9KwTkHEm28o.mp4",
+    "start": 0,
+    "end": 21,
+    "credit": "GTA Series Videos",
+    "caption": "Look for sunken wrecks",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=9KwTkHEm28o&t=48s"
+  },
+  "notes": "⚠️ Check: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 8/10. The player character dives underwater to a sunken boat, opens a compartment to retrieve a package worth $1,200, and swims back up. From GTA Series Videos: https://youtu.be/9KwTkHEm28o?t=48 (found by search). Change the on-screen hook with: hook T17: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCuWcjpKbIDAbZfHoru1toFg",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "22/11/2026, 22:31:49 WAT",
+  "message_id": 93
+}

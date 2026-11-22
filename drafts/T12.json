@@ -1,0 +1,52 @@
+{
+  "id": "T12",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T08:00:00+01:00",
+  "credit": "GTA Series Videos",
+  "category": "guide",
+  "media": "media/edits/T12.mp4",
+  "media_x": "media/edits/T12_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T12.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T12_x.mp4",
+  "hook": "SECRET AMMO NATION DISCOUNT",
+  "captions": {
+    "x": "Did you know you can get cheaper weapons at Ammu-Nation by visiting specific contacts? Great tip from GTA Series Videos. 💸\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube",
+    "tiktok": "Did you know you can get cheaper weapons at Ammu-Nation by visiting specific contacts? Great tip from GTA Series Videos. 💸\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Did you know you can get cheaper weapons at Ammu-Nation by visiting specific contacts? Great tip from GTA Series Videos. 💸\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Did you know you can get cheaper weapons at Ammu-Nation by visiting specific contacts? Great tip from GTA Series Videos. 💸\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Jason visits an Ammu-Nation where the shopkeeper recognizes him and offers a special discount on firearms.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T12_Lb6JyzX5gho.mp4",
+    "start": 48.5,
+    "end": 75,
+    "credit": "GTA Series Videos",
+    "caption": "Get discounts at Ammu-Nation",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=Lb6JyzX5gho&t=68s"
+  },
+  "notes": "⚠️ Check: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 7/10. Jason visits an Ammu-Nation where the shopkeeper recognizes him and offers a special discount on firearms. From GTA Series Videos: https://youtu.be/Lb6JyzX5gho?t=68 (found by search). Change the on-screen hook with: hook T12: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCuWcjpKbIDAbZfHoru1toFg",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "21/11/2026, 18:07:53 WAT",
+  "message_id": 80
+}

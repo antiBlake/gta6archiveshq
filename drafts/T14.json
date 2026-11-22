@@ -1,0 +1,51 @@
+{
+  "id": "T14",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T12:00:00+01:00",
+  "credit": "jayvee",
+  "category": "guide",
+  "media": "media/edits/T14.mp4",
+  "media_x": "media/edits/T14_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T14.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T14_x.mp4",
+  "hook": "EASY EARLY GAME MONEY",
+  "captions": {
+    "x": "Jayvee shares an easy money tip for the early game. 💵\n⚠️ Mission spoilers\n\n🎥 jayvee on YouTube",
+    "tiktok": "Jayvee shares an easy money tip for the early game. 💵\n⚠️ Mission spoilers 🎥 jayvee on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Jayvee shares an easy money tip for the early game. 💵\n⚠️ Mission spoilers 🎥 jayvee on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Jayvee shares an easy money tip for the early game. 💵\n⚠️ Mission spoilers\n\n🎥 jayvee on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "A player demonstrates how to easily make early game money by holding up clothing store clerks in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T14_x5TIARqO-rE.mp4",
+    "start": 44,
+    "end": 74,
+    "credit": "jayvee",
+    "caption": "Rob clothing stores",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=x5TIARqO-rE&t=75s"
+  },
+  "notes": "⚠️ Check: found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 8/10. A player demonstrates how to easily make early game money by holding up clothing store clerks in GTA 6. From jayvee: https://youtu.be/x5TIARqO-rE?t=75 (found by search). Change the on-screen hook with: hook T14: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UC3WoPalcYf7d_x4DC2BXAfw",
+  "flags": [
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "21/11/2026, 21:37:23 WAT",
+  "message_id": 85
+}

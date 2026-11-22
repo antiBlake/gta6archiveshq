@@ -1,0 +1,46 @@
+{
+  "id": "C6",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-22T14:00:00+01:00",
+  "credit": "GameV",
+  "category": "creator",
+  "media": "media/edits/C6.mp4",
+  "media_x": "media/edits/C6_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/C6.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/C6_x.mp4",
+  "hook": "THIS 5 STAR JET CHASE IS INSANE",
+  "captions": {
+    "x": "GameV showing off some incredible pilot skills in a high-speed chase. ✈️\n\n🎥 GameV on YouTube",
+    "tiktok": "GameV showing off some incredible pilot skills in a high-speed chase. ✈️ 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "GameV showing off some incredible pilot skills in a high-speed chase. ✈️ 🎥 GameV on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "GameV showing off some incredible pilot skills in a high-speed chase. ✈️\n\n🎥 GameV on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "A pilot maneuvers a jet through narrow city gaps and under bridges while evading a five-star police pursuit.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/C6_RGF_AhHa2kw.mp4",
+    "start": 34,
+    "end": 56,
+    "credit": "GameV",
+    "caption": "Flying low in Vice City",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=RGF_AhHa2kw&t=223s"
+  },
+  "notes": "quality 8/10. A pilot maneuvers a jet through narrow city gaps and under bridges while evading a five-star police pursuit. From GameV: https://youtu.be/RGF_AhHa2kw?t=223. Change the on-screen hook with: hook C6: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCAvRtPIFFbnfLHswfRS6zhQ",
+  "auto_approved": true
+}

@@ -1,0 +1,51 @@
+{
+  "id": "T13",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-22T10:00:00+01:00",
+  "credit": "KnowledgeBase",
+  "category": "guide",
+  "media": "media/edits/T13.mp4",
+  "media_x": "media/edits/T13_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T13.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-21/T13_x.mp4",
+  "hook": "STUCK IN GTA 6? DO THIS",
+  "captions": {
+    "x": "Never get stuck on what to do next in GTA 6 with this handy guide by KnowledgeBase. 🗺️\n⚠️ Mission spoilers\n\n🎥 KnowledgeBase on YouTube",
+    "tiktok": "Never get stuck on what to do next in GTA 6 with this handy guide by KnowledgeBase. 🗺️\n⚠️ Mission spoilers 🎥 KnowledgeBase on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Never get stuck on what to do next in GTA 6 with this handy guide by KnowledgeBase. 🗺️\n⚠️ Mission spoilers 🎥 KnowledgeBase on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Never get stuck on what to do next in GTA 6 with this handy guide by KnowledgeBase. 🗺️\n⚠️ Mission spoilers\n\n🎥 KnowledgeBase on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "The player explains how to check missions on the map menu in GTA 6 when stuck without phone calls.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T13_4Ge3MufDVs8.mp4",
+    "start": 16.5,
+    "end": 40,
+    "credit": "KnowledgeBase",
+    "caption": "How to find active missions",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=4Ge3MufDVs8&t=27s"
+  },
+  "notes": "⚠️ Check: found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 8/10. The player explains how to check missions on the map menu in GTA 6 when stuck without phone calls. From KnowledgeBase: https://youtu.be/4Ge3MufDVs8?t=27 (found by search). Change the on-screen hook with: hook T13: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCpT0JcJRu9d0QtugrTMDwsw",
+  "flags": [
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "21/11/2026, 21:25:37 WAT",
+  "message_id": 84
+}

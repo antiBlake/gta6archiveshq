@@ -154,7 +154,7 @@ async function scan() {
         const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
         const out = `media/edits/${id}.mp4`;
         const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', layout);
-        const slot = nextSlot(taken); taken.add(slot);
+        const slot = nextSlot(taken, 'odd'); taken.add(slot);
         const post = ch.type === 'guide' ? `${v.post_caption}\n⚠️ Mission spoilers` : v.post_caption;
         const d = {
           id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: ch.name, category: ch.type,
@@ -186,15 +186,21 @@ async function scan() {
 import { lookup } from 'node:dns/promises';
 const LOCK = join(STATE, 'clipper.lock');
 if (existsSync(LOCK)) {
-  const pid = parseInt(readFileSync(LOCK, 'utf8'));
-  let alive = false; try { process.kill(pid, 0); alive = true; } catch {}
-  if (alive) { log(`another clipper run (pid ${pid}) is still working; skipping`); process.exit(0); }
+  const [pid, since] = readFileSync(LOCK, 'utf8').split(' ');
+  let alive = false; try { process.kill(parseInt(pid), 0); alive = true; } catch {}
+  const ageMin = (Date.now() - new Date(since ?? 0)) / 60000;
+  if (alive && ageMin < 90) { log(`another clipper run (pid ${pid}) is still working; skipping`); process.exit(0); }
+  if (alive) { try { process.kill(parseInt(pid)); } catch {} log(`killed stuck clipper run (pid ${pid}, ${Math.round(ageMin)} min)`); }
 }
-writeFileSync(LOCK, String(process.pid));
+writeFileSync(LOCK, `${process.pid} ${new Date().toISOString()}`);
 process.on('exit', () => rmSync(LOCK, { force: true }));
 const online = await Promise.race([lookup('www.youtube.com').then(() => true, () => false), new Promise((r) => setTimeout(() => r(false), 8000))]);
 if (!online) { log('offline (cannot resolve www.youtube.com): turn on the VPN / check Wi-Fi. Skipping this run.'); process.exit(0); }
 writeFileSync(join(STATE, 'last_alive'), new Date().toISOString());
+const KICK = join(STATE, '.last_kick');
+if (!existsSync(KICK) || Date.now() - new Date(readFileSync(KICK, 'utf8')) > 28 * 60_000) {
+  try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(KICK, new Date().toISOString()); log('started GitHub publisher'); } catch {}
+}
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
 await rehooks();
 const last = existsSync(join(STATE, 'last_scan')) ? new Date(readFileSync(join(STATE, 'last_scan'), 'utf8')) : new Date(0);

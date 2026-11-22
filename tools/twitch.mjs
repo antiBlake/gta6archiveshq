@@ -74,7 +74,7 @@ for (const { st, url, info } of candidates) {
   const out = `media/edits/${id}.mp4`;
   let xOut;
   try { xOut = render(src, start, end, v.hook, credit, out, v.on_screen_caption, layout); } catch (e) { log(`${id}: render failed: ${e.message.split('\n')[0]}`); continue; }
-  const slot = nextSlot(taken); taken.add(slot);
+  const slot = nextSlot(taken, 'even'); taken.add(slot);
   const auto = verdict.action === 'auto' && !textFlags.length;
   const d = {
     id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: auto ? 'approved' : 'draft', auto_approved: auto, slot, credit: st.name, category: 'streamer',

@@ -46,9 +46,10 @@ export function render(src, start, end, hook, credit, out, caption, opts = {}) {
   return xOut;
 }
 
-export function nextSlot(taken) {
+export function nextSlot(taken, parity) {
+  // The cloud (Twitch) takes even hours, the Mac (YouTube) odd hours, so they never pick the same slot.
   for (let day = 0; day < 4; day++) {
-    for (const s of SLOTS) {
+    for (const s of SLOTS.filter((x) => !parity || (parseInt(x) % 2 === (parity === 'odd' ? 1 : 0)))) {
       const d = new Date(Date.now() + day * 86400000);
       const iso = `${d.toLocaleDateString('en-CA', { timeZone: 'Africa/Lagos' })}T${s}:00+01:00`;
       if (new Date(iso) > new Date(Date.now() + 45 * 60_000) && !taken.has(iso)) return iso;

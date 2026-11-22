@@ -41,8 +41,8 @@ function publishApproved() {
   const CAPS = { tiktok: 15, instagram: 5, youtube: 8 };   // per day (WAT); YouTube channel phone-verified 2026-11-21
   const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
-  for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if (b.id) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
-  const due = drafts().filter((x) => x.status === 'approved' && (!x.slot || new Date(x.slot) <= new Date(Date.now() + 75 * 60_000)))
+  for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if (b.id && !b.deleted && !['pulled', 'superseded'].includes(x.status)) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
+  const due = drafts().filter((x) => x.status === 'approved' && (!x.slot || new Date(x.slot) <= new Date(Date.now() + 8 * 3600_000)))
     .sort((a, b) => (b.judge?.quality ?? 6) - (a.judge?.quality ?? 6));   // best clips claim Instagram/YouTube first
   for (const d of due) {
     const day = dayOf(d.slot);

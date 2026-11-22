@@ -1,0 +1,52 @@
+{
+  "id": "T16",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-23T09:00:00+01:00",
+  "credit": "Jay Dunna ",
+  "category": "guide",
+  "media": "media/edits/T16.mp4",
+  "media_x": "media/edits/T16_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T16.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T16_x.mp4",
+  "hook": "DON'T WASTE YOUR MONEY ON THIS",
+  "captions": {
+    "x": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers\n\n🎥 Jay Dunna  on YouTube",
+    "tiktok": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers 🎥 Jay Dunna  on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers 🎥 Jay Dunna  on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers\n\n🎥 Jay Dunna  on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Jason visits a car shop where the narrator advises against buying car upgrades since they are lost after the first chapter.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T16_dTXD4m4qomY.mp4",
+    "start": 27.2,
+    "end": 39.8,
+    "credit": "Jay Dunna ",
+    "caption": "Save your cash for weapons",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=dTXD4m4qomY&t=88s"
+  },
+  "notes": "⚠️ Check: possible story spoiler; found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 7/10. Jason visits a car shop where the narrator advises against buying car upgrades since they are lost after the first chapter. From Jay Dunna : https://youtu.be/dTXD4m4qomY?t=88 (found by search). Change the on-screen hook with: hook T16: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCaNmoqlzLZ2Pg8NJuMGXrjg",
+  "flags": [
+    "possible story spoiler",
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "22/11/2026, 22:21:45 WAT",
+  "message_id": 92
+}

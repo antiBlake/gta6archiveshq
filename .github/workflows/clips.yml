@@ -15,7 +15,7 @@ jobs:
         with: { node-version: 20 }
       - name: tools
         run: |
-          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg fonts-dejavu-core >/dev/null
+          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
           mkdir -p tools/bin media/raw media/edits
           curl -sSL -o tools/bin/yt-dlp https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux && chmod +x tools/bin/yt-dlp
       - run: node tools/twitch.mjs

@@ -205,7 +205,7 @@ async function scan() {
         const len = w1 - w0;
         const start = Math.max(0, Math.min(v.trim_start ?? 0, len - 6)), end = Math.min(len, Math.max(start + 6, v.trim_end ?? len));
         const layout = v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
-        const hook = (v.hook || tpl.hook).toUpperCase().slice(0, 48);
+        const hook = (v.hook || tpl.hook).slice(0, 70);
         const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
         const out = `media/edits/${id}.mp4`;
         const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', layout);

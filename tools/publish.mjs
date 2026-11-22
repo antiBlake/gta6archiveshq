@@ -31,7 +31,10 @@ function need(...keys) {
 
 async function supabase(path, init = {}) {
   need('SUPABASE_URL', 'SUPABASE_SERVICE_KEY');
-  const res = await fetch(`${env.SUPABASE_URL.replace(/\/$/, '')}/storage/v1/${path}`, {
+  // retry network blips (flaky DNS) up to 4 times
+  let res;
+  for (let i = 1; ; i++) { try { res = await fetchOnce(); break; } catch (e) { if (i >= 4) throw e; await new Promise((r) => setTimeout(r, 10_000 * i)); } }
+  async function fetchOnce() { return fetch(`${env.SUPABASE_URL.replace(/\/$/, '')}/storage/v1/${path}`, {
     ...init,
     // New-style secret keys (sb_secret_…) go in `apikey` only; legacy service_role JWTs also go in Authorization.
     headers: {
@@ -40,7 +43,7 @@ async function supabase(path, init = {}) {
       ...(init.headers ?? {}),
     },
     signal: AbortSignal.timeout(300_000),
-  });
+  }); }
   const body = await res.text();
   if (!res.ok) throw new Error(`Supabase ${path}: ${res.status} ${body.slice(0, 300)}`);
   return body ? JSON.parse(body) : {};

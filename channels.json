@@ -86,16 +86,16 @@
   {
     "name": "Mission guides",
     "type": "guide",
-    "search": "GTA 6 mission guide",
+    "search": "GTA 6 tips and tricks",
     "max": 3,
-    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download"
+    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download|walkthrough|full game|full gameplay|no commentary|chapter|ending|all missions|part \\d"
   },
   {
     "name": "How-to tips",
     "type": "guide",
-    "search": "GTA 6 how to complete mission tips",
+    "search": "GTA 6 secret locations how to",
     "max": 2,
-    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download"
+    "exclude": "leak|early access|glitch|exploit|mod menu|mods|cheat|free download|walkthrough|full game|full gameplay|no commentary|chapter|ending|all missions|part \\d"
   },
   {
     "name": "Funny moments",

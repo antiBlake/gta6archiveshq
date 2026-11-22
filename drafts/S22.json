@@ -1,0 +1,53 @@
+{
+  "id": "S22",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-23T10:00:00+01:00",
+  "credit": "Lacy",
+  "category": "streamer",
+  "media": "media/edits/S22.mp4",
+  "media_x": "media/edits/S22_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S22.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S22_x.mp4",
+  "hook": "THE BEST DRIVER IN GTA 6",
+  "captions": {
+    "x": "Lacy really thought he was the best driver until this happened. 🚑\n\n🎥 Lacy on Twitch",
+    "tiktok": "Lacy really thought he was the best driver until this happened. 🚑 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lacy really thought he was the best driver until this happened. 🚑 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lacy really thought he was the best driver until this happened. 🚑\n\n🎥 Lacy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "Lacy brags about being the best driver in GTA 6 while fleeing from the police, only to immediately crash into an ambulance.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_2790256185.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/lacy",
+    "caption": "Instant karma strikes again",
+    "url": "https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE",
+    "twitch": "lacy",
+    "views": 582,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.22,
+        "w": 0.23,
+        "x": 0.015,
+        "y": 0.03
+      }
+    }
+  },
+  "notes": "quality 8/10. Lacy brags about being the best driver in GTA 6 while fleeing from the police, only to immediately crash into an ambulance. Source: https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE (582 views). Change the on-screen hook with: hook S22: NEW TEXT"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "S21",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-23T08:00:00+01:00",
+  "credit": "Ludwig",
+  "category": "streamer",
+  "media": "media/edits/S21.mp4",
+  "media_x": "media/edits/S21_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S21.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S21_x.mp4",
+  "hook": "JASON HAS LUCIA'S BACK",
+  "captions": {
+    "x": "Ludwig was not expecting Jason to jump in and help Lucia like that. 😳\n\n🎥 Ludwig on Twitch",
+    "tiktok": "Ludwig was not expecting Jason to jump in and help Lucia like that. 😳 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Ludwig was not expecting Jason to jump in and help Lucia like that. 😳 🎥 Ludwig on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Ludwig was not expecting Jason to jump in and help Lucia like that. 😳\n\n🎥 Ludwig on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Lucia punches a barber and her AI companion Jason immediately jumps in to help her beat them up, which shocks Ludwig.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_307645506.mp4",
+    "start": 0,
+    "end": 24,
+    "credit": "twitch.tv/ludwig",
+    "caption": "Jason is a real one",
+    "url": "https://www.twitch.tv/ludwig/clip/ArtisticVenomousCoffeeSSSsss-LYTRpkfrQj90uTgO",
+    "twitch": "ludwig",
+    "views": 3419,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.26,
+        "w": 0.15,
+        "x": 0.01,
+        "y": 0.36
+      }
+    }
+  },
+  "notes": "quality 8/10. Lucia punches a barber and her AI companion Jason immediately jumps in to help her beat them up, which shocks Ludwig. Source: https://www.twitch.tv/ludwig/clip/ArtisticVenomousCoffeeSSSsss-LYTRpkfrQj90uTgO (3419 views). Change the on-screen hook with: hook S21: NEW TEXT"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "S23",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-23T12:00:00+01:00",
+  "credit": "Kai Cenat",
+  "category": "streamer",
+  "media": "media/edits/S23.mp4",
+  "media_x": "media/edits/S23_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S23.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S23_x.mp4",
+  "hook": "KAI CENAT FOUND THE WILDEST NPC",
+  "captions": {
+    "x": "Kai Cenat couldn't believe what this NPC was saying in the pawn shop. 💀\n\n🎥 Kai Cenat on Twitch",
+    "tiktok": "Kai Cenat couldn't believe what this NPC was saying in the pawn shop. 💀 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Kai Cenat couldn't believe what this NPC was saying in the pawn shop. 💀 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Kai Cenat couldn't believe what this NPC was saying in the pawn shop. 💀\n\n🎥 Kai Cenat on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Kai Cenat listens to a wild rant from an NPC in a pawn shop about a dickless society and dick-tearing females.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_3584801750.mp4",
+    "start": 0,
+    "end": 42,
+    "credit": "twitch.tv/kaicenat",
+    "caption": "GTA 6 NPCs are something else",
+    "url": "https://www.twitch.tv/kaicenat/clip/DeadStrongShrewPeteZarollTie-D0zPJW0an0d9FDMm",
+    "twitch": "kaicenat",
+    "views": 350,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.255,
+        "w": 0.185,
+        "x": 0.008,
+        "y": 0.445
+      }
+    }
+  },
+  "notes": "quality 8/10. Kai Cenat listens to a wild rant from an NPC in a pawn shop about a dickless society and dick-tearing females. Source: https://www.twitch.tv/kaicenat/clip/DeadStrongShrewPeteZarollTie-D0zPJW0an0d9FDMm (350 views). Change the on-screen hook with: hook S23: NEW TEXT"
+}

@@ -257,12 +257,12 @@ if (!existsSync(KICK) || Date.now() - new Date(readFileSync(KICK, 'utf8')) > 28 
   try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(KICK, new Date().toISOString()); log('started GitHub publisher'); } catch {}
 }
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
-await rehooks();
-if (env.GEMINI_API_KEY) log(`link queue: ${await processQueue()} new clip(s)`);
+try { await rehooks(); } catch (e) { log(`re-render step failed: ${e.message.split('\n')[0]}`); }
+if (env.GEMINI_API_KEY) { try { log(`link queue: ${await processQueue()} new clip(s)`); } catch (e) { log(`link queue step failed: ${e.message.split('\n')[0]}`); } }
 const last = existsSync(join(STATE, 'last_scan')) ? new Date(readFileSync(join(STATE, 'last_scan'), 'utf8')) : new Date(0);
 const requested = existsSync(join(STATE, 'clip_request'));
 if (requested || Date.now() - last > SCAN_EVERY_MS) {
-  const n = await scan();
+  let n = 0; try { n = await scan(); } catch (e) { log(`scan failed: ${e.message.split('\n')[0]}`); }
   rmSync(join(STATE, 'clip_request'), { force: true });
   log(`scan done: ${n} new clip(s)`);
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "pulled",
   "auto_approved": true,
   "slot": "2026-11-23T12:00:00+01:00",
   "credit": "Kai Cenat",
@@ -49,5 +49,6 @@
       }
     }
   },
-  "notes": "quality 8/10. Kai Cenat listens to a wild rant from an NPC in a pawn shop about a dickless society and dick-tearing females. Source: https://www.twitch.tv/kaicenat/clip/DeadStrongShrewPeteZarollTie-D0zPJW0an0d9FDMm (350 views). Change the on-screen hook with: hook S23: NEW TEXT"
+  "notes": "PULLED 2026-11-22: crude sexual language in the NPC rant. quality 8/10. Kai Cenat listens to a wild rant from an NPC in a pawn shop about a dickless society and dick-tearing females. Source: https://www.twitch.tv/kaicenat/clip/DeadStrongShrewPeteZarollTie-D0zPJW0an0d9FDMm (350 views). Change the on-screen hook with: hook S23: NEW TEXT",
+  "x_status": "skipped"
 }

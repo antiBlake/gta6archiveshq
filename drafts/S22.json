@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "rehook",
   "auto_approved": true,
   "slot": "2026-11-23T10:00:00+01:00",
   "credit": "Lacy",
@@ -49,5 +49,7 @@
       }
     }
   },
-  "notes": "quality 8/10. Lacy brags about being the best driver in GTA 6 while fleeing from the police, only to immediately crash into an ambulance. Source: https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE (582 views). Change the on-screen hook with: hook S22: NEW TEXT"
+  "notes": "quality 8/10. Lacy brags about being the best driver in GTA 6 while fleeing from the police, only to immediately crash into an ambulance. Source: https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE (582 views). Change the on-screen hook with: hook S22: NEW TEXT",
+  "hook_request": "Lacy was bragging about his driving right before this",
+  "keep_approved": true
 }

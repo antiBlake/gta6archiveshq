@@ -63,7 +63,7 @@ Clip: ${ctx.kind} by ${ctx.who}. Original title: "${ctx.title}". Length ${Math.r
 Facts: GTA 6 (Grand Theft Auto VI) was RELEASED on 19 November 2026 on PS5 and Xbox Series X|S and people are playing it now. Never call it upcoming or unreleased. ${ctx.kind.includes('Twitch') ? 'Twitch has already confirmed this clip is from GTA 6.' : ''}
 
 Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and prepare it:
-- keep=false if it shows sexual content or nudity (strip clubs, close-ups of bodies, lap dances), major story spoilers (story cutscenes, character deaths, endings), slurs, real-world violence, leaks/exploits/glitches, is not GTA 6, is mostly menus/loading, blurry, or is just someone talking with no interesting gameplay or reaction.
+- keep=false if it shows OR SAYS sexual content (nudity, strip clubs, close-ups of bodies, lap dances, crude sexual words or jokes in speech or on screen), major story spoilers (story cutscenes, character deaths, endings), slurs, real-world violence, leaks/exploits/glitches, is not GTA 6, is mostly menus/loading, blurry, or is just someone talking with no interesting gameplay or reaction.
 - quality 1-10: how likely viewers stop scrolling and watch to the end (funny reaction, wild chase, crash, hidden detail, impressive graphics, useful tip). 7+ means a strong post.
 - trim_start/trim_end (seconds, within the clip): the most complete moment, 8-45 s: start at the setup, end right after the payoff. Never cut mid-sentence or mid-action.
 - facecam_box: only if a streamer's webcam is visible inside a landscape frame, give its box as fractions of the frame (x,y,w,h). Otherwise null.

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
+  "status": "rehook",
   "slot": "2026-11-23T11:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -48,5 +48,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "22/11/2026, 22:31:49 WAT",
-  "message_id": 93
+  "message_id": 93,
+  "hook_request": "This underwater stash in GTA 6 is free money"
 }

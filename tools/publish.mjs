@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 import { env } from './lib/env.mjs';
+import { youtubeReady, uploadShort } from './youtube.mjs';
 const BUCKET = 'gta6-clips';
 const CHANNELS = {
   tiktok: '6afdb4c2ece6dfde5f0bc0a2',
@@ -97,6 +98,14 @@ async function publish(id, mode, at) {
   d.media_url = media?.url;
   d.buffer = d.buffer ?? {};
   for (const service of (d.publish_platforms ?? d.platforms).filter((s) => CHANNELS[s])) {
+    if (service === 'youtube' && youtubeReady() && mode !== 'draft') {   // direct YouTube API: ~6/day instead of Buffer's 1-2
+      try {
+        const r = await uploadShort(d, mode === 'at' ? at : null);
+        d.buffer.youtube = { direct: true, videoId: r.id, url: r.url, dueAt: mode === 'at' ? new Date(at).toISOString() : new Date().toISOString() };
+        console.log(`✓ youtube (direct): ${r.url}`);
+      } catch (e) { d.buffer.youtube = { error: `YouTube API: ${e.message.slice(0, 200)}` }; console.log(`✗ youtube (direct): ${e.message.slice(0, 200)}`); }
+      continue;
+    }
     if (!media && service !== 'instagram') { console.log(`skip ${service}: needs media`); continue; }
     const input = {
       channelId: CHANNELS[service],

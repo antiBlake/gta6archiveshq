@@ -8,4 +8,4 @@ const file = join(ROOT, '.env');
 const fromFile = existsSync(file)
   ? Object.fromEntries(readFileSync(file, 'utf8').split('\n').filter((l) => l.includes('=') && !l.startsWith('#')).map((l) => [l.slice(0, l.indexOf('=')).trim(), l.slice(l.indexOf('=') + 1).trim()]))
   : {};
-export const env = { ...fromFile, ...Object.fromEntries(Object.entries(process.env).filter(([k, v]) => v && /^(TELEGRAM_|BUFFER_|SUPABASE_|GEMINI_)/.test(k))) };
+export const env = { ...fromFile, ...Object.fromEntries(Object.entries(process.env).filter(([k, v]) => v && /^(TELEGRAM_|BUFFER_|SUPABASE_|GEMINI_|YT_)/.test(k))) };

@@ -7,3 +7,4 @@ state/*.lock
 .DS_Store
 state/.last_kick
 brand/official_*
+youtube_client.json

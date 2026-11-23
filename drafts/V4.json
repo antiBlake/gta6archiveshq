@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-23T23:00:00+01:00",
   "credit": "MemeioYT",
   "category": "viral",
@@ -40,5 +40,24 @@
     },
     "url": "https://x.com/DiscussingFilm/status/2124916933208199428"
   },
-  "notes": "Shared by the owner. Video by @MemeioYT, reposted by DiscussingFilm (2.6M views, 106K likes)."
+  "notes": "Shared by the owner. Video by @MemeioYT, reposted by DiscussingFilm (2.6M views, 106K likes).",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b04c400c0a1a00006eaed6f",
+      "status": "sending",
+      "dueAt": "2026-11-23T22:53:52.400Z",
+      "mode": "now"
+    },
+    "instagram": {
+      "id": "6b04c40b58d65b8ef8d5350d",
+      "status": "sending",
+      "dueAt": "2026-11-23T22:54:03.051Z",
+      "mode": "now"
+    }
+  },
+  "x_status": "pending"
 }

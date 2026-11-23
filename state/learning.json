@@ -1,0 +1,184 @@
+{
+  "updated": "2026-11-23T19:59:06.612Z",
+  "posts": 44,
+  "platforms": {
+    "tiktok": {
+      "median_engagement": 2,
+      "posts": 20
+    },
+    "youtube": {
+      "median_engagement": 1519,
+      "posts": 8
+    },
+    "instagram": {
+      "median_engagement": 136,
+      "posts": 16
+    }
+  },
+  "streamer": {
+    "xQc": {
+      "n": 2,
+      "score": 27.4
+    },
+    "CaseOh": {
+      "n": 3,
+      "score": 1.12
+    },
+    "Ludwig": {
+      "n": 8,
+      "score": 0.97
+    },
+    "Lacy": {
+      "n": 4,
+      "score": 0.43
+    },
+    "IShowSpeed": {
+      "n": 2,
+      "score": 33.8
+    },
+    "Jynxzi": {
+      "n": 2,
+      "score": 40
+    }
+  },
+  "source": {
+    "creator": {
+      "n": 16,
+      "score": 1
+    },
+    "streamer": {
+      "n": 21,
+      "score": 0.96
+    },
+    "guide": {
+      "n": 7,
+      "score": 1.04
+    }
+  },
+  "hookStyle": {
+    "all-caps": {
+      "n": 34,
+      "score": 1
+    },
+    "statement": {
+      "n": 3,
+      "score": 0.91
+    },
+    "tip": {
+      "n": 7,
+      "score": 1.04
+    }
+  },
+  "length": {
+    "≤20s": {
+      "n": 8,
+      "score": 1.18
+    },
+    "21-35s": {
+      "n": 19,
+      "score": 1
+    },
+    ">50s": {
+      "n": 2,
+      "score": 27.4
+    },
+    "36-50s": {
+      "n": 7,
+      "score": 0.89
+    }
+  },
+  "hour": {
+    "0": {
+      "n": 3,
+      "score": 1
+    },
+    "1": {
+      "n": 1,
+      "score": 0.75
+    },
+    "8": {
+      "n": 3,
+      "score": 0.91
+    },
+    "9": {
+      "n": 2,
+      "score": 40
+    },
+    "11": {
+      "n": 4,
+      "score": 1.06
+    },
+    "13": {
+      "n": 2,
+      "score": 22.2
+    },
+    "14": {
+      "n": 2,
+      "score": 0.98
+    },
+    "15": {
+      "n": 4,
+      "score": 1.03
+    },
+    "16": {
+      "n": 2,
+      "score": 0.6
+    },
+    "17": {
+      "n": 3,
+      "score": 1.11
+    },
+    "19": {
+      "n": 3,
+      "score": 1.12
+    },
+    "20": {
+      "n": 5,
+      "score": 1.15
+    },
+    "21": {
+      "n": 2,
+      "score": 27.4
+    },
+    "22": {
+      "n": 3,
+      "score": 1
+    },
+    "23": {
+      "n": 5,
+      "score": 1
+    }
+  },
+  "best_hooks": [
+    {
+      "hook": "HOW TO BEAT GEAR UP",
+      "platform": "tiktok",
+      "views": 471,
+      "score": 455.5
+    },
+    {
+      "hook": "HOW TO CALL A TAXI IN GTA 6",
+      "platform": "tiktok",
+      "views": 212,
+      "score": 166
+    },
+    {
+      "hook": "JYNXZI IN GTA 6",
+      "platform": "tiktok",
+      "views": 157,
+      "score": 98.5
+    },
+    {
+      "hook": "GTA 6 VS GTA 5 VS GTA 4",
+      "platform": "tiktok",
+      "views": 80,
+      "score": 90
+    },
+    {
+      "hook": "ISHOWSPEED IN GTA 6",
+      "platform": "tiktok",
+      "views": 66,
+      "score": 83
+    }
+  ]
+}

@@ -12,7 +12,7 @@ import { ROOT, env } from './lib/env.mjs';
 import { upload } from './publish.mjs';
 import { riskReasons } from './lib/risk.mjs';
 import { judgeClip, decide } from './lib/gemini.mjs';
-import { STATE, log, sh, readJSON, drafts, saveDraft, tool, render, nextSlot, captionsFor } from './lib/clips.mjs';
+import { STATE, log, sh, readJSON, drafts, saveDraft, tool, render, nextSlot, captionsFor, weight } from './lib/clips.mjs';
 
 const MAX_NEW = Number(process.env.MAX_NEW ?? 4);   // drafts per run
 const MAX_JUDGED = 10;                               // Gemini calls per run (free tier friendly)
@@ -44,7 +44,8 @@ for (const st of streamers) {
     candidates.push({ st, url, info }); n++;
   }
 }
-candidates.sort((a, b) => (b.info.view_count ?? 0) - (a.info.view_count ?? 0));
+// rank by Twitch views x how well that streamer's clips did on OUR page (learning loop)
+candidates.sort((a, b) => (b.info.view_count ?? 0) * weight('streamer', b.st.name) - (a.info.view_count ?? 0) * weight('streamer', a.st.name));
 log(`${candidates.length} GTA 6 clip(s) to review`);
 
 // 2-5. judge, render, decide

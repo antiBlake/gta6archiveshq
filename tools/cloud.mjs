@@ -8,6 +8,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, appendFileSync, m
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { env, ROOT } from './lib/env.mjs';
+import { weight } from './lib/clips.mjs';
 
 const DRAFTS = join(ROOT, 'drafts');
 const STATE = join(ROOT, 'state');
@@ -43,7 +44,8 @@ function publishApproved() {
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
   for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if ((b.id || b.videoId) && !b.deleted && !['pulled', 'superseded'].includes(x.status)) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
   const due = drafts().filter((x) => x.status === 'approved' && (!x.slot || new Date(x.slot) <= new Date(Date.now() + 8 * 3600_000)))
-    .sort((a, b) => (b.judge?.quality ?? 6) - (a.judge?.quality ?? 6));   // best clips claim Instagram/YouTube first
+    .sort((a, b) => score(b) - score(a));   // best (and proven) clips claim YouTube first
+  function score(x) { return (x.judge?.quality ?? 6) * weight('source', x.category ?? '') * (x.category === 'streamer' ? weight('streamer', x.credit) : 1); }
   for (const d of due) {
     const day = dayOf(d.slot);
     d.publish_platforms = d.platforms.filter((p) => p !== 'x' && (!CAPS[p] || (used[`${day}|${p}`] ?? 0) < CAPS[p]

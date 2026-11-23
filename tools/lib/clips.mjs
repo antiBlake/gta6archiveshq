@@ -68,3 +68,7 @@ export function captionsFor(ch, line) {
   };
 }
 
+
+// What the nightly learning loop found (tools/learn.mjs). weight() returns a multiplier (1 = average).
+export function learned() { try { return JSON.parse(readFileSync(join(STATE, 'learning.json'), 'utf8')); } catch { return null; } }
+export function weight(group, key) { const g = learned()?.[group]?.[key]; return g && g.n >= 3 ? g.score : 1; }

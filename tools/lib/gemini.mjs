@@ -1,7 +1,11 @@
 // Free Google Gemini (AI Studio key) watches each clip: safety, quality, best trim, facecam box, hook and caption.
 import { readFileSync, statSync } from 'node:fs';
 import { basename } from 'node:path';
-import { env } from './env.mjs';
+import { env, ROOT } from './env.mjs';
+import { readFileSync as rf } from 'node:fs';
+const learning = () => { try { return JSON.parse(rf(`${ROOT}/state/learning.json`, 'utf8')); } catch { return {}; } };
+const bestHooks = () => learning().best_hooks ?? [];
+const bestLength = () => { const g = learning().length ?? {}; const top = Object.entries(g).filter(([, v]) => v.n >= 3).sort((a, b) => b[1].score - a[1].score)[0]; return top && top[1].score > 1.05 ? top[0] : null; };
 
 const API = 'https://generativelanguage.googleapis.com';
 const key = () => { if (!env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY missing'); return env.GEMINI_API_KEY; };
@@ -65,10 +69,10 @@ Facts: GTA 6 (Grand Theft Auto VI) was RELEASED on 19 November 2026 on PS5 and X
 Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and prepare it:
 - keep=false if it shows OR SAYS sexual content (nudity, strip clubs, close-ups of bodies, lap dances, crude sexual words or jokes in speech or on screen), major story spoilers (story cutscenes, character deaths, endings), slurs, real-world violence, leaks/exploits/glitches, is not GTA 6, is mostly menus/loading, blurry, or is just someone talking with no interesting gameplay or reaction.
 - quality 1-10: how likely viewers stop scrolling and watch to the end (funny reaction, wild chase, crash, hidden detail, impressive graphics, useful tip). 7+ means a strong post.
-- trim_start/trim_end (seconds, within the clip): the most complete moment, 8-45 s: start at the setup, end right after the payoff. Never cut mid-sentence or mid-action.
+- trim_start/trim_end (seconds, within the clip): the most complete moment, 8-45 s${bestLength() ? ` (on this page clips of ${bestLength()} perform best, so prefer that when the moment allows)` : ''}: start at the setup, end right after the payoff. Never cut mid-sentence or mid-action.
 - facecam_box: only if a streamer's webcam is visible inside a landscape frame, give its box as fractions of the frame (x,y,w,h). Otherwise null.
 - hook: the on-screen caption, written like a native TikTok caption: sentence case (NOT all caps), 35-60 characters, NO emoji, relatable and curiosity-driven, e.g. "These GTA 6 cops have me on my best behaviour", "Ludwig said he was the best driver and then this happened". Must be true to the clip.
-- on_screen_caption: max 32 characters, NO emoji, adds context or a punchline, sentence case.
+${bestHooks().length ? `  Hooks that performed best on THIS page so far (learn their ANGLE/topic only — always write in sentence case, never copy): ${bestHooks().map((h) => `"${h.hook}"`).join('; ')}.\n` : ''}- on_screen_caption: max 32 characters, NO emoji, adds context or a punchline, sentence case.
 - post_caption: 1-2 short punchy sentences (max 140 characters) with exactly one emoji, written for a worldwide audience, ${ctx.who !== 'unknown' ? `naming ${ctx.who}` : ''}. No hashtags, no @handles, no links, no countries or cities, never claim it is official Rockstar news, no invented facts.
 - what_happens: one plain sentence describing the clip.
 Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;

@@ -6,15 +6,15 @@
     "youtube",
     "instagram"
   ],
-  "status": "rehook",
+  "status": "sent",
   "slot": "2026-11-23T11:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
-  "media": "media/edits/T17.mp4",
-  "media_x": "media/edits/T17_x.mp4",
-  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T17.mp4",
-  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T17_x.mp4",
-  "hook": "EASY UNDERWATER MONEY LOCATION",
+  "media": "media/edits/T17_v2.mp4",
+  "media_x": "media/edits/T17_v2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T17_v2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T17_v2_x.mp4",
+  "hook": "This underwater stash in GTA 6 is free money",
   "captions": {
     "x": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers\n\n🎥 GTA Series Videos on YouTube",
     "tiktok": "You can find thousands of dollars hidden in shipwrecks across the map. Great tip from GTA Series Videos! 💰\n⚠️ Mission spoilers 🎥 GTA Series Videos on YouTube #GTA6 #GTAVI #ViceCity",
@@ -47,7 +47,7 @@
     "found by YouTube search: original creator not verified",
     "mission guide: may show story content"
   ],
-  "sent_at": "22/11/2026, 22:31:49 WAT",
-  "message_id": 93,
-  "hook_request": "This underwater stash in GTA 6 is free money"
+  "sent_at": "23/11/2026, 14:12:41 WAT",
+  "message_id": 99,
+  "version": 2
 }

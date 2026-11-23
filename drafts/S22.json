@@ -6,16 +6,16 @@
     "youtube",
     "instagram"
   ],
-  "status": "rehook",
+  "status": "approved",
   "auto_approved": true,
   "slot": "2026-11-23T10:00:00+01:00",
   "credit": "Lacy",
   "category": "streamer",
-  "media": "media/edits/S22.mp4",
-  "media_x": "media/edits/S22_x.mp4",
-  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S22.mp4",
-  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/S22_x.mp4",
-  "hook": "THE BEST DRIVER IN GTA 6",
+  "media": "media/edits/S22_v2.mp4",
+  "media_x": "media/edits/S22_v2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/S22_v2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/S22_v2_x.mp4",
+  "hook": "Lacy was bragging about his driving right before this",
   "captions": {
     "x": "Lacy really thought he was the best driver until this happened. 🚑\n\n🎥 Lacy on Twitch",
     "tiktok": "Lacy really thought he was the best driver until this happened. 🚑 🎥 Lacy on Twitch #GTA6 #GTAVI #ViceCity",
@@ -50,6 +50,5 @@
     }
   },
   "notes": "quality 8/10. Lacy brags about being the best driver in GTA 6 while fleeing from the police, only to immediately crash into an ambulance. Source: https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE (582 views). Change the on-screen hook with: hook S22: NEW TEXT",
-  "hook_request": "Lacy was bragging about his driving right before this",
-  "keep_approved": true
+  "version": 2
 }

@@ -6,15 +6,15 @@
     "youtube",
     "instagram"
   ],
-  "status": "rehook",
+  "status": "approved",
   "slot": "2026-11-23T09:00:00+01:00",
   "credit": "Jay Dunna ",
   "category": "guide",
-  "media": "media/edits/T16.mp4",
-  "media_x": "media/edits/T16_x.mp4",
-  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T16.mp4",
-  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-22/T16_x.mp4",
-  "hook": "DON'T WASTE YOUR MONEY ON THIS",
+  "media": "media/edits/T16_v2.mp4",
+  "media_x": "media/edits/T16_v2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T16_v2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T16_v2_x.mp4",
+  "hook": "Don't waste money on car upgrades in GTA 6 yet",
   "captions": {
     "x": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers\n\n🎥 Jay Dunna  on YouTube",
     "tiktok": "Jay Dunna explains why you should avoid car upgrades in Chapter 1. 🚗\n⚠️ Mission spoilers 🎥 Jay Dunna  on YouTube #GTA6 #GTAVI #ViceCity",
@@ -50,6 +50,5 @@
   "sent_at": "22/11/2026, 22:21:45 WAT",
   "message_id": 92,
   "decided_at": "22/11/2026, 22:42:24 WAT",
-  "hook_request": "Don't waste money on car upgrades in GTA 6 yet",
-  "keep_approved": true
+  "version": 2
 }

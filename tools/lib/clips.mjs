@@ -37,7 +37,7 @@ export function render(src, start, end, hook, credit, out, caption, opts = {}) {
   hook = plainText(hook); caption = plainText(caption); credit = plainText(credit);
   // opts: { layout: 'full'|'portrait'|'stack', cam: {x,y,w,h}, focus: 0..1 }
   const envx = { ...process.env, LAYOUT: opts.layout ?? 'full', FOCUS: String(opts.focus ?? 0.5), ...(opts.hookY ? { HOOK_Y: String(opts.hookY) } : {}), ...(opts.cam ? { CAM: [opts.cam.x, opts.cam.y, opts.cam.w, opts.cam.h].map((n) => Math.min(1, Math.max(0, n)).toFixed(3)).join(',') } : {}) };
-  sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption], { env: envx });
+  sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption], { env: envx, timeout: 1_800_000 });
   // X copy must stay under 10 MB: pick the video bitrate from the clip length
   const dur = Math.max(1, Number(end) - Number(start));
   const kbps = Math.max(800, Math.min(3200, Math.floor((9 * 8 * 1000) / dur) - 160));

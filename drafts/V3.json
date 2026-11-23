@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-23T17:00:00+01:00",
   "credit": "Synth Potato🥔",
   "category": "viral",
@@ -43,5 +43,31 @@
     "views": 1258468
   },
   "notes": "Viral X post by Synth Potato🥔 (@SynthPotato), 8859 likes. quality 8/10. A player character approaches a horse from behind and gets kicked to the ground before standing back up. https://x.com/SynthPotato/status/2124175461710488062",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b043fe948fbbe79614ca1e4",
+      "status": "scheduled",
+      "dueAt": "2026-11-23T16:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "QOyydXrMuKg",
+      "url": "https://www.youtube.com/shorts/QOyydXrMuKg",
+      "dueAt": "2026-11-23T16:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b043fedd35c00e2ba72bdb0",
+      "status": "scheduled",
+      "dueAt": "2026-11-23T16:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

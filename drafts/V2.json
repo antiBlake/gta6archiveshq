@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-23T15:00:00+01:00",
   "credit": "Noticias PlayStation",
   "category": "viral",
@@ -43,5 +43,31 @@
     "views": 1391747
   },
   "notes": "Viral X post by Noticias PlayStation (@NotiPlay_), 43800 likes. quality 8/10. A player character rides a jet ski across the ocean with a dog wearing goggles sitting in front of him. https://x.com/NotiPlay_/status/2123059783431246246",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b043fe4ab9184f298a46ece",
+      "status": "scheduled",
+      "dueAt": "2026-11-23T14:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "5spRHBzav0U",
+      "url": "https://www.youtube.com/shorts/5spRHBzav0U",
+      "dueAt": "2026-11-23T14:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b043fe7ab9184f298a47357",
+      "status": "scheduled",
+      "dueAt": "2026-11-23T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

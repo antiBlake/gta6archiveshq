@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-23T13:00:00+01:00",
   "credit": "Synth Potato🥔",
   "category": "viral",
@@ -43,5 +43,31 @@
     "views": 3010285
   },
   "notes": "Viral X post by Synth Potato🥔 (@SynthPotato), 20362 likes. quality 8/10. Jason runs across a crowded beach, gets into a fistfight with an NPC, and knocks him out. https://x.com/SynthPotato/status/2123057941729382471",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b043fcaab9184f298a44ede",
+      "status": "sending",
+      "dueAt": "2026-11-23T13:29:46.075Z",
+      "mode": "now"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "VDWcXTkS3uk",
+      "url": "https://www.youtube.com/shorts/VDWcXTkS3uk",
+      "dueAt": "2026-11-23T13:29:58.191Z"
+    },
+    "instagram": {
+      "id": "6b043fd6b94e468a6da44ef6",
+      "status": "sending",
+      "dueAt": "2026-11-23T13:29:58.658Z",
+      "mode": "now"
+    }
+  },
+  "x_status": "pending"
 }

@@ -155,7 +155,9 @@ const TEMPLATES = {
 };
 
 // ---------- scan sources for new uploads ----------
+const SCAN_BUDGET_MS = 25 * 60_000; // a slow network must not hold up re-renders and the link queue for hours
 async function scan() {
+  const scanStart = Date.now();
   if (!env.GEMINI_API_KEY) { log('GEMINI_API_KEY missing: not making clips (quality/safety check required)'); return 0; }
   const sources = readJSON(join(ROOT, 'channels.json'), []).filter((c) => c.youtube || c.search); // Twitch streamers are clipped in the cloud
   const seenFile = join(STATE, 'yt_seen.json');
@@ -166,13 +168,14 @@ async function scan() {
   let made = 0;
   for (const src0 of sources) {
     if (made >= MAX_NEW) break;
+    if (Date.now() - scanStart > SCAN_BUDGET_MS) { log('scan time budget used up; continuing next run'); break; }
     const listUrl = src0.search ? `https://www.youtube.com/results?search_query=${encodeURIComponent(src0.search)}&sp=CAI%253D` : src0.youtube;
     let entries = [];
     try { entries = JSON.parse(YT(['--flat-playlist', '-J', '--playlist-end', '10', listUrl])).entries ?? []; }
     catch (e) { log(`${src0.name}: list failed: ${e.message.split('\n')[0]}`); continue; }
     let perSource = 0;
     for (const e of entries) {
-      if (made >= MAX_NEW || perSource >= (src0.max ?? 2)) break;
+      if (made >= MAX_NEW || perSource >= (src0.max ?? 2) || Date.now() - scanStart > SCAN_BUDGET_MS) break;
       if (seen.has(e.id) || !/GTA ?(6|VI)|Grand Theft Auto VI/i.test(e.title ?? '')) continue;
       if (src0.exclude && new RegExp(src0.exclude, 'i').test(e.title ?? '')) { seen.add(e.id); continue; }
       let info;

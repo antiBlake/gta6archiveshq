@@ -1,0 +1,51 @@
+{
+  "id": "T18",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "sent",
+  "slot": "2026-11-23T19:00:00+01:00",
+  "credit": "Hazard",
+  "category": "guide",
+  "media": "media/edits/T18.mp4",
+  "media_x": "media/edits/T18_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T18.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/T18_x.mp4",
+  "hook": "This combat trick will save your life in GTA 6",
+  "captions": {
+    "x": "Hazard shows us how to handle enemies without wasting ammo. 👊\n⚠️ Mission spoilers\n\n🎥 Hazard on YouTube",
+    "tiktok": "Hazard shows us how to handle enemies without wasting ammo. 👊\n⚠️ Mission spoilers 🎥 Hazard on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Hazard shows us how to handle enemies without wasting ammo. 👊\n⚠️ Mission spoilers 🎥 Hazard on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Hazard shows us how to handle enemies without wasting ammo. 👊\n⚠️ Mission spoilers\n\n🎥 Hazard on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Hazard explains how to perform stealth takedowns and disarm enemies in GTA 6 using the square or X button.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/T18_aY2VhMLIsms.mp4",
+    "start": 4,
+    "end": 33,
+    "credit": "Hazard",
+    "caption": "GTA 6 stealth combat tips",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=aY2VhMLIsms&t=35s"
+  },
+  "notes": "⚠️ Check: found by YouTube search: original creator not verified; mission guide: may show story content.\nquality 8/10. Hazard explains how to perform stealth takedowns and disarm enemies in GTA 6 using the square or X button. From Hazard: https://youtu.be/aY2VhMLIsms?t=35 (found by search). Change the on-screen hook with: hook T18: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCI1-J45WXprOQQ_m9pmfW9A",
+  "flags": [
+    "found by YouTube search: original creator not verified",
+    "mission guide: may show story content"
+  ],
+  "sent_at": "23/11/2026, 09:54:50 WAT",
+  "message_id": 97
+}

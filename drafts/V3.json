@@ -1,0 +1,47 @@
+{
+  "id": "V3",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-23T17:00:00+01:00",
+  "credit": "Synth Potato🥔",
+  "category": "viral",
+  "media": "media/edits/V3.mp4",
+  "media_x": "media/edits/V3_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V3.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V3_x.mp4",
+  "hook": "GTA 6 horses have the exact same physics as RDR2",
+  "captions": {
+    "x": "Synth Potato🥔 shows us that the horses in Leonida are just as moody as the ones in New Austin. 🐎\n\n🎥 @SynthPotato",
+    "tiktok": "Synth Potato🥔 shows us that the horses in Leonida are just as moody as the ones in New Austin. 🐎 🎥 Synth Potato🥔 on X (@SynthPotato) #GTA6 #GTAVI #ViceCity",
+    "youtube": "Synth Potato🥔 shows us that the horses in Leonida are just as moody as the ones in New Austin. 🐎 🎥 Synth Potato🥔 on X (@SynthPotato) #GTA6 #GTAVI #ViceCity",
+    "instagram": "Synth Potato🥔 shows us that the horses in Leonida are just as moody as the ones in New Austin. 🐎\n\n🎥 Synth Potato🥔 on X (@SynthPotato)\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "A player character approaches a horse from behind and gets kicked to the ground before standing back up.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/V3.mp4",
+    "start": 0,
+    "end": 29.846,
+    "credit": "@SynthPotato",
+    "caption": "They still kick hard",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://x.com/SynthPotato/status/2124175461710488062",
+    "likes": 8859,
+    "views": 1258468
+  },
+  "notes": "Viral X post by Synth Potato🥔 (@SynthPotato), 8859 likes. quality 8/10. A player character approaches a horse from behind and gets kicked to the ground before standing back up. https://x.com/SynthPotato/status/2124175461710488062",
+  "auto_approved": true
+}

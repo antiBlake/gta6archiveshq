@@ -1,0 +1,47 @@
+{
+  "id": "V2",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-23T15:00:00+01:00",
+  "credit": "Noticias PlayStation",
+  "category": "viral",
+  "media": "media/edits/V2.mp4",
+  "media_x": "media/edits/V2_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V2.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V2_x.mp4",
+  "hook": "You can actually take your dog on a jet ski in GTA 6",
+  "captions": {
+    "x": "The bond between a man and his dog is unbreakable even on the water. Credit to Noticias PlayStation 🌊\n\n🎥 @NotiPlay_",
+    "tiktok": "The bond between a man and his dog is unbreakable even on the water. Credit to Noticias PlayStation 🌊 🎥 Noticias PlayStation on X (@NotiPlay_) #GTA6 #GTAVI #ViceCity",
+    "youtube": "The bond between a man and his dog is unbreakable even on the water. Credit to Noticias PlayStation 🌊 🎥 Noticias PlayStation on X (@NotiPlay_) #GTA6 #GTAVI #ViceCity",
+    "instagram": "The bond between a man and his dog is unbreakable even on the water. Credit to Noticias PlayStation 🌊\n\n🎥 Noticias PlayStation on X (@NotiPlay_)\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "A player character rides a jet ski across the ocean with a dog wearing goggles sitting in front of him.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/V2.mp4",
+    "start": 0,
+    "end": 11.733,
+    "credit": "@NotiPlay_",
+    "caption": "Best feature in the game",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://x.com/NotiPlay_/status/2123059783431246246",
+    "likes": 43800,
+    "views": 1391747
+  },
+  "notes": "Viral X post by Noticias PlayStation (@NotiPlay_), 43800 likes. quality 8/10. A player character rides a jet ski across the ocean with a dog wearing goggles sitting in front of him. https://x.com/NotiPlay_/status/2123059783431246246",
+  "auto_approved": true
+}

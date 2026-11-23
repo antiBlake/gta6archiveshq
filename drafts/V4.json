@@ -1,0 +1,44 @@
+{
+  "id": "V4",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-23T23:00:00+01:00",
+  "credit": "MemeioYT",
+  "category": "viral",
+  "media": "media/edits/V4.mp4",
+  "media_x": "media/edits/V4_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V4.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-23/V4_x.mp4",
+  "hook": "This GTA 6 portal sends you back to Vice City",
+  "captions": {
+    "x": "Someone found a portal in GTA 6 that sends you straight back to the original Vice City 🤯\n\n🎥 @MemeioYT",
+    "tiktok": "Someone found a portal in GTA 6 that sends you straight back to the original Vice City 🤯 🎥 MemeioYT on YouTube (@MemeioYT) #GTA6 #GTAVI #ViceCity",
+    "youtube": "Someone found a portal in GTA 6 that sends you straight back to the original Vice City 🤯 🎥 MemeioYT on YouTube (@MemeioYT) #GTA6 #GTAVI #ViceCity",
+    "instagram": "Someone found a portal in GTA 6 that sends you straight back to the original Vice City 🤯\n\n🎥 MemeioYT on YouTube (@MemeioYT)\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Portal easter egg drops the player into the original Vice City Malibu club (reviewed by Claude: Gemini wrongly flagged the dance club as sexual).",
+    "model": "manual review",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/V4.mp4",
+    "start": 0,
+    "end": 40,
+    "credit": "@MemeioYT",
+    "caption": "",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://x.com/DiscussingFilm/status/2124916933208199428"
+  },
+  "notes": "Shared by the owner. Video by @MemeioYT, reposted by DiscussingFilm (2.6M views, 106K likes)."
+}

@@ -67,8 +67,9 @@ async function processQueue() {
     try { YT(['-q', '--ffmpeg-location', BIN, '-f', 'bv*+ba/b', '-S', 'res,fps', '--merge-output-format', 'mp4', '-o', src, item.url]); }
     catch (e) { item.result = 'download failed'; continue; }
     const platform = /x\.com|twitter\.com/.test(item.url) ? 'X' : /instagram/.test(item.url) ? 'Instagram' : /tiktok/.test(item.url) ? 'TikTok' : 'YouTube';
-    const who = info.uploader ?? info.channel ?? 'unknown';
-    const handle = info.uploader_id && !/^\d+$/.test(info.uploader_id) ? info.uploader_id.replace(/^@/, '') : null;
+    // item.credit: the ORIGINAL creator when the link is a repost (e.g. a news account sharing someone's video)
+    const who = item.credit ?? info.uploader ?? info.channel ?? 'unknown';
+    const handle = item.credit ? item.credit.replace(/^@/, '') : info.uploader_id && !/^\d+$/.test(info.uploader_id) ? info.uploader_id.replace(/^@/, '') : null;
     let v;
     try { v = await judgeClip(join(ROOT, src), { who, kind: `viral ${platform} post (credit the creator)`, title: (info.title ?? info.description ?? '').slice(0, 200), duration: info.duration ?? 30, layout: info.height > info.width ? 'vertical 9:16 video (may already have its own text)' : 'landscape 16:9 video' }); }
     catch (e) { item.result = `Gemini failed: ${e.message.slice(0, 120)}`; continue; }

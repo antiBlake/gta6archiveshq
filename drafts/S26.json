@@ -1,0 +1,53 @@
+{
+  "id": "S26",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-24T18:00:00+01:00",
+  "credit": "Jynxzi",
+  "category": "streamer",
+  "media": "media/edits/S26.mp4",
+  "media_x": "media/edits/S26_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S26.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S26_x.mp4",
+  "hook": "Jynxzi cannot believe what NickEh30 is doing in GTA 6",
+  "captions": {
+    "x": "Jynxzi was not ready for NickEh30 to play like this in GTA 6. 🤯\n\n🎥 Jynxzi on Twitch",
+    "tiktok": "Jynxzi was not ready for NickEh30 to play like this in GTA 6. 🤯 🎥 Jynxzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Jynxzi was not ready for NickEh30 to play like this in GTA 6. 🤯 🎥 Jynxzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Jynxzi was not ready for NickEh30 to play like this in GTA 6. 🤯\n\n🎥 Jynxzi on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "NickEh30 throws an NPC off a rooftop and shoots down a helicopter with an RPG while Jynxzi reacts in disbelief.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1603004476.mp4",
+    "start": 0,
+    "end": 30,
+    "credit": "twitch.tv/jynxzi",
+    "caption": "NickEh30 is a menace",
+    "url": "https://www.twitch.tv/jynxzi/clip/SparklingDeliciousElephantDuDudu-7ZtEIG3eWcRoA8BV",
+    "twitch": "jynxzi",
+    "views": 1883,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.39,
+        "w": 0.26,
+        "x": 0.73,
+        "y": 0.6
+      }
+    }
+  },
+  "notes": "quality 9/10. NickEh30 throws an NPC off a rooftop and shoots down a helicopter with an RPG while Jynxzi reacts in disbelief. Source: https://www.twitch.tv/jynxzi/clip/SparklingDeliciousElephantDuDudu-7ZtEIG3eWcRoA8BV (1883 views). Change the on-screen hook with: hook S26: NEW TEXT"
+}

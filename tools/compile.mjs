@@ -38,7 +38,7 @@ picks.forEach((p, i) => {
   const hook = `${i === 0 ? `${title}\n` : ''}#${num}  ${p.caption ?? ''}`.trim();
   const credit = p.handle ? `@${p.handle}` : p.who;
   const out = join('media', 'work', id, `${i}.mp4`);
-  render(p.file, p.start, p.end, hook, credit, out, '', p.vertical ? { layout: 'portrait', hookY: 300 } : { layout: 'full', hookY: 300 });
+  render(p.file, p.start, p.end, hook, credit, out, '', p.vertical ? { layout: 'portrait', hookY: 90 } : { layout: 'full', hookY: 300 });
   rmSync(join(ROOT, out.replace(/\.mp4$/, '_x.mp4')), { force: true });
   parts.push(out);
 });

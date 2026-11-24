@@ -31,7 +31,7 @@ export function cleanTitle(t) {
 }
 
 // Burned-in text can't show emoji (the font has none): keep letters, numbers, punctuation and spaces only.
-export const plainText = (t) => String(t ?? '').normalize('NFKC').replace(/[^\p{L}\p{N}\p{P}\p{Zs}$+<=>^`|~]/gu, '').replace(/\s{2,}/g, ' ').trim();
+export const plainText = (t) => String(t ?? '').normalize('NFKC').split('\n').map((l) => l.replace(/[^\p{L}\p{N}\p{P}\p{Zs}$+<=>^`|~]/gu, '').replace(/\s{2,}/g, ' ').trim()).filter(Boolean).join('\n');
 
 export function render(src, start, end, hook, credit, out, caption, opts = {}) {
   hook = plainText(hook); caption = plainText(caption); credit = plainText(credit);

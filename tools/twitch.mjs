@@ -7,6 +7,7 @@
 // 5. Strong clips are auto-approved (published at their slot); unsure ones go to Telegram; bad ones are dropped.
 
 import { writeFileSync, rmSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { ROOT, env } from './lib/env.mjs';
 import { upload } from './publish.mjs';
@@ -86,6 +87,9 @@ for (const { st, url, info } of candidates) {
     notes: `${verdict.why}${textFlags.length ? `; text flags: ${textFlags.join('; ')}` : ''}. ${v.what_happens} Source: ${url} (${info.view_count} views). Change the on-screen hook with: hook ${id}: NEW TEXT`,
   };
   saveDraft(d); all.push(d);
+  saveSeen();
+  // save each finished clip right away so a cancelled/timed-out run never loses work
+  if (process.env.GITHUB_ACTIONS) { try { execFileSync('bash', ['-c', `git add -A drafts state && git commit -qm "clips: ${id}" && git pull -q --rebase --autostash -X theirs && git push -q`], { cwd: ROOT, stdio: 'ignore', timeout: 120_000 }); } catch {} }
   if (!auto) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
   log(`${auto ? '✓ auto' : '? review'} ${id}: ${st.name} [${layout.layout}] "${v.hook}" q${v.quality} → ${slot}`);
   made++;

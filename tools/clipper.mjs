@@ -260,6 +260,11 @@ const KICK = join(STATE, '.last_kick');
 if (!existsSync(KICK) || Date.now() - new Date(readFileSync(KICK, 'utf8')) > 28 * 60_000) {
   try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(KICK, new Date().toISOString()); log('started GitHub publisher'); } catch {}
 }
+// GitHub runs scheduled jobs late on busy days: while online, also start the Twitch clipper every 2 h
+const KICK2 = join(STATE, '.last_kick_clips');
+if (!existsSync(KICK2) || Date.now() - new Date(readFileSync(KICK2, 'utf8')) > 115 * 60_000) {
+  try { sh('gh', ['workflow', 'run', 'clips']); writeFileSync(KICK2, new Date().toISOString()); log('started GitHub Twitch clipper'); } catch {}
+}
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
 try { await rehooks(); } catch (e) { log(`re-render step failed: ${e.message.split('\n')[0]}`); }
 if (env.GEMINI_API_KEY) { try { log(`link queue: ${await processQueue()} new clip(s)`); } catch (e) { log(`link queue step failed: ${e.message.split('\n')[0]}`); } }

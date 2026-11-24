@@ -8,7 +8,7 @@ concurrency: { group: gta6-state, cancel-in-progress: false }
 jobs:
   clips:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,7 +18,9 @@ jobs:
           sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
           mkdir -p tools/bin media/raw media/edits
           curl -sSL -o tools/bin/yt-dlp https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux && chmod +x tools/bin/yt-dlp
-      - run: node tools/twitch.mjs
+      - run: |
+          git config user.name "gta6-bot"; git config user.email "gta6-bot@users.noreply.github.com"
+          node tools/twitch.mjs
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

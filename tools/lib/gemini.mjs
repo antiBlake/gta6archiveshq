@@ -98,9 +98,10 @@ Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;
 
 /** Turns a verdict into an action: 'discard' | 'auto' | 'review' (send to Telegram) */
 export function decide(v) {
+  // Owner rule (2026-11-24): never wait for approval. Hard violations are dropped; weak clips are dropped;
+  // everything else posts automatically. Only possible rule violations go to Telegram (see riskReasons).
   const hard = ['sexual_or_nudity', 'slur_or_hate', 'real_world_violence', 'leak_or_exploit'];
   if (!v || v.reject_reasons?.some((r) => hard.includes(r))) return { action: 'discard', why: (v?.reject_reasons ?? ['no verdict']).join(', ') };
-  if (!v.keep || v.quality < 5) return { action: 'discard', why: `weak clip (quality ${v.quality}${v.reject_reasons?.length ? `, ${v.reject_reasons.join(', ')}` : ''})` };
-  if (v.quality >= 7 && v.confidence >= 0.7 && !v.reject_reasons?.length) return { action: 'auto', why: `quality ${v.quality}/10` };
-  return { action: 'review', why: `quality ${v.quality}/10, confidence ${v.confidence}${v.reject_reasons?.length ? `, ${v.reject_reasons.join(', ')}` : ''}` };
+  if (!v.keep || v.quality < 6) return { action: 'discard', why: `weak clip (quality ${v.quality}${v.reject_reasons?.length ? `, ${v.reject_reasons.join(', ')}` : ''})` };
+  return { action: 'auto', why: `quality ${v.quality}/10${v.reject_reasons?.includes('story_spoiler') ? ' (spoiler label added)' : ''}` };
 }

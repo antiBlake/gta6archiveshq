@@ -277,3 +277,9 @@ if (!existsSync(kick) || Date.now() - new Date(readFileSync(kick, 'utf8')) > 28 
   try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(kick, new Date().toISOString()); log('started GitHub publisher'); }
   catch (e) { log(`could not start GitHub publisher: ${e.message.split('\n')[0]}`); }
 }
+
+// Daily disk cleanup: delete local files of clips posted more than 2 days ago (copies stay online + in Supabase).
+const CLEAN = join(STATE, '.last_cleanup');
+if (!existsSync(CLEAN) || Date.now() - new Date(readFileSync(CLEAN, 'utf8')) > 20 * 3600_000) {
+  try { log(sh(process.execPath, ['tools/cleanup.mjs']).trim()); writeFileSync(CLEAN, new Date().toISOString()); } catch (e) { log(`cleanup failed: ${e.message.split('\n')[0]}`); }
+}

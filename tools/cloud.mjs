@@ -43,6 +43,20 @@ function publishApproved() {
   const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
   for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if ((b.id || b.videoId) && !b.deleted && !['pulled', 'superseded'].includes(x.status)) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }
+  // spread clashes: the cloud and the Mac can pick the same free hour; keep one per hour
+  {
+    const all = drafts();
+    const used = new Set(all.filter((x) => x.status === 'published_buffer' && x.slot).map((x) => x.slot));
+    for (const x of all.filter((y) => y.status === 'approved' && y.slot).sort((a, b) => a.slot.localeCompare(b.slot))) {
+      let t = new Date(x.slot);
+      while (used.has(new Date(t).toISOString()) || [...used].some((u) => new Date(u).getTime() === t.getTime())) t = new Date(t.getTime() + 3600_000);
+      const hourWAT = new Date(t.getTime() + 3600_000).getUTCHours();
+      if (hourWAT > 23 || hourWAT < 8) { const n = new Date(t.getTime() + 3600_000); n.setUTCDate(n.getUTCDate() + (hourWAT > 23 ? 1 : 0)); n.setUTCHours(7, 0, 0, 0); t = n; } // 08:00 WAT next day
+      const iso = new Date(t).toISOString().replace('.000Z', '+00:00');
+      if (new Date(iso).getTime() !== new Date(x.slot).getTime()) { log(`${x.id}: ${x.slot} taken → ${iso}`); x.slot = iso; saveDraft(x); }
+      used.add(new Date(t).toISOString());
+    }
+  }
   const due = drafts().filter((x) => x.status === 'approved' && (!x.slot || new Date(x.slot) <= new Date(Date.now() + 8 * 3600_000)))
     .sort((a, b) => score(b) - score(a));   // best (and proven) clips claim YouTube first
   function score(x) { return (x.judge?.quality ?? 6) * weight('source', x.category ?? '') * (x.category === 'streamer' ? weight('streamer', x.credit) : 1); }

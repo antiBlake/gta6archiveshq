@@ -58,7 +58,7 @@ const line = `${title} 👀 Which one is your favourite?\n\nCredits: ${credits}`
 const all = drafts();
 const taken = new Set(all.map((d) => d.slot).filter(Boolean));
 const d = {
-  id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'approved', auto_approved: true, slot: nextSlot(taken, 'odd'),
+  id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'approved', auto_approved: true, slot: nextSlot(taken),
   credit: picks.map((p) => p.who).join(', '), category: 'compilation',
   media: outMain, media_x: outX, media_url: (await upload(outMain)).url, media_x_url: (await upload(outX)).url,
   hook: title, captions: {

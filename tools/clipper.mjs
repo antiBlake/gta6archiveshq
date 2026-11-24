@@ -201,7 +201,7 @@ async function scan() {
         const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
         const out = `media/edits/${id}.mp4`;
         const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', layout);
-        const slot = nextSlot(taken, 'odd'); taken.add(slot);
+        const slot = nextSlot(taken); taken.add(slot);
         const post = ch.type === 'guide' ? `${v.post_caption}\n⚠️ Mission spoilers` : v.post_caption;
         const d = {
           id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: ch.name, category: ch.type,

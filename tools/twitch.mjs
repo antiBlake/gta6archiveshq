@@ -15,8 +15,8 @@ import { riskReasons } from './lib/risk.mjs';
 import { judgeClip, decide } from './lib/gemini.mjs';
 import { STATE, log, sh, readJSON, drafts, saveDraft, tool, render, nextSlot, captionsFor, weight } from './lib/clips.mjs';
 
-const MAX_NEW = Number(process.env.MAX_NEW ?? 4);   // drafts per run
-const MAX_JUDGED = 10;                               // Gemini calls per run (free tier friendly)
+const MAX_NEW = Number(process.env.MAX_NEW ?? 6);   // drafts per run
+const MAX_JUDGED = 16;                               // Gemini calls per run (free tier friendly)
 const PER_STREAMER = 3;
 const MIN_VIEWS = 300;
 const GAME = /Grand Theft Auto VI/i;
@@ -76,7 +76,7 @@ for (const { st, url, info } of candidates) {
   const out = `media/edits/${id}.mp4`;
   let xOut;
   try { xOut = render(src, start, end, v.hook, credit, out, v.on_screen_caption, layout); } catch (e) { log(`${id}: render failed: ${e.message.split('\n')[0]}`); continue; }
-  const slot = nextSlot(taken, 'even'); taken.add(slot);
+  const slot = nextSlot(taken); taken.add(slot);
   const auto = verdict.action === 'auto' && !textFlags.length;
   const d = {
     id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: auto ? 'approved' : 'draft', auto_approved: auto, slot, credit: st.name, category: 'streamer',

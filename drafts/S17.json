@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": false,
   "slot": "2026-11-24T22:00:00+01:00",
   "credit": "Lacy",
@@ -46,5 +46,24 @@
   "notes": "quality 6/10, confidence 0.9. Lacy attempts to perform a stylish drift on a motorcycle at night while characters discuss their next mission objective. Source: https://www.twitch.tv/lacy/clip/EndearingNimblePassionfruitChocolateRain-01jh1UKyjqi850ol (531 views). Change the on-screen hook with: hook S17: NEW TEXT",
   "sent_at": "21/11/2026, 20:35:59 WAT",
   "message_id": 82,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0590ab15dc109ec78b74ab",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T21:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0590ab1a413c5443593830",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T21:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

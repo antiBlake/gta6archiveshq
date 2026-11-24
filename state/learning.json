@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-23T19:59:06.612Z",
-  "posts": 44,
+  "updated": "2026-11-24T04:42:06.994Z",
+  "posts": 59,
   "platforms": {
     "tiktok": {
       "median_engagement": 2,
-      "posts": 20
+      "posts": 25
     },
     "youtube": {
-      "median_engagement": 1519,
-      "posts": 8
+      "median_engagement": 1888,
+      "posts": 13
     },
     "instagram": {
-      "median_engagement": 136,
-      "posts": 16
+      "median_engagement": 84,
+      "posts": 21
     }
   },
   "streamer": {
@@ -22,15 +22,15 @@
     },
     "CaseOh": {
       "n": 3,
-      "score": 1.12
+      "score": 1
     },
     "Ludwig": {
       "n": 8,
-      "score": 0.97
+      "score": 1
     },
     "Lacy": {
-      "n": 4,
-      "score": 0.43
+      "n": 7,
+      "score": 0.3
     },
     "IShowSpeed": {
       "n": 2,
@@ -47,12 +47,16 @@
       "score": 1
     },
     "streamer": {
-      "n": 21,
-      "score": 0.96
+      "n": 24,
+      "score": 1
     },
     "guide": {
-      "n": 7,
-      "score": 1.04
+      "n": 10,
+      "score": 1.54
+    },
+    "viral": {
+      "n": 9,
+      "score": 0.25
     }
   },
   "hookStyle": {
@@ -61,30 +65,34 @@
       "score": 1
     },
     "statement": {
+      "n": 15,
+      "score": 0.17
+    },
+    "setup-payoff": {
       "n": 3,
-      "score": 0.91
+      "score": 0.5
     },
     "tip": {
       "n": 7,
-      "score": 1.04
+      "score": 1.49
     }
   },
   "length": {
     "≤20s": {
-      "n": 8,
-      "score": 1.18
-    },
-    "21-35s": {
-      "n": 19,
+      "n": 14,
       "score": 1
     },
+    "21-35s": {
+      "n": 22,
+      "score": 1.08
+    },
     ">50s": {
-      "n": 2,
-      "score": 27.4
+      "n": 8,
+      "score": 1
     },
     "36-50s": {
       "n": 7,
-      "score": 0.89
+      "score": 0.86
     }
   },
   "hour": {
@@ -98,7 +106,7 @@
     },
     "8": {
       "n": 3,
-      "score": 0.91
+      "score": 0.83
     },
     "9": {
       "n": 2,
@@ -106,35 +114,35 @@
     },
     "11": {
       "n": 4,
-      "score": 1.06
+      "score": 1.46
     },
     "13": {
       "n": 2,
       "score": 22.2
     },
     "14": {
-      "n": 2,
-      "score": 0.98
+      "n": 11,
+      "score": 0.21
     },
     "15": {
-      "n": 4,
-      "score": 1.03
+      "n": 7,
+      "score": 0.65
     },
     "16": {
       "n": 2,
       "score": 0.6
     },
     "17": {
-      "n": 3,
-      "score": 1.11
+      "n": 6,
+      "score": 1.64
     },
     "19": {
       "n": 3,
-      "score": 1.12
+      "score": 1
     },
     "20": {
       "n": 5,
-      "score": 1.15
+      "score": 1
     },
     "21": {
       "n": 2,
@@ -146,7 +154,7 @@
     },
     "23": {
       "n": 5,
-      "score": 1
+      "score": 1.23
     }
   },
   "best_hooks": [

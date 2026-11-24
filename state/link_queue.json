@@ -31,7 +31,8 @@
     "url": "https://x.com/Caspahz/status/2124377522955771906",
     "added": "2026-11-22",
     "by": "claude: X top GTA 6 videos (2k+ likes)",
-    "result": "download failed"
+    "result": "added to compilation pool as Pmwuqdvn4 (q8)",
+    "done": "2026-11-24T13:28:37.692Z"
   },
   {
     "url": "https://x.com/DiscussingFilm/status/2124916933208199428",
@@ -46,7 +47,7 @@
     "url": "https://x.com/Hiteshsharma100/status/2124486160210919665",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed: fetch failed"
+    "result": "Gemini failed (will retry): fetch failed"
   },
   {
     "url": "https://x.com/JaredFPS/status/2124488512003318181",
@@ -80,7 +81,7 @@
     "url": "https://x.com/BurntPnutShorts/status/2124865065664893153",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed: The operation was aborted due to timeout"
+    "result": "Gemini failed (will retry): The operation was aborted due to timeout"
   },
   {
     "url": "https://x.com/Nightalize/status/2124919019253981585",
@@ -100,6 +101,6 @@
     "url": "https://x.com/chasmmmmmmmmmmm/status/2125161579230449919",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed: The operation was aborted due to timeout"
+    "result": "Gemini failed (will retry): fetch failed"
   }
 ]

@@ -1,0 +1,59 @@
+{
+  "id": "K1",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-24T23:00:00+01:00",
+  "credit": "Caspahz, Enigma Gaming, JaredFPS, Si Paling Gen Z",
+  "category": "compilation",
+  "media": "media/edits/K1.mp4",
+  "media_x": "media/edits/K1_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/K1.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/K1_x.mp4",
+  "hook": "4 GTA 6 moments you missed this week",
+  "captions": {
+    "x": "4 GTA 6 moments you missed this week 👀 Which one is your favourite?\n\nCredits: #1 @txtdarigenz97 · #2 @JaredFPS · #3 @EnigmaGamingX · #4 @Caspahz",
+    "tiktok": "4 GTA 6 moments you missed this week 👀 Which one is your favourite?\n\nCredits: #1 @txtdarigenz97 · #2 @JaredFPS · #3 @EnigmaGamingX · #4 @Caspahz #GTA6 #GTAVI #ViceCity",
+    "youtube": "4 GTA 6 moments you missed this week 👀 Which one is your favourite?\n\nCredits: #1 @txtdarigenz97 · #2 @JaredFPS · #3 @EnigmaGamingX · #4 @Caspahz #GTA6 #GTAVI #ViceCity",
+    "instagram": "4 GTA 6 moments you missed this week 👀 Which one is your favourite?\n\nCredits: #1 @txtdarigenz97 · #2 @JaredFPS · #3 @EnigmaGamingX · #4 @Caspahz\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "what": "Compilation of 4 moments",
+    "layout": "compilation"
+  },
+  "source": {
+    "segments": [
+      {
+        "url": "https://x.com/Caspahz/status/2124377522955771906",
+        "start": 0,
+        "end": 8,
+        "who": "Caspahz"
+      },
+      {
+        "url": "https://x.com/EnigmaGamingX/status/2124371174583148672",
+        "start": 19.5,
+        "end": 27.5,
+        "who": "Enigma Gaming"
+      },
+      {
+        "url": "https://x.com/JaredFPS/status/2124488512003318181",
+        "start": 0,
+        "end": 8,
+        "who": "JaredFPS"
+      },
+      {
+        "url": "https://x.com/txtdarigenz97/status/2124816478054551617",
+        "start": 0,
+        "end": 8,
+        "who": "Si Paling Gen Z"
+      }
+    ]
+  },
+  "notes": "Compilation of 4 credited moments: https://x.com/Caspahz/status/2124377522955771906 https://x.com/EnigmaGamingX/status/2124371174583148672 https://x.com/JaredFPS/status/2124488512003318181 https://x.com/txtdarigenz97/status/2124816478054551617"
+}

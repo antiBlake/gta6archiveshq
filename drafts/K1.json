@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-24T23:00:00+01:00",
   "credit": "Caspahz, Enigma Gaming, JaredFPS, Si Paling Gen Z",
@@ -55,5 +55,24 @@
       }
     ]
   },
-  "notes": "Compilation of 4 credited moments: https://x.com/Caspahz/status/2124377522955771906 https://x.com/EnigmaGamingX/status/2124371174583148672 https://x.com/JaredFPS/status/2124488512003318181 https://x.com/txtdarigenz97/status/2124816478054551617"
+  "notes": "Compilation of 4 credited moments: https://x.com/Caspahz/status/2124377522955771906 https://x.com/EnigmaGamingX/status/2124371174583148672 https://x.com/JaredFPS/status/2124488512003318181 https://x.com/txtdarigenz97/status/2124816478054551617",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b05ba56ecff32b1bfdad795",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T22:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b05ba57ecff32b1bfdad7d0",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T22:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

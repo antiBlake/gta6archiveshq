@@ -47,7 +47,8 @@
     "url": "https://x.com/Hiteshsharma100/status/2124486160210919665",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed (will retry): The operation was aborted due to timeout"
+    "result": "added to compilation pool as Pmwuwdpf8 (q8)",
+    "done": "2026-11-24T16:16:16.085Z"
   },
   {
     "url": "https://x.com/JaredFPS/status/2124488512003318181",
@@ -81,7 +82,8 @@
     "url": "https://x.com/BurntPnutShorts/status/2124865065664893153",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed (will retry): The operation was aborted due to timeout"
+    "result": "added to compilation pool as Pmwuwld45 (q8)",
+    "done": "2026-11-24T16:22:24.339Z"
   },
   {
     "url": "https://x.com/Nightalize/status/2124919019253981585",
@@ -101,6 +103,6 @@
     "url": "https://x.com/chasmmmmmmmmmmm/status/2125161579230449919",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed (will retry): fetch failed"
+    "result": "Gemini failed (will retry): all Gemini models failed — last: gemini-flash-lite-latest 503: This model is currently experiencing high demand. Spikes "
   }
 ]

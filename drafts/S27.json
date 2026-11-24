@@ -1,0 +1,53 @@
+{
+  "id": "S27",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T08:00:00+01:00",
+  "credit": "CohhCarnage",
+  "category": "streamer",
+  "media": "media/edits/S27.mp4",
+  "media_x": "media/edits/S27_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S27.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S27_x.mp4",
+  "hook": "CohhCarnage discovered a wild UFO encounter in GTA 6",
+  "captions": {
+    "x": "CohhCarnage was not expecting this spooky extraterrestrial encounter in GTA 6 🛸\n\n🎥 CohhCarnage on Twitch",
+    "tiktok": "CohhCarnage was not expecting this spooky extraterrestrial encounter in GTA 6 🛸 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CohhCarnage was not expecting this spooky extraterrestrial encounter in GTA 6 🛸 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CohhCarnage was not expecting this spooky extraterrestrial encounter in GTA 6 🛸\n\n🎥 CohhCarnage on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CohhCarnage reacts in disbelief as a UFO flies away after abducting an NPC in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1780474274.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/cohhcarnage",
+    "caption": "UFO encounter in GTA 6",
+    "url": "https://www.twitch.tv/cohhcarnage/clip/ArtsyGenerousAniseDendiFace-NxwfD1GOBiYOHbfx",
+    "twitch": "cohhcarnage",
+    "views": 18022,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.235,
+        "w": 0.219,
+        "x": 0.016,
+        "y": 0.384
+      }
+    }
+  },
+  "notes": "quality 8/10. CohhCarnage reacts in disbelief as a UFO flies away after abducting an NPC in GTA 6. Source: https://www.twitch.tv/cohhcarnage/clip/ArtsyGenerousAniseDendiFace-NxwfD1GOBiYOHbfx (18022 views). Change the on-screen hook with: hook S27: NEW TEXT"
+}

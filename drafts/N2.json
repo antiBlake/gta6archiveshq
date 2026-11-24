@@ -3,7 +3,7 @@
   "platforms": [
     "x"
   ],
-  "status": "approved",
+  "status": "queued_x",
   "credit": "Xbox Wire",
   "captions": {
     "x": "GTA 6 news: How to Play Grand Theft Auto VI in the Cloud and with Remote Play\n\nSource: Xbox Wire 🔗 https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/"
@@ -11,5 +11,7 @@
   "notes": "Official source (Xbox Wire). Check the article before approving. https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
   "sent_at": "23/11/2026, 23:54:13 WAT",
   "message_id": 101,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [],
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-24T16:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,24 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh drives an orange car through the city and hits a person on a scooter, causing a funny ragdoll effect. Source: https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA (6531 views). Change the on-screen hook with: hook S25: NEW TEXT"
+  "notes": "quality 8/10. CaseOh crashes his motorcycle into a deer while driving through a forest in GTA 6, leading to a dramatic ragdoll sequence. Source: https://www.twitch.tv/caseoh_/clip/OutstandingPoorMuleTooSpicy-EPG7Mkqz0hYMboIi (4012 views). Change the on-screen hook with: hook S25: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f60f6a22c1e50eb04f1",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T15:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b057f6135d19879be28d31e",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T15:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

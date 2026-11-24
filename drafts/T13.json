@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-24T15:00:00+01:00",
   "credit": "KnowledgeBase",
   "category": "guide",
@@ -48,5 +48,31 @@
   ],
   "sent_at": "21/11/2026, 21:25:37 WAT",
   "message_id": 84,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f43508d3abe26a24ff6",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T14:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "v1Y6fQyqAgA",
+      "url": "https://www.youtube.com/shorts/v1Y6fQyqAgA",
+      "dueAt": "2026-11-24T14:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b057f45508d3abe26a2509e",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

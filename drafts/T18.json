@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-24T20:00:00+01:00",
   "credit": "Hazard",
   "category": "guide",
@@ -48,5 +48,31 @@
   ],
   "sent_at": "23/11/2026, 09:54:50 WAT",
   "message_id": 97,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f51508d3abe26a25859",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T19:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "3-FT4QHKBaU",
+      "url": "https://www.youtube.com/shorts/3-FT4QHKBaU",
+      "dueAt": "2026-11-24T19:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b057f54f6a22c1e50eb00dd",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T19:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

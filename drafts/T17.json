@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-24T19:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
@@ -50,5 +50,31 @@
   "sent_at": "23/11/2026, 14:12:41 WAT",
   "message_id": 99,
   "version": 2,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f4bb6b5afc850a59da3",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T18:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "R1YeW7PWIT4",
+      "url": "https://www.youtube.com/shorts/R1YeW7PWIT4",
+      "dueAt": "2026-11-24T18:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b057f4fb6b5afc850a5a289",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T18:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

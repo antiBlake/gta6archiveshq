@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-24T17:00:00+01:00",
   "credit": "jayvee",
   "category": "guide",
@@ -48,5 +48,31 @@
   ],
   "sent_at": "21/11/2026, 21:37:23 WAT",
   "message_id": 85,
-  "approved": "owner: approve all (2026-11-24)"
+  "approved": "owner: approve all (2026-11-24)",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f47508d3abe26a25103",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T16:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "xo4fzvqpmFo",
+      "url": "https://www.youtube.com/shorts/xo4fzvqpmFo",
+      "dueAt": "2026-11-24T16:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b057f4ad280bf495ba7a142",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T16:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

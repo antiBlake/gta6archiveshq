@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-24T14:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,24 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh gets into a heated road rage incident with an NPC driver in GTA 6 that ends in a shootout. Source: https://www.twitch.tv/caseoh_/clip/SmoggyCleverMosquitoTBTacoRight-RVBfPSPbe5p5k44q (17283 views). Change the on-screen hook with: hook S24: NEW TEXT"
+  "notes": "quality 8/10. CaseOh drives an orange convertible through the city and accidentally rams into a person on a scooter. Source: https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA (6461 views). Change the on-screen hook with: hook S24: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f5eb6b5afc850a5a773",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T13:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b057f5f328248f765f787de",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

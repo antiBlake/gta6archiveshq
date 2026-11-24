@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-24T18:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh is riding a motorcycle through the woods in GTA 6 when he hits a deer and flies off his bike. Source: https://www.twitch.tv/caseoh_/clip/OutstandingPoorMuleTooSpicy-EPG7Mkqz0hYMboIi (4067 views). Change the on-screen hook with: hook S26: NEW TEXT"
+  "notes": "quality 9/10. NickEh30 throws an NPC off a rooftop and shoots down a helicopter with an RPG while Jynxzi reacts in disbelief. Source: https://www.twitch.tv/jynxzi/clip/SparklingDeliciousElephantDuDudu-7ZtEIG3eWcRoA8BV (1883 views). Change the on-screen hook with: hook S26: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b057f59d280bf495ba7a8b4",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T17:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "ZLXp0iYMaFE",
+      "url": "https://www.youtube.com/shorts/ZLXp0iYMaFE",
+      "dueAt": "2026-11-24T17:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b057f5d328248f765f78768",
+      "status": "scheduled",
+      "dueAt": "2026-11-24T17:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

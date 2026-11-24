@@ -46,46 +46,64 @@
   {
     "url": "https://x.com/Hiteshsharma100/status/2124486160210919665",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T11:51:08.804Z",
+    "result": "Gemini failed: fetch failed"
   },
   {
     "url": "https://x.com/JaredFPS/status/2124488512003318181",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T11:58:09.244Z",
+    "result": "added to compilation pool as Pmwun5gbm (q8)"
   },
   {
     "url": "https://x.com/xboxBG/status/2124932548757205224",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:03:19.868Z",
+    "result": "dropped: leak_or_exploit, not_gta6"
   },
   {
     "url": "https://x.com/txtdarigenz97/status/2124816478054551617",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:06:05.961Z",
+    "result": "added to compilation pool as Pmwunfq1r (q9)"
   },
   {
     "url": "https://x.com/EnigmaGamingX/status/2124371174583148672",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:12:43.180Z",
+    "result": "added to compilation pool as Pmwunof6c (q8)"
   },
   {
     "url": "https://x.com/BurntPnutShorts/status/2124865065664893153",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:16:33.312Z",
+    "result": "Gemini failed: The operation was aborted due to timeout"
   },
   {
     "url": "https://x.com/Nightalize/status/2124919019253981585",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:22:27.057Z",
+    "result": "dropped: sexual_or_nudity, slur_or_hate"
   },
   {
     "url": "https://x.com/CyanBlueFluff/status/2124703561401733623",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:27:04.091Z",
+    "result": "dropped: leak_or_exploit, menus_or_loading"
   },
   {
     "url": "https://x.com/chasmmmmmmmmmmm/status/2125161579230449919",
     "added": "2026-11-24",
-    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)"
+    "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
+    "done": "2026-11-24T12:31:00.021Z",
+    "result": "Gemini failed: The operation was aborted due to timeout"
   }
 ]

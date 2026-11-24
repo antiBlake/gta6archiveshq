@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-24T04:42:06.994Z",
-  "posts": 59,
+  "updated": "2026-11-24T12:06:58.319Z",
+  "posts": 61,
   "platforms": {
     "tiktok": {
       "median_engagement": 2,
-      "posts": 25
+      "posts": 26
     },
     "youtube": {
       "median_engagement": 1888,
       "posts": 13
     },
     "instagram": {
-      "median_engagement": 84,
-      "posts": 21
+      "median_engagement": 130,
+      "posts": 22
     }
   },
   "streamer": {
@@ -30,7 +30,7 @@
     },
     "Lacy": {
       "n": 7,
-      "score": 0.3
+      "score": 1.02
     },
     "IShowSpeed": {
       "n": 2,
@@ -52,11 +52,11 @@
     },
     "guide": {
       "n": 10,
-      "score": 1.54
+      "score": 1.12
     },
     "viral": {
-      "n": 9,
-      "score": 0.25
+      "n": 11,
+      "score": 0.21
     }
   },
   "hookStyle": {
@@ -65,34 +65,34 @@
       "score": 1
     },
     "statement": {
-      "n": 15,
-      "score": 0.17
+      "n": 17,
+      "score": 0.15
     },
     "setup-payoff": {
       "n": 3,
-      "score": 0.5
+      "score": 1.37
     },
     "tip": {
       "n": 7,
-      "score": 1.49
+      "score": 1.07
     }
   },
   "length": {
     "≤20s": {
       "n": 14,
-      "score": 1
+      "score": 1.22
     },
     "21-35s": {
       "n": 22,
-      "score": 1.08
+      "score": 1.04
     },
     ">50s": {
       "n": 8,
-      "score": 1
+      "score": 1.06
     },
     "36-50s": {
-      "n": 7,
-      "score": 0.86
+      "n": 9,
+      "score": 0.25
     }
   },
   "hour": {
@@ -114,15 +114,15 @@
     },
     "11": {
       "n": 4,
-      "score": 1.46
+      "score": 1.09
     },
     "13": {
       "n": 2,
-      "score": 22.2
+      "score": 23.4
     },
     "14": {
       "n": 11,
-      "score": 0.21
+      "score": 1.02
     },
     "15": {
       "n": 7,
@@ -130,11 +130,11 @@
     },
     "16": {
       "n": 2,
-      "score": 0.6
+      "score": 1
     },
     "17": {
       "n": 6,
-      "score": 1.64
+      "score": 3.01
     },
     "19": {
       "n": 3,
@@ -153,8 +153,8 @@
       "score": 1
     },
     "23": {
-      "n": 5,
-      "score": 1.23
+      "n": 7,
+      "score": 0.86
     }
   },
   "best_hooks": [
@@ -165,10 +165,16 @@
       "score": 455.5
     },
     {
+      "hook": "Lacy was bragging about his driving right before this",
+      "platform": "tiktok",
+      "views": 412,
+      "score": 376
+    },
+    {
       "hook": "HOW TO CALL A TAXI IN GTA 6",
       "platform": "tiktok",
-      "views": 212,
-      "score": 166
+      "views": 405,
+      "score": 332.5
     },
     {
       "hook": "JYNXZI IN GTA 6",
@@ -179,14 +185,8 @@
     {
       "hook": "GTA 6 VS GTA 5 VS GTA 4",
       "platform": "tiktok",
-      "views": 80,
-      "score": 90
-    },
-    {
-      "hook": "ISHOWSPEED IN GTA 6",
-      "platform": "tiktok",
-      "views": 66,
-      "score": 83
+      "views": 81,
+      "score": 90.5
     }
   ]
 }

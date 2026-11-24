@@ -48,6 +48,7 @@ const SCHEMA = {
     quality: { type: 'INTEGER' },
     reject_reasons: { type: 'ARRAY', items: { type: 'STRING', enum: ['sexual_or_nudity', 'story_spoiler', 'slur_or_hate', 'real_world_violence', 'leak_or_exploit', 'no_gameplay_just_talking', 'boring', 'blurry_or_low_quality', 'menus_or_loading', 'incomplete_moment', 'not_gta6'] } },
     what_happens: { type: 'STRING' },
+    spoken_language: { type: 'STRING' },
     facecam_box: { type: 'OBJECT', nullable: true, properties: { x: { type: 'NUMBER' }, y: { type: 'NUMBER' }, w: { type: 'NUMBER' }, h: { type: 'NUMBER' } } },
     trim_start: { type: 'NUMBER' },
     trim_end: { type: 'NUMBER' },
@@ -75,6 +76,7 @@ Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and pr
 ${bestHooks().length ? `  Hooks that performed best on THIS page so far (learn their ANGLE/topic only — always write in sentence case, never copy): ${bestHooks().map((h) => `"${h.hook}"`).join('; ')}.\n` : ''}- on_screen_caption: max 32 characters, NO emoji, adds context or a punchline, sentence case.
 - post_caption: 1-2 short punchy sentences (max 140 characters) with exactly one emoji, written for a worldwide audience, ${ctx.who !== 'unknown' ? `naming ${ctx.who}` : ''}. No hashtags, no @handles, no links, no countries or cities, never claim it is official Rockstar news, no invented facts.
 - what_happens: one plain sentence describing the clip.
+- spoken_language: the main language spoken in the clip as an ISO code (e.g. en, es, ru), or "none" if there is little or no speech.
 Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;
   const body = { contents: [{ parts: [{ file_data: { mime_type: 'video/mp4', file_uri: file.uri } }, { text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: SCHEMA, temperature: 0.6 } };
   let lastErr = '';
@@ -102,6 +104,8 @@ export function decide(v) {
   // everything else posts automatically. Only possible rule violations go to Telegram (see riskReasons).
   const hard = ['sexual_or_nudity', 'slur_or_hate', 'real_world_violence', 'leak_or_exploit'];
   if (!v || v.reject_reasons?.some((r) => hard.includes(r))) return { action: 'discard', why: (v?.reject_reasons ?? ['no verdict']).join(', ') };
+  // worldwide English-speaking audience: skip clips that depend on non-English speech
+  if (v.spoken_language && !/^(en|none|)$/i.test(v.spoken_language.trim().slice(0, 4)) && !/^en/i.test(v.spoken_language)) return { action: 'discard', why: `speech is ${v.spoken_language}` };
   if (!v.keep || v.quality < 6) return { action: 'discard', why: `weak clip (quality ${v.quality}${v.reject_reasons?.length ? `, ${v.reject_reasons.join(', ')}` : ''})` };
   return { action: 'auto', why: `quality ${v.quality}/10${v.reject_reasons?.includes('story_spoiler') ? ' (spoiler label added)' : ''}` };
 }

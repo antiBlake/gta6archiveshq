@@ -28,15 +28,35 @@ const seenFile = join(STATE, 'tw_seen.json');
 const seen = new Set(readJSON(seenFile, []));
 const saveSeen = () => writeFileSync(seenFile, JSON.stringify([...seen].slice(-3000)));
 
-// 1. candidates
+// 1. candidates: (a) the most-viewed GTA VI clips of the last 24 h from ANY streamer (incl. non-gaming personalities),
+//                (b) plus the seed streamers in channels.json
 const candidates = [];
+try {
+  const r = await (await fetch('https://gql.twitch.tv/gql', { method: 'POST', headers: { 'Client-ID': 'kimne78kx3ncx6brgo4mv6wki5h1ko', 'content-type': 'application/json' },
+    body: JSON.stringify({ query: '{ game(name: "Grand Theft Auto VI") { clips(first: 40, criteria: { period: LAST_DAY, sort: VIEWS_DESC }) { edges { node { slug viewCount broadcaster { login displayName } } } } } }' }),
+    signal: AbortSignal.timeout(30_000) })).json();
+  const seeds = Object.fromEntries(streamers.map((x) => [x.twitch.toLowerCase(), x]));
+  const perStreamer = {};
+  for (const e of r.data?.game?.clips?.edges ?? []) {
+    const n = e.node, login = n.broadcaster?.login; if (!login) continue;
+    const url = `https://www.twitch.tv/${login}/clip/${n.slug}`;
+    if (seen.has(url) || (perStreamer[login] = (perStreamer[login] ?? 0) + 1) > PER_STREAMER) continue;
+    let info; try { info = JSON.parse(YT(['-j', url])); } catch { continue; }
+    seen.add(url);
+    if ((info.view_count ?? 0) < MIN_VIEWS || info.duration < 6) continue;
+    const st = seeds[login.toLowerCase()] ?? { name: n.broadcaster.displayName, type: 'streamer', twitch: login, handles: {} };
+    candidates.push({ st, url, info });
+  }
+  log(`category: ${candidates.length} candidate clip(s) from ${new Set(candidates.map((c) => c.st.twitch)).size} streamer(s)`);
+} catch (e) { log(`category lookup failed: ${e.message}`); }
+
 for (const st of streamers) {
   let urls = [];
   try { urls = YT(['--flat-playlist', '--playlist-end', '8', '--print', '%(url)s', `https://www.twitch.tv/${st.twitch}/clips?filter=clips&range=24hr`]).split('\n').filter(Boolean); }
   catch (e) { log(`${st.name}: clip list failed: ${e.message.split('\n')[0]}`); continue; }
   let n = 0;
   for (const url of urls) {
-    if (seen.has(url) || n >= PER_STREAMER) continue;
+    if (seen.has(url) || candidates.some((c) => c.url === url) || n >= PER_STREAMER) continue;
     let info;
     try { info = JSON.parse(YT(['-j', url])); } catch { continue; }
     seen.add(url);

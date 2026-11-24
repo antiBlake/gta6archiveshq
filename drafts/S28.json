@@ -1,0 +1,53 @@
+{
+  "id": "S28",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T09:00:00+01:00",
+  "credit": "PatStaresAt",
+  "category": "streamer",
+  "media": "media/edits/S28.mp4",
+  "media_x": "media/edits/S28_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S28.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S28_x.mp4",
+  "hook": "PatStaresAt exploring the back of a liquor store",
+  "captions": {
+    "x": "PatStaresAt searching for the loot in the back room. 💰\n\n🎥 PatStaresAt on Twitch",
+    "tiktok": "PatStaresAt searching for the loot in the back room. 💰 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "PatStaresAt searching for the loot in the back room. 💰 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "PatStaresAt searching for the loot in the back room. 💰\n\n🎥 PatStaresAt on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "PatStaresAt robs a liquor store in GTA 6 and explores the backrooms looking for the safe.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1039283312.mp4",
+    "start": 0,
+    "end": 45,
+    "credit": "twitch.tv/patstaresat",
+    "caption": "Robbing the liquor store",
+    "url": "https://www.twitch.tv/patstaresat/clip/HonestLachrymoseVampireGivePLZ-MoSkwm7cqX2mpf_l",
+    "twitch": "patstaresat",
+    "views": 1975,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.28,
+        "w": 0.23,
+        "x": 0.05,
+        "y": 0.7
+      }
+    }
+  },
+  "notes": "quality 7/10. PatStaresAt robs a liquor store in GTA 6 and explores the backrooms looking for the safe. Source: https://www.twitch.tv/patstaresat/clip/HonestLachrymoseVampireGivePLZ-MoSkwm7cqX2mpf_l (1975 views). Change the on-screen hook with: hook S28: NEW TEXT"
+}

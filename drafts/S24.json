@@ -1,0 +1,53 @@
+{
+  "id": "S24",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-24T14:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S24.mp4",
+  "media_x": "media/edits/S24_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S24.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S24_x.mp4",
+  "hook": "CaseOh is already causing chaos in GTA 6",
+  "captions": {
+    "x": "CaseOh definitely needs to go back to driving school in GTA 6 🚗\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh definitely needs to go back to driving school in GTA 6 🚗 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh definitely needs to go back to driving school in GTA 6 🚗 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh definitely needs to go back to driving school in GTA 6 🚗\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "CaseOh drives an orange convertible through the city and accidentally rams into a person on a scooter.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_64433754.mp4",
+    "start": 0,
+    "end": 30,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "CaseOh vs a scooter",
+    "url": "https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA",
+    "twitch": "caseoh_",
+    "views": 6461,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.225,
+        "w": 0.1875,
+        "x": 0.0125,
+        "y": 0.18
+      }
+    }
+  },
+  "notes": "quality 8/10. CaseOh drives an orange convertible through the city and accidentally rams into a person on a scooter. Source: https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA (6461 views). Change the on-screen hook with: hook S24: NEW TEXT"
+}

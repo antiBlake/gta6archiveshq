@@ -103,6 +103,6 @@
     "url": "https://x.com/chasmmmmmmmmmmm/status/2125161579230449919",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "Gemini failed (will retry): all Gemini models failed — last: gemini-flash-lite-latest 503: This model is currently experiencing high demand. Spikes "
+    "result": "Gemini failed (will retry): The operation was aborted due to timeout"
   }
 ]

@@ -1,0 +1,53 @@
+{
+  "id": "S30",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T11:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S30.mp4",
+  "media_x": "media/edits/S30_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S30.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S30_x.mp4",
+  "hook": "CaseOh called a taxi in GTA 6 and this happened",
+  "captions": {
+    "x": "CaseOh tried to take a taxi in GTA 6 and it went completely wrong 🚖\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh tried to take a taxi in GTA 6 and it went completely wrong 🚖 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh tried to take a taxi in GTA 6 and it went completely wrong 🚖 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh tried to take a taxi in GTA 6 and it went completely wrong 🚖\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CaseOh calls a taxi in GTA 6 and then steals the vehicle when it arrives.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_2665674403.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "Calling a taxi in GTA 6",
+    "url": "https://www.twitch.tv/caseoh_/clip/BlindingAgreeableTurtleKreygasm-OFxrS3_6aayEoRV3",
+    "twitch": "caseoh_",
+    "views": 507,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.3,
+        "w": 0.2,
+        "x": 0.02,
+        "y": 0.15
+      }
+    }
+  },
+  "notes": "quality 8/10. CaseOh calls a taxi in GTA 6 and then steals the vehicle when it arrives. Source: https://www.twitch.tv/caseoh_/clip/BlindingAgreeableTurtleKreygasm-OFxrS3_6aayEoRV3 (507 views). Change the on-screen hook with: hook S30: NEW TEXT"
+}

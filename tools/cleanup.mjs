@@ -24,6 +24,7 @@ for (const f of readdirSync(join(ROOT, 'drafts')).filter((x) => x.endsWith('.jso
   if (stillNeeded) files.forEach((x) => keep.add(x));
 }
 for (const x of ['media/official']) keep.add(x); // official art kit
+try { for (const it of JSON.parse(readFileSync(join(ROOT, 'state', 'comp_pool.json'), 'utf8'))) if (!it.used) keep.add(it.file); } catch {}
 
 function* walk(dir) {
   for (const e of readdirSync(dir, { withFileTypes: true })) {

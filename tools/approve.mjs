@@ -137,14 +137,14 @@ async function poll() {
       await call('sendMessage', { chat_id: CHAT, text: control(cmd).slice(0, 3900) });
       continue;
     }
-    const add = mine && m.text?.match(/^add\s+(https?:\/\/\S+)/i);
+    const add = mine && m.text?.match(/^add\s+(https?:\/\/\S+)(?:\s+credit\s+@?(\S+))?/i);
     if (add) {
       mkdirSync(STATE, { recursive: true });
       const qf = join(STATE, 'link_queue.json');
       const q = existsSync(qf) ? JSON.parse(readFileSync(qf, 'utf8')) : [];
-      if (!q.some((x) => x.url === add[1])) q.push({ url: add[1], added: stamp(), by: 'telegram' });
+      if (!q.some((x) => x.url === add[1])) q.push({ url: add[1], added: stamp(), by: 'telegram', ...(add[2] ? { credit: add[2] } : {}) });
       writeFileSync(qf, JSON.stringify(q, null, 2));
-      await call('sendMessage', { chat_id: CHAT, text: `📥 Added to the queue. Your Mac edits it on its next run (within ~15 min while it's on).` });
+      await call('sendMessage', { chat_id: CHAT, text: `📥 Added. It won't be reposted on its own (platforms block reposts); its best moment goes into the next "moments you missed" compilation (Mon/Wed/Fri).` });
       continue;
     }
     const hook = mine && m.text?.match(/^hook\s+(\S+):\s*([\s\S]+)/i);

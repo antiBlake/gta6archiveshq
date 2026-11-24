@@ -62,7 +62,7 @@ async function processQueue() {
     item.done = new Date().toISOString();
     let info;
     try { info = JSON.parse(YT(['-j', item.url])); } catch (e) { item.result = `info failed: ${e.message.split('\n')[0].slice(0, 120)}`; continue; }
-    const id = `V${Math.max(0, ...all.filter((d) => /^V\d+$/.test(d.id)).map((d) => parseInt(d.id.slice(1)))) + 1}`;
+    const id = `P${Date.now().toString(36)}`; // compilation-pool segment id (unique)
     const src = `media/raw/${id}.mp4`;
     try { YT(['-q', '--ffmpeg-location', BIN, '-f', 'bv*+ba/b', '-S', 'res,fps', '--merge-output-format', 'mp4', '-o', src, item.url]); }
     catch (e) { item.result = 'download failed'; continue; }
@@ -74,31 +74,19 @@ async function processQueue() {
     try { v = await judgeClip(join(ROOT, src), { who, kind: `viral ${platform} post (credit the creator)`, title: (info.title ?? info.description ?? '').slice(0, 200), duration: info.duration ?? 30, layout: info.height > info.width ? 'vertical 9:16 video (may already have its own text)' : 'landscape 16:9 video' }); }
     catch (e) { item.result = `Gemini failed: ${e.message.slice(0, 120)}`; continue; }
     const verdict = decide(v);
-    if (verdict.action === 'discard') { item.result = `dropped: ${verdict.why}`; rmSync(join(ROOT, src), { force: true }); log(`✗ ${id} ${item.url} dropped (${verdict.why})`); continue; }
-    const vertical = info.height > info.width;
+    if (verdict.action === 'discard') { item.result = `dropped: ${verdict.why}`; rmSync(join(ROOT, src), { force: true }); log(`✗ ${item.url} dropped (${verdict.why})`); continue; }
+    // Owner rule (2026-11-24): no straight reposts — platforms flag them as unoriginal (0 views).
+    // Keep the best 6-8 s as a segment for the next compilation instead.
     const dur = info.duration ?? 30;
-    const start = dur <= 90 ? 0 : Math.max(0, v.trim_start ?? 0), end = dur <= 90 ? dur : Math.min(dur, Math.max(start + 15, v.trim_end ?? dur));
-    const layout = vertical ? { layout: 'portrait' } : v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
-    const credit = handle ? `@${handle}` : who;
-    const out = `media/edits/${id}.mp4`;
-    // vertical posts usually carry their own text: only add the credit line, no hook
-    const xOut = render(src, start, end, vertical ? '' : v.hook, credit, out, vertical ? '' : v.on_screen_caption, { ...layout, ...(vertical ? { hookY: 1330 } : {}) });
-    const slot = nextSlot(taken, 'odd'); taken.add(slot);
-    const ch = { name: who, handles: platform === 'X' && handle ? { x: handle } : {}, platform: platform === 'X' && handle ? `X (@${handle})` : platform };
-    const d = {
-      id, platforms: ['x', 'tiktok', 'youtube', 'instagram'], status: 'draft', slot, credit: who, category: 'viral',
-      media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
-      hook: v.hook, captions: captionsFor(ch, v.post_caption),
-      judge: { quality: v.quality, confidence: v.confidence, reasons: v.reject_reasons, what: v.what_happens, model: v.model, layout: layout.layout },
-      source: { file: src, start, end, credit, caption: v.on_screen_caption, layout, url: item.url, likes: info.like_count, views: info.view_count },
-      notes: `Viral ${platform} post by ${who}${handle ? ` (@${handle})` : ''}, ${info.like_count ?? '?'} likes. ${verdict.why}. ${v.what_happens} ${item.url}`,
-    };
-    const auto = verdict.action === 'auto';
-    if (auto) Object.assign(d, { status: 'approved', auto_approved: true });
-    saveDraft(d); all.push(d);
-    if (!auto) sh(process.execPath, ['tools/approve.mjs', 'send', id]);
-    item.result = `${id} ${auto ? 'auto-approved' : 'sent for review'} (${slot})`;
-    log(`${auto ? '✓ auto' : '? review'} ${id} ${who} [${layout.layout}] q${v.quality} → ${slot}`);
+    const s0 = Math.max(0, Math.min(v.trim_start ?? 0, dur - 4));
+    const s1 = Math.min(dur, s0 + Math.min(8, Math.max(5, (v.trim_end ?? s0 + 8) - s0)));
+    const poolF = join(STATE, 'comp_pool.json');
+    const pool = readJSON(poolF, []);
+    pool.push({ id, url: item.url, file: src, start: s0, end: s1, vertical: info.height > info.width, who, handle, platform,
+      caption: v.on_screen_caption || v.hook, what: v.what_happens, quality: v.quality, added: new Date().toISOString() });
+    writeFileSync(poolF, JSON.stringify(pool, null, 2));
+    item.result = `added to compilation pool as ${id} (q${v.quality})`;
+    log(`+ pool ${id}: ${who} "${v.on_screen_caption}" q${v.quality}`);
     made++;
   }
   writeFileSync(qf, JSON.stringify(q, null, 2));
@@ -267,7 +255,7 @@ if (!existsSync(KICK2) || Date.now() - new Date(readFileSync(KICK2, 'utf8')) > 1
 }
 try { git('pull', '--rebase', '--autostash', '-q'); } catch (e) { log(`git pull failed: ${e.message.split('\n')[0]}`); }
 try { await rehooks(); } catch (e) { log(`re-render step failed: ${e.message.split('\n')[0]}`); }
-if (env.GEMINI_API_KEY) { try { log(`link queue: ${await processQueue()} new clip(s)`); } catch (e) { log(`link queue step failed: ${e.message.split('\n')[0]}`); } }
+if (env.GEMINI_API_KEY) { try { log(`link queue: ${await processQueue()} segment(s) added to the compilation pool`); } catch (e) { log(`link queue step failed: ${e.message.split('\n')[0]}`); } }
 const last = existsSync(join(STATE, 'last_scan')) ? new Date(readFileSync(join(STATE, 'last_scan'), 'utf8')) : new Date(0);
 const requested = existsSync(join(STATE, 'clip_request'));
 if (requested || Date.now() - last > SCAN_EVERY_MS) {
@@ -282,6 +270,9 @@ if (!existsSync(kick) || Date.now() - new Date(readFileSync(kick, 'utf8')) > 28 
   try { sh('gh', ['workflow', 'run', 'tick']); writeFileSync(kick, new Date().toISOString()); log('started GitHub publisher'); }
   catch (e) { log(`could not start GitHub publisher: ${e.message.split('\n')[0]}`); }
 }
+
+// Compilations (Mon/Wed/Fri): numbered "moments you missed" video from the pool
+try { const out = sh(process.execPath, ['tools/compile.mjs'], { timeout: 3_600_000 }).trim(); if (!/not a compilation day|need 4/.test(out)) log(out); } catch (e) { log(`compile failed: ${e.message.split('\n')[0]}`); }
 
 // Daily disk cleanup: delete local files of clips posted more than 2 days ago (copies stay online + in Supabase).
 const CLEAN = join(STATE, '.last_cleanup');

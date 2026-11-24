@@ -64,3 +64,8 @@ Quality beats volume. Skip a slot rather than post something weak or unverified.
 - Streamer clips: camera ~30% top, game ~70% (not Twitch's 50/50 portrait). Best source quality, original frame rate, whole Twitch clip.
 - Instagram and TikTok: one video per hour (08:00–23:00). YouTube Shorts get the best engagement (top 3: C5 1.7K, S14 1.5K, S15 1.2K views): give YouTube the strongest clips (quality 8+).
 - New source: viral X / Instagram / TikTok posts with good engagement (state/link_queue.json; Telegram "add <url>"), credited to the original creator.
+
+## 2026-11-24 owner decision: no straight reposts
+- TikTok/Instagram gave 0 views to single reposts of other creators' viral videos ("not eligible for recommendation": unoriginal).
+- Viral links (X/IG/TikTok, Telegram "add <url> [credit @creator]") now go to a compilation pool (best 6-8 s each, Gemini-checked).
+- Mon/Wed/Fri: tools/compile.mjs builds "5 GTA 6 moments you missed this week" (#5..#1, captions + per-segment credit, all creators credited in the caption).

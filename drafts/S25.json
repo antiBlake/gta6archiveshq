@@ -15,39 +15,39 @@
   "media_x": "media/edits/S25_x.mp4",
   "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S25.mp4",
   "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S25_x.mp4",
-  "hook": "CaseOh found out why you shouldn't speed in GTA 6",
+  "hook": "CaseOh is definitely not a safe driver in GTA 6",
   "captions": {
-    "x": "CaseOh might need to work on his driving skills in GTA 6. 🦌\n\n🎥 CaseOh on Twitch",
-    "tiktok": "CaseOh might need to work on his driving skills in GTA 6. 🦌 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
-    "youtube": "CaseOh might need to work on his driving skills in GTA 6. 🦌 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
-    "instagram": "CaseOh might need to work on his driving skills in GTA 6. 🦌\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+    "x": "CaseOh really didn't like that scooter driver. 😂\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh really didn't like that scooter driver. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh really didn't like that scooter driver. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh really didn't like that scooter driver. 😂\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
   },
   "judge": {
     "quality": 8,
-    "confidence": 0.9,
+    "confidence": 0.95,
     "reasons": [],
-    "what": "CaseOh crashes his motorcycle into a deer while driving through a forest in GTA 6, leading to a dramatic ragdoll sequence.",
+    "what": "CaseOh drives an orange car through the city and hits a person on a scooter, causing a funny ragdoll effect.",
     "model": "gemini-3-flash-preview",
     "layout": "stack"
   },
   "source": {
-    "file": "media/raw/tw_2413884263.mp4",
+    "file": "media/raw/tw_64433754.mp4",
     "start": 0,
-    "end": 37,
+    "end": 30,
     "credit": "twitch.tv/caseoh_",
-    "caption": "CaseOh vs a deer",
-    "url": "https://www.twitch.tv/caseoh_/clip/OutstandingPoorMuleTooSpicy-EPG7Mkqz0hYMboIi",
+    "caption": "CaseOh vs a scooter",
+    "url": "https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA",
     "twitch": "caseoh_",
-    "views": 4012,
+    "views": 6531,
     "layout": {
       "layout": "stack",
       "cam": {
-        "h": 0.32,
-        "w": 0.19,
-        "x": 0.015,
-        "y": 0.05
+        "h": 0.25,
+        "w": 0.2,
+        "x": 0.01,
+        "y": 0.18
       }
     }
   },
-  "notes": "quality 8/10. CaseOh crashes his motorcycle into a deer while driving through a forest in GTA 6, leading to a dramatic ragdoll sequence. Source: https://www.twitch.tv/caseoh_/clip/OutstandingPoorMuleTooSpicy-EPG7Mkqz0hYMboIi (4012 views). Change the on-screen hook with: hook S25: NEW TEXT"
+  "notes": "quality 8/10. CaseOh drives an orange car through the city and hits a person on a scooter, causing a funny ragdoll effect. Source: https://www.twitch.tv/caseoh_/clip/BlueBlitheMarjoramWoofer-ZSasg_aIiI5hO6pA (6531 views). Change the on-screen hook with: hook S25: NEW TEXT"
 }

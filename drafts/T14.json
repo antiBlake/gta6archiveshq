@@ -6,8 +6,8 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
-  "slot": "2026-11-22T20:00:00+01:00",
+  "status": "approved",
+  "slot": "2026-11-24T17:00:00+01:00",
   "credit": "jayvee",
   "category": "guide",
   "media": "media/edits/T14.mp4",
@@ -47,5 +47,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "21/11/2026, 21:37:23 WAT",
-  "message_id": 85
+  "message_id": 85,
+  "approved": "owner: approve all (2026-11-24)"
 }

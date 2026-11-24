@@ -6,8 +6,8 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
-  "slot": "2026-11-23T19:00:00+01:00",
+  "status": "approved",
+  "slot": "2026-11-24T20:00:00+01:00",
   "credit": "Hazard",
   "category": "guide",
   "media": "media/edits/T18.mp4",
@@ -47,5 +47,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "23/11/2026, 09:54:50 WAT",
-  "message_id": 97
+  "message_id": 97,
+  "approved": "owner: approve all (2026-11-24)"
 }

@@ -3,12 +3,13 @@
   "platforms": [
     "x"
   ],
-  "status": "sent",
+  "status": "approved",
   "credit": "PlayStation Blog",
   "captions": {
     "x": "GTA 6 news: Thank you for making Grand Theft Auto VI the biggest launch in PlayStation history\n\nSource: PlayStation Blog 🔗 https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/"
   },
   "notes": "Official source (PlayStation Blog). Check the article before approving. https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/",
   "sent_at": "24/11/2026, 00:51:42 WAT",
-  "message_id": 102
+  "message_id": 102,
+  "approved": "owner: approve all (2026-11-24)"
 }

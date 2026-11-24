@@ -6,8 +6,8 @@
     "youtube",
     "instagram"
   ],
-  "status": "sent",
-  "slot": "2026-11-22T18:00:00+01:00",
+  "status": "approved",
+  "slot": "2026-11-24T21:00:00+01:00",
   "credit": "GTA Series Videos",
   "category": "guide",
   "media": "media/edits/T12.mp4",
@@ -48,5 +48,6 @@
     "mission guide: may show story content"
   ],
   "sent_at": "21/11/2026, 18:07:53 WAT",
-  "message_id": 80
+  "message_id": 80,
+  "approved": "owner: approve all (2026-11-24)"
 }

@@ -58,7 +58,7 @@ async function processQueue() {
   const all = drafts();
   const taken = new Set(all.map((d) => d.slot).filter(Boolean));
   let made = 0;
-  for (const item of todo.slice(0, 4)) {
+  for (const item of todo.slice(0, 10)) {
     item.done = new Date().toISOString();
     let info;
     try { info = JSON.parse(YT(['-j', item.url])); } catch (e) { item.result = `info failed: ${e.message.split('\n')[0].slice(0, 120)}`; continue; }

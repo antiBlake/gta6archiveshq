@@ -1,0 +1,53 @@
+{
+  "id": "S29",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T10:00:00+01:00",
+  "credit": "ohnePixel",
+  "category": "streamer",
+  "media": "media/edits/S29.mp4",
+  "media_x": "media/edits/S29_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S29.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-24/S29_x.mp4",
+  "hook": "OhnePixel chose the brutal truth option",
+  "captions": {
+    "x": "OhnePixel did not expect that response from the yoga instructor. 💀\n\n🎥 ohnePixel on Twitch",
+    "tiktok": "OhnePixel did not expect that response from the yoga instructor. 💀 🎥 ohnePixel on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "OhnePixel did not expect that response from the yoga instructor. 💀 🎥 ohnePixel on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "OhnePixel did not expect that response from the yoga instructor. 💀\n\n🎥 ohnePixel on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "ohnePixel chooses the brutal truth in a yoga class cutscene and reacts with amusement and embarrassment as the character speaks.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1517290641.mp4",
+    "start": 0,
+    "end": 19,
+    "credit": "twitch.tv/ohnepixel",
+    "caption": "Awkward yoga truth",
+    "url": "https://www.twitch.tv/ohnepixel/clip/SourAggressiveLaptopBloodTrail-uxWVwJyY7CRC1KuJ",
+    "twitch": "ohnepixel",
+    "views": 1186,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.35,
+        "w": 0.18,
+        "x": 0.03,
+        "y": 0.61
+      }
+    }
+  },
+  "notes": "quality 8/10. ohnePixel chooses the brutal truth in a yoga class cutscene and reacts with amusement and embarrassment as the character speaks. Source: https://www.twitch.tv/ohnepixel/clip/SourAggressiveLaptopBloodTrail-uxWVwJyY7CRC1KuJ (1186 views). Change the on-screen hook with: hook S29: NEW TEXT"
+}

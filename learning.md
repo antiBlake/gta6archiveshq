@@ -30,3 +30,11 @@
 - Length: ≤20s 1.22× (14), >50s 1.06× (8), 21-35s 1.04× (22), 36-50s 0.25× (9)
 - Best hours (WAT): 17 3.01× (6), 11 1.09× (4), 14 1.02× (11), 0 1× (3), 19 1× (3), 20 1× (5), 22 1× (3), 23 0.86× (7), 8 0.83× (3), 15 0.65× (7)
 - Top hooks: "HOW TO BEAT GEAR UP" (tiktok 471 views); "Lacy was bragging about his driving right before this" (tiktok 412 views); "HOW TO CALL A TAXI IN GTA 6" (tiktok 405 views); "JYNXZI IN GTA 6" (tiktok 157 views); "GTA 6 VS GTA 5 VS GTA 4" (tiktok 81 views)
+
+### 2026-11-25 — 47 posts scored
+- Streamers: Ludwig 1× (8), Lacy 1× (7), CaseOh 0.3× (7)
+- Source types: viral 1.57× (3), creator 1× (16), streamer 1× (26)
+- Hook styles: setup-payoff 1.85× (3), all-caps 1× (33), statement 0.72× (11)
+- Length: ≤20s 1.87× (10), >50s 1.06× (8), 21-35s 1× (17), 36-50s 0.43× (4)
+- Best hours (WAT): 17 3.17× (4), 15 1.65× (4), 14 1.06× (9), 0 1× (3), 20 1× (5), 22 1× (3), 19 0.99× (3), 8 0.82× (3), 16 0.43× (4)
+- Top hooks: "Lacy was bragging about his driving right before this" (tiktok 412 views); "GTA 6 VS GTA 5 VS GTA 4" (tiktok 81 views); "ISHOWSPEED IN GTA 6" (tiktok 66 views); "XQC IN GTA 6" (tiktok 74 views); "THIS NPC HAD ENOUGH" (tiktok 74 views)

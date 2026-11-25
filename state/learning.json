@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-24T12:06:58.319Z",
-  "posts": 61,
+  "updated": "2026-11-25T03:29:13.330Z",
+  "posts": 47,
   "platforms": {
     "tiktok": {
       "median_engagement": 2,
-      "posts": 26
+      "posts": 19
     },
     "youtube": {
-      "median_engagement": 1888,
+      "median_engagement": 1927,
       "posts": 13
     },
     "instagram": {
-      "median_engagement": 130,
-      "posts": 22
+      "median_engagement": 84,
+      "posts": 15
     }
   },
   "streamer": {
@@ -21,8 +21,8 @@
       "score": 27.4
     },
     "CaseOh": {
-      "n": 3,
-      "score": 1
+      "n": 7,
+      "score": 0.3
     },
     "Ludwig": {
       "n": 8,
@@ -30,15 +30,11 @@
     },
     "Lacy": {
       "n": 7,
-      "score": 1.02
+      "score": 1
     },
     "IShowSpeed": {
       "n": 2,
       "score": 33.8
-    },
-    "Jynxzi": {
-      "n": 2,
-      "score": 40
     }
   },
   "source": {
@@ -47,52 +43,48 @@
       "score": 1
     },
     "streamer": {
-      "n": 24,
+      "n": 26,
       "score": 1
     },
     "guide": {
-      "n": 10,
-      "score": 1.12
+      "n": 2,
+      "score": 2.85
     },
     "viral": {
-      "n": 11,
-      "score": 0.21
+      "n": 3,
+      "score": 1.57
     }
   },
   "hookStyle": {
     "all-caps": {
-      "n": 34,
+      "n": 33,
       "score": 1
     },
     "statement": {
-      "n": 17,
-      "score": 0.15
+      "n": 11,
+      "score": 0.72
     },
     "setup-payoff": {
       "n": 3,
-      "score": 1.37
-    },
-    "tip": {
-      "n": 7,
-      "score": 1.07
+      "score": 1.85
     }
   },
   "length": {
     "≤20s": {
-      "n": 14,
-      "score": 1.22
+      "n": 10,
+      "score": 1.87
     },
     "21-35s": {
-      "n": 22,
-      "score": 1.04
+      "n": 17,
+      "score": 1
     },
     ">50s": {
       "n": 8,
       "score": 1.06
     },
     "36-50s": {
-      "n": 9,
-      "score": 0.25
+      "n": 4,
+      "score": 0.43
     }
   },
   "hour": {
@@ -106,39 +98,35 @@
     },
     "8": {
       "n": 3,
-      "score": 0.83
-    },
-    "9": {
-      "n": 2,
-      "score": 40
+      "score": 0.82
     },
     "11": {
-      "n": 4,
-      "score": 1.09
+      "n": 2,
+      "score": 1
     },
     "13": {
       "n": 2,
       "score": 23.4
     },
     "14": {
-      "n": 11,
-      "score": 1.02
+      "n": 9,
+      "score": 1.06
     },
     "15": {
-      "n": 7,
-      "score": 0.65
+      "n": 4,
+      "score": 1.65
     },
     "16": {
-      "n": 2,
-      "score": 1
+      "n": 4,
+      "score": 0.43
     },
     "17": {
-      "n": 6,
-      "score": 3.01
+      "n": 4,
+      "score": 3.17
     },
     "19": {
       "n": 3,
-      "score": 1
+      "score": 0.99
     },
     "20": {
       "n": 5,
@@ -153,17 +141,11 @@
       "score": 1
     },
     "23": {
-      "n": 7,
-      "score": 0.86
+      "n": 2,
+      "score": 33.8
     }
   },
   "best_hooks": [
-    {
-      "hook": "HOW TO BEAT GEAR UP",
-      "platform": "tiktok",
-      "views": 471,
-      "score": 455.5
-    },
     {
       "hook": "Lacy was bragging about his driving right before this",
       "platform": "tiktok",
@@ -171,22 +153,28 @@
       "score": 376
     },
     {
-      "hook": "HOW TO CALL A TAXI IN GTA 6",
-      "platform": "tiktok",
-      "views": 405,
-      "score": 332.5
-    },
-    {
-      "hook": "JYNXZI IN GTA 6",
-      "platform": "tiktok",
-      "views": 157,
-      "score": 98.5
-    },
-    {
       "hook": "GTA 6 VS GTA 5 VS GTA 4",
       "platform": "tiktok",
       "views": 81,
       "score": 90.5
+    },
+    {
+      "hook": "ISHOWSPEED IN GTA 6",
+      "platform": "tiktok",
+      "views": 66,
+      "score": 83
+    },
+    {
+      "hook": "XQC IN GTA 6",
+      "platform": "tiktok",
+      "views": 74,
+      "score": 67
+    },
+    {
+      "hook": "THIS NPC HAD ENOUGH",
+      "platform": "tiktok",
+      "views": 74,
+      "score": 57
     }
   ]
 }

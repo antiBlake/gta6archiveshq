@@ -1,0 +1,53 @@
+{
+  "id": "S38",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T19:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S38.mp4",
+  "media_x": "media/edits/S38_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S38.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S38_x.mp4",
+  "hook": "CaseOh was bragging about his driving before this",
+  "captions": {
+    "x": "CaseOh got what he deserved 💀\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh got what he deserved 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh got what he deserved 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh got what he deserved 💀\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CaseOh mocks a scooter parked next to his motorcycle in GTA 6 before crashing into a barrier and getting wasted.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_4270004280.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "Instant karma",
+    "url": "https://www.twitch.tv/caseoh_/clip/SarcasticBlitheAyeayeSwiftRage-OuxqysQFl8gnMDQH",
+    "twitch": "caseoh_",
+    "views": 997,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.25,
+        "w": 0.2,
+        "x": 0.02,
+        "y": 0.05
+      }
+    }
+  },
+  "notes": "quality 8/10. CaseOh mocks a scooter parked next to his motorcycle in GTA 6 before crashing into a barrier and getting wasted. Source: https://www.twitch.tv/caseoh_/clip/SarcasticBlitheAyeayeSwiftRage-OuxqysQFl8gnMDQH (997 views). Change the on-screen hook with: hook S38: NEW TEXT"
+}

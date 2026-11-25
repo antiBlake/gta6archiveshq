@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "auto_approved": true,
   "slot": "2026-11-25T15:00:00+01:00",
   "credit": "BruceGreene",
@@ -49,5 +49,28 @@
       }
     }
   },
-  "notes": "quality 8/10. BruceGreene laughs as he uses a shovel to knock out a group of NPCs in a Vice City alleyway. Source: https://www.twitch.tv/brucegreene/clip/FunnyAverageDiamond4Head-rUU4lEnhtbjGMkPr (1222 views). Change the on-screen hook with: hook S34: NEW TEXT"
+  "notes": "quality 8/10. BruceGreene laughs as he uses a shovel to knock out a group of NPCs in a Vice City alleyway. Source: https://www.twitch.tv/brucegreene/clip/FunnyAverageDiamond4Head-rUU4lEnhtbjGMkPr (1222 views). Change the on-screen hook with: hook S34: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b06ca1412688bcaa7bdcc39",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T14:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "YouTube API: YouTube upload start failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has "
+    },
+    "instagram": {
+      "id": "6b06ca17d2d05d9666452d8f",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

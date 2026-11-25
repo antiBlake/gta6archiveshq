@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T16:00:00+01:00",
   "credit": "NickEh30",
@@ -49,5 +49,24 @@
       }
     }
   },
-  "notes": "quality 8/10. NickEh30 performs a motorcycle burnout on a fallen NPC's head while making exaggerated psycho faces. Source: https://www.twitch.tv/nickeh30/clip/ModernPrettySalmonFloof-NOA94s2iCBKUu7Kb (897 views). Change the on-screen hook with: hook S35: NEW TEXT"
+  "notes": "quality 8/10. NickEh30 performs a motorcycle burnout on a fallen NPC's head while making exaggerated psycho faces. Source: https://www.twitch.tv/nickeh30/clip/ModernPrettySalmonFloof-NOA94s2iCBKUu7Kb (897 views). Change the on-screen hook with: hook S35: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b06ca19e3ac2fcff7a088ea",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T15:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b06ca19d2a08dc61b0efc24",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T15:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

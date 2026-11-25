@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "auto_approved": true,
   "slot": "2026-11-25T14:00:00+01:00",
   "credit": "lilypichu",
@@ -49,5 +49,28 @@
       }
     }
   },
-  "notes": "quality 8/10. Lilypichu repeatedly punches NPCs in GTA 6 while trying to figure out how to put down a drink. Source: https://www.twitch.tv/lilypichu/clip/RelievedTolerantMetalPunchTrees-1SrUQSJUwg6PKugm (6394 views). Change the on-screen hook with: hook S33: NEW TEXT"
+  "notes": "quality 8/10. Lilypichu repeatedly punches NPCs in GTA 6 while trying to figure out how to put down a drink. Source: https://www.twitch.tv/lilypichu/clip/RelievedTolerantMetalPunchTrees-1SrUQSJUwg6PKugm (6394 views). Change the on-screen hook with: hook S33: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b06ca10d2d05d9666452c23",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T13:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "YouTube API: YouTube upload start failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has "
+    },
+    "instagram": {
+      "id": "6b06ca12d2a08dc61b0ef9db",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

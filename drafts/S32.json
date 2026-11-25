@@ -1,0 +1,53 @@
+{
+  "id": "S32",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T13:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S32.mp4",
+  "media_x": "media/edits/S32_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S32.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S32_x.mp4",
+  "hook": "CaseOh was bragging about his driving before this",
+  "captions": {
+    "x": "CaseOh finds out the hard way. 💀\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh finds out the hard way. 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh finds out the hard way. 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh finds out the hard way. 💀\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CaseOh crashes his motorcycle into a van on a bridge.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_989303877.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "Famous last words",
+    "url": "https://www.twitch.tv/caseoh_/clip/SneakyZanyReindeerGrammarKing-kpyL3xCv90okawFH",
+    "twitch": "caseoh_",
+    "views": 845,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.281,
+        "w": 0.176,
+        "x": 0.027,
+        "y": 0.122
+      }
+    }
+  },
+  "notes": "quality 8/10. CaseOh crashes his motorcycle into a van on a bridge. Source: https://www.twitch.tv/caseoh_/clip/SneakyZanyReindeerGrammarKing-kpyL3xCv90okawFH (845 views). Change the on-screen hook with: hook S32: NEW TEXT"
+}

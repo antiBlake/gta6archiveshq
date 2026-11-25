@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T23:00:00+01:00",
   "credit": "PatStaresAt",
@@ -43,5 +43,24 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. A random NPC suddenly attacks the player's character in the middle of the street, and PatStaresAt reacts in disbelief. Source: https://www.twitch.tv/patstaresat/clip/VivaciousTriumphantCheetahTBTacoLeft-osslbJRdiUFXJ3SL (575 views). Change the on-screen hook with: hook S41: NEW TEXT"
+  "notes": "quality 8/10. A random NPC suddenly attacks the player's character in the middle of the street, and PatStaresAt reacts in disbelief. Source: https://www.twitch.tv/patstaresat/clip/VivaciousTriumphantCheetahTBTacoLeft-osslbJRdiUFXJ3SL (575 views). Change the on-screen hook with: hook S41: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b073816650fcc0cfee56d30",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T22:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0738162c45af88d79f0598",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T22:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

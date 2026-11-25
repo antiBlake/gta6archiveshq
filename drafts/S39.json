@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T21:00:00+01:00",
   "credit": "HasanAbi",
@@ -43,5 +43,24 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. HasanAbi tries to use a parachute from a rooftop in GTA 6 and immediately hits a bridge, getting wasted. Source: https://www.twitch.tv/hasanabi/clip/GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR (718 views). Change the on-screen hook with: hook S39: NEW TEXT"
+  "notes": "quality 8/10. HasanAbi tries to use a parachute from a rooftop in GTA 6 and immediately hits a bridge, getting wasted. Source: https://www.twitch.tv/hasanabi/clip/GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR (718 views). Change the on-screen hook with: hook S39: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0738122c45af88d79f0454",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T20:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0738122c45af88d79f04a8",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T20:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

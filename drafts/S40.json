@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T22:00:00+01:00",
   "credit": "TheBurntPeanut",
@@ -43,5 +43,24 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. TheBurntPeanut tries to escape in a jet while police surround him on the runway. Source: https://www.twitch.tv/theburntpeanut/clip/GloriousShortRamenANELE-1Bn-506RuvLm-UJb (714 views). Change the on-screen hook with: hook S40: NEW TEXT"
+  "notes": "quality 8/10. TheBurntPeanut tries to escape in a jet while police surround him on the runway. Source: https://www.twitch.tv/theburntpeanut/clip/GloriousShortRamenANELE-1Bn-506RuvLm-UJb (714 views). Change the on-screen hook with: hook S40: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b073814650fcc0cfee56c3b",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T21:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b073814650fcc0cfee56c6e",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T21:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

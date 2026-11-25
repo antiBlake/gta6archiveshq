@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T11:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh calls a taxi in GTA 6 and then steals the vehicle when it arrives. Source: https://www.twitch.tv/caseoh_/clip/BlindingAgreeableTurtleKreygasm-OFxrS3_6aayEoRV3 (507 views). Change the on-screen hook with: hook S30: NEW TEXT"
+  "notes": "quality 8/10. CaseOh calls a taxi in GTA 6 and then steals the vehicle when it arrives. Source: https://www.twitch.tv/caseoh_/clip/BlindingAgreeableTurtleKreygasm-OFxrS3_6aayEoRV3 (507 views). Change the on-screen hook with: hook S30: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b064f545dd36d2dd0d4e4c0",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T10:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "B_60zh_xDNQ",
+      "url": "https://www.youtube.com/shorts/B_60zh_xDNQ",
+      "dueAt": "2026-11-25T10:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b064f5a608549ccf257f26c",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

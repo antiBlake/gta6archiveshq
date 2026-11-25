@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T12:00:00+01:00",
   "credit": "Kai Cenat",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. Kai Cenat crashes his car into a wall while playing Grand Theft Auto VI and reacts dramatically. Source: https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh (3484 views). Change the on-screen hook with: hook S31: NEW TEXT"
+  "notes": "quality 8/10. Kai Cenat crashes his car into a wall while playing Grand Theft Auto VI and reacts dramatically. Source: https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh (3484 views). Change the on-screen hook with: hook S31: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b064f5c608549ccf257f4d4",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T11:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "-fMAYE34ddQ",
+      "url": "https://www.youtube.com/shorts/-fMAYE34ddQ",
+      "dueAt": "2026-11-25T11:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b064f6240e1d58d12f1646b",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T11:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

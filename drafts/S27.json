@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T08:00:00+01:00",
   "credit": "CohhCarnage",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. CohhCarnage reacts in disbelief as a UFO flies away after abducting an NPC in GTA 6. Source: https://www.twitch.tv/cohhcarnage/clip/ArtsyGenerousAniseDendiFace-NxwfD1GOBiYOHbfx (18022 views). Change the on-screen hook with: hook S27: NEW TEXT"
+  "notes": "quality 8/10. CohhCarnage reacts in disbelief as a UFO flies away after abducting an NPC in GTA 6. Source: https://www.twitch.tv/cohhcarnage/clip/ArtsyGenerousAniseDendiFace-NxwfD1GOBiYOHbfx (18022 views). Change the on-screen hook with: hook S27: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b064f439cddd8483aa25c3b",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T07:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "ik1_3g4iAfo",
+      "url": "https://www.youtube.com/shorts/ik1_3g4iAfo",
+      "dueAt": "2026-11-25T07:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b064f4b22dfb7833a74c306",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T07:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

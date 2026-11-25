@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T10:00:00+01:00",
   "credit": "ohnePixel",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. ohnePixel chooses the brutal truth in a yoga class cutscene and reacts with amusement and embarrassment as the character speaks. Source: https://www.twitch.tv/ohnepixel/clip/SourAggressiveLaptopBloodTrail-uxWVwJyY7CRC1KuJ (1186 views). Change the on-screen hook with: hook S29: NEW TEXT"
+  "notes": "quality 8/10. ohnePixel chooses the brutal truth in a yoga class cutscene and reacts with amusement and embarrassment as the character speaks. Source: https://www.twitch.tv/ohnepixel/clip/SourAggressiveLaptopBloodTrail-uxWVwJyY7CRC1KuJ (1186 views). Change the on-screen hook with: hook S29: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b064f4c22dfb7833a74c736",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T09:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "hHXa433MT04",
+      "url": "https://www.youtube.com/shorts/hHXa433MT04",
+      "dueAt": "2026-11-25T09:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b064f5240e1d58d12f14e34",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T09:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

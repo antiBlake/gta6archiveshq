@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "auto_approved": true,
   "slot": "2026-11-25T09:00:00+01:00",
   "credit": "PatStaresAt",
@@ -49,5 +49,28 @@
       }
     }
   },
-  "notes": "quality 7/10. PatStaresAt robs a liquor store in GTA 6 and explores the backrooms looking for the safe. Source: https://www.twitch.tv/patstaresat/clip/HonestLachrymoseVampireGivePLZ-MoSkwm7cqX2mpf_l (1975 views). Change the on-screen hook with: hook S28: NEW TEXT"
+  "notes": "quality 7/10. PatStaresAt robs a liquor store in GTA 6 and explores the backrooms looking for the safe. Source: https://www.twitch.tv/patstaresat/clip/HonestLachrymoseVampireGivePLZ-MoSkwm7cqX2mpf_l (1975 views). Change the on-screen hook with: hook S28: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b064f649cddd8483aa27ac3",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T08:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "YouTube API: YouTube upload start failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has "
+    },
+    "instagram": {
+      "id": "6b064f6a22dfb7833a74e56f",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T08:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

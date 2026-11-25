@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "publish_error",
   "auto_approved": true,
   "slot": "2026-11-25T13:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,28 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh crashes his motorcycle into a van on a bridge. Source: https://www.twitch.tv/caseoh_/clip/SneakyZanyReindeerGrammarKing-kpyL3xCv90okawFH (845 views). Change the on-screen hook with: hook S32: NEW TEXT"
+  "notes": "quality 8/10. CaseOh crashes his motorcycle into a van on a bridge. Source: https://www.twitch.tv/caseoh_/clip/SneakyZanyReindeerGrammarKing-kpyL3xCv90okawFH (845 views). Change the on-screen hook with: hook S32: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b06c209a06cd4c4bb43f3e8",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T12:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "error": "YouTube API: YouTube upload start failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has "
+    },
+    "instagram": {
+      "id": "6b06c20f54905beab83c83b1",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T12:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

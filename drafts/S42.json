@@ -1,0 +1,53 @@
+{
+  "id": "S42",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T08:00:00+01:00",
+  "credit": "vanillamace",
+  "category": "streamer",
+  "media": "media/edits/S42.mp4",
+  "media_x": "media/edits/S42_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S42.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S42_x.mp4",
+  "hook": "Schlatt gave the most brutal review of GTA 6",
+  "captions": {
+    "x": "Even Schlatt had to roast vanillamace's gameplay 💀\n\n🎥 vanillamace on Twitch",
+    "tiktok": "Even Schlatt had to roast vanillamace's gameplay 💀 🎥 vanillamace on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Even Schlatt had to roast vanillamace's gameplay 💀 🎥 vanillamace on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Even Schlatt had to roast vanillamace's gameplay 💀\n\n🎥 vanillamace on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "A viewer donates a brutal roast of the gameplay while vanillamace is struggling to move around in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_2878971646.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/vanillamace",
+    "caption": "Schlatt's brutal review",
+    "url": "https://www.twitch.tv/vanillamace/clip/HeartlessCreativePizzaPhilosoraptor-yCzQjO64c1vj_twP",
+    "twitch": "vanillamace",
+    "views": 620,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.3125,
+        "w": 0.2083,
+        "x": 0.012,
+        "y": 0.044
+      }
+    }
+  },
+  "notes": "quality 8/10. A viewer donates a brutal roast of the gameplay while vanillamace is struggling to move around in GTA 6. Source: https://www.twitch.tv/vanillamace/clip/HeartlessCreativePizzaPhilosoraptor-yCzQjO64c1vj_twP (620 views). Change the on-screen hook with: hook S42: NEW TEXT"
+}

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T08:00:00+01:00",
   "credit": "vanillamace",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. A viewer donates a brutal roast of the gameplay while vanillamace is struggling to move around in GTA 6. Source: https://www.twitch.tv/vanillamace/clip/HeartlessCreativePizzaPhilosoraptor-yCzQjO64c1vj_twP (620 views). Change the on-screen hook with: hook S42: NEW TEXT"
+  "notes": "quality 8/10. A viewer donates a brutal roast of the gameplay while vanillamace is struggling to move around in GTA 6. Source: https://www.twitch.tv/vanillamace/clip/HeartlessCreativePizzaPhilosoraptor-yCzQjO64c1vj_twP (620 views). Change the on-screen hook with: hook S42: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0769809f6dda31cca43636",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T07:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "JBeNAcKvJgA",
+      "url": "https://www.youtube.com/shorts/JBeNAcKvJgA",
+      "dueAt": "2026-11-26T07:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b076985a791bea1b23434b3",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T07:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

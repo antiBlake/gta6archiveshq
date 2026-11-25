@@ -1,0 +1,53 @@
+{
+  "id": "S35",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T16:00:00+01:00",
+  "credit": "NickEh30",
+  "category": "streamer",
+  "media": "media/edits/S35.mp4",
+  "media_x": "media/edits/S35_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S35.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S35_x.mp4",
+  "hook": "NickEh30 might have spent too much time in Leonida",
+  "captions": {
+    "x": "NickEh30 is really embracing the chaos of GTA 6. He might need a break from the streets of Leonida 💀\n\n🎥 NickEh30 on Twitch",
+    "tiktok": "NickEh30 is really embracing the chaos of GTA 6. He might need a break from the streets of Leonida 💀 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "NickEh30 is really embracing the chaos of GTA 6. He might need a break from the streets of Leonida 💀 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "NickEh30 is really embracing the chaos of GTA 6. He might need a break from the streets of Leonida 💀\n\n🎥 NickEh30 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "NickEh30 performs a motorcycle burnout on a fallen NPC's head while making exaggerated psycho faces.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_2350855652.mp4",
+    "start": 0,
+    "end": 18,
+    "credit": "twitch.tv/nickeh30",
+    "caption": "Nick goes psycho",
+    "url": "https://www.twitch.tv/nickeh30/clip/ModernPrettySalmonFloof-NOA94s2iCBKUu7Kb",
+    "twitch": "nickeh30",
+    "views": 897,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.32,
+        "w": 0.22,
+        "x": 0,
+        "y": 0.31
+      }
+    }
+  },
+  "notes": "quality 8/10. NickEh30 performs a motorcycle burnout on a fallen NPC's head while making exaggerated psycho faces. Source: https://www.twitch.tv/nickeh30/clip/ModernPrettySalmonFloof-NOA94s2iCBKUu7Kb (897 views). Change the on-screen hook with: hook S35: NEW TEXT"
+}

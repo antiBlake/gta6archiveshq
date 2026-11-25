@@ -1,0 +1,47 @@
+{
+  "id": "S39",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T21:00:00+01:00",
+  "credit": "HasanAbi",
+  "category": "streamer",
+  "media": "media/edits/S39.mp4",
+  "media_x": "media/edits/S39_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S39.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S39_x.mp4",
+  "hook": "HasanAbi wanted to base jump and this happened",
+  "captions": {
+    "x": "HasanAbi learns the hard way that parachuting in GTA 6 is harder than it looks 💀\n\n🎥 HasanAbi on Twitch",
+    "tiktok": "HasanAbi learns the hard way that parachuting in GTA 6 is harder than it looks 💀 🎥 HasanAbi on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "HasanAbi learns the hard way that parachuting in GTA 6 is harder than it looks 💀 🎥 HasanAbi on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "HasanAbi learns the hard way that parachuting in GTA 6 is harder than it looks 💀\n\n🎥 HasanAbi on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "HasanAbi tries to use a parachute from a rooftop in GTA 6 and immediately hits a bridge, getting wasted.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/tw_3841296071.mp4",
+    "start": 0,
+    "end": 20,
+    "credit": "twitch.tv/hasanabi",
+    "caption": "Bro forgot how to parachute",
+    "url": "https://www.twitch.tv/hasanabi/clip/GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR",
+    "twitch": "hasanabi",
+    "views": 718,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. HasanAbi tries to use a parachute from a rooftop in GTA 6 and immediately hits a bridge, getting wasted. Source: https://www.twitch.tv/hasanabi/clip/GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR (718 views). Change the on-screen hook with: hook S39: NEW TEXT"
+}

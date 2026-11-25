@@ -1,0 +1,47 @@
+{
+  "id": "S40",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T22:00:00+01:00",
+  "credit": "TheBurntPeanut",
+  "category": "streamer",
+  "media": "media/edits/S40.mp4",
+  "media_x": "media/edits/S40_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S40.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S40_x.mp4",
+  "hook": "TheBurntPeanut trying to escape the cops",
+  "captions": {
+    "x": "TheBurntPeanut barely escapes the police in a jet ✈️\n\n🎥 TheBurntPeanut on Twitch",
+    "tiktok": "TheBurntPeanut barely escapes the police in a jet ✈️ 🎥 TheBurntPeanut on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "TheBurntPeanut barely escapes the police in a jet ✈️ 🎥 TheBurntPeanut on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "TheBurntPeanut barely escapes the police in a jet ✈️\n\n🎥 TheBurntPeanut on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "TheBurntPeanut tries to escape in a jet while police surround him on the runway.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/tw_1408713125.mp4",
+    "start": 0,
+    "end": 22,
+    "credit": "twitch.tv/theburntpeanut",
+    "caption": "Plane almost explodes",
+    "url": "https://www.twitch.tv/theburntpeanut/clip/GloriousShortRamenANELE-1Bn-506RuvLm-UJb",
+    "twitch": "theburntpeanut",
+    "views": 714,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. TheBurntPeanut tries to escape in a jet while police surround him on the runway. Source: https://www.twitch.tv/theburntpeanut/clip/GloriousShortRamenANELE-1Bn-506RuvLm-UJb (714 views). Change the on-screen hook with: hook S40: NEW TEXT"
+}

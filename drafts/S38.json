@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T19:00:00+01:00",
   "credit": "CaseOh",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. CaseOh mocks a scooter parked next to his motorcycle in GTA 6 before crashing into a barrier and getting wasted. Source: https://www.twitch.tv/caseoh_/clip/SarcasticBlitheAyeayeSwiftRage-OuxqysQFl8gnMDQH (997 views). Change the on-screen hook with: hook S38: NEW TEXT"
+  "notes": "quality 8/10. CaseOh mocks a scooter parked next to his motorcycle in GTA 6 before crashing into a barrier and getting wasted. Source: https://www.twitch.tv/caseoh_/clip/SarcasticBlitheAyeayeSwiftRage-OuxqysQFl8gnMDQH (997 views). Change the on-screen hook with: hook S38: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0702237865fd0c91546da5",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T18:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "JWW-meMhvEk",
+      "url": "https://www.youtube.com/shorts/JWW-meMhvEk",
+      "dueAt": "2026-11-25T18:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b070228304332fdc8e03f92",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T18:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

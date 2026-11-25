@@ -1,0 +1,53 @@
+{
+  "id": "S43",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T09:00:00+01:00",
+  "credit": "NickEh30",
+  "category": "streamer",
+  "media": "media/edits/S43.mp4",
+  "media_x": "media/edits/S43_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S43.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S43_x.mp4",
+  "hook": "NickEh30 checks Jason and Lucia criminal profiles",
+  "captions": {
+    "x": "NickEh30 found out the truth about Jason and Lucia. 😳\n\n🎥 NickEh30 on Twitch",
+    "tiktok": "NickEh30 found out the truth about Jason and Lucia. 😳 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "NickEh30 found out the truth about Jason and Lucia. 😳 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "NickEh30 found out the truth about Jason and Lucia. 😳\n\n🎥 NickEh30 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "NickEh30 checks the criminal profiles of Jason and Lucia in GTA 6 and discovers both of them are classified as psycho.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_3921435208.mp4",
+    "start": 0,
+    "end": 12,
+    "credit": "twitch.tv/nickeh30",
+    "caption": "Checking their criminal record",
+    "url": "https://www.twitch.tv/nickeh30/clip/DistinctAcceptableTildeDendiFace-QZ4Dl82xC99BLwpI",
+    "twitch": "nickeh30",
+    "views": 611,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.4431,
+        "w": 0.2312,
+        "x": 0.0453,
+        "y": 0.2611
+      }
+    }
+  },
+  "notes": "quality 7/10. NickEh30 checks the criminal profiles of Jason and Lucia in GTA 6 and discovers both of them are classified as psycho. Source: https://www.twitch.tv/nickeh30/clip/DistinctAcceptableTildeDendiFace-QZ4Dl82xC99BLwpI (611 views). Change the on-screen hook with: hook S43: NEW TEXT"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "S31",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T12:00:00+01:00",
+  "credit": "Kai Cenat",
+  "category": "streamer",
+  "media": "media/edits/S31.mp4",
+  "media_x": "media/edits/S31_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S31.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S31_x.mp4",
+  "hook": "Kai Cenat found out how bad the driving physics are",
+  "captions": {
+    "x": "Kai Cenat cannot catch a break on the road. 💀\n\n🎥 Kai Cenat on Twitch",
+    "tiktok": "Kai Cenat cannot catch a break on the road. 💀 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Kai Cenat cannot catch a break on the road. 💀 🎥 Kai Cenat on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Kai Cenat cannot catch a break on the road. 💀\n\n🎥 Kai Cenat on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Kai Cenat crashes his car into a wall while playing Grand Theft Auto VI and reacts dramatically.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_395630095.mp4",
+    "start": 0,
+    "end": 19,
+    "credit": "twitch.tv/kaicenat",
+    "caption": "Worst driver in Los Santos",
+    "url": "https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh",
+    "twitch": "kaicenat",
+    "views": 3484,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.3667,
+        "w": 0.1479,
+        "x": 0.0271,
+        "y": 0.3083
+      }
+    }
+  },
+  "notes": "quality 8/10. Kai Cenat crashes his car into a wall while playing Grand Theft Auto VI and reacts dramatically. Source: https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh (3484 views). Change the on-screen hook with: hook S31: NEW TEXT"
+}

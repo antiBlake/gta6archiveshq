@@ -1,0 +1,53 @@
+{
+  "id": "S36",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T17:00:00+01:00",
+  "credit": "CohhCarnage",
+  "category": "streamer",
+  "media": "media/edits/S36.mp4",
+  "media_x": "media/edits/S36_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S36.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S36_x.mp4",
+  "hook": "CohhCarnage was not ready for this GTA 6 crash",
+  "captions": {
+    "x": "CohhCarnage couldn't believe the speed of that collision. 🏎️\n\n🎥 CohhCarnage on Twitch",
+    "tiktok": "CohhCarnage couldn't believe the speed of that collision. 🏎️ 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CohhCarnage couldn't believe the speed of that collision. 🏎️ 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CohhCarnage couldn't believe the speed of that collision. 🏎️\n\n🎥 CohhCarnage on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CohhCarnage gets rammed from behind at extreme speed during a race in GTA 6 and crashes into a fence.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_775726162.mp4",
+    "start": 0,
+    "end": 32,
+    "credit": "twitch.tv/cohhcarnage",
+    "caption": "That car was moving way too fast",
+    "url": "https://www.twitch.tv/cohhcarnage/clip/ObliviousRoughDelicataFutureMan-CS3ZEl3poE2C9fMP",
+    "twitch": "cohhcarnage",
+    "views": 638,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.23,
+        "w": 0.14,
+        "x": 0.01,
+        "y": 0.44
+      }
+    }
+  },
+  "notes": "quality 8/10. CohhCarnage gets rammed from behind at extreme speed during a race in GTA 6 and crashes into a fence. Source: https://www.twitch.tv/cohhcarnage/clip/ObliviousRoughDelicataFutureMan-CS3ZEl3poE2C9fMP (638 views). Change the on-screen hook with: hook S36: NEW TEXT"
+}

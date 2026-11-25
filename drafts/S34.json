@@ -1,0 +1,53 @@
+{
+  "id": "S34",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T15:00:00+01:00",
+  "credit": "BruceGreene",
+  "category": "streamer",
+  "media": "media/edits/S34.mp4",
+  "media_x": "media/edits/S34_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S34.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S34_x.mp4",
+  "hook": "BruceGreene found the most lethal weapon in GTA 6",
+  "captions": {
+    "x": "BruceGreene might have found his new favorite way to deal with NPCs in Vice City. 😂\n\n🎥 BruceGreene on Twitch",
+    "tiktok": "BruceGreene might have found his new favorite way to deal with NPCs in Vice City. 😂 🎥 BruceGreene on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "BruceGreene might have found his new favorite way to deal with NPCs in Vice City. 😂 🎥 BruceGreene on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "BruceGreene might have found his new favorite way to deal with NPCs in Vice City. 😂\n\n🎥 BruceGreene on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "BruceGreene laughs as he uses a shovel to knock out a group of NPCs in a Vice City alleyway.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_4158635606.mp4",
+    "start": 0,
+    "end": 31,
+    "credit": "twitch.tv/brucegreene",
+    "caption": "The Vice City shoveler",
+    "url": "https://www.twitch.tv/brucegreene/clip/FunnyAverageDiamond4Head-rUU4lEnhtbjGMkPr",
+    "twitch": "brucegreene",
+    "views": 1222,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.25,
+        "w": 0.17,
+        "x": 0.81,
+        "y": 0.45
+      }
+    }
+  },
+  "notes": "quality 8/10. BruceGreene laughs as he uses a shovel to knock out a group of NPCs in a Vice City alleyway. Source: https://www.twitch.tv/brucegreene/clip/FunnyAverageDiamond4Head-rUU4lEnhtbjGMkPr (1222 views). Change the on-screen hook with: hook S34: NEW TEXT"
+}

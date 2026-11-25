@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-25T18:00:00+01:00",
   "credit": "HutchMF",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. HutchMF attempts a throwing knife execution on a kneeling NPC but misses completely, resulting in a funny reaction. Source: https://www.twitch.tv/hutchmf/clip/DeliciousPlayfulTrollYouWHY-WbmZTC6YKNepJHhB (717 views). Change the on-screen hook with: hook S37: NEW TEXT"
+  "notes": "quality 8/10. HutchMF attempts a throwing knife execution on a kneeling NPC but misses completely, resulting in a funny reaction. Source: https://www.twitch.tv/hutchmf/clip/DeliciousPlayfulTrollYouWHY-WbmZTC6YKNepJHhB (717 views). Change the on-screen hook with: hook S37: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b06e1882e4372ade2f031d4",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T17:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "iCDNsf6o0tw",
+      "url": "https://www.youtube.com/shorts/iCDNsf6o0tw",
+      "dueAt": "2026-11-25T17:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b06e18c154a177288ca90f6",
+      "status": "scheduled",
+      "dueAt": "2026-11-25T17:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

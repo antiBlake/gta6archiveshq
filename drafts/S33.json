@@ -1,0 +1,53 @@
+{
+  "id": "S33",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T14:00:00+01:00",
+  "credit": "lilypichu",
+  "category": "streamer",
+  "media": "media/edits/S33.mp4",
+  "media_x": "media/edits/S33_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S33.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S33_x.mp4",
+  "hook": "Lilypichu was just trying to put her drink down",
+  "captions": {
+    "x": "Lilypichu just wanted to put her drink down but kept starting fights instead. 👊\n\n🎥 lilypichu on Twitch",
+    "tiktok": "Lilypichu just wanted to put her drink down but kept starting fights instead. 👊 🎥 lilypichu on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Lilypichu just wanted to put her drink down but kept starting fights instead. 👊 🎥 lilypichu on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Lilypichu just wanted to put her drink down but kept starting fights instead. 👊\n\n🎥 lilypichu on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Lilypichu repeatedly punches NPCs in GTA 6 while trying to figure out how to put down a drink.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_3228121140.mp4",
+    "start": 0,
+    "end": 27,
+    "credit": "twitch.tv/lilypichu",
+    "caption": "She keeps punching everyone",
+    "url": "https://www.twitch.tv/lilypichu/clip/RelievedTolerantMetalPunchTrees-1SrUQSJUwg6PKugm",
+    "twitch": "lilypichu",
+    "views": 6394,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.31,
+        "w": 0.14,
+        "x": 0.01,
+        "y": 0.32
+      }
+    }
+  },
+  "notes": "quality 8/10. Lilypichu repeatedly punches NPCs in GTA 6 while trying to figure out how to put down a drink. Source: https://www.twitch.tv/lilypichu/clip/RelievedTolerantMetalPunchTrees-1SrUQSJUwg6PKugm (6394 views). Change the on-screen hook with: hook S33: NEW TEXT"
+}

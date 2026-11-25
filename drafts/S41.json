@@ -1,0 +1,47 @@
+{
+  "id": "S41",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-25T23:00:00+01:00",
+  "credit": "PatStaresAt",
+  "category": "streamer",
+  "media": "media/edits/S41.mp4",
+  "media_x": "media/edits/S41_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S41.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-25/S41_x.mp4",
+  "hook": "This NPC chose violence for no reason",
+  "captions": {
+    "x": "PatStaresAt got jumped out of nowhere in GTA 6 💀\n\n🎥 PatStaresAt on Twitch",
+    "tiktok": "PatStaresAt got jumped out of nowhere in GTA 6 💀 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "PatStaresAt got jumped out of nowhere in GTA 6 💀 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "PatStaresAt got jumped out of nowhere in GTA 6 💀\n\n🎥 PatStaresAt on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "A random NPC suddenly attacks the player's character in the middle of the street, and PatStaresAt reacts in disbelief.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/tw_4118509291.mp4",
+    "start": 0,
+    "end": 44,
+    "credit": "twitch.tv/patstaresat",
+    "caption": "NPC wanted all the smoke",
+    "url": "https://www.twitch.tv/patstaresat/clip/VivaciousTriumphantCheetahTBTacoLeft-osslbJRdiUFXJ3SL",
+    "twitch": "patstaresat",
+    "views": 575,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. A random NPC suddenly attacks the player's character in the middle of the street, and PatStaresAt reacts in disbelief. Source: https://www.twitch.tv/patstaresat/clip/VivaciousTriumphantCheetahTBTacoLeft-osslbJRdiUFXJ3SL (575 views). Change the on-screen hook with: hook S41: NEW TEXT"
+}

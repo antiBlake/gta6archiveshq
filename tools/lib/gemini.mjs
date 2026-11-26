@@ -84,7 +84,7 @@ Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;
   let lastErr = '';
   for (const m of await models()) {
     for (let i = 1; i <= 2; i++) {
-      const res = await fetch(`${API}/v1beta/models/${m}:generateContent?key=${key()}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(90_000) });
+      const res = await fetch(`${API}/v1beta/models/${m}:generateContent?key=${key()}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(150_000) });
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         fetch(`${API}/v1beta/${file.name}?key=${key()}`, { method: 'DELETE' }).catch(() => {});

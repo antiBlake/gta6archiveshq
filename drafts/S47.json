@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "published_buffer",
+  "status": "approved",
   "auto_approved": true,
   "slot": "2026-11-26T13:00:00+01:00",
   "credit": "CaseOh",
@@ -15,51 +15,66 @@
   "media_x": "media/edits/S47_x.mp4",
   "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S47.mp4",
   "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S47_x.mp4",
-  "hook": "CaseOh really doesn't want a job in GTA 6",
+  "hook": "CaseOh's reaction to the GTA 6 story is pure gold",
   "captions": {
-    "x": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂\n\n🎥 CaseOh on Twitch",
-    "tiktok": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
-    "youtube": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
-    "instagram": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+    "x": "CaseOh is losing his mind over the GTA 6 main characters 💀\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh is losing his mind over the GTA 6 main characters 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh is losing his mind over the GTA 6 main characters 💀 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh is losing his mind over the GTA 6 main characters 💀\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
   },
   "judge": {
     "quality": 9,
-    "confidence": 0.9,
+    "confidence": 0.95,
     "reasons": [],
-    "what": "CaseOh screams at the game characters to get a job, and then Jason jumps out of the moving car.",
+    "what": "CaseOh screams at the GTA 6 characters to get a job before Jason jumps out of the moving vehicle.",
     "model": "gemini-3-flash-preview",
     "layout": "stack"
   },
   "source": {
-    "file": "media/raw/tw_1738140025.mp4",
-    "start": 0,
-    "end": 60,
+    "subs": [
+      {
+        "start": 3.8,
+        "end": 5.5,
+        "text": "Just get a job!"
+      },
+      {
+        "start": 11.5,
+        "end": 13.5,
+        "text": "I mean anything but a job"
+      },
+      {
+        "start": 13.5,
+        "end": 14.8,
+        "text": "with you two!"
+      },
+      {
+        "start": 15,
+        "end": 16,
+        "text": "Nah, no way."
+      },
+      {
+        "start": 16,
+        "end": 17.5,
+        "text": "Why'd you jump out?"
+      }
+    ],
+    "file": "media/raw/tw_AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE.mp4",
+    "start": 3.5,
+    "end": 17.5,
     "credit": "twitch.tv/caseoh_",
-    "caption": "He really hates jobs",
+    "caption": "He really doesn't want a job",
     "url": "https://www.twitch.tv/caseoh_/clip/AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE",
     "twitch": "caseoh_",
     "views": 542,
     "layout": {
       "layout": "stack",
       "cam": {
-        "h": 0.18,
+        "h": 0.2,
         "w": 0.18,
         "x": 0.01,
-        "y": 0.21
+        "y": 0.2
       }
     }
   },
-  "notes": "quality 9/10. CaseOh screams at the game characters to get a job, and then Jason jumps out of the moving car. Source: https://www.twitch.tv/caseoh_/clip/AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE (542 views). Change the on-screen hook with: hook S47: NEW TEXT",
-  "publish_platforms": [
-    "instagram"
-  ],
-  "buffer": {
-    "instagram": {
-      "id": "6b07fd55e75fad9dc8d89be8",
-      "status": "scheduled",
-      "dueAt": "2026-11-26T12:00:00.000Z",
-      "mode": "at"
-    }
-  },
-  "x_status": "pending"
+  "notes": "quality 9/10. CaseOh screams at the GTA 6 characters to get a job before Jason jumps out of the moving vehicle. Source: https://www.twitch.tv/caseoh_/clip/AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE (542 views). Change the on-screen hook with: hook S47: NEW TEXT"
 }

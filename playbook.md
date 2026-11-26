@@ -69,3 +69,9 @@ Quality beats volume. Skip a slot rather than post something weak or unverified.
 - TikTok/Instagram gave 0 views to single reposts of other creators' viral videos ("not eligible for recommendation": unoriginal).
 - Viral links (X/IG/TikTok, Telegram "add <url> [credit @creator]") now go to a compilation pool (best 6-8 s each, Gemini-checked).
 - Mon/Wed/Fri: tools/compile.mjs builds "5 GTA 6 moments you missed this week" (#5..#1, captions + per-segment credit, all creators credited in the caption).
+
+## 2026-11-26: reach recovery (TikTok "not eligible for For You", YouTube stalled)
+- Caps: TikTok 4/day, YouTube 3/day, Instagram 16/day until TikTok views return; then raise 4 → 6 → 8.
+- Streamer clips: English only, 300–3,000 Twitch/Kick views (skip clips already viral, which every fan page reposts).
+- Cuts: Gemini picks the best 6–20 s (tips up to 30 s).
+- Burned-in yellow subtitles of what's said (Gemini, swear words censored).

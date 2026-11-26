@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T12:00:00+01:00",
   "credit": "CohhCarnage",
@@ -49,5 +49,17 @@
       }
     }
   },
-  "notes": "quality 8/10. CohhCarnage praises his car's handling in GTA 6 right before crashing it into another vehicle. Source: https://www.twitch.tv/cohhcarnage/clip/RenownedUninterestedOrcaAMPEnergy-fyL5CkAsqUYjbW5- (619 views). Change the on-screen hook with: hook S46: NEW TEXT"
+  "notes": "quality 8/10. CohhCarnage praises his car's handling in GTA 6 right before crashing it into another vehicle. Source: https://www.twitch.tv/cohhcarnage/clip/RenownedUninterestedOrcaAMPEnergy-fyL5CkAsqUYjbW5- (619 views). Change the on-screen hook with: hook S46: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b07e1eb17fc84b971b1d0fc",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T11:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -1,0 +1,47 @@
+{
+  "id": "S44",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T10:00:00+01:00",
+  "credit": "Tminnzy",
+  "category": "streamer",
+  "media": "media/edits/S44.mp4",
+  "media_x": "media/edits/S44_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S44.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S44_x.mp4",
+  "hook": "Tminnzy stole the wrong car and made fun of the NPC",
+  "captions": {
+    "x": "Tminnzy did not care at all about stealing that car 😭\n\n🎥 Tminnzy on Twitch",
+    "tiktok": "Tminnzy did not care at all about stealing that car 😭 🎥 Tminnzy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Tminnzy did not care at all about stealing that car 😭 🎥 Tminnzy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Tminnzy did not care at all about stealing that car 😭\n\n🎥 Tminnzy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Tminnzy steals a car right in front of the NPCs and tells them to buy another one.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "file": "media/raw/tw_4231131404.mp4",
+    "start": 0,
+    "end": 29,
+    "credit": "twitch.tv/tminnzy",
+    "caption": "Go buy another one",
+    "url": "https://www.twitch.tv/tminnzy/clip/HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH",
+    "twitch": "tminnzy",
+    "views": 28432,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. Tminnzy steals a car right in front of the NPCs and tells them to buy another one. Source: https://www.twitch.tv/tminnzy/clip/HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH (28432 views). Change the on-screen hook with: hook S44: NEW TEXT"
+}

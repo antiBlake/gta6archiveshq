@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T10:00:00+01:00",
   "credit": "Tminnzy",
@@ -43,5 +43,31 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. Tminnzy steals a car right in front of the NPCs and tells them to buy another one. Source: https://www.twitch.tv/tminnzy/clip/HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH (28432 views). Change the on-screen hook with: hook S44: NEW TEXT"
+  "notes": "quality 8/10. Tminnzy steals a car right in front of the NPCs and tells them to buy another one. Source: https://www.twitch.tv/tminnzy/clip/HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH (28432 views). Change the on-screen hook with: hook S44: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b07a66c9f6dda31ccbcf158",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T09:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "SgT8fb54pAM",
+      "url": "https://www.youtube.com/shorts/SgT8fb54pAM",
+      "dueAt": "2026-11-26T09:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b07a670b96dd8d351857efd",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T09:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

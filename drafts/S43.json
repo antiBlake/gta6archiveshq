@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T09:00:00+01:00",
   "credit": "NickEh30",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 7/10. NickEh30 checks the criminal profiles of Jason and Lucia in GTA 6 and discovers both of them are classified as psycho. Source: https://www.twitch.tv/nickeh30/clip/DistinctAcceptableTildeDendiFace-QZ4Dl82xC99BLwpI (611 views). Change the on-screen hook with: hook S43: NEW TEXT"
+  "notes": "quality 7/10. NickEh30 checks the criminal profiles of Jason and Lucia in GTA 6 and discovers both of them are classified as psycho. Source: https://www.twitch.tv/nickeh30/clip/DistinctAcceptableTildeDendiFace-QZ4Dl82xC99BLwpI (611 views). Change the on-screen hook with: hook S43: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b07a6789f6dda31ccbcf438",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T08:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "naSMRXQYwIo",
+      "url": "https://www.youtube.com/shorts/naSMRXQYwIo",
+      "dueAt": "2026-11-26T08:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b07a67c07071a60674e9195",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T08:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

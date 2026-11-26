@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T11:00:00+01:00",
   "credit": "Maximilian_DOOD",
@@ -49,5 +49,31 @@
       }
     }
   },
-  "notes": "quality 8/10. Maximilian_DOOD explodes his character while trying to do something in GTA 6 and says it was such a good idea. Source: https://www.twitch.tv/maximilian_dood/clip/LuckyPoliteGullHoneyBadger-Sa0aukYe2KCGDfNQ (638 views). Change the on-screen hook with: hook S45: NEW TEXT"
+  "notes": "quality 8/10. Maximilian_DOOD explodes his character while trying to do something in GTA 6 and says it was such a good idea. Source: https://www.twitch.tv/maximilian_dood/clip/LuckyPoliteGullHoneyBadger-Sa0aukYe2KCGDfNQ (638 views). Change the on-screen hook with: hook S45: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b07a6729f6dda31ccbcf342",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T10:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "NzxrzapMhSc",
+      "url": "https://www.youtube.com/shorts/NzxrzapMhSc",
+      "dueAt": "2026-11-26T10:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b07a676a791bea1b24d2009",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

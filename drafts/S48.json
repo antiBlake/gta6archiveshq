@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T14:00:00+01:00",
   "credit": "Stormfall33",
@@ -71,5 +71,17 @@
       }
     }
   },
-  "notes": "quality 7/10. Stormfall33 crashes her motorcycle into a pole that she seemingly didn't hit and reacts with disbelief at the collision physics. Source: https://www.twitch.tv/stormfall33/clip/SparklyDeliciousOysterKappaRoss-m7xkhO4JHZ0xE8pq (317 views). Change the on-screen hook with: hook S48: NEW TEXT"
+  "notes": "quality 7/10. Stormfall33 crashes her motorcycle into a pole that she seemingly didn't hit and reacts with disbelief at the collision physics. Source: https://www.twitch.tv/stormfall33/clip/SparklyDeliciousOysterKappaRoss-m7xkhO4JHZ0xE8pq (317 views). Change the on-screen hook with: hook S48: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b080516ed9dce3bdafbd883",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

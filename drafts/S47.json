@@ -1,0 +1,53 @@
+{
+  "id": "S47",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T13:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S47.mp4",
+  "media_x": "media/edits/S47_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S47.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S47_x.mp4",
+  "hook": "CaseOh really doesn't want a job in GTA 6",
+  "captions": {
+    "x": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh has a very strong reaction to the idea of getting a job in GTA 6. 😂\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "CaseOh screams at the game characters to get a job, and then Jason jumps out of the moving car.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1738140025.mp4",
+    "start": 0,
+    "end": 60,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "He really hates jobs",
+    "url": "https://www.twitch.tv/caseoh_/clip/AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE",
+    "twitch": "caseoh_",
+    "views": 542,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.18,
+        "w": 0.18,
+        "x": 0.01,
+        "y": 0.21
+      }
+    }
+  },
+  "notes": "quality 9/10. CaseOh screams at the game characters to get a job, and then Jason jumps out of the moving car. Source: https://www.twitch.tv/caseoh_/clip/AbstemiousPrettyFiddleheadsNinjaGrumpy--kvlqhtuGMfbKcOE (542 views). Change the on-screen hook with: hook S47: NEW TEXT"
+}

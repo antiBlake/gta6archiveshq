@@ -19,6 +19,9 @@ const MAX_NEW = Number(process.env.MAX_NEW ?? 6);   // drafts per run
 const MAX_JUDGED = 16;                               // Gemini calls per run (free tier friendly)
 const PER_STREAMER = 3;
 const MIN_VIEWS = 300;
+// 2026-11-26: TikTok/YouTube stopped recommending us after we posted the category's most-viewed clips (every fan page reposts those).
+// Skip clips that are already viral; pick fresher moments.
+const MAX_VIEWS = Number(process.env.MAX_VIEWS ?? 3000);
 const GAME = /Grand Theft Auto VI/i;
 const YT = (args) => sh(tool('yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '5', ...args]);
 if (!env.GEMINI_API_KEY) { log('GEMINI_API_KEY missing: not making clips (quality/safety check required)'); process.exit(0); }
@@ -33,24 +36,24 @@ const saveSeen = () => writeFileSync(seenFile, JSON.stringify([...seen].slice(-3
 const candidates = [];
 try {
   const r = await (await fetch('https://gql.twitch.tv/gql', { method: 'POST', headers: { 'Client-ID': 'kimne78kx3ncx6brgo4mv6wki5h1ko', 'content-type': 'application/json' },
-    body: JSON.stringify({ query: '{ game(name: "Grand Theft Auto VI") { clips(first: 40, criteria: { period: LAST_DAY, sort: VIEWS_DESC }) { edges { node { slug viewCount broadcaster { login displayName } } } } } }' }),
+    body: JSON.stringify({ query: '{ game(name: "Grand Theft Auto VI") { clips(first: 100, criteria: { period: LAST_DAY, sort: VIEWS_DESC }) { edges { node { slug title viewCount durationSeconds language broadcaster { login displayName } } } } } }' }),
     signal: AbortSignal.timeout(30_000) })).json();
   const seeds = Object.fromEntries(streamers.map((x) => [x.twitch.toLowerCase(), x]));
   const perStreamer = {};
+  // filter on Twitch's own data first (fast): English, not already viral, not seen
   for (const e of r.data?.game?.clips?.edges ?? []) {
     const n = e.node, login = n.broadcaster?.login; if (!login) continue;
     const url = `https://www.twitch.tv/${login}/clip/${n.slug}`;
-    if (seen.has(url) || (perStreamer[login] = (perStreamer[login] ?? 0) + 1) > PER_STREAMER) continue;
-    let info; try { info = JSON.parse(YT(['-j', url])); } catch { continue; }
-    seen.add(url);
-    if ((info.view_count ?? 0) < MIN_VIEWS || info.duration < 6) continue;
+    if (seen.has(url) || !/^en/i.test(n.language ?? '') || n.viewCount < MIN_VIEWS || n.viewCount > MAX_VIEWS || n.durationSeconds < 6) continue;
+    if ((perStreamer[login] = (perStreamer[login] ?? 0) + 1) > PER_STREAMER) continue;
     const st = seeds[login.toLowerCase()] ?? { name: n.broadcaster.displayName, type: 'streamer', twitch: login, handles: {} };
-    candidates.push({ st, url, info });
+    candidates.push({ st, url, info: { id: n.slug, title: n.title ?? '', duration: n.durationSeconds, view_count: n.viewCount } });
   }
   log(`category: ${candidates.length} candidate clip(s) from ${new Set(candidates.map((c) => c.st.twitch)).size} streamer(s)`);
 } catch (e) { log(`category lookup failed: ${e.message}`); }
 
-for (const st of streamers) {
+// seed list only as a backup when the category gave too little (it costs one slow lookup per clip)
+for (const st of candidates.length >= 10 ? [] : streamers) {
   let urls = [];
   try { urls = YT(['--flat-playlist', '--playlist-end', '8', '--print', '%(url)s', `https://www.twitch.tv/${st.twitch}/clips?filter=clips&range=24hr`]).split('\n').filter(Boolean); }
   catch (e) { log(`${st.name}: clip list failed: ${e.message.split('\n')[0]}`); continue; }
@@ -61,15 +64,17 @@ for (const st of streamers) {
     try { info = JSON.parse(YT(['-j', url])); } catch { continue; }
     seen.add(url);
     if (!(info.categories ?? []).some((c) => GAME.test(c))) continue;
-    if ((info.view_count ?? 0) < MIN_VIEWS || info.duration < 8) continue;
+    if ((info.view_count ?? 0) < MIN_VIEWS || (info.view_count ?? 0) > MAX_VIEWS || info.duration < 8) continue;
     candidates.push({ st, url, info }); n++;
   }
 }
 // rank by Twitch views x how well that streamer's clips did on OUR page (learning loop)
 // (c) Kick: most-viewed GTA VI clips of the last 24 h (Asmongold, Blueface, …)
 try {
-  const r = await (await fetch('https://kick.com/api/v2/categories/grand-theft-auto-vi/clips?sort=view&time=day', {
-    headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131 Safari/537.36', accept: 'application/json' }, signal: AbortSignal.timeout(30_000) })).json();
+  const H = { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131 Safari/537.36', accept: 'application/json' };
+  const base = 'https://kick.com/api/v2/categories/grand-theft-auto-vi/clips?sort=view&time=day';
+  const r = await (await fetch(base, { headers: H, signal: AbortSignal.timeout(30_000) })).json();
+  if (r.nextCursor) { try { const r2 = await (await fetch(`${base}&cursor=${encodeURIComponent(r.nextCursor)}`, { headers: H, signal: AbortSignal.timeout(30_000) })).json(); r.clips = [...(r.clips ?? []), ...(r2.clips ?? [])]; } catch {} }
   const per = {}; let k = 0;
   for (const c of r.clips ?? []) {
     const login = c.channel?.slug ?? c.channel?.username; if (!login || c.privacy !== 'public') continue;
@@ -77,7 +82,7 @@ try {
     if (seen.has(url) || (per[login] = (per[login] ?? 0) + 1) > PER_STREAMER) continue;
     seen.add(url);
     const views = c.views ?? c.view_count ?? 0;
-    if (views < MIN_VIEWS || (c.duration ?? 0) < 6) continue;
+    if (views < MIN_VIEWS || views > MAX_VIEWS || (c.duration ?? 0) < 6) continue;
     candidates.push({ st: { name: c.channel?.username ?? login, type: 'streamer', kick: login, handles: {} }, url, kick: true,
       media: c.video_url || c.clip_url, info: { id: c.id, title: c.title ?? '', duration: c.duration, view_count: views, formats: [] } });
     k++;
@@ -93,6 +98,7 @@ const taken = new Set(all.map((d) => d.slot).filter(Boolean));
 let made = 0, judged = 0;
 for (const { st, url, info, kick: isKick, media } of candidates) {
   if (made >= MAX_NEW || judged >= MAX_JUDGED) break;
+  seen.add(url);
   const portrait = null; // owner wants the game bigger than Twitch's 50/50 portrait: use the landscape clip + our 30/70 camera stack
   const src = `media/raw/tw_${info.id}.mp4`;
   try {
@@ -103,22 +109,21 @@ for (const { st, url, info, kick: isKick, media } of candidates) {
   let v;
   try {
     judged++;
-    v = await judgeClip(join(ROOT, src), { who: st.name, kind: isKick ? 'Kick stream clip' : 'Twitch stream clip', title: info.title ?? '', duration: info.duration, layout: portrait ? 'vertical: streamer camera on top, game below' : 'landscape 16:9 stream (may contain a webcam overlay)' });
+    v = await judgeClip(join(ROOT, src), { who: st.name, kind: isKick ? 'Kick stream clip' : 'Twitch stream clip', title: info.title ?? '', duration: info.duration, maxLen: 20, layout: portrait ? 'vertical: streamer camera on top, game below' : 'landscape 16:9 stream (may contain a webcam overlay)' });
   } catch (e) { log(`${info.id}: Gemini failed: ${e.message}`); continue; }
   const verdict = decide(v);
   const textFlags = riskReasons({ title: info.title, hook: v.hook, caption: `${v.on_screen_caption} ${v.post_caption}` });
   if (verdict.action === 'discard') { log(`✗ ${st.name} "${info.title}": dropped (${verdict.why}) — ${v.what_happens}`); rmSync(join(ROOT, src), { force: true }); continue; }
 
   const id = `S${Math.max(0, ...all.filter((d) => /^S\d+$/.test(d.id)).map((d) => parseInt(d.id.slice(1)))) + 1}`;
-  // Owner: complete length. Keep the whole Twitch clip (viewers already trimmed it to the moment).
-  // Twitch clips are already trimmed by viewers (keep whole); Kick clips run up to 3 min, so use Gemini's best moment
-  const start = isKick && info.duration > 60 ? Math.max(0, v.trim_start ?? 0) : 0;
-  const end = isKick && info.duration > 60 ? Math.min(info.duration, Math.max(start + 8, v.trim_end ?? start + 45)) : info.duration;
+  // 2026-11-26: short, tight cuts (<=20 s did best) — Gemini picks the complete best moment
+  let start = 0, end = info.duration;
+  if (info.duration > 22) { start = Math.max(0, Math.min(v.trim_start ?? 0, info.duration - 6)); end = Math.min(info.duration, start + 22, Math.max(start + 6, v.trim_end ?? start + 20)); }
   const layout = portrait ? { layout: 'portrait' } : v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
   const credit = st.handles?.tiktok ? `@${st.handles.tiktok.replace(/^@/, '')}` : isKick ? `kick.com/${st.kick}` : `twitch.tv/${st.twitch}`;
   const out = `media/edits/${id}.mp4`;
   let xOut;
-  try { xOut = render(src, start, end, v.hook, credit, out, v.on_screen_caption, layout); } catch (e) { log(`${id}: render failed: ${e.message.split('\n')[0]}`); continue; }
+  try { xOut = render(src, start, end, v.hook, credit, out, v.on_screen_caption, { ...layout, subs: v.subtitles }); } catch (e) { log(`${id}: render failed: ${e.message.split('\n')[0]}`); continue; }
   const slot = nextSlot(taken); taken.add(slot);
   const auto = verdict.action === 'auto' && !textFlags.length;
   const d = {
@@ -126,7 +131,7 @@ for (const { st, url, info, kick: isKick, media } of candidates) {
     media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
     hook: v.hook, captions: captionsFor({ ...st, platform: isKick ? 'Kick' : 'Twitch' }, v.post_caption),
     judge: { quality: v.quality, confidence: v.confidence, reasons: v.reject_reasons, what: v.what_happens, model: v.model, layout: layout.layout },
-    source: { file: src, start, end, credit, caption: v.on_screen_caption, url, twitch: st.twitch, views: info.view_count, layout },
+    source: { subs: v.subtitles, file: src, start, end, credit, caption: v.on_screen_caption, url, twitch: st.twitch, views: info.view_count, layout },
     notes: `${verdict.why}${textFlags.length ? `; text flags: ${textFlags.join('; ')}` : ''}. ${v.what_happens} Source: ${url} (${info.view_count} views). Change the on-screen hook with: hook ${id}: NEW TEXT`,
   };
   saveDraft(d); all.push(d);

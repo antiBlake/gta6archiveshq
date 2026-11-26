@@ -1,5 +1,5 @@
 // Shared clip-making helpers for the Mac YouTube clipper and the cloud Twitch clipper.
-import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { ROOT } from './env.mjs';
@@ -36,8 +36,16 @@ export const plainText = (t) => String(t ?? '').normalize('NFKC').split('\n').ma
 export function render(src, start, end, hook, credit, out, caption, opts = {}) {
   hook = plainText(hook); caption = plainText(caption); credit = plainText(credit);
   // opts: { layout: 'full'|'portrait'|'stack', cam: {x,y,w,h}, focus: 0..1 }
-  const envx = { ...process.env, LAYOUT: opts.layout ?? 'full', FOCUS: String(opts.focus ?? 0.5), ...(opts.hookY ? { HOOK_Y: String(opts.hookY) } : {}), ...(opts.cam ? { CAM: [opts.cam.x, opts.cam.y, opts.cam.w, opts.cam.h].map((n) => Math.min(1, Math.max(0, n)).toFixed(3)).join(',') } : {}) };
-  sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption], { env: envx, timeout: 1_800_000 });
+  let subsFile;
+  if (opts.subs?.length) {
+    subsFile = join(ROOT, 'media', 'work', `subs_${process.pid}_${Date.now()}.txt`);
+    mkdirSync(join(ROOT, 'media', 'work'), { recursive: true });
+    const s0 = Number(start), s1 = Number(end);
+    writeFileSync(subsFile, opts.subs.filter((x) => x.end > s0 && x.start < s1 && plainText(x.text)).map((x) => `${Math.max(0, x.start - s0).toFixed(2)}|${Math.min(s1 - s0, x.end - s0).toFixed(2)}|${plainText(x.text).replace(/\n/g, ' ')}`).join('\n'));
+  }
+  const envx = { ...process.env, ...(subsFile ? { SUBS: subsFile } : {}), LAYOUT: opts.layout ?? 'full', FOCUS: String(opts.focus ?? 0.5), ...(opts.hookY ? { HOOK_Y: String(opts.hookY) } : {}), ...(opts.cam ? { CAM: [opts.cam.x, opts.cam.y, opts.cam.w, opts.cam.h].map((n) => Math.min(1, Math.max(0, n)).toFixed(3)).join(',') } : {}) };
+  try { sh(join(ROOT, 'tools', 'clip.sh'), [src, String(start), String(end), hook, credit, out, caption], { env: envx, timeout: 1_800_000 }); }
+  finally { if (subsFile) rmSync(subsFile, { force: true }); }
   // X copy must stay under 10 MB: pick the video bitrate from the clip length
   const dur = Math.max(1, Number(end) - Number(start));
   const kbps = Math.max(800, Math.min(3200, Math.floor((9 * 8 * 1000) / dur) - 160));

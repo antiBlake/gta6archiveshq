@@ -40,7 +40,7 @@ async function rehooks() {
     const v = (d.version ?? 1) + 1;
     const out = `media/edits/${d.id}_v${v}.mp4`;
     log(`${d.id}: re-rendering with hook "${d.hook_request}"`);
-    const xOut = render(s.file, s.start, s.end, d.hook_request, s.credit, out, s.caption ?? '', s.layout ?? {});
+    const xOut = render(s.file, s.start, s.end, d.hook_request, s.credit, out, s.caption ?? '', { ...(s.layout ?? {}), subs: s.subs });
     Object.assign(d, { media: out, media_x: xOut, version: v, hook: d.hook_request, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url });
     delete d.hook_request;
     if (d.auto_approved || d.keep_approved) { d.status = 'approved'; delete d.keep_approved; saveDraft(d); continue; } // fix-only re-render: stays approved
@@ -190,17 +190,18 @@ async function scan() {
             '-f', 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]', '--merge-output-format', 'mp4', '-o', src, `https://www.youtube.com/watch?v=${e.id}`]);
         } catch (err) { log(`${id}: download failed: ${err.message.split('\n')[0]}`); continue; }
         let v;
-        try { v = await judgeClip(join(ROOT, src), { who: ch.name, kind: ch.type === 'guide' ? 'GTA 6 mission guide / tips video (make it a useful how-to tip)' : ch.type === 'streamer' ? 'streamer video' : 'gameplay video', title: info.title, duration: w1 - w0, layout: 'landscape 16:9 YouTube video' }); }
+        try { v = await judgeClip(join(ROOT, src), { who: ch.name, kind: ch.type === 'guide' ? 'GTA 6 mission guide / tips video (make it a useful how-to tip)' : ch.type === 'streamer' ? 'streamer video' : 'gameplay video', title: info.title, maxLen: ch.type === 'guide' ? 30 : 20, duration: w1 - w0, layout: 'landscape 16:9 YouTube video' }); }
         catch (err) { log(`${id}: Gemini failed: ${err.message}`); continue; }
         const verdict = decide(v);
         if (verdict.action === 'discard') { log(`✗ ${id} dropped (${verdict.why}) — ${v.what_happens}`); rmSync(join(ROOT, src), { force: true }); continue; }
         const len = w1 - w0;
-        const start = Math.max(0, Math.min(v.trim_start ?? 0, len - 6)), end = Math.min(len, Math.max(start + 6, v.trim_end ?? len));
+        const cap = ch.type === 'guide' ? 32 : 22;
+        const start = Math.max(0, Math.min(v.trim_start ?? 0, len - 6)), end = Math.min(len, start + cap, Math.max(start + 6, v.trim_end ?? len));
         const layout = v.facecam_box?.w > 0.05 ? { layout: 'stack', cam: v.facecam_box } : { layout: 'full' };
         const hook = (v.hook || tpl.hook).slice(0, 70);
         const credit = ch.handles?.tiktok ? `@${ch.handles.tiktok.replace(/^@/, '')}` : ch.name;
         const out = `media/edits/${id}.mp4`;
-        const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', layout);
+        const xOut = render(src, start, end, hook, credit, out, v.on_screen_caption ?? '', { ...layout, subs: v.subtitles });
         const slot = nextSlot(taken); taken.add(slot);
         const post = ch.type === 'guide' ? `${v.post_caption}\n⚠️ Mission spoilers` : v.post_caption;
         const d = {
@@ -208,7 +209,7 @@ async function scan() {
           media: out, media_x: xOut, media_url: (await upload(out)).url, media_x_url: (await upload(xOut)).url,
           hook, captions: captionsFor(ch, post),
           judge: { quality: v.quality, confidence: v.confidence, reasons: v.reject_reasons, what: v.what_happens, model: v.model, layout: layout.layout },
-          source: { file: src, start, end, credit, caption: v.on_screen_caption, layout, url: `https://www.youtube.com/watch?v=${e.id}&t=${w0 + Math.round(start)}s` },
+          source: { subs: v.subtitles, file: src, start, end, credit, caption: v.on_screen_caption, layout, url: `https://www.youtube.com/watch?v=${e.id}&t=${w0 + Math.round(start)}s` },
           notes: `${verdict.why}. ${v.what_happens} From ${ch.name}: https://youtu.be/${e.id}?t=${w0 + Math.round(start)}${src0.search ? ' (found by search)' : ''}. Change the on-screen hook with: hook ${id}: NEW TEXT`,
         };
         d.channel_url = info.channel_url;

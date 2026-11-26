@@ -75,7 +75,25 @@ while IFS= read -r line || [ -n "$line" ]; do
 [$LAST]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/h$i.txt':fontsize=58:$TXT:x=(w-text_w)/2:y=$((HOOK_Y + i * 70))[h$i];"
   LAST="h$i"; i=$((i + 1))
 done < "$TMP/hook.txt"
-FILTER="$BASEV$HOOKF
+# Burned-in subtitles (SUBS=file of "start|end|text", seconds from the cut start): lower third, above the app buttons.
+SUBF=""; SUB_Y=${SUB_Y:-1330}; [ "$LAYOUT" = "full" ] && [ "$HOOK_Y" -gt 1000 ] && SUB_Y=560
+if [ -n "${SUBS:-}" ] && [ -s "$SUBS" ]; then
+  j=0
+  while IFS='|' read -r ss se st || [ -n "$ss" ]; do
+    [ -z "$st" ] && continue
+    printf '%s' "$st" | noemoji | fold -s -w 26 > "$TMP/s$j.all"
+    k=0
+    while IFS= read -r sl || [ -n "$sl" ]; do
+      [ -z "$sl" ] && continue
+      printf '%s' "$sl" > "$TMP/s${j}_$k.txt"
+      SUBF="$SUBF
+[$LAST]drawtext=fontfile='$FONT_BOLD':textfile='$TMP/s${j}_$k.txt':fontsize=54:fontcolor=0xFFE135:borderw=4:bordercolor=black:shadowx=0:shadowy=3:shadowcolor=black@0.5:x=(w-text_w)/2:y=$((SUB_Y + k * 66)):enable='between(t,$ss,$se)'[s${j}_$k];"
+      LAST="s${j}_$k"; k=$((k + 1))
+    done < "$TMP/s$j.all"
+    j=$((j + 1))
+  done < "$SUBS"
+fi
+FILTER="$BASEV$HOOKF$SUBF
 [$LAST]drawtext=fontfile='$FONT':textfile='$TMP/credit.txt':fontsize=30:fontcolor=white@0.9:borderw=2:bordercolor=black@0.8:x=(w-text_w)/2:y=$((HOOK_Y + i * 70 + 14)),format=yuv420p[v]"
 
 mkdir -p "$(dirname "$OUT")"

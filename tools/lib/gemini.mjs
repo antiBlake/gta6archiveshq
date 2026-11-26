@@ -55,6 +55,7 @@ const SCHEMA = {
     hook: { type: 'STRING' },
     on_screen_caption: { type: 'STRING' },
     post_caption: { type: 'STRING' },
+    subtitles: { type: 'ARRAY', items: { type: 'OBJECT', properties: { start: { type: 'NUMBER' }, end: { type: 'NUMBER' }, text: { type: 'STRING' } }, required: ['start', 'end', 'text'] } },
   },
   required: ['keep', 'confidence', 'quality', 'reject_reasons', 'what_happens', 'trim_start', 'trim_end', 'hook', 'on_screen_caption', 'post_caption'],
 };
@@ -70,11 +71,12 @@ Facts: GTA 6 (Grand Theft Auto VI) was RELEASED on 19 November 2026 on PS5 and X
 Decide if this makes a strong, safe short for a worldwide GTA 6 audience, and prepare it:
 - keep=false if it shows OR SAYS sexual content (nudity, strip clubs, close-ups of bodies, lap dances, crude sexual words or jokes in speech or on screen), major story spoilers (story cutscenes, character deaths, endings), slurs, real-world violence, leaks/exploits/glitches, is not GTA 6, is mostly menus/loading, blurry, or is just someone talking with no interesting gameplay or reaction.
 - quality 1-10: how likely viewers stop scrolling and watch to the end (funny reaction, wild chase, crash, hidden detail, impressive graphics, useful tip). 7+ means a strong post.
-- trim_start/trim_end (seconds, within the clip): the most complete moment, 8-45 s${bestLength() ? ` (on this page clips of ${bestLength()} perform best, so prefer that when the moment allows)` : ''}: start at the setup, end right after the payoff. Never cut mid-sentence or mid-action.
+- trim_start/trim_end (seconds, within the clip): the single best moment, ${ctx.maxLen ? `6-${ctx.maxLen}` : '6-20'} s long (short clips perform best on this page): start right before the setup (no slow intro), end right after the payoff. Never cut mid-sentence or mid-action.
 - facecam_box: only if a streamer's webcam is visible inside a landscape frame, give its box as fractions of the frame (x,y,w,h). Otherwise null.
 - hook: the on-screen caption, written like a native TikTok caption: sentence case (NOT all caps), 35-60 characters, NO emoji, relatable and curiosity-driven, e.g. "These GTA 6 cops have me on my best behaviour", "Ludwig said he was the best driver and then this happened". Must be true to the clip.
 ${bestHooks().length ? `  Hooks that performed best on THIS page so far (learn their ANGLE/topic only — always write in sentence case, never copy): ${bestHooks().map((h) => `"${h.hook}"`).join('; ')}.\n` : ''}- on_screen_caption: max 32 characters, NO emoji, adds context or a punchline, sentence case.
 - post_caption: 1-2 short punchy sentences (max 140 characters) with exactly one emoji, written for a worldwide audience, ${ctx.who !== 'unknown' ? `naming ${ctx.who}` : ''}. No hashtags, no @handles, no links, no countries or cities, never claim it is official Rockstar news, no invented facts.
+- subtitles: English subtitles of what is SPOKEN inside trim_start..trim_end (streamer and important game dialogue), times in seconds of the ORIGINAL clip, each item max 6 words and max 2.5 s, in order, no gaps in the speech. Translate non-English speech to English. Censor swear words with asterisks (f***). Empty array if nothing is said.
 - what_happens: one plain sentence describing the clip.
 - spoken_language: the main language spoken in the clip as an ISO code (e.g. en, es, ru), or "none" if there is little or no speech.
 Be strict: when unsure about safety, set keep=false or confidence below 0.6.`;

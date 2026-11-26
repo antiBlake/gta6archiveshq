@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-26T16:00:00+01:00",
   "credit": "Vinesauce",
@@ -66,5 +66,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Vinesauce attempts to escape the police in GTA 6 using a kayak on land. Source: https://www.twitch.tv/vinesauce/clip/MoralFastPenguinUWot-LG0z7lwE4TPs24CW (328 views). Change the on-screen hook with: hook S50: NEW TEXT"
+  "notes": "quality 8/10. Vinesauce attempts to escape the police in GTA 6 using a kayak on land. Source: https://www.twitch.tv/vinesauce/clip/MoralFastPenguinUWot-LG0z7lwE4TPs24CW (328 views). Change the on-screen hook with: hook S50: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b081c09908ca1bcccbcd7b1",
+      "status": "scheduled",
+      "dueAt": "2026-11-26T15:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

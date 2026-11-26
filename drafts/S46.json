@@ -1,0 +1,53 @@
+{
+  "id": "S46",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T12:00:00+01:00",
+  "credit": "CohhCarnage",
+  "category": "streamer",
+  "media": "media/edits/S46.mp4",
+  "media_x": "media/edits/S46_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S46.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S46_x.mp4",
+  "hook": "CohhCarnage praises his car and immediately crashes",
+  "captions": {
+    "x": "CohhCarnage finds out how fast his car really is. 💥\n\n🎥 CohhCarnage on Twitch",
+    "tiktok": "CohhCarnage finds out how fast his car really is. 💥 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CohhCarnage finds out how fast his car really is. 💥 🎥 CohhCarnage on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CohhCarnage finds out how fast his car really is. 💥\n\n🎥 CohhCarnage on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "CohhCarnage praises his car's handling in GTA 6 right before crashing it into another vehicle.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_1259620049.mp4",
+    "start": 0,
+    "end": 31,
+    "credit": "twitch.tv/cohhcarnage",
+    "caption": "Wait for the crash",
+    "url": "https://www.twitch.tv/cohhcarnage/clip/RenownedUninterestedOrcaAMPEnergy-fyL5CkAsqUYjbW5-",
+    "twitch": "cohhcarnage",
+    "views": 619,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.4074,
+        "w": 0.1604,
+        "x": 0.0052,
+        "y": 0.4574
+      }
+    }
+  },
+  "notes": "quality 8/10. CohhCarnage praises his car's handling in GTA 6 right before crashing it into another vehicle. Source: https://www.twitch.tv/cohhcarnage/clip/RenownedUninterestedOrcaAMPEnergy-fyL5CkAsqUYjbW5- (619 views). Change the on-screen hook with: hook S46: NEW TEXT"
+}

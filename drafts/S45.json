@@ -1,0 +1,53 @@
+{
+  "id": "S45",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T11:00:00+01:00",
+  "credit": "Maximilian_DOOD",
+  "category": "streamer",
+  "media": "media/edits/S45.mp4",
+  "media_x": "media/edits/S45_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S45.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S45_x.mp4",
+  "hook": "Maximilian_DOOD thought this was a good idea",
+  "captions": {
+    "x": "Maximilian_DOOD regrets his brilliant decision instantly. 💥\n\n🎥 Maximilian_DOOD on Twitch",
+    "tiktok": "Maximilian_DOOD regrets his brilliant decision instantly. 💥 🎥 Maximilian_DOOD on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Maximilian_DOOD regrets his brilliant decision instantly. 💥 🎥 Maximilian_DOOD on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Maximilian_DOOD regrets his brilliant decision instantly. 💥\n\n🎥 Maximilian_DOOD on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Maximilian_DOOD explodes his character while trying to do something in GTA 6 and says it was such a good idea.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "file": "media/raw/tw_3925300308.mp4",
+    "start": 0,
+    "end": 31,
+    "credit": "twitch.tv/maximilian_dood",
+    "caption": "It was such a good idea!",
+    "url": "https://www.twitch.tv/maximilian_dood/clip/LuckyPoliteGullHoneyBadger-Sa0aukYe2KCGDfNQ",
+    "twitch": "maximilian_dood",
+    "views": 638,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.28,
+        "w": 0.23,
+        "x": 0.05,
+        "y": 0.7
+      }
+    }
+  },
+  "notes": "quality 8/10. Maximilian_DOOD explodes his character while trying to do something in GTA 6 and says it was such a good idea. Source: https://www.twitch.tv/maximilian_dood/clip/LuckyPoliteGullHoneyBadger-Sa0aukYe2KCGDfNQ (638 views). Change the on-screen hook with: hook S45: NEW TEXT"
+}

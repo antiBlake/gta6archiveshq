@@ -1,0 +1,85 @@
+{
+  "id": "S55",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T12:00:00+01:00",
+  "credit": "Syndicate",
+  "category": "streamer",
+  "media": "media/edits/S55.mp4",
+  "media_x": "media/edits/S55_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S55.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S55_x.mp4",
+  "hook": "GTA 6 has the most insane car details yet",
+  "captions": {
+    "x": "Syndicate discovered that car brakes actually glow when they overheat in GTA 6. 🏎️\n\n🎥 Syndicate on Twitch",
+    "tiktok": "Syndicate discovered that car brakes actually glow when they overheat in GTA 6. 🏎️ 🎥 Syndicate on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Syndicate discovered that car brakes actually glow when they overheat in GTA 6. 🏎️ 🎥 Syndicate on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Syndicate discovered that car brakes actually glow when they overheat in GTA 6. 🏎️\n\n🎥 Syndicate on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Syndicate reacts with amazement after discovering that the disc brakes on his car glow orange from heat in GTA 6.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 18.2,
+        "end": 20.2,
+        "text": "Holy sh**!"
+      },
+      {
+        "start": 20.8,
+        "end": 21.8,
+        "text": "Dude!"
+      },
+      {
+        "start": 22.2,
+        "end": 24.2,
+        "text": "Your disc brakes"
+      },
+      {
+        "start": 24.2,
+        "end": 26.2,
+        "text": "can get too hot?"
+      },
+      {
+        "start": 27.2,
+        "end": 28.7,
+        "text": "Yo!"
+      },
+      {
+        "start": 29.8,
+        "end": 31.2,
+        "text": "That's insane!"
+      }
+    ],
+    "file": "media/raw/tw_VastSmilingHorseradish4Head-6RTexNXyghi735zV.mp4",
+    "start": 18.2,
+    "end": 31.2,
+    "credit": "twitch.tv/syndicate",
+    "caption": "Glowing disc brakes in GTA 6",
+    "url": "https://www.twitch.tv/syndicate/clip/VastSmilingHorseradish4Head-6RTexNXyghi735zV",
+    "twitch": "syndicate",
+    "views": 442,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.25,
+        "w": 0.25,
+        "x": 0.71,
+        "y": 0.15
+      }
+    }
+  },
+  "notes": "quality 8/10. Syndicate reacts with amazement after discovering that the disc brakes on his car glow orange from heat in GTA 6. Source: https://www.twitch.tv/syndicate/clip/VastSmilingHorseradish4Head-6RTexNXyghi735zV (442 views). Change the on-screen hook with: hook S55: NEW TEXT"
+}

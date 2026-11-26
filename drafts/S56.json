@@ -1,0 +1,65 @@
+{
+  "id": "S56",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T13:00:00+01:00",
+  "credit": "NickEh30",
+  "category": "streamer",
+  "media": "media/edits/S56.mp4",
+  "media_x": "media/edits/S56_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S56.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S56_x.mp4",
+  "hook": "NickEh30 is losing his mind in GTA 6",
+  "captions": {
+    "x": "NickEh30 is having way too much fun with the new dragging physics in GTA 6. 💀\n\n🎥 NickEh30 on Twitch",
+    "tiktok": "NickEh30 is having way too much fun with the new dragging physics in GTA 6. 💀 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "NickEh30 is having way too much fun with the new dragging physics in GTA 6. 💀 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "NickEh30 is having way too much fun with the new dragging physics in GTA 6. 💀\n\n🎥 NickEh30 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "NickEh30 drags an NPC behind his truck in GTA 6 while laughing hysterically and making faces at the camera.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 20,
+        "end": 21.5,
+        "text": "Kiss my eyes!"
+      },
+      {
+        "start": 21.5,
+        "end": 22.5,
+        "text": "Hey!"
+      }
+    ],
+    "file": "media/raw/tw_BelovedCalmChoughPermaSmug-2IF_yHi9uSGuadKM.mp4",
+    "start": 13,
+    "end": 26,
+    "credit": "twitch.tv/nickeh30",
+    "caption": "Nick is going crazy",
+    "url": "https://www.twitch.tv/nickeh30/clip/BelovedCalmChoughPermaSmug-2IF_yHi9uSGuadKM",
+    "twitch": "nickeh30",
+    "views": 406,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.385,
+        "w": 0.212,
+        "x": 0.007,
+        "y": 0.252
+      }
+    }
+  },
+  "notes": "quality 8/10. NickEh30 drags an NPC behind his truck in GTA 6 while laughing hysterically and making faces at the camera. Source: https://www.twitch.tv/nickeh30/clip/BelovedCalmChoughPermaSmug-2IF_yHi9uSGuadKM (406 views). Change the on-screen hook with: hook S56: NEW TEXT"
+}

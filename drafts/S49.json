@@ -1,0 +1,70 @@
+{
+  "id": "S49",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T15:00:00+01:00",
+  "credit": "CaseOh",
+  "category": "streamer",
+  "media": "media/edits/S49.mp4",
+  "media_x": "media/edits/S49_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S49.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S49_x.mp4",
+  "hook": "CaseOh really doesn't want a job in GTA 6",
+  "captions": {
+    "x": "CaseOh's reaction to jumping out of the car is priceless 😂\n\n🎥 CaseOh on Twitch",
+    "tiktok": "CaseOh's reaction to jumping out of the car is priceless 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "CaseOh's reaction to jumping out of the car is priceless 😂 🎥 CaseOh on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "CaseOh's reaction to jumping out of the car is priceless 😂\n\n🎥 CaseOh on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "CaseOh accidentally jumps out of his car in GTA 6 while unpausing and has a hilarious reaction.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 1.2,
+        "end": 3,
+        "text": "[Laughter]"
+      },
+      {
+        "start": 3,
+        "end": 5,
+        "text": "The guards, yo, bro!"
+      },
+      {
+        "start": 5,
+        "end": 7.2,
+        "text": "[Laughter]"
+      }
+    ],
+    "file": "media/raw/tw_DeterminedSullenSalsifyTheRinger-eK-6VgJIVSraRB9T.mp4",
+    "start": 1.2,
+    "end": 7.2,
+    "credit": "twitch.tv/caseoh_",
+    "caption": "He really said no job",
+    "url": "https://www.twitch.tv/caseoh_/clip/DeterminedSullenSalsifyTheRinger-eK-6VgJIVSraRB9T",
+    "twitch": "caseoh_",
+    "views": 474,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.22,
+        "w": 0.2,
+        "x": 0.02,
+        "y": 0.2
+      }
+    }
+  },
+  "notes": "quality 8/10. CaseOh accidentally jumps out of his car in GTA 6 while unpausing and has a hilarious reaction. Source: https://www.twitch.tv/caseoh_/clip/DeterminedSullenSalsifyTheRinger-eK-6VgJIVSraRB9T (474 views). Change the on-screen hook with: hook S49: NEW TEXT"
+}

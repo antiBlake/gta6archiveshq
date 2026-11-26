@@ -39,7 +39,7 @@ async function buffer(query, variables) {
 // ---------- publish approved drafts ----------
 function publishApproved() {
   if (existsSync(join(STATE, 'paused'))) return log('paused: not publishing');
-  const CAPS = { tiktok: 16, instagram: 16, youtube: 6 };   // per day (WAT); YouTube channel phone-verified 2026-11-21
+  const CAPS = { tiktok: 4, instagram: 16, youtube: 3 };   // per day (WAT). 2026-11-26: TikTok+YouTube cut after both stopped recommending us (16/day of reposted streamer clips read as spam)
   const dayOf = (iso) => new Date(new Date(iso ?? Date.now()).getTime() + 3600_000).toISOString().slice(0, 10);
   const used = {};                                        // `${day}|${platform}` -> count already sent to Buffer
   for (const x of drafts()) for (const [p, b] of Object.entries(x.buffer ?? {})) if ((b.id || b.videoId) && !b.deleted && !['pulled', 'superseded'].includes(x.status)) { const k = `${dayOf(x.slot ?? b.dueAt)}|${p}`; used[k] = (used[k] ?? 0) + 1; }

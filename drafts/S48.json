@@ -1,0 +1,75 @@
+{
+  "id": "S48",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T14:00:00+01:00",
+  "credit": "Stormfall33",
+  "category": "streamer",
+  "media": "media/edits/S48.mp4",
+  "media_x": "media/edits/S48_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S48.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S48_x.mp4",
+  "hook": "The GTA 6 physics are already acting up",
+  "captions": {
+    "x": "Stormfall33 couldn't believe her eyes after this weird collision in the middle of the street. 😲\n\n🎥 Stormfall33 on Twitch",
+    "tiktok": "Stormfall33 couldn't believe her eyes after this weird collision in the middle of the street. 😲 🎥 Stormfall33 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Stormfall33 couldn't believe her eyes after this weird collision in the middle of the street. 😲 🎥 Stormfall33 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Stormfall33 couldn't believe her eyes after this weird collision in the middle of the street. 😲\n\n🎥 Stormfall33 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Stormfall33 crashes her motorcycle into a pole that she seemingly didn't hit and reacts with disbelief at the collision physics.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 7,
+        "end": 9,
+        "text": "I was not near that pole!"
+      },
+      {
+        "start": 10,
+        "end": 11.5,
+        "text": "Holy sh*t someone clip..."
+      },
+      {
+        "start": 12,
+        "end": 13,
+        "text": "I need evidence."
+      },
+      {
+        "start": 13.5,
+        "end": 14.5,
+        "text": "That sh*t I was not near."
+      }
+    ],
+    "file": "media/raw/tw_SparklyDeliciousOysterKappaRoss-m7xkhO4JHZ0xE8pq.mp4",
+    "start": 0,
+    "end": 17,
+    "credit": "twitch.tv/stormfall33",
+    "caption": "The ghost pole incident",
+    "url": "https://www.twitch.tv/stormfall33/clip/SparklyDeliciousOysterKappaRoss-m7xkhO4JHZ0xE8pq",
+    "twitch": "stormfall33",
+    "views": 317,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.48,
+        "w": 0.2,
+        "x": 0.79,
+        "y": 0.51
+      }
+    }
+  },
+  "notes": "quality 7/10. Stormfall33 crashes her motorcycle into a pole that she seemingly didn't hit and reacts with disbelief at the collision physics. Source: https://www.twitch.tv/stormfall33/clip/SparklyDeliciousOysterKappaRoss-m7xkhO4JHZ0xE8pq (317 views). Change the on-screen hook with: hook S48: NEW TEXT"
+}

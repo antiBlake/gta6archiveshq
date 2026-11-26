@@ -1,0 +1,105 @@
+{
+  "id": "S52",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T09:00:00+01:00",
+  "credit": "Maximilian_DOOD",
+  "category": "streamer",
+  "media": "media/edits/S52.mp4",
+  "media_x": "media/edits/S52_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S52.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S52_x.mp4",
+  "hook": "Lucia really hates robocallers in GTA 6",
+  "captions": {
+    "x": "Maximilian_DOOD can't believe how realistic these random phone calls are in GTA 6. 😂\n\n🎥 Maximilian_DOOD on Twitch",
+    "tiktok": "Maximilian_DOOD can't believe how realistic these random phone calls are in GTA 6. 😂 🎥 Maximilian_DOOD on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Maximilian_DOOD can't believe how realistic these random phone calls are in GTA 6. 😂 🎥 Maximilian_DOOD on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Maximilian_DOOD can't believe how realistic these random phone calls are in GTA 6. 😂\n\n🎥 Maximilian_DOOD on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Lucia threatens a robocaller while Maximilian_DOOD drives through traffic in GTA 6.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 25.5,
+        "end": 26.8,
+        "text": "I know you can hear me,"
+      },
+      {
+        "start": 26.8,
+        "end": 28.2,
+        "text": "and I want you to know"
+      },
+      {
+        "start": 28.2,
+        "end": 29.1,
+        "text": "I will find the"
+      },
+      {
+        "start": 29.1,
+        "end": 30,
+        "text": "f***ing data center"
+      },
+      {
+        "start": 30,
+        "end": 31.4,
+        "text": "they keep your memory in,"
+      },
+      {
+        "start": 31.4,
+        "end": 32.5,
+        "text": "and I will burn that s***"
+      },
+      {
+        "start": 32.5,
+        "end": 33.5,
+        "text": "to the ground."
+      },
+      {
+        "start": 33.5,
+        "end": 34.8,
+        "text": "I will delete you"
+      },
+      {
+        "start": 34.8,
+        "end": 36.8,
+        "text": "and your entire robocaller bloodline."
+      },
+      {
+        "start": 39,
+        "end": 41,
+        "text": "Get his ass, Lu."
+      }
+    ],
+    "file": "media/raw/tw_ResoluteProudVanillaMVGame--KBwh7P1PDd86Jch.mp4",
+    "start": 25.5,
+    "end": 41,
+    "credit": "twitch.tv/maximilian_dood",
+    "caption": "Lucia vs Robocallers",
+    "url": "https://www.twitch.tv/maximilian_dood/clip/ResoluteProudVanillaMVGame--KBwh7P1PDd86Jch",
+    "twitch": "maximilian_dood",
+    "views": 561,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.22,
+        "w": 0.22,
+        "x": 0.01,
+        "y": 0.75
+      }
+    }
+  },
+  "notes": "quality 8/10. Lucia threatens a robocaller while Maximilian_DOOD drives through traffic in GTA 6. Source: https://www.twitch.tv/maximilian_dood/clip/ResoluteProudVanillaMVGame--KBwh7P1PDd86Jch (561 views). Change the on-screen hook with: hook S52: NEW TEXT"
+}

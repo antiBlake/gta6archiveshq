@@ -38,3 +38,11 @@
 - Length: ≤20s 1.87× (10), >50s 1.06× (8), 21-35s 1× (17), 36-50s 0.43× (4)
 - Best hours (WAT): 17 3.17× (4), 15 1.65× (4), 14 1.06× (9), 0 1× (3), 20 1× (5), 22 1× (3), 19 0.99× (3), 8 0.82× (3), 16 0.43× (4)
 - Top hooks: "Lacy was bragging about his driving right before this" (tiktok 412 views); "GTA 6 VS GTA 5 VS GTA 4" (tiktok 81 views); "ISHOWSPEED IN GTA 6" (tiktok 66 views); "XQC IN GTA 6" (tiktok 74 views); "THIS NPC HAD ENOUGH" (tiktok 74 views)
+
+### 2026-11-26 — 41 posts scored
+- Streamers: Ludwig 1× (3), CaseOh 0.63× (5)
+- Source types: viral 2.15× (3), guide 1.31× (6), creator 1× (16), streamer 1× (14)
+- Hook styles: all-caps 1× (24), statement 1× (13), tip 0.62× (3)
+- Length: ≤20s 1.4× (10), >50s 1.36× (6), 21-35s 1.22× (13)
+- Best hours (WAT): 20 1.37× (6), 14 1.33× (3), 19 1.3× (4), 15 1.15× (4), 0 1× (3), 17 1× (5), 22 1× (3), 21 0.75× (3), 11 0.5× (3)
+- Top hooks: "GTA 6 VS GTA 5 VS GTA 4" (tiktok 81 views); "XQC IN GTA 6" (tiktok 74 views); "Don't waste money on car upgrades in GTA 6 yet" (youtube 8839 views); "GTA 6 horses have the exact same physics as RDR2" (youtube 5502 views); "HE PLAYED THE BRIDGE GAME" (tiktok 12 views)

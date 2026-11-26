@@ -103,6 +103,6 @@
     "url": "https://x.com/chasmmmmmmmmmmm/status/2125161579230449919",
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
-    "result": "info failed: spawnSync /Users/mac/gta6archiveshq/tools/bin/yt-dlp ETIMEDOUT"
+    "result": "download failed (will retry)"
   }
 ]

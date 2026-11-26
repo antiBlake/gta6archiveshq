@@ -1,0 +1,70 @@
+{
+  "id": "S50",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-26T16:00:00+01:00",
+  "credit": "Vinesauce",
+  "category": "streamer",
+  "media": "media/edits/S50.mp4",
+  "media_x": "media/edits/S50_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S50.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S50_x.mp4",
+  "hook": "Vinesauce chose the worst getaway vehicle in GTA 6",
+  "captions": {
+    "x": "Vinesauce tried to make a clean escape in a kayak. 🛶\n\n🎥 Vinesauce on Twitch",
+    "tiktok": "Vinesauce tried to make a clean escape in a kayak. 🛶 🎥 Vinesauce on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Vinesauce tried to make a clean escape in a kayak. 🛶 🎥 Vinesauce on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Vinesauce tried to make a clean escape in a kayak. 🛶\n\n🎥 Vinesauce on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "Vinesauce attempts to escape the police in GTA 6 using a kayak on land.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 16.5,
+        "end": 18.2,
+        "text": "This is my getaway vehicle."
+      },
+      {
+        "start": 18.2,
+        "end": 20.2,
+        "text": "How? How? Suspect still going!"
+      },
+      {
+        "start": 21.8,
+        "end": 24.5,
+        "text": "Is that the person I crashed into?"
+      }
+    ],
+    "file": "media/raw/tw_MoralFastPenguinUWot-LG0z7lwE4TPs24CW.mp4",
+    "start": 16.2,
+    "end": 25,
+    "credit": "twitch.tv/vinesauce",
+    "caption": "Best getaway vehicle ever",
+    "url": "https://www.twitch.tv/vinesauce/clip/MoralFastPenguinUWot-LG0z7lwE4TPs24CW",
+    "twitch": "vinesauce",
+    "views": 328,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.24,
+        "w": 0.18,
+        "x": 0.01,
+        "y": 0.54
+      }
+    }
+  },
+  "notes": "quality 8/10. Vinesauce attempts to escape the police in GTA 6 using a kayak on land. Source: https://www.twitch.tv/vinesauce/clip/MoralFastPenguinUWot-LG0z7lwE4TPs24CW (328 views). Change the on-screen hook with: hook S50: NEW TEXT"
+}

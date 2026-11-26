@@ -1,0 +1,85 @@
+{
+  "id": "S51",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T08:00:00+01:00",
+  "credit": "SypherPK",
+  "category": "streamer",
+  "media": "media/edits/S51.mp4",
+  "media_x": "media/edits/S51_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S51.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-26/S51_x.mp4",
+  "hook": "The GTA 6 alligators are always listening",
+  "captions": {
+    "x": "SypherPK learned the hard way that you should never talk about alligators in the swamp. 🐊\n\n🎥 SypherPK on Twitch",
+    "tiktok": "SypherPK learned the hard way that you should never talk about alligators in the swamp. 🐊 🎥 SypherPK on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "SypherPK learned the hard way that you should never talk about alligators in the swamp. 🐊 🎥 SypherPK on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "SypherPK learned the hard way that you should never talk about alligators in the swamp. 🐊\n\n🎥 SypherPK on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "SypherPK gets attacked by an alligator in the swamp immediately after saying he's afraid of being eaten by one.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 39,
+        "end": 40.5,
+        "text": "Let me get out of here"
+      },
+      {
+        "start": 40.5,
+        "end": 41.5,
+        "text": "before a freaking alligator"
+      },
+      {
+        "start": 41.5,
+        "end": 42.8,
+        "text": "eats me alive"
+      },
+      {
+        "start": 43,
+        "end": 44.5,
+        "text": "Oh my god!"
+      },
+      {
+        "start": 44.5,
+        "end": 46,
+        "text": "Oh my god!"
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "text": "F***"
+      }
+    ],
+    "file": "media/raw/tw_PlumpBombasticWerewolfKreygasm-StYJhDjrsdyLvhTK.mp4",
+    "start": 39,
+    "end": 53,
+    "credit": "twitch.tv/sypherpk",
+    "caption": "He jinxed himself",
+    "url": "https://www.twitch.tv/sypherpk/clip/PlumpBombasticWerewolfKreygasm-StYJhDjrsdyLvhTK",
+    "twitch": "sypherpk",
+    "views": 599,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.305,
+        "w": 0.265,
+        "x": 0.007,
+        "y": 0.375
+      }
+    }
+  },
+  "notes": "quality 9/10. SypherPK gets attacked by an alligator in the swamp immediately after saying he's afraid of being eaten by one. Source: https://www.twitch.tv/sypherpk/clip/PlumpBombasticWerewolfKreygasm-StYJhDjrsdyLvhTK (599 views). Change the on-screen hook with: hook S51: NEW TEXT"
+}

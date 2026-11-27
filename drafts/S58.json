@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T15:00:00+01:00",
   "credit": "ohnePixel",
@@ -71,5 +71,17 @@
       }
     }
   },
-  "notes": "quality 8/10. ohnePixel encounters a stray cat and a strange NPC sitting on the ground in GTA 6. Source: https://www.twitch.tv/ohnepixel/clip/BreakableWimpyStarlingFutureMan-8I8IqOwAd2RtZEY2 (1338 views). Change the on-screen hook with: hook S58: NEW TEXT"
+  "notes": "quality 8/10. ohnePixel encounters a stray cat and a strange NPC sitting on the ground in GTA 6. Source: https://www.twitch.tv/ohnepixel/clip/BreakableWimpyStarlingFutureMan-8I8IqOwAd2RtZEY2 (1338 views). Change the on-screen hook with: hook S58: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b092018049983dcfb92ccc6",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

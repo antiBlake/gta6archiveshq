@@ -1,0 +1,69 @@
+{
+  "id": "S77",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T12:00:00+01:00",
+  "credit": "Quin69",
+  "category": "streamer",
+  "media": "media/edits/S77.mp4",
+  "media_x": "media/edits/S77_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S77.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S77_x.mp4",
+  "hook": "Quin69 tries to escape the cops in GTA 6",
+  "captions": {
+    "x": "Quin69 trying to outrun the cops in GTA 6 is pure comedy 💀\n\n🎥 Quin69 on Twitch",
+    "tiktok": "Quin69 trying to outrun the cops in GTA 6 is pure comedy 💀 🎥 Quin69 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Quin69 trying to outrun the cops in GTA 6 is pure comedy 💀 🎥 Quin69 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Quin69 trying to outrun the cops in GTA 6 is pure comedy 💀\n\n🎥 Quin69 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Quin69 tries to escape a police chase on a motorcycle in GTA 6 at night, crashing repeatedly before flying off a bridge into the river.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 10,
+        "end": 10.5,
+        "text": "Oh shit!"
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "text": "No! No! Ah no!"
+      },
+      {
+        "start": 26,
+        "end": 28.5,
+        "text": "We're going through, motherf***ers!"
+      },
+      {
+        "start": 34,
+        "end": 36,
+        "text": "Just as I planned!"
+      }
+    ],
+    "file": "media/raw/tw_StormyThankfulHamburgerMoreCowbell-RREUCZR4iWXU7A0Q.mp4",
+    "start": 10,
+    "end": 32,
+    "credit": "twitch.tv/quin69",
+    "caption": "Bro cannot drive",
+    "url": "https://www.twitch.tv/quin69/clip/StormyThankfulHamburgerMoreCowbell-RREUCZR4iWXU7A0Q",
+    "twitch": "quin69",
+    "views": 341,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. Quin69 tries to escape a police chase on a motorcycle in GTA 6 at night, crashing repeatedly before flying off a bridge into the river. Source: https://www.twitch.tv/quin69/clip/StormyThankfulHamburgerMoreCowbell-RREUCZR4iWXU7A0Q (341 views). Change the on-screen hook with: hook S77: NEW TEXT"
+}

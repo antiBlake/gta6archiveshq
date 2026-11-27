@@ -1,0 +1,68 @@
+{
+  "id": "T24",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T12:00:00+01:00",
+  "credit": "Arekkz Gaming",
+  "category": "guide",
+  "media": "media/edits/T24.mp4",
+  "media_x": "media/edits/T24_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T24.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T24_x.mp4",
+  "hook": "The best way to save your money early in GTA 6",
+  "captions": {
+    "x": "Arekkz Gaming shows us how to keep our hard earned cash safe in the early game. 💰\n⚠️ Mission spoilers\n\n🎥 Arekkz Gaming on YouTube",
+    "tiktok": "Arekkz Gaming shows us how to keep our hard earned cash safe in the early game. 💰\n⚠️ Mission spoilers 🎥 Arekkz Gaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Arekkz Gaming shows us how to keep our hard earned cash safe in the early game. 💰\n⚠️ Mission spoilers 🎥 Arekkz Gaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Arekkz Gaming shows us how to keep our hard earned cash safe in the early game. 💰\n⚠️ Mission spoilers\n\n🎥 Arekkz Gaming on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "The narrator explains how to store cash under floorboards in Jason's house to avoid losing it when dying or getting arrested.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 73.2,
+        "end": 75.5,
+        "text": "Any cash that you're carrying"
+      },
+      {
+        "start": 75.5,
+        "end": 78,
+        "text": "can be lost if you die"
+      },
+      {
+        "start": 78,
+        "end": 80.5,
+        "text": "or get arrested, so early on"
+      },
+      {
+        "start": 80.5,
+        "end": 83.2,
+        "text": "store it under Jason's floorboards."
+      }
+    ],
+    "file": "media/raw/T24_OFC1ZVSjB3o.mp4",
+    "start": 73.2,
+    "end": 83.2,
+    "credit": "Arekkz Gaming",
+    "caption": "Don't lose your cash",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=OFC1ZVSjB3o&t=120s"
+  },
+  "notes": "quality 8/10. The narrator explains how to store cash under floorboards in Jason's house to avoid losing it when dying or getting arrested. From Arekkz Gaming: https://youtu.be/OFC1ZVSjB3o?t=120 (found by search). Change the on-screen hook with: hook T24: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UC-zjH-e5XBzMpy_VtwIGRxQ",
+  "auto_approved": true
+}

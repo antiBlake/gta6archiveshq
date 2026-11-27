@@ -1,0 +1,88 @@
+{
+  "id": "T22",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T10:00:00+01:00",
+  "credit": "Arekkz Gaming",
+  "category": "guide",
+  "media": "media/edits/T22.mp4",
+  "media_x": "media/edits/T22_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T22.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T22_x.mp4",
+  "hook": "The attention to detail in GTA 6 is actually insane",
+  "captions": {
+    "x": "Arekkz Gaming shows off how Jason uses his teeth to open snacks when his hands are full. 🍟\n⚠️ Mission spoilers\n\n🎥 Arekkz Gaming on YouTube",
+    "tiktok": "Arekkz Gaming shows off how Jason uses his teeth to open snacks when his hands are full. 🍟\n⚠️ Mission spoilers 🎥 Arekkz Gaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Arekkz Gaming shows off how Jason uses his teeth to open snacks when his hands are full. 🍟\n⚠️ Mission spoilers 🎥 Arekkz Gaming on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Arekkz Gaming shows off how Jason uses his teeth to open snacks when his hands are full. 🍟\n⚠️ Mission spoilers\n\n🎥 Arekkz Gaming on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "Jason uses his teeth to open a bag of chips because he is holding a pack of beer in his other hand.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 64,
+        "end": 66.5,
+        "text": "Another insane little detail"
+      },
+      {
+        "start": 66.5,
+        "end": 68.5,
+        "text": "is that the animations for"
+      },
+      {
+        "start": 68.5,
+        "end": 70.5,
+        "text": "eating food actually change"
+      },
+      {
+        "start": 70.5,
+        "end": 73,
+        "text": "your character is holding."
+      },
+      {
+        "start": 73,
+        "end": 75,
+        "text": "For example, if Jason has"
+      },
+      {
+        "start": 75,
+        "end": 77,
+        "text": "a pack of beer in"
+      },
+      {
+        "start": 77,
+        "end": 79,
+        "text": "one hand and buys chips,"
+      },
+      {
+        "start": 79,
+        "end": 81,
+        "text": "he'll use his teeth to rip"
+      }
+    ],
+    "file": "media/raw/T22_Qpb3yf2kEsU.mp4",
+    "start": 64,
+    "end": 81,
+    "credit": "Arekkz Gaming",
+    "caption": "Dynamic eating animations",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=Qpb3yf2kEsU&t=109s"
+  },
+  "notes": "quality 8/10. Jason uses his teeth to open a bag of chips because he is holding a pack of beer in his other hand. From Arekkz Gaming: https://youtu.be/Qpb3yf2kEsU?t=109 (found by search). Change the on-screen hook with: hook T22: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UC-zjH-e5XBzMpy_VtwIGRxQ",
+  "auto_approved": true
+}

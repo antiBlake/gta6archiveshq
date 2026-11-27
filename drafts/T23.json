@@ -1,0 +1,73 @@
+{
+  "id": "T23",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T11:00:00+01:00",
+  "credit": "Hazard",
+  "category": "guide",
+  "media": "media/edits/T23.mp4",
+  "media_x": "media/edits/T23_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T23.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T23_x.mp4",
+  "hook": "Don't lose your weapons in GTA 6",
+  "captions": {
+    "x": "Save your weapons from disappearing forever with this Hazard tip. 🎮\n⚠️ Mission spoilers\n\n🎥 Hazard on YouTube",
+    "tiktok": "Save your weapons from disappearing forever with this Hazard tip. 🎮\n⚠️ Mission spoilers 🎥 Hazard on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "Save your weapons from disappearing forever with this Hazard tip. 🎮\n⚠️ Mission spoilers 🎥 Hazard on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "Save your weapons from disappearing forever with this Hazard tip. 🎮\n⚠️ Mission spoilers\n\n🎥 Hazard on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Hazard explains how to permanently store weapons and cash in GTA 6 to avoid losing them when busted or wasted.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 3,
+        "end": 5.5,
+        "text": "For starters, you shouldn't shy away"
+      },
+      {
+        "start": 5.5,
+        "end": 9.5,
+        "text": "from buying good weapons and customizing them, as the weapons you purchase"
+      },
+      {
+        "start": 9.5,
+        "end": 12,
+        "text": "will get permanently added to your inventory."
+      },
+      {
+        "start": 12,
+        "end": 16,
+        "text": "But the weapons that you pick from your enemies will be lost if you die or get busted."
+      },
+      {
+        "start": 16,
+        "end": 21,
+        "text": "So to save them, simply open the trunk of Jason's Vapid Granado and store them."
+      }
+    ],
+    "file": "media/raw/T23_FJmOtHevY5w.mp4",
+    "start": 3,
+    "end": 21,
+    "credit": "Hazard",
+    "caption": "Store guns in your trunk",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=FJmOtHevY5w&t=41s"
+  },
+  "notes": "quality 8/10. Hazard explains how to permanently store weapons and cash in GTA 6 to avoid losing them when busted or wasted. From Hazard: https://youtu.be/FJmOtHevY5w?t=41 (found by search). Change the on-screen hook with: hook T23: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCI1-J45WXprOQQ_m9pmfW9A",
+  "auto_approved": true
+}

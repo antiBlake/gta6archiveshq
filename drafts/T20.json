@@ -1,0 +1,129 @@
+{
+  "id": "T20",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T08:00:00+01:00",
+  "credit": "IceManIsaac",
+  "category": "guide",
+  "media": "media/edits/T20.mp4",
+  "media_x": "media/edits/T20_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T20.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T20_x.mp4",
+  "hook": "You can actually hide from the cops while driving in GTA 6",
+  "captions": {
+    "x": "IceManIsaac shows how to dodge bullets and hide from the police using this simple driving mechanic. 🚔\n⚠️ Mission spoilers\n\n🎥 IceManIsaac on YouTube",
+    "tiktok": "IceManIsaac shows how to dodge bullets and hide from the police using this simple driving mechanic. 🚔\n⚠️ Mission spoilers 🎥 IceManIsaac on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "IceManIsaac shows how to dodge bullets and hide from the police using this simple driving mechanic. 🚔\n⚠️ Mission spoilers 🎥 IceManIsaac on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "IceManIsaac shows how to dodge bullets and hide from the police using this simple driving mechanic. 🚔\n⚠️ Mission spoilers\n\n🎥 IceManIsaac on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "IceManIsaac explains how holding the duck button while driving helps dodge bullets and avoid police recognition.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 42.5,
+        "end": 44.5,
+        "text": "You can hold B while driving"
+      },
+      {
+        "start": 44.5,
+        "end": 46.5,
+        "text": "and there's two benefits to it."
+      },
+      {
+        "start": 46.5,
+        "end": 48.5,
+        "text": "So hold B or Circle"
+      },
+      {
+        "start": 48.5,
+        "end": 51,
+        "text": "and that will cause your character"
+      },
+      {
+        "start": 51,
+        "end": 52.5,
+        "text": "to duck down."
+      },
+      {
+        "start": 52.5,
+        "end": 54.5,
+        "text": "This is not only useful"
+      },
+      {
+        "start": 54.5,
+        "end": 56.5,
+        "text": "for dodging bullets,"
+      },
+      {
+        "start": 56.5,
+        "end": 58.5,
+        "text": "but it's also useful if"
+      },
+      {
+        "start": 58.5,
+        "end": 60.5,
+        "text": "sometimes cops won't know"
+      },
+      {
+        "start": 60.5,
+        "end": 62.5,
+        "text": "the vehicle you're driving."
+      },
+      {
+        "start": 62.5,
+        "end": 64.5,
+        "text": "But they'll know your description."
+      },
+      {
+        "start": 64.5,
+        "end": 66.5,
+        "text": "You can see that blue bar"
+      },
+      {
+        "start": 66.5,
+        "end": 68.5,
+        "text": "start to tick up"
+      },
+      {
+        "start": 68.5,
+        "end": 70.5,
+        "text": "as a cop gets close to you."
+      },
+      {
+        "start": 70.5,
+        "end": 72.5,
+        "text": "Do you match the description?"
+      }
+    ],
+    "file": "media/raw/T20_GN-fCSbiv6U.mp4",
+    "start": 42.5,
+    "end": 74.5,
+    "credit": "IceManIsaac",
+    "caption": "How to hide from cops",
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.2,
+        "w": 0.15,
+        "x": 0.82,
+        "y": 0.77
+      }
+    },
+    "url": "https://www.youtube.com/watch?v=GN-fCSbiv6U&t=146s"
+  },
+  "notes": "quality 8/10. IceManIsaac explains how holding the duck button while driving helps dodge bullets and avoid police recognition. From IceManIsaac: https://youtu.be/GN-fCSbiv6U?t=146 (found by search). Change the on-screen hook with: hook T20: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCoT7FaR2QO-YSplT4N5UIbg",
+  "auto_approved": true
+}

@@ -1,0 +1,103 @@
+{
+  "id": "T25",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T11:00:00+01:00",
+  "credit": "MrDalekJD",
+  "category": "guide",
+  "media": "media/edits/T25.mp4",
+  "media_x": "media/edits/T25_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T25.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T25_x.mp4",
+  "hook": "You can actually change your cap orientation in GTA 6",
+  "captions": {
+    "x": "MrDalekJD shows us how to change your look without visiting a store. 🧢\n⚠️ Mission spoilers\n\n🎥 MrDalekJD on YouTube",
+    "tiktok": "MrDalekJD shows us how to change your look without visiting a store. 🧢\n⚠️ Mission spoilers 🎥 MrDalekJD on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "MrDalekJD shows us how to change your look without visiting a store. 🧢\n⚠️ Mission spoilers 🎥 MrDalekJD on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "MrDalekJD shows us how to change your look without visiting a store. 🧢\n⚠️ Mission spoilers\n\n🎥 MrDalekJD on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "The player demonstrates a hidden control in GTA 6 that allows you to change the orientation of your character's cap using a button combination.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 0.5,
+        "end": 2.2,
+        "text": "Next, if you're wearing a cap,"
+      },
+      {
+        "start": 2.2,
+        "end": 3.4,
+        "text": "you can change how you"
+      },
+      {
+        "start": 3.4,
+        "end": 4,
+        "text": "wear it"
+      },
+      {
+        "start": 4,
+        "end": 5.5,
+        "text": "without going anywhere"
+      },
+      {
+        "start": 5.5,
+        "end": 6.4,
+        "text": "near a clothes shop."
+      },
+      {
+        "start": 6.4,
+        "end": 8.4,
+        "text": "If you hold L1 on PlayStation,"
+      },
+      {
+        "start": 8.4,
+        "end": 9.5,
+        "text": "LB on Xbox"
+      },
+      {
+        "start": 9.5,
+        "end": 10.4,
+        "text": "and use the D-pad,"
+      },
+      {
+        "start": 10.4,
+        "end": 12.4,
+        "text": "you can swap your cap around,"
+      },
+      {
+        "start": 12.4,
+        "end": 14,
+        "text": "so you can wear it forwards,"
+      },
+      {
+        "start": 14,
+        "end": 15,
+        "text": "backwards and so on."
+      }
+    ],
+    "file": "media/raw/T25_e7XJhrlnOEQ.mp4",
+    "start": 0.5,
+    "end": 15,
+    "credit": "MrDalekJD",
+    "caption": "Hidden cap controls",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=e7XJhrlnOEQ&t=79s"
+  },
+  "notes": "quality 8/10. The player demonstrates a hidden control in GTA 6 that allows you to change the orientation of your character's cap using a button combination. From MrDalekJD: https://youtu.be/e7XJhrlnOEQ?t=79 (found by search). Change the on-screen hook with: hook T25: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCMUP9j-QidC_S0KLlO06uCg",
+  "auto_approved": true
+}

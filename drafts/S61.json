@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T18:00:00+01:00",
   "credit": "NickEh30",
@@ -76,5 +76,17 @@
       }
     }
   },
-  "notes": "quality 8/10. NickEh30 drives a military tank down a road in GTA 6 and blows up a car in his way. Source: https://www.twitch.tv/nickeh30/clip/PleasantDirtyWallabyDancingBanana-0knKCXLfB4Uw-FS0 (451 views). Change the on-screen hook with: hook S61: NEW TEXT"
+  "notes": "quality 8/10. NickEh30 drives a military tank down a road in GTA 6 and blows up a car in his way. Source: https://www.twitch.tv/nickeh30/clip/PleasantDirtyWallabyDancingBanana-0knKCXLfB4Uw-FS0 (451 views). Change the on-screen hook with: hook S61: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b094c52062ed764a800044e",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T17:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

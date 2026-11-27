@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T11:00:00+01:00",
   "credit": "Jerma985",
@@ -55,5 +55,24 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. Jerma985 plays Grand Theft Auto 6 in his underwear and makes a weird scream after putting on sunglasses. Source: https://www.twitch.tv/jerma985/clip/GrotesqueHonestBaconLitFam-3VjkBrl4qO7sbRQ0 (480 views). Change the on-screen hook with: hook S54: NEW TEXT"
+  "notes": "quality 8/10. Jerma985 plays Grand Theft Auto 6 in his underwear and makes a weird scream after putting on sunglasses. Source: https://www.twitch.tv/jerma985/clip/GrotesqueHonestBaconLitFam-3VjkBrl4qO7sbRQ0 (480 views). Change the on-screen hook with: hook S54: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0912bfe94385a8fd771bd7",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T10:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0912c0049983dcfb8dd260",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

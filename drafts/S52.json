@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T09:00:00+01:00",
   "credit": "Maximilian_DOOD",
@@ -101,5 +101,31 @@
       }
     }
   },
-  "notes": "quality 8/10. Lucia threatens a robocaller while Maximilian_DOOD drives through traffic in GTA 6. Source: https://www.twitch.tv/maximilian_dood/clip/ResoluteProudVanillaMVGame--KBwh7P1PDd86Jch (561 views). Change the on-screen hook with: hook S52: NEW TEXT"
+  "notes": "quality 8/10. Lucia threatens a robocaller while Maximilian_DOOD drives through traffic in GTA 6. Source: https://www.twitch.tv/maximilian_dood/clip/ResoluteProudVanillaMVGame--KBwh7P1PDd86Jch (561 views). Change the on-screen hook with: hook S52: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0912b6658222306ce4894d",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T08:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "5xWdl9uBOYo",
+      "url": "https://www.youtube.com/shorts/5xWdl9uBOYo",
+      "dueAt": "2026-11-27T08:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b0912b91fd46e62e715c6bf",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T08:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T13:00:00+01:00",
   "credit": "NickEh30",
@@ -61,5 +61,17 @@
       }
     }
   },
-  "notes": "quality 8/10. NickEh30 drags an NPC behind his truck in GTA 6 while laughing hysterically and making faces at the camera. Source: https://www.twitch.tv/nickeh30/clip/BelovedCalmChoughPermaSmug-2IF_yHi9uSGuadKM (406 views). Change the on-screen hook with: hook S56: NEW TEXT"
+  "notes": "quality 8/10. NickEh30 drags an NPC behind his truck in GTA 6 while laughing hysterically and making faces at the camera. Source: https://www.twitch.tv/nickeh30/clip/BelovedCalmChoughPermaSmug-2IF_yHi9uSGuadKM (406 views). Change the on-screen hook with: hook S56: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0912c3658222306ce48c7e",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T12:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

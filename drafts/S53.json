@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T10:00:00+01:00",
   "credit": "Vinesauce",
@@ -71,5 +71,31 @@
       }
     }
   },
-  "notes": "quality 8/10. A crow performs a backflip and dies spontaneously in front of the player, leading to a confused reaction from Vinesauce. Source: https://www.twitch.tv/vinesauce/clip/StrangeArtisticRaisinFunRun-89Y1nn2dQuf8TmcD (492 views). Change the on-screen hook with: hook S53: NEW TEXT"
+  "notes": "quality 8/10. A crow performs a backflip and dies spontaneously in front of the player, leading to a confused reaction from Vinesauce. Source: https://www.twitch.tv/vinesauce/clip/StrangeArtisticRaisinFunRun-89Y1nn2dQuf8TmcD (492 views). Change the on-screen hook with: hook S53: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0912bb776ce21276ea56ff",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T09:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "N4osw_inbLk",
+      "url": "https://www.youtube.com/shorts/N4osw_inbLk",
+      "dueAt": "2026-11-27T09:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b0912be1fd46e62e715c81b",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T09:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

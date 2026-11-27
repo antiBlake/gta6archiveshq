@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T14:00:00+01:00",
   "credit": "Joe_Bartolozzi",
@@ -71,5 +71,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Joe Bartolozzi steals a pair of shoes from an NPC in GTA 6 and runs away. Source: https://www.twitch.tv/joe_bartolozzi/clip/CloudyBeautifulSageAliens-lPvnP92e3db1_lR1 (1689 views). Change the on-screen hook with: hook S57: NEW TEXT"
+  "notes": "quality 8/10. Joe Bartolozzi steals a pair of shoes from an NPC in GTA 6 and runs away. Source: https://www.twitch.tv/joe_bartolozzi/clip/CloudyBeautifulSageAliens-lPvnP92e3db1_lR1 (1689 views). Change the on-screen hook with: hook S57: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0912c4658222306ce48cb0",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

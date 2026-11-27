@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T12:00:00+01:00",
   "credit": "Syndicate",
@@ -81,5 +81,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Syndicate reacts with amazement after discovering that the disc brakes on his car glow orange from heat in GTA 6. Source: https://www.twitch.tv/syndicate/clip/VastSmilingHorseradish4Head-6RTexNXyghi735zV (442 views). Change the on-screen hook with: hook S55: NEW TEXT"
+  "notes": "quality 8/10. Syndicate reacts with amazement after discovering that the disc brakes on his car glow orange from heat in GTA 6. Source: https://www.twitch.tv/syndicate/clip/VastSmilingHorseradish4Head-6RTexNXyghi735zV (442 views). Change the on-screen hook with: hook S55: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0912c1776ce21276ea589d",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T11:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -1,36 +1,32 @@
 {
-  "updated": "2026-11-26T02:46:25.328Z",
-  "posts": 41,
+  "updated": "2026-11-27T02:45:50.720Z",
+  "posts": 35,
   "platforms": {
     "tiktok": {
       "median_engagement": 2,
-      "posts": 11
+      "posts": 4
     },
     "youtube": {
-      "median_engagement": 1249,
-      "posts": 22
+      "median_engagement": 205,
+      "posts": 26
     },
     "instagram": {
       "median_engagement": 165,
-      "posts": 8
+      "posts": 5
     }
   },
   "streamer": {
-    "xQc": {
-      "n": 2,
-      "score": 27.4
-    },
-    "CaseOh": {
-      "n": 5,
-      "score": 0.63
-    },
     "Ludwig": {
-      "n": 3,
-      "score": 1
+      "n": 1,
+      "score": 2.27
     },
     "Lacy": {
       "n": 1,
-      "score": 1.14
+      "score": 3.1
+    },
+    "CaseOh": {
+      "n": 3,
+      "score": 0.5
     },
     "CohhCarnage": {
       "n": 1,
@@ -43,64 +39,80 @@
     "Kai Cenat": {
       "n": 1,
       "score": 0.75
+    },
+    "HutchMF": {
+      "n": 1,
+      "score": 0.77
+    },
+    "vanillamace": {
+      "n": 1,
+      "score": 0.75
+    },
+    "NickEh30": {
+      "n": 1,
+      "score": 0.76
+    },
+    "Tminnzy": {
+      "n": 1,
+      "score": 0.75
+    },
+    "Maximilian_DOOD": {
+      "n": 1,
+      "score": 0.75
     }
   },
   "source": {
     "creator": {
-      "n": 16,
-      "score": 1
-    },
-    "compilation": {
-      "n": 2,
+      "n": 13,
       "score": 1
     },
     "streamer": {
-      "n": 14,
-      "score": 1
+      "n": 13,
+      "score": 0.2
     },
     "guide": {
       "n": 6,
-      "score": 1.31
+      "score": 6.27
     },
     "viral": {
       "n": 3,
-      "score": 2.15
+      "score": 10.52
     }
   },
   "hookStyle": {
     "all-caps": {
-      "n": 24,
+      "n": 14,
       "score": 1
     },
     "statement": {
-      "n": 13,
-      "score": 1
+      "n": 17,
+      "score": 0.17
     },
     "setup-payoff": {
       "n": 1,
-      "score": 1.14
+      "score": 3.1
     },
     "tip": {
       "n": 3,
-      "score": 0.62
+      "score": 1.21
     }
   },
   "length": {
     "≤20s": {
       "n": 10,
-      "score": 1.4
+      "score": 1
     },
     "21-35s": {
-      "n": 13,
-      "score": 1.22
+      "n": 9,
+      "score": 1.94
     },
     ">50s": {
-      "n": 6,
-      "score": 1.36
+      "n": 7,
+      "score": 0.31
     },
     "36-50s": {
-      "n": 2,
-      "score": 0.77
+      "n": 1,
+      "score": 1.38
     }
   },
   "hour": {
@@ -109,16 +121,20 @@
       "score": 1
     },
     "8": {
-      "n": 2,
-      "score": 1
+      "n": 3,
+      "score": 0.51
+    },
+    "9": {
+      "n": 1,
+      "score": 0.76
     },
     "10": {
-      "n": 1,
-      "score": 0.75
+      "n": 2,
+      "score": 0.6
     },
     "11": {
-      "n": 3,
-      "score": 0.5
+      "n": 4,
+      "score": 0.43
     },
     "12": {
       "n": 1,
@@ -126,38 +142,34 @@
     },
     "14": {
       "n": 3,
-      "score": 1.33
+      "score": 5.57
     },
     "15": {
-      "n": 4,
-      "score": 1.15
+      "n": 2,
+      "score": 8.62
     },
     "17": {
       "n": 5,
       "score": 1
     },
     "18": {
-      "n": 1,
-      "score": 0.85
+      "n": 2,
+      "score": 1.61
     },
     "19": {
       "n": 4,
-      "score": 1.3
+      "score": 5.71
     },
     "20": {
-      "n": 6,
-      "score": 1.37
+      "n": 1,
+      "score": 2.98
     },
     "21": {
-      "n": 3,
-      "score": 0.75
+      "n": 1,
+      "score": 1.1
     },
     "22": {
       "n": 3,
-      "score": 1
-    },
-    "23": {
-      "n": 2,
       "score": 1
     }
   },
@@ -165,32 +177,32 @@
     {
       "hook": "GTA 6 VS GTA 5 VS GTA 4",
       "platform": "tiktok",
-      "views": 81,
-      "score": 90.5
-    },
-    {
-      "hook": "XQC IN GTA 6",
-      "platform": "tiktok",
-      "views": 74,
-      "score": 67
+      "views": 80,
+      "score": 90
     },
     {
       "hook": "Don't waste money on car upgrades in GTA 6 yet",
       "platform": "youtube",
-      "views": 8839,
-      "score": 8.7
+      "views": 8677,
+      "score": 52.1
     },
     {
       "hook": "GTA 6 horses have the exact same physics as RDR2",
       "platform": "youtube",
-      "views": 5502,
-      "score": 7.4
+      "views": 5515,
+      "score": 45.2
     },
     {
-      "hook": "HE PLAYED THE BRIDGE GAME",
-      "platform": "tiktok",
-      "views": 12,
-      "score": 6
+      "hook": "You can actually take your dog on a jet ski in GTA 6",
+      "platform": "youtube",
+      "views": 2708,
+      "score": 20
+    },
+    {
+      "hook": "The NPC density on Vice Beach is actually insane",
+      "platform": "youtube",
+      "views": 1458,
+      "score": 10.1
     }
   ]
 }

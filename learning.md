@@ -46,3 +46,11 @@
 - Length: ≤20s 1.4× (10), >50s 1.36× (6), 21-35s 1.22× (13)
 - Best hours (WAT): 20 1.37× (6), 14 1.33× (3), 19 1.3× (4), 15 1.15× (4), 0 1× (3), 17 1× (5), 22 1× (3), 21 0.75× (3), 11 0.5× (3)
 - Top hooks: "GTA 6 VS GTA 5 VS GTA 4" (tiktok 81 views); "XQC IN GTA 6" (tiktok 74 views); "Don't waste money on car upgrades in GTA 6 yet" (youtube 8839 views); "GTA 6 horses have the exact same physics as RDR2" (youtube 5502 views); "HE PLAYED THE BRIDGE GAME" (tiktok 12 views)
+
+### 2026-11-27 — 35 posts scored
+- Streamers: CaseOh 0.5× (3)
+- Source types: viral 10.52× (3), guide 6.27× (6), creator 1× (13), streamer 0.2× (13)
+- Hook styles: tip 1.21× (3), all-caps 1× (14), statement 0.17× (17)
+- Length: 21-35s 1.94× (9), ≤20s 1× (10), >50s 0.31× (7)
+- Best hours (WAT): 19 5.71× (4), 14 5.57× (3), 0 1× (3), 17 1× (5), 22 1× (3), 8 0.51× (3), 11 0.43× (4)
+- Top hooks: "GTA 6 VS GTA 5 VS GTA 4" (tiktok 80 views); "Don't waste money on car upgrades in GTA 6 yet" (youtube 8677 views); "GTA 6 horses have the exact same physics as RDR2" (youtube 5515 views); "You can actually take your dog on a jet ski in GTA 6" (youtube 2708 views); "The NPC density on Vice Beach is actually insane" (youtube 1458 views)

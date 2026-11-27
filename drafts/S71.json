@@ -1,0 +1,80 @@
+{
+  "id": "S71",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T09:00:00+01:00",
+  "credit": "Joe_Bartolozzi",
+  "category": "streamer",
+  "media": "media/edits/S71.mp4",
+  "media_x": "media/edits/S71_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S71.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S71_x.mp4",
+  "hook": "The NPC interactions in GTA 6 are on another level",
+  "captions": {
+    "x": "Joe Bartolozzi finds a new way to annoy NPCs in Vice City. 😂\n\n🎥 Joe_Bartolozzi on Twitch",
+    "tiktok": "Joe Bartolozzi finds a new way to annoy NPCs in Vice City. 😂 🎥 Joe_Bartolozzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Joe Bartolozzi finds a new way to annoy NPCs in Vice City. 😂 🎥 Joe_Bartolozzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Joe Bartolozzi finds a new way to annoy NPCs in Vice City. 😂\n\n🎥 Joe_Bartolozzi on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Joe Bartolozzi steals car keys from a group of NPCs and runs away while mocking them.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 5.4,
+        "end": 6.8,
+        "text": "F*** your stupid ass sneakers"
+      },
+      {
+        "start": 6.8,
+        "end": 8.5,
+        "text": "Nobody cares about that s***"
+      },
+      {
+        "start": 8.8,
+        "end": 10.2,
+        "text": "Thanks for the keys p***y"
+      },
+      {
+        "start": 10.2,
+        "end": 11.5,
+        "text": "I'm stealing your f***ing car"
+      },
+      {
+        "start": 11.5,
+        "end": 13,
+        "text": "Let's leave! Let's leave!"
+      }
+    ],
+    "file": "media/raw/tw_NiceEsteemedChowderPermaSmug-HnzatspfVuGomST3.mp4",
+    "start": 0,
+    "end": 13,
+    "credit": "twitch.tv/joe_bartolozzi",
+    "caption": "He really stole his car",
+    "url": "https://www.twitch.tv/joe_bartolozzi/clip/NiceEsteemedChowderPermaSmug-HnzatspfVuGomST3",
+    "twitch": "joe_bartolozzi",
+    "views": 304,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.45,
+        "w": 0.22,
+        "x": 0.77,
+        "y": 0.45
+      }
+    }
+  },
+  "notes": "quality 8/10. Joe Bartolozzi steals car keys from a group of NPCs and runs away while mocking them. Source: https://www.twitch.tv/joe_bartolozzi/clip/NiceEsteemedChowderPermaSmug-HnzatspfVuGomST3 (304 views). Change the on-screen hook with: hook S71: NEW TEXT"
+}

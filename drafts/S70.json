@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "draft",
+  "status": "sent",
   "auto_approved": false,
   "slot": "2026-11-28T08:00:00+01:00",
   "credit": "PatStaresAt",
@@ -50,5 +50,7 @@
       }
     }
   },
-  "notes": "quality 9/10; text flags: glitch, exploit, mod or cheat. PatStaresAt laughs hysterically in GTA 6 after taking a completely destroyed car to a mechanic and seeing a repair bill of only $650. Source: https://www.twitch.tv/patstaresat/clip/GoldenCrackySageCharlieBitMe-Qm_VtxKVxjma0uba (639 views). Change the on-screen hook with: hook S70: NEW TEXT"
+  "notes": "quality 9/10; text flags: glitch, exploit, mod or cheat. PatStaresAt laughs hysterically in GTA 6 after taking a completely destroyed car to a mechanic and seeing a repair bill of only $650. Source: https://www.twitch.tv/patstaresat/clip/GoldenCrackySageCharlieBitMe-Qm_VtxKVxjma0uba (639 views). Change the on-screen hook with: hook S70: NEW TEXT",
+  "sent_at": "27/11/2026, 15:01:47 WAT",
+  "message_id": 125
 }

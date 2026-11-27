@@ -1,0 +1,100 @@
+{
+  "id": "S64",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T21:00:00+01:00",
+  "credit": "MrSavage",
+  "category": "streamer",
+  "media": "media/edits/S64.mp4",
+  "media_x": "media/edits/S64_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S64.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S64_x.mp4",
+  "hook": "Rockstar actually put MrSavage in GTA 6",
+  "captions": {
+    "x": "MrSavage couldn't believe his eyes when he saw this kid watching his stream in-game. 🤯\n\n🎥 MrSavage on Twitch",
+    "tiktok": "MrSavage couldn't believe his eyes when he saw this kid watching his stream in-game. 🤯 🎥 MrSavage on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "MrSavage couldn't believe his eyes when he saw this kid watching his stream in-game. 🤯 🎥 MrSavage on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "MrSavage couldn't believe his eyes when he saw this kid watching his stream in-game. 🤯\n\n🎥 MrSavage on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.8,
+    "reasons": [],
+    "what": "MrSavage reacts to seeing a character in a GTA 6 cutscene watching a video that appears to be his own live stream.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 4.4,
+        "end": 5.8,
+        "text": "So, what are you watching?"
+      },
+      {
+        "start": 5.8,
+        "end": 7.5,
+        "text": "Is that my stream? What?"
+      },
+      {
+        "start": 7.5,
+        "end": 9.2,
+        "text": "I swear that was my stream!"
+      },
+      {
+        "start": 9.2,
+        "end": 11,
+        "text": "Yeah, he likes to watch..."
+      },
+      {
+        "start": 11,
+        "end": 13,
+        "text": "...videos of people watching people..."
+      },
+      {
+        "start": 13,
+        "end": 15.2,
+        "text": "...play video games. Got it."
+      },
+      {
+        "start": 15.2,
+        "end": 17.5,
+        "text": "Wait, is that on my stream?"
+      },
+      {
+        "start": 17.5,
+        "end": 19,
+        "text": "I swear that kid is watching..."
+      },
+      {
+        "start": 19,
+        "end": 20.5,
+        "text": "...my stream!"
+      }
+    ],
+    "file": "media/raw/tw_FurryRefinedRavenPlanking-Ch_RpPiXRvXRj7Hg.mp4",
+    "start": 4,
+    "end": 20.5,
+    "credit": "twitch.tv/mrsavage",
+    "caption": "MrSavage is in GTA 6",
+    "url": "https://www.twitch.tv/mrsavage/clip/FurryRefinedRavenPlanking-Ch_RpPiXRvXRj7Hg",
+    "twitch": "mrsavage",
+    "views": 389,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.24,
+        "w": 0.17,
+        "x": 0.02,
+        "y": 0.04
+      }
+    }
+  },
+  "notes": "quality 9/10. MrSavage reacts to seeing a character in a GTA 6 cutscene watching a video that appears to be his own live stream. Source: https://www.twitch.tv/mrsavage/clip/FurryRefinedRavenPlanking-Ch_RpPiXRvXRj7Hg (389 views). Change the on-screen hook with: hook S64: NEW TEXT"
+}

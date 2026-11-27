@@ -1,0 +1,99 @@
+{
+  "id": "S65",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T22:00:00+01:00",
+  "credit": "Loserfruit",
+  "category": "streamer",
+  "media": "media/edits/S65.mp4",
+  "media_x": "media/edits/S65_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S65.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S65_x.mp4",
+  "hook": "Loserfruit only shoots them in the groin",
+  "captions": {
+    "x": "Loserfruit takes down the enemies one by one on the water. 🚤\n\n🎥 Loserfruit on Twitch",
+    "tiktok": "Loserfruit takes down the enemies one by one on the water. 🚤 🎥 Loserfruit on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Loserfruit takes down the enemies one by one on the water. 🚤 🎥 Loserfruit on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Loserfruit takes down the enemies one by one on the water. 🚤\n\n🎥 Loserfruit on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Loserfruit plays a boat shootout mission in GTA 6, aiming exclusively at enemies' groins.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "Yeah be f***ing fire."
+      },
+      {
+        "start": 2.5,
+        "end": 4.5,
+        "text": "Shoot the front guy in the groin."
+      },
+      {
+        "start": 6.8,
+        "end": 8.5,
+        "text": "I don't believe it, there's more of these assholes."
+      },
+      {
+        "start": 8.7,
+        "end": 10,
+        "text": "You think we pissed them off?"
+      },
+      {
+        "start": 10.3,
+        "end": 11.2,
+        "text": "Oh, sorry."
+      },
+      {
+        "start": 12.8,
+        "end": 15.5,
+        "text": "Oh, I shot your friend that shoots, but not you."
+      },
+      {
+        "start": 15.8,
+        "end": 16.5,
+        "text": "We got another one."
+      },
+      {
+        "start": 16.8,
+        "end": 17.5,
+        "text": "Yep."
+      },
+      {
+        "start": 20,
+        "end": 22.3,
+        "text": "Yo, they're backing off."
+      },
+      {
+        "start": 22.5,
+        "end": 25.5,
+        "text": "Hey Raul, where we gonna drop this package?"
+      }
+    ],
+    "file": "media/raw/tw_SmokyCaringPineappleHoneyBadger-pYzGScLBcXf7W4X5.mp4",
+    "start": 0,
+    "end": 21,
+    "credit": "twitch.tv/loserfruit",
+    "caption": "Groin shots only",
+    "url": "https://www.twitch.tv/loserfruit/clip/SmokyCaringPineappleHoneyBadger-pYzGScLBcXf7W4X5",
+    "twitch": "loserfruit",
+    "views": 355,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. Loserfruit plays a boat shootout mission in GTA 6, aiming exclusively at enemies' groins. Source: https://www.twitch.tv/loserfruit/clip/SmokyCaringPineappleHoneyBadger-pYzGScLBcXf7W4X5 (355 views). Change the on-screen hook with: hook S65: NEW TEXT"
+}

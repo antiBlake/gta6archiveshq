@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T22:00:00+01:00",
   "credit": "Loserfruit",
@@ -95,5 +95,17 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. Loserfruit plays a boat shootout mission in GTA 6, aiming exclusively at enemies' groins. Source: https://www.twitch.tv/loserfruit/clip/SmokyCaringPineappleHoneyBadger-pYzGScLBcXf7W4X5 (355 views). Change the on-screen hook with: hook S65: NEW TEXT"
+  "notes": "quality 8/10. Loserfruit plays a boat shootout mission in GTA 6, aiming exclusively at enemies' groins. Source: https://www.twitch.tv/loserfruit/clip/SmokyCaringPineappleHoneyBadger-pYzGScLBcXf7W4X5 (355 views). Change the on-screen hook with: hook S65: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b099365b83ec61257d434e1",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T21:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

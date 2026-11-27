@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T20:00:00+01:00",
   "credit": "NickEh30",
@@ -81,5 +81,17 @@
       }
     }
   },
-  "notes": "quality 8/10. NickEh30 discovers a man dressed as a mermaid on a beach in GTA 6 and proceeds to kick and shoot him while complaining about being scammed. Source: https://www.twitch.tv/nickeh30/clip/BlatantTallDumplingsDxCat-doHSECt5cWuX950I (411 views). Change the on-screen hook with: hook S63: NEW TEXT"
+  "notes": "quality 8/10. NickEh30 discovers a man dressed as a mermaid on a beach in GTA 6 and proceeds to kick and shoot him while complaining about being scammed. Source: https://www.twitch.tv/nickeh30/clip/BlatantTallDumplingsDxCat-doHSECt5cWuX950I (411 views). Change the on-screen hook with: hook S63: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b09936318c8c6749befec50",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T19:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

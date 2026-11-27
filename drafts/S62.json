@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T19:00:00+01:00",
   "credit": "TheBurntPeanut",
@@ -56,5 +56,17 @@
       }
     }
   },
-  "notes": "quality 7/10. TheBurntPeanut crashes his car during a night drive in GTA 6. Source: https://www.twitch.tv/theburntpeanut/clip/ObservantAffluentSashimiDogFace-lW6TfybNm5u2Q6K- (373 views). Change the on-screen hook with: hook S62: NEW TEXT"
+  "notes": "quality 7/10. TheBurntPeanut crashes his car during a night drive in GTA 6. Source: https://www.twitch.tv/theburntpeanut/clip/ObservantAffluentSashimiDogFace-lW6TfybNm5u2Q6K- (373 views). Change the on-screen hook with: hook S62: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b09936832c212878fd91365",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T18:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

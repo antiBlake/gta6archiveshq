@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T21:00:00+01:00",
   "credit": "MrSavage",
@@ -96,5 +96,17 @@
       }
     }
   },
-  "notes": "quality 9/10. MrSavage reacts to seeing a character in a GTA 6 cutscene watching a video that appears to be his own live stream. Source: https://www.twitch.tv/mrsavage/clip/FurryRefinedRavenPlanking-Ch_RpPiXRvXRj7Hg (389 views). Change the on-screen hook with: hook S64: NEW TEXT"
+  "notes": "quality 9/10. MrSavage reacts to seeing a character in a GTA 6 cutscene watching a video that appears to be his own live stream. Source: https://www.twitch.tv/mrsavage/clip/FurryRefinedRavenPlanking-Ch_RpPiXRvXRj7Hg (389 views). Change the on-screen hook with: hook S64: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b09936118c8c6749befebca",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T20:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T23:00:00+01:00",
   "credit": "Apollolol",
@@ -101,5 +101,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Apollolol robs a jewelry store in GTA 6 and panics when her getaway driver Jason gets in the passenger seat instead of driving. Source: https://www.twitch.tv/apollolol/clip/TallTrappedCarabeefPoooound-ej7FuuEn36OTm21i (325 views). Change the on-screen hook with: hook S66: NEW TEXT"
+  "notes": "quality 8/10. Apollolol robs a jewelry store in GTA 6 and panics when her getaway driver Jason gets in the passenger seat instead of driving. Source: https://www.twitch.tv/apollolol/clip/TallTrappedCarabeefPoooound-ej7FuuEn36OTm21i (325 views). Change the on-screen hook with: hook S66: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b099367b83ec61257d43551",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T22:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

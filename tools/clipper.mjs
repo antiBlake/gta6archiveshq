@@ -61,18 +61,18 @@ async function processQueue() {
   for (const item of todo.slice(0, 10)) {
     item.done = new Date().toISOString();
     let info;
-    try { info = JSON.parse(YT(['-j', item.url])); } catch (e) { item.result = `info failed: ${e.message.split('\n')[0].slice(0, 120)}`; delete item.done; continue; }
+    try { info = JSON.parse(YT(['-j', item.url])); } catch (e) { item.result = `info failed: ${e.message.split('\n')[0].slice(0, 120)}`; if ((item.tries = (item.tries ?? 0) + 1) < 3) delete item.done; continue; }
     const id = `P${Date.now().toString(36)}`; // compilation-pool segment id (unique)
     const src = `media/raw/${id}.mp4`;
     try { YT(['-q', '--ffmpeg-location', BIN, '-f', 'bv*+ba/b', '-S', 'res,fps', '--merge-output-format', 'mp4', '-o', src, item.url]); }
-    catch (e) { item.result = 'download failed (will retry)'; delete item.done; continue; }
+    catch (e) { item.result = 'download failed (will retry)'; if ((item.tries = (item.tries ?? 0) + 1) < 3) delete item.done; continue; }
     const platform = /x\.com|twitter\.com/.test(item.url) ? 'X' : /instagram/.test(item.url) ? 'Instagram' : /tiktok/.test(item.url) ? 'TikTok' : 'YouTube';
     // item.credit: the ORIGINAL creator when the link is a repost (e.g. a news account sharing someone's video)
     const who = item.credit ?? info.uploader ?? info.channel ?? 'unknown';
     const handle = item.credit ? item.credit.replace(/^@/, '') : info.uploader_id && !/^\d+$/.test(info.uploader_id) ? info.uploader_id.replace(/^@/, '') : null;
     let v;
     try { v = await judgeClip(join(ROOT, src), { who, kind: `viral ${platform} post (credit the creator)`, title: (info.title ?? info.description ?? '').slice(0, 200), duration: info.duration ?? 30, layout: info.height > info.width ? 'vertical 9:16 video (may already have its own text)' : 'landscape 16:9 video' }); }
-    catch (e) { item.result = `Gemini failed (will retry): ${e.message.slice(0, 120)}`; delete item.done; continue; }
+    catch (e) { item.result = `Gemini failed (will retry): ${e.message.slice(0, 120)}`; if ((item.tries = (item.tries ?? 0) + 1) < 3) delete item.done; continue; }
     const verdict = decide(v);
     if (verdict.action === 'discard') { item.result = `dropped: ${verdict.why}`; rmSync(join(ROOT, src), { force: true }); log(`✗ ${item.url} dropped (${verdict.why})`); continue; }
     // Owner rule (2026-11-24): no straight reposts — platforms flag them as unoriginal (0 views).
@@ -96,7 +96,7 @@ async function processQueue() {
 // ---------- finding moments without AI ----------
 function YT(args, tries = 3) {
   for (let i = 1; ; i++) {
-    try { return sh(tool('yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '5', ...args]); }
+    try { return sh(tool('yt-dlp'), ['--no-warnings', '--socket-timeout', '20', '--retries', '3', '--fragment-retries', '3', ...args], { timeout: 300_000 }); }
     catch (e) {
       if (i >= tries || !/resolve|timed out|Temporary failure|Connection reset/i.test(e.message)) throw e;
       execFileSync('sleep', [String(15 * i)]); // network blip: wait and retry

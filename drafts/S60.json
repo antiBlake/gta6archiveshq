@@ -1,0 +1,69 @@
+{
+  "id": "S60",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T17:00:00+01:00",
+  "credit": "ironmouse",
+  "category": "streamer",
+  "media": "media/edits/S60.mp4",
+  "media_x": "media/edits/S60_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S60.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S60_x.mp4",
+  "hook": "Ironmouse trying to park a plane in GTA 6",
+  "captions": {
+    "x": "Ironmouse attempting to land a plane in GTA 6 is peak comedy. ✈️\n\n🎥 ironmouse on Twitch",
+    "tiktok": "Ironmouse attempting to land a plane in GTA 6 is peak comedy. ✈️ 🎥 ironmouse on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Ironmouse attempting to land a plane in GTA 6 is peak comedy. ✈️ 🎥 ironmouse on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Ironmouse attempting to land a plane in GTA 6 is peak comedy. ✈️\n\n🎥 ironmouse on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "VTuber ironmouse tries to land a vintage biplane in GTA 6 and crashes directly into a billboard.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 30.13,
+        "end": 31.07,
+        "text": "Where am I gonna park?"
+      },
+      {
+        "start": 31.07,
+        "end": 32.27,
+        "text": "Uh, oh."
+      },
+      {
+        "start": 32.89,
+        "end": 34.33,
+        "text": "Uh, I ain't that far ahead."
+      },
+      {
+        "start": 39.51,
+        "end": 42.17,
+        "text": "Ah!"
+      }
+    ],
+    "file": "media/raw/tw_RelentlessOptimisticFungusGingerPower-jFqt09vdAaXpdeaF.mp4",
+    "start": 30,
+    "end": 44,
+    "credit": "twitch.tv/ironmouse",
+    "caption": "Smooth landing",
+    "url": "https://www.twitch.tv/ironmouse/clip/RelentlessOptimisticFungusGingerPower-jFqt09vdAaXpdeaF",
+    "twitch": "ironmouse",
+    "views": 604,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. VTuber ironmouse tries to land a vintage biplane in GTA 6 and crashes directly into a billboard. Source: https://www.twitch.tv/ironmouse/clip/RelentlessOptimisticFungusGingerPower-jFqt09vdAaXpdeaF (604 views). Change the on-screen hook with: hook S60: NEW TEXT"
+}

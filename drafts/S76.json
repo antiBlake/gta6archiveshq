@@ -1,0 +1,75 @@
+{
+  "id": "S76",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T11:00:00+01:00",
+  "credit": "luality",
+  "category": "streamer",
+  "media": "media/edits/S76.mp4",
+  "media_x": "media/edits/S76_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S76.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S76_x.mp4",
+  "hook": "Luality got ambushed and kidnapped in GTA 6",
+  "captions": {
+    "x": "Luality waking up somewhere she definitely didn't want to be in GTA 6. 😱\n\n🎥 luality on Twitch",
+    "tiktok": "Luality waking up somewhere she definitely didn't want to be in GTA 6. 😱 🎥 luality on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Luality waking up somewhere she definitely didn't want to be in GTA 6. 😱 🎥 luality on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Luality waking up somewhere she definitely didn't want to be in GTA 6. 😱\n\n🎥 luality on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Streamer luality gets tranquilized and kidnapped in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 4.1,
+        "end": 6.3,
+        "text": "Might as well just check the boat."
+      },
+      {
+        "start": 7.4,
+        "end": 9.4,
+        "text": "Look, there is something over there."
+      },
+      {
+        "start": 9.4,
+        "end": 10.1,
+        "text": "Ah!"
+      },
+      {
+        "start": 12.9,
+        "end": 14.3,
+        "text": "Ugh, f***!"
+      }
+    ],
+    "file": "media/raw/tw_TastyBombasticLardCorgiDerp-0GVdK03eGy9MT1Ca.mp4",
+    "start": 3.7,
+    "end": 15.2,
+    "credit": "twitch.tv/luality",
+    "caption": "Wait, did she just get jumped?",
+    "url": "https://www.twitch.tv/luality/clip/TastyBombasticLardCorgiDerp-0GVdK03eGy9MT1Ca",
+    "twitch": "luality",
+    "views": 357,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.54,
+        "w": 0.13,
+        "x": 0.05,
+        "y": 0.22
+      }
+    }
+  },
+  "notes": "quality 8/10. Streamer luality gets tranquilized and kidnapped in GTA 6. Source: https://www.twitch.tv/luality/clip/TastyBombasticLardCorgiDerp-0GVdK03eGy9MT1Ca (357 views). Change the on-screen hook with: hook S76: NEW TEXT"
+}

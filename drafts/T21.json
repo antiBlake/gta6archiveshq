@@ -1,0 +1,103 @@
+{
+  "id": "T21",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "slot": "2026-11-28T08:00:00+01:00",
+  "credit": "JorRaptor",
+  "category": "guide",
+  "media": "media/edits/T21.mp4",
+  "media_x": "media/edits/T21_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T21.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/T21_x.mp4",
+  "hook": "You can get free adrenaline from ambulances in GTA 6",
+  "captions": {
+    "x": "JorRaptor shows how to stock up on adrenaline for free at the hospital. 🚑\n⚠️ Mission spoilers\n\n🎥 JorRaptor on YouTube",
+    "tiktok": "JorRaptor shows how to stock up on adrenaline for free at the hospital. 🚑\n⚠️ Mission spoilers 🎥 JorRaptor on YouTube #GTA6 #GTAVI #ViceCity",
+    "youtube": "JorRaptor shows how to stock up on adrenaline for free at the hospital. 🚑\n⚠️ Mission spoilers 🎥 JorRaptor on YouTube #GTA6 #GTAVI #ViceCity",
+    "instagram": "JorRaptor shows how to stock up on adrenaline for free at the hospital. 🚑\n⚠️ Mission spoilers\n\n🎥 JorRaptor on YouTube\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "A player breaks into an ambulance near a hospital to collect free adrenaline items for both characters.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 53.5,
+        "end": 55,
+        "text": "And the best part is"
+      },
+      {
+        "start": 55,
+        "end": 56.5,
+        "text": "that you can grab more"
+      },
+      {
+        "start": 56.5,
+        "end": 58.5,
+        "text": "of these for free at hospitals."
+      },
+      {
+        "start": 58.5,
+        "end": 60,
+        "text": "Just break open one of"
+      },
+      {
+        "start": 60,
+        "end": 62,
+        "text": "the ambulances that you see"
+      },
+      {
+        "start": 62,
+        "end": 63.5,
+        "text": "right here and you can"
+      },
+      {
+        "start": 63.5,
+        "end": 65,
+        "text": "start collecting them. It's smart"
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "text": "to do it with both"
+      },
+      {
+        "start": 66,
+        "end": 67,
+        "text": "characters so they both have"
+      },
+      {
+        "start": 67,
+        "end": 68,
+        "text": "three on them at all"
+      },
+      {
+        "start": 68,
+        "end": 68.5,
+        "text": "times."
+      }
+    ],
+    "file": "media/raw/T21_ZA-bFmyc9vw.mp4",
+    "start": 53.5,
+    "end": 68.5,
+    "credit": "JorRaptor",
+    "caption": "Free adrenaline location",
+    "layout": {
+      "layout": "full"
+    },
+    "url": "https://www.youtube.com/watch?v=ZA-bFmyc9vw&t=89s"
+  },
+  "notes": "quality 8/10. A player breaks into an ambulance near a hospital to collect free adrenaline items for both characters. From JorRaptor: https://youtu.be/ZA-bFmyc9vw?t=89 (found by search). Change the on-screen hook with: hook T21: NEW TEXT",
+  "channel_url": "https://www.youtube.com/channel/UCzF5oxzeidHOZzy4KK5nxCQ",
+  "auto_approved": true
+}

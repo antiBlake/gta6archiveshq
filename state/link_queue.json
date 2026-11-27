@@ -104,6 +104,7 @@
     "added": "2026-11-24",
     "by": "claude: X top GTA 6 videos since Nov 22 (1.5k+ likes)",
     "result": "info failed: Command failed: /Users/mac/gta6archiveshq/tools/bin/yt-dlp --no-warnings --socket-timeout 20 --retries 3 --fragment-retr",
-    "tries": 2
+    "tries": 3,
+    "done": "2026-11-27T08:22:42.156Z"
   }
 ]

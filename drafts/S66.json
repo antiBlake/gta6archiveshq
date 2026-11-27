@@ -1,0 +1,105 @@
+{
+  "id": "S66",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T23:00:00+01:00",
+  "credit": "Apollolol",
+  "category": "streamer",
+  "media": "media/edits/S66.mp4",
+  "media_x": "media/edits/S66_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S66.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S66_x.mp4",
+  "hook": "When your GTA 6 getaway driver has no idea what he is doing",
+  "captions": {
+    "x": "Apollolol cannot believe Jason stole the passenger seat instead of driving. 💀\n\n🎥 Apollolol on Twitch",
+    "tiktok": "Apollolol cannot believe Jason stole the passenger seat instead of driving. 💀 🎥 Apollolol on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Apollolol cannot believe Jason stole the passenger seat instead of driving. 💀 🎥 Apollolol on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Apollolol cannot believe Jason stole the passenger seat instead of driving. 💀\n\n🎥 Apollolol on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Apollolol robs a jewelry store in GTA 6 and panics when her getaway driver Jason gets in the passenger seat instead of driving.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 34,
+        "end": 35.5,
+        "text": "Okay, meaning I need"
+      },
+      {
+        "start": 35.5,
+        "end": 37,
+        "text": "Run, run, run, they're so close!"
+      },
+      {
+        "start": 37,
+        "end": 39.5,
+        "text": "I can hear them really close. Jason!"
+      },
+      {
+        "start": 39.5,
+        "end": 41.5,
+        "text": "Is he waiting for me? Okay."
+      },
+      {
+        "start": 41.5,
+        "end": 44.5,
+        "text": "Jason, run!"
+      },
+      {
+        "start": 45.5,
+        "end": 47.5,
+        "text": "He's not even in the driving seat!"
+      },
+      {
+        "start": 47.5,
+        "end": 49.5,
+        "text": "What is he doing here?"
+      },
+      {
+        "start": 49.5,
+        "end": 51.5,
+        "text": "Jason, you're not even driving!"
+      },
+      {
+        "start": 51.5,
+        "end": 54.5,
+        "text": "How are you the getaway driver when you're in the passenger seat?"
+      },
+      {
+        "start": 54.5,
+        "end": 56,
+        "text": "He's useless!"
+      }
+    ],
+    "file": "media/raw/tw_TallTrappedCarabeefPoooound-ej7FuuEn36OTm21i.mp4",
+    "start": 34,
+    "end": 56,
+    "credit": "twitch.tv/apollolol",
+    "caption": "Worst getaway driver",
+    "url": "https://www.twitch.tv/apollolol/clip/TallTrappedCarabeefPoooound-ej7FuuEn36OTm21i",
+    "twitch": "apollolol",
+    "views": 325,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.522222,
+        "w": 0.169792,
+        "x": 0.021875,
+        "y": 0.222222
+      }
+    }
+  },
+  "notes": "quality 8/10. Apollolol robs a jewelry store in GTA 6 and panics when her getaway driver Jason gets in the passenger seat instead of driving. Source: https://www.twitch.tv/apollolol/clip/TallTrappedCarabeefPoooound-ej7FuuEn36OTm21i (325 views). Change the on-screen hook with: hook S66: NEW TEXT"
+}

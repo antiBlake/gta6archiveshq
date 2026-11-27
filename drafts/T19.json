@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-28T07:00:00+00:00",
   "credit": "TGG",
   "category": "guide",
@@ -109,5 +109,31 @@
   },
   "notes": "quality 8/10. TGG explains how to permanently increase the focus stat in GTA 6 by using shooting ranges and interacting with NPCs and animals. From TGG: https://youtu.be/fyT21-s4VZQ?t=104 (found by search). Change the on-screen hook with: hook T19: NEW TEXT",
   "channel_url": "https://www.youtube.com/channel/UC72PuhDwKtZ5MikpGNhPAtA",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0a1534eada83daa6aaa466",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T07:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "TbnWhSTCBXc",
+      "url": "https://www.youtube.com/shorts/TbnWhSTCBXc",
+      "dueAt": "2026-11-28T07:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b0a153a2a2e4f66cae18acd",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T07:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -1,0 +1,80 @@
+{
+  "id": "S61",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T18:00:00+01:00",
+  "credit": "NickEh30",
+  "category": "streamer",
+  "media": "media/edits/S61.mp4",
+  "media_x": "media/edits/S61_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S61.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S61_x.mp4",
+  "hook": "NickEh30 taking a tank for a drive in GTA 6",
+  "captions": {
+    "x": "NickEh30 causes absolute chaos in a tank on GTA 6 💥\n\n🎥 NickEh30 on Twitch",
+    "tiktok": "NickEh30 causes absolute chaos in a tank on GTA 6 💥 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "NickEh30 causes absolute chaos in a tank on GTA 6 💥 🎥 NickEh30 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "NickEh30 causes absolute chaos in a tank on GTA 6 💥\n\n🎥 NickEh30 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "NickEh30 drives a military tank down a road in GTA 6 and blows up a car in his way.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "Oh my god like the wank it."
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "text": "I'm not going to blow anyone up"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "text": "until I get to uh No way bro."
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "text": "I'm trying to get to my"
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "text": "Not you, buddy, I'm just trying to get to Vice City Beach."
+      }
+    ],
+    "file": "media/raw/tw_PleasantDirtyWallabyDancingBanana-0knKCXLfB4Uw-FS0.mp4",
+    "start": 3,
+    "end": 21,
+    "credit": "twitch.tv/nickeh30",
+    "caption": "Tank ride gone wild",
+    "url": "https://www.twitch.tv/nickeh30/clip/PleasantDirtyWallabyDancingBanana-0knKCXLfB4Uw-FS0",
+    "twitch": "nickeh30",
+    "views": 451,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.5185,
+        "w": 0.1609,
+        "x": 0,
+        "y": 0.2241
+      }
+    }
+  },
+  "notes": "quality 8/10. NickEh30 drives a military tank down a road in GTA 6 and blows up a car in his way. Source: https://www.twitch.tv/nickeh30/clip/PleasantDirtyWallabyDancingBanana-0knKCXLfB4Uw-FS0 (451 views). Change the on-screen hook with: hook S61: NEW TEXT"
+}

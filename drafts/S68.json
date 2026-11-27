@@ -1,0 +1,80 @@
+{
+  "id": "S68",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T09:00:00+01:00",
+  "credit": "MissMikkaa",
+  "category": "streamer",
+  "media": "media/edits/S68.mp4",
+  "media_x": "media/edits/S68_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S68.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S68_x.mp4",
+  "hook": "The NPCs in GTA 6 have zero chill when you crash",
+  "captions": {
+    "x": "MissMikkaa found out the hard way that jumping cars on a scooter is a bad idea. 😅\n\n🎥 MissMikkaa on Twitch",
+    "tiktok": "MissMikkaa found out the hard way that jumping cars on a scooter is a bad idea. 😅 🎥 MissMikkaa on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "MissMikkaa found out the hard way that jumping cars on a scooter is a bad idea. 😅 🎥 MissMikkaa on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "MissMikkaa found out the hard way that jumping cars on a scooter is a bad idea. 😅\n\n🎥 MissMikkaa on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "MissMikkaa tries to jump over a car on an electric scooter in GTA 6, crashes, and gets yelled at by several NPCs.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 11.5,
+        "end": 13.5,
+        "text": "Bro, f***ing stop!"
+      },
+      {
+        "start": 14,
+        "end": 16.5,
+        "text": "Mami! What's with the attitude?"
+      },
+      {
+        "start": 17,
+        "end": 18.5,
+        "text": "No, I cannot jump a car."
+      },
+      {
+        "start": 18.6,
+        "end": 20.5,
+        "text": "Bro, I will put you to sleep!"
+      },
+      {
+        "start": 20.6,
+        "end": 22,
+        "text": "Don't let them treat you like that!"
+      }
+    ],
+    "file": "media/raw/tw_RelentlessWiseGalagoDBstyle--4IO9sxWSyAAuQ1Z.mp4",
+    "start": 8,
+    "end": 22,
+    "credit": "twitch.tv/missmikkaa",
+    "caption": "GTA 6 NPCs have no chill",
+    "url": "https://www.twitch.tv/missmikkaa/clip/RelentlessWiseGalagoDBstyle--4IO9sxWSyAAuQ1Z",
+    "twitch": "missmikkaa",
+    "views": 344,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.44,
+        "w": 0.24,
+        "x": 0.74,
+        "y": 0.52
+      }
+    }
+  },
+  "notes": "quality 8/10. MissMikkaa tries to jump over a car on an electric scooter in GTA 6, crashes, and gets yelled at by several NPCs. Source: https://www.twitch.tv/missmikkaa/clip/RelentlessWiseGalagoDBstyle--4IO9sxWSyAAuQ1Z (344 views). Change the on-screen hook with: hook S68: NEW TEXT"
+}

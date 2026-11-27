@@ -1,0 +1,85 @@
+{
+  "id": "S69",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T10:00:00+01:00",
+  "credit": "ohnePixel",
+  "category": "streamer",
+  "media": "media/edits/S69.mp4",
+  "media_x": "media/edits/S69_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S69.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S69_x.mp4",
+  "hook": "ohnePixel shows why slow motion is OP in GTA 6",
+  "captions": {
+    "x": "ohnePixel has already mastered the new slow-motion mechanics in GTA 6 🎯\n\n🎥 ohnePixel on Twitch",
+    "tiktok": "ohnePixel has already mastered the new slow-motion mechanics in GTA 6 🎯 🎥 ohnePixel on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "ohnePixel has already mastered the new slow-motion mechanics in GTA 6 🎯 🎥 ohnePixel on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "ohnePixel has already mastered the new slow-motion mechanics in GTA 6 🎯\n\n🎥 ohnePixel on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "ohnePixel uses the slow-motion ability in GTA 6 to quickly take out a hostage-taker during a standoff.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 0,
+        "end": 1.5,
+        "text": "We don't trade revenge for money"
+      },
+      {
+        "start": 1.5,
+        "end": 3.2,
+        "text": "I can slow everything down"
+      },
+      {
+        "start": 3.2,
+        "end": 4.8,
+        "text": "and I can kill her, trust me"
+      },
+      {
+        "start": 4.8,
+        "end": 6.5,
+        "text": "Watch this"
+      },
+      {
+        "start": 8.5,
+        "end": 10,
+        "text": "We don't trade revenge for money"
+      },
+      {
+        "start": 11.8,
+        "end": 13.2,
+        "text": "BANG"
+      }
+    ],
+    "file": "media/raw/tw_GoldenWildPepperoniTwitchRaid-dJPNN-6ZwFtouU7s.mp4",
+    "start": 0,
+    "end": 13.5,
+    "credit": "twitch.tv/ohnepixel",
+    "caption": "Fastest hands in Leonida",
+    "url": "https://www.twitch.tv/ohnepixel/clip/GoldenWildPepperoniTwitchRaid-dJPNN-6ZwFtouU7s",
+    "twitch": "ohnepixel",
+    "views": 304,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.28,
+        "w": 0.16,
+        "x": 0.11,
+        "y": 0.65
+      }
+    }
+  },
+  "notes": "quality 9/10. ohnePixel uses the slow-motion ability in GTA 6 to quickly take out a hostage-taker during a standoff. Source: https://www.twitch.tv/ohnepixel/clip/GoldenWildPepperoniTwitchRaid-dJPNN-6ZwFtouU7s (304 views). Change the on-screen hook with: hook S69: NEW TEXT"
+}

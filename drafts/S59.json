@@ -1,0 +1,64 @@
+{
+  "id": "S59",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T16:00:00+01:00",
+  "credit": "DizzyKitten",
+  "category": "streamer",
+  "media": "media/edits/S59.mp4",
+  "media_x": "media/edits/S59_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S59.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S59_x.mp4",
+  "hook": "Jason really just did that in GTA 6",
+  "captions": {
+    "x": "DizzyKitten could not believe Jason did that to the dog 💀\n\n🎥 DizzyKitten on Twitch",
+    "tiktok": "DizzyKitten could not believe Jason did that to the dog 💀 🎥 DizzyKitten on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "DizzyKitten could not believe Jason did that to the dog 💀 🎥 DizzyKitten on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "DizzyKitten could not believe Jason did that to the dog 💀\n\n🎥 DizzyKitten on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Streamer DizzyKitten reacts in shock when the in-game character Jason accidentally kicks a dog on the street.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 27.279,
+        "end": 28.539,
+        "text": "Whoa!"
+      },
+      {
+        "start": 32.119,
+        "end": 33.379,
+        "text": "Okay, listen,"
+      },
+      {
+        "start": 33.379,
+        "end": 35.859,
+        "text": "Oh my god, he's dead!"
+      }
+    ],
+    "file": "media/raw/tw_LovelyDoubtfulApeShazBotstix-V8emROS9xMEPS_Zx.mp4",
+    "start": 26,
+    "end": 43,
+    "credit": "twitch.tv/dizzykitten",
+    "caption": "He did what?!",
+    "url": "https://www.twitch.tv/dizzykitten/clip/LovelyDoubtfulApeShazBotstix-V8emROS9xMEPS_Zx",
+    "twitch": "dizzykitten",
+    "views": 607,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. Streamer DizzyKitten reacts in shock when the in-game character Jason accidentally kicks a dog on the street. Source: https://www.twitch.tv/dizzykitten/clip/LovelyDoubtfulApeShazBotstix-V8emROS9xMEPS_Zx (607 views). Change the on-screen hook with: hook S59: NEW TEXT"
+}

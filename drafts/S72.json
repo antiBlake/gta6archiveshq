@@ -1,0 +1,100 @@
+{
+  "id": "S72",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T09:00:00+01:00",
+  "credit": "Syndicate",
+  "category": "streamer",
+  "media": "media/edits/S72.mp4",
+  "media_x": "media/edits/S72_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S72.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S72_x.mp4",
+  "hook": "Syndicate found his favorite car in GTA 6",
+  "captions": {
+    "x": "Syndicate was so happy to find this classic car in a Vice City garage. The Sultan RS looks better than ever 🏎️\n\n🎥 Syndicate on Twitch",
+    "tiktok": "Syndicate was so happy to find this classic car in a Vice City garage. The Sultan RS looks better than ever 🏎️ 🎥 Syndicate on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Syndicate was so happy to find this classic car in a Vice City garage. The Sultan RS looks better than ever 🏎️ 🎥 Syndicate on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Syndicate was so happy to find this classic car in a Vice City garage. The Sultan RS looks better than ever 🏎️\n\n🎥 Syndicate on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Syndicate finds and unlocks a Sultan RS in a garage in GTA 6, expressing his nostalgic connection to the vehicle.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 0.6,
+        "end": 2.1,
+        "text": "I've got a new car to unlock"
+      },
+      {
+        "start": 2.1,
+        "end": 3.4,
+        "text": "Check this out"
+      },
+      {
+        "start": 3.4,
+        "end": 4.7,
+        "text": "Sultan RS"
+      },
+      {
+        "start": 4.7,
+        "end": 5.7,
+        "text": "Over here"
+      },
+      {
+        "start": 5.7,
+        "end": 7.4,
+        "text": "Let's take a look"
+      },
+      {
+        "start": 10,
+        "end": 12,
+        "text": "Does it stay in here?"
+      },
+      {
+        "start": 12,
+        "end": 13.8,
+        "text": "Oh you guys have no idea"
+      },
+      {
+        "start": 13.8,
+        "end": 15.8,
+        "text": "how much this car means to me"
+      },
+      {
+        "start": 15.8,
+        "end": 18,
+        "text": "Me and my mates used to buzz off it"
+      }
+    ],
+    "file": "media/raw/tw_MoralGracefulElkSquadGoals-92iWbDHzDWbgS-yk.mp4",
+    "start": 0,
+    "end": 18,
+    "credit": "twitch.tv/syndicate",
+    "caption": "Sultan RS is back",
+    "url": "https://www.twitch.tv/syndicate/clip/MoralGracefulElkSquadGoals-92iWbDHzDWbgS-yk",
+    "twitch": "syndicate",
+    "views": 335,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.31,
+        "w": 0.22,
+        "x": 0.73,
+        "y": 0.11
+      }
+    }
+  },
+  "notes": "quality 7/10. Syndicate finds and unlocks a Sultan RS in a garage in GTA 6, expressing his nostalgic connection to the vehicle. Source: https://www.twitch.tv/syndicate/clip/MoralGracefulElkSquadGoals-92iWbDHzDWbgS-yk (335 views). Change the on-screen hook with: hook S72: NEW TEXT"
+}

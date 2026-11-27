@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-27T16:00:00+01:00",
   "credit": "DizzyKitten",
@@ -60,5 +60,17 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. Streamer DizzyKitten reacts in shock when the in-game character Jason accidentally kicks a dog on the street. Source: https://www.twitch.tv/dizzykitten/clip/LovelyDoubtfulApeShazBotstix-V8emROS9xMEPS_Zx (607 views). Change the on-screen hook with: hook S59: NEW TEXT"
+  "notes": "quality 8/10. Streamer DizzyKitten reacts in shock when the in-game character Jason accidentally kicks a dog on the street. Source: https://www.twitch.tv/dizzykitten/clip/LovelyDoubtfulApeShazBotstix-V8emROS9xMEPS_Zx (607 views). Change the on-screen hook with: hook S59: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b093dd8e94385a8fd88db8d",
+      "status": "scheduled",
+      "dueAt": "2026-11-27T15:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -1,0 +1,80 @@
+{
+  "id": "S75",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T10:00:00+01:00",
+  "credit": "Elina",
+  "category": "streamer",
+  "media": "media/edits/S75.mp4",
+  "media_x": "media/edits/S75_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S75.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S75_x.mp4",
+  "hook": "Jason finally showing personality in GTA 6",
+  "captions": {
+    "x": "Elina can't believe Jason's new dialogue in GTA 6 💀\n\n🎥 Elina on Twitch",
+    "tiktok": "Elina can't believe Jason's new dialogue in GTA 6 💀 🎥 Elina on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Elina can't believe Jason's new dialogue in GTA 6 💀 🎥 Elina on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Elina can't believe Jason's new dialogue in GTA 6 💀\n\n🎥 Elina on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Streamer Elina watches as Jason and Lucia walk through a mall in GTA 6 discussing their future relationship.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 47,
+        "end": 49.5,
+        "text": "Are these the most personality"
+      },
+      {
+        "start": 49.5,
+        "end": 51.5,
+        "text": "I've ever had had from Jason?"
+      },
+      {
+        "start": 51.5,
+        "end": 53,
+        "text": "Finally he's opening up."
+      },
+      {
+        "start": 53,
+        "end": 56.5,
+        "text": "His personality trait is horny for Lucia."
+      },
+      {
+        "start": 56.5,
+        "end": 58.5,
+        "text": "Boner for Lucia, wants to die"
+      }
+    ],
+    "file": "media/raw/tw_HedonisticExcitedDuckStinkyCheese-cSzG1bZFy2JA89i2.mp4",
+    "start": 47,
+    "end": 60,
+    "credit": "twitch.tv/elina",
+    "caption": "Jason's new personality",
+    "url": "https://www.twitch.tv/elina/clip/HedonisticExcitedDuckStinkyCheese-cSzG1bZFy2JA89i2",
+    "twitch": "elina",
+    "views": 381,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.65,
+        "w": 0.28,
+        "x": 0.68,
+        "y": 0.3
+      }
+    }
+  },
+  "notes": "quality 8/10. Streamer Elina watches as Jason and Lucia walk through a mall in GTA 6 discussing their future relationship. Source: https://www.twitch.tv/elina/clip/HedonisticExcitedDuckStinkyCheese-cSzG1bZFy2JA89i2 (381 views). Change the on-screen hook with: hook S75: NEW TEXT"
+}

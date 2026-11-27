@@ -1,0 +1,60 @@
+{
+  "id": "S62",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-27T19:00:00+01:00",
+  "credit": "TheBurntPeanut",
+  "category": "streamer",
+  "media": "media/edits/S62.mp4",
+  "media_x": "media/edits/S62_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S62.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S62_x.mp4",
+  "hook": "TheBurntPeanut driving at night in GTA 6",
+  "captions": {
+    "x": "TheBurntPeanut takes a brutal shortcut in Vice City. 🚗\n\n🎥 TheBurntPeanut on Twitch",
+    "tiktok": "TheBurntPeanut takes a brutal shortcut in Vice City. 🚗 🎥 TheBurntPeanut on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "TheBurntPeanut takes a brutal shortcut in Vice City. 🚗 🎥 TheBurntPeanut on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "TheBurntPeanut takes a brutal shortcut in Vice City. 🚗\n\n🎥 TheBurntPeanut on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "TheBurntPeanut crashes his car during a night drive in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 14.5,
+        "end": 15.8,
+        "text": "Engine damaged."
+      }
+    ],
+    "file": "media/raw/tw_ObservantAffluentSashimiDogFace-lW6TfybNm5u2Q6K-.mp4",
+    "start": 0,
+    "end": 22,
+    "credit": "twitch.tv/theburntpeanut",
+    "caption": "Night drive crash",
+    "url": "https://www.twitch.tv/theburntpeanut/clip/ObservantAffluentSashimiDogFace-lW6TfybNm5u2Q6K-",
+    "twitch": "theburntpeanut",
+    "views": 373,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.28,
+        "w": 0.16,
+        "x": 0.22,
+        "y": 0.72
+      }
+    }
+  },
+  "notes": "quality 7/10. TheBurntPeanut crashes his car during a night drive in GTA 6. Source: https://www.twitch.tv/theburntpeanut/clip/ObservantAffluentSashimiDogFace-lW6TfybNm5u2Q6K- (373 views). Change the on-screen hook with: hook S62: NEW TEXT"
+}

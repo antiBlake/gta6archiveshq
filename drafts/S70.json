@@ -1,0 +1,54 @@
+{
+  "id": "S70",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "draft",
+  "auto_approved": false,
+  "slot": "2026-11-28T08:00:00+01:00",
+  "credit": "PatStaresAt",
+  "category": "streamer",
+  "media": "media/edits/S70.mp4",
+  "media_x": "media/edits/S70_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S70.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S70_x.mp4",
+  "hook": "GTA 6 car repair prices make no sense",
+  "captions": {
+    "x": "PatStaresAt loses it after seeing the repair bill for his totaled car 😂\n\n🎥 PatStaresAt on Twitch",
+    "tiktok": "PatStaresAt loses it after seeing the repair bill for his totaled car 😂 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "PatStaresAt loses it after seeing the repair bill for his totaled car 😂 🎥 PatStaresAt on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "PatStaresAt loses it after seeing the repair bill for his totaled car 😂\n\n🎥 PatStaresAt on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 1,
+    "reasons": [],
+    "what": "PatStaresAt laughs hysterically in GTA 6 after taking a completely destroyed car to a mechanic and seeing a repair bill of only $650.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [],
+    "file": "media/raw/tw_GoldenCrackySageCharlieBitMe-Qm_VtxKVxjma0uba.mp4",
+    "start": 22,
+    "end": 34,
+    "credit": "twitch.tv/patstaresat",
+    "caption": "Only $650 to fix this?",
+    "url": "https://www.twitch.tv/patstaresat/clip/GoldenCrackySageCharlieBitMe-Qm_VtxKVxjma0uba",
+    "twitch": "patstaresat",
+    "views": 639,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.3,
+        "w": 0.22,
+        "x": 0.01,
+        "y": 0.68
+      }
+    }
+  },
+  "notes": "quality 9/10; text flags: glitch, exploit, mod or cheat. PatStaresAt laughs hysterically in GTA 6 after taking a completely destroyed car to a mechanic and seeing a repair bill of only $650. Source: https://www.twitch.tv/patstaresat/clip/GoldenCrackySageCharlieBitMe-Qm_VtxKVxjma0uba (639 views). Change the on-screen hook with: hook S70: NEW TEXT"
+}

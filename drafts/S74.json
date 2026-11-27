@@ -1,0 +1,80 @@
+{
+  "id": "S74",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T09:00:00+01:00",
+  "credit": "parkenharbor",
+  "category": "streamer",
+  "media": "media/edits/S74.mp4",
+  "media_x": "media/edits/S74_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S74.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-27/S74_x.mp4",
+  "hook": "The GTA 6 pilot AI is already failing me",
+  "captions": {
+    "x": "parkenharbor was just trying to finish the mission when her pilot decided to quit. ✈️\n\n🎥 parkenharbor on Twitch",
+    "tiktok": "parkenharbor was just trying to finish the mission when her pilot decided to quit. ✈️ 🎥 parkenharbor on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "parkenharbor was just trying to finish the mission when her pilot decided to quit. ✈️ 🎥 parkenharbor on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "parkenharbor was just trying to finish the mission when her pilot decided to quit. ✈️\n\n🎥 parkenharbor on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.85,
+    "reasons": [],
+    "what": "While flying a plane for a drug delivery mission, the pilot suddenly jumps out for no reason, causing parkenharbor to fail the mission.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 5.5,
+        "end": 7.5,
+        "text": "Alright, we're approaching the drop."
+      },
+      {
+        "start": 8.2,
+        "end": 10.2,
+        "text": "You ready with one of those packages?"
+      },
+      {
+        "start": 10.5,
+        "end": 11.5,
+        "text": "Uh-huh."
+      },
+      {
+        "start": 17.5,
+        "end": 19,
+        "text": "Whoa! The f***?"
+      },
+      {
+        "start": 19.5,
+        "end": 21.5,
+        "text": "Why did he jump out?"
+      }
+    ],
+    "file": "media/raw/tw_TolerantFlaccidMangoSuperVinlin-_RasnQIY3NJ048SN.mp4",
+    "start": 5.5,
+    "end": 21.5,
+    "credit": "twitch.tv/parkenharbor",
+    "caption": "He just gave up",
+    "url": "https://www.twitch.tv/parkenharbor/clip/TolerantFlaccidMangoSuperVinlin-_RasnQIY3NJ048SN",
+    "twitch": "parkenharbor",
+    "views": 711,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.45,
+        "w": 0.16,
+        "x": 0.83,
+        "y": 0.08
+      }
+    }
+  },
+  "notes": "quality 8/10. While flying a plane for a drug delivery mission, the pilot suddenly jumps out for no reason, causing parkenharbor to fail the mission. Source: https://www.twitch.tv/parkenharbor/clip/TolerantFlaccidMangoSuperVinlin-_RasnQIY3NJ048SN (711 views). Change the on-screen hook with: hook S74: NEW TEXT"
+}

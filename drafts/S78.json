@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T09:00:00+01:00",
+  "slot": "2026-11-28T14:00:00+00:00",
   "credit": "BanksAtkin",
   "category": "streamer",
   "media": "media/edits/S78.mp4",
@@ -81,5 +81,17 @@
       }
     }
   },
-  "notes": "quality 7/10. BanksAtkin discovers a large airplane glitched into the middle of a busy street while playing GTA 6. Source: https://www.twitch.tv/banksatkin/clip/InterestingArbitraryTrayCeilingCat-3QfGX42WbJRVW0Ct (1551 views). Change the on-screen hook with: hook S78: NEW TEXT"
+  "notes": "quality 7/10. BanksAtkin discovers a large airplane glitched into the middle of a busy street while playing GTA 6. Source: https://www.twitch.tv/banksatkin/clip/InterestingArbitraryTrayCeilingCat-3QfGX42WbJRVW0Ct (1551 views). Change the on-screen hook with: hook S78: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0a7b27d718580fbd664a3f",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T14:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

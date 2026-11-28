@@ -1,0 +1,54 @@
+{
+  "id": "S84",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T10:00:00+01:00",
+  "credit": "Stormfall33",
+  "category": "streamer",
+  "media": "media/edits/S84.mp4",
+  "media_x": "media/edits/S84_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S84.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S84_x.mp4",
+  "hook": "Trying to do stunts in GTA 6 is harder than it looks",
+  "captions": {
+    "x": "Stormfall33 thought she had the perfect jump planned 😅\n\n🎥 Stormfall33 on Twitch",
+    "tiktok": "Stormfall33 thought she had the perfect jump planned 😅 🎥 Stormfall33 on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Stormfall33 thought she had the perfect jump planned 😅 🎥 Stormfall33 on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Stormfall33 thought she had the perfect jump planned 😅\n\n🎥 Stormfall33 on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Stormfall33 attempts a stunt jump on a scooter in GTA 6 but fails and crashes into a canal wall.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [],
+    "file": "media/raw/tw_HonestDelightfulPigeonFeelsBadMan-WDRLOhUsGf1rnD6S.mp4",
+    "start": 23.5,
+    "end": 34,
+    "credit": "twitch.tv/stormfall33",
+    "caption": "Expectations vs reality",
+    "url": "https://www.twitch.tv/stormfall33/clip/HonestDelightfulPigeonFeelsBadMan-WDRLOhUsGf1rnD6S",
+    "twitch": "stormfall33",
+    "views": 374,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.45,
+        "w": 0.25,
+        "x": 0.74,
+        "y": 0.53
+      }
+    }
+  },
+  "notes": "quality 7/10. Stormfall33 attempts a stunt jump on a scooter in GTA 6 but fails and crashes into a canal wall. Source: https://www.twitch.tv/stormfall33/clip/HonestDelightfulPigeonFeelsBadMan-WDRLOhUsGf1rnD6S (374 views). Change the on-screen hook with: hook S84: NEW TEXT"
+}

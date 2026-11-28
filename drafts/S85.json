@@ -1,0 +1,89 @@
+{
+  "id": "S85",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T11:00:00+01:00",
+  "credit": "wayneradiotv",
+  "category": "streamer",
+  "media": "media/edits/S85.mp4",
+  "media_x": "media/edits/S85_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S85.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S85_x.mp4",
+  "hook": "Wayneradiotv didn't even see him until it was too late",
+  "captions": {
+    "x": "Wayneradiotv might need to get his eyes checked after this one 🚗\n\n🎥 wayneradiotv on Twitch",
+    "tiktok": "Wayneradiotv might need to get his eyes checked after this one 🚗 🎥 wayneradiotv on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Wayneradiotv might need to get his eyes checked after this one 🚗 🎥 wayneradiotv on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Wayneradiotv might need to get his eyes checked after this one 🚗\n\n🎥 wayneradiotv on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "Wayneradiotv drives a van through a construction site and accidentally hits an NPC worker after jumping a pile of dirt.",
+    "model": "gemini-3-flash-preview",
+    "layout": "full"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 5,
+        "end": 6.5,
+        "text": "I know, that's why"
+      },
+      {
+        "start": 6.5,
+        "end": 8.5,
+        "text": "I'm playing mass consumers"
+      },
+      {
+        "start": 8.5,
+        "end": 10,
+        "text": "popular slop"
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "text": "Oh god!"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "text": "Was there a guy there?"
+      },
+      {
+        "start": 15,
+        "end": 17.5,
+        "text": "Oh, oh, you didn't see that"
+      },
+      {
+        "start": 18,
+        "end": 19.5,
+        "text": "You didn't see that"
+      },
+      {
+        "start": 19.5,
+        "end": 21,
+        "text": "I literally didn't"
+      }
+    ],
+    "file": "media/raw/tw_EsteemedBlushingDolphinItsBoshyTime-pdt2BztCxHVGYhkf.mp4",
+    "start": 0,
+    "end": 22,
+    "credit": "twitch.tv/wayneradiotv",
+    "caption": "He didn't see him",
+    "url": "https://www.twitch.tv/wayneradiotv/clip/EsteemedBlushingDolphinItsBoshyTime-pdt2BztCxHVGYhkf",
+    "twitch": "wayneradiotv",
+    "views": 322,
+    "layout": {
+      "layout": "full"
+    }
+  },
+  "notes": "quality 8/10. Wayneradiotv drives a van through a construction site and accidentally hits an NPC worker after jumping a pile of dirt. Source: https://www.twitch.tv/wayneradiotv/clip/EsteemedBlushingDolphinItsBoshyTime-pdt2BztCxHVGYhkf (322 views). Change the on-screen hook with: hook S85: NEW TEXT"
+}

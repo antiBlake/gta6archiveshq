@@ -1,0 +1,85 @@
+{
+  "id": "S88",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T19:00:00+01:00",
+  "credit": "DarkViperAU",
+  "category": "streamer",
+  "media": "media/edits/S88.mp4",
+  "media_x": "media/edits/S88_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S88.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S88_x.mp4",
+  "hook": "DarkViperAU found out GTA 6 physics are no joke",
+  "captions": {
+    "x": "DarkViperAU is already testing the limits of the GTA 6 physics engine 😅\n\n🎥 DarkViperAU on Twitch",
+    "tiktok": "DarkViperAU is already testing the limits of the GTA 6 physics engine 😅 🎥 DarkViperAU on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "DarkViperAU is already testing the limits of the GTA 6 physics engine 😅 🎥 DarkViperAU on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "DarkViperAU is already testing the limits of the GTA 6 physics engine 😅\n\n🎥 DarkViperAU on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.9,
+    "reasons": [],
+    "what": "DarkViperAU crashes his truck into a car on the highway, causing it to flip over and land upright before he continues driving.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 8.3,
+        "end": 9.3,
+        "text": "This is a speed run"
+      },
+      {
+        "start": 9.3,
+        "end": 10.3,
+        "text": "my love."
+      },
+      {
+        "start": 10.3,
+        "end": 12.3,
+        "text": "There's nothing we can do"
+      },
+      {
+        "start": 12.3,
+        "end": 14.3,
+        "text": "except keep our heads down"
+      },
+      {
+        "start": 14.3,
+        "end": 16.3,
+        "text": "and get through this s***"
+      },
+      {
+        "start": 16.3,
+        "end": 18.3,
+        "text": "Oh ho ho!"
+      }
+    ],
+    "file": "media/raw/tw_BlatantBlushingSwordHeyGirl-ZpgZ3V-f6TPc7zFv.mp4",
+    "start": 8,
+    "end": 19.5,
+    "credit": "twitch.tv/darkviperau",
+    "caption": "GTA 6 physics are wild",
+    "url": "https://www.twitch.tv/darkviperau/clip/BlatantBlushingSwordHeyGirl-ZpgZ3V-f6TPc7zFv",
+    "twitch": "darkviperau",
+    "views": 445,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.22,
+        "w": 0.17,
+        "x": 0.81,
+        "y": 0.17
+      }
+    }
+  },
+  "notes": "quality 8/10. DarkViperAU crashes his truck into a car on the highway, causing it to flip over and land upright before he continues driving. Source: https://www.twitch.tv/darkviperau/clip/BlatantBlushingSwordHeyGirl-ZpgZ3V-f6TPc7zFv (445 views). Change the on-screen hook with: hook S88: NEW TEXT"
+}

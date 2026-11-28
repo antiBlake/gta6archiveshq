@@ -1,0 +1,65 @@
+{
+  "id": "S80",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T11:00:00+01:00",
+  "credit": "Chloeyummyyy",
+  "category": "streamer",
+  "media": "media/edits/S80.mp4",
+  "media_x": "media/edits/S80_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S80.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S80_x.mp4",
+  "hook": "She was so confident in her piloting skills",
+  "captions": {
+    "x": "Chloeyummyyy thought she was going to die after this plane crash ✈️\n\n🎥 Chloeyummyyy on Twitch",
+    "tiktok": "Chloeyummyyy thought she was going to die after this plane crash ✈️ 🎥 Chloeyummyyy on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Chloeyummyyy thought she was going to die after this plane crash ✈️ 🎥 Chloeyummyyy on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Chloeyummyyy thought she was going to die after this plane crash ✈️\n\n🎥 Chloeyummyyy on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Chloeyummyyy crashes a plane into a field in GTA 6 and panics hilariously.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "Oh damn. Touchdown."
+      },
+      {
+        "start": 7.5,
+        "end": 9.5,
+        "text": "I thought I was going to die."
+      }
+    ],
+    "file": "media/raw/tw_PlacidTalentedRutabagaRlyTho-GVoIrhktBKo4GX4v.mp4",
+    "start": 0,
+    "end": 10,
+    "credit": "twitch.tv/chloeyummyyy",
+    "caption": "Rate this landing",
+    "url": "https://www.twitch.tv/chloeyummyyy/clip/PlacidTalentedRutabagaRlyTho-GVoIrhktBKo4GX4v",
+    "twitch": "chloeyummyyy",
+    "views": 443,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.35,
+        "w": 0.35,
+        "x": 0.64,
+        "y": 0.02
+      }
+    }
+  },
+  "notes": "quality 8/10. Chloeyummyyy crashes a plane into a field in GTA 6 and panics hilariously. Source: https://www.twitch.tv/chloeyummyyy/clip/PlacidTalentedRutabagaRlyTho-GVoIrhktBKo4GX4v (443 views). Change the on-screen hook with: hook S80: NEW TEXT"
+}

@@ -54,3 +54,11 @@
 - Length: 21-35s 1.94× (9), ≤20s 1× (10), >50s 0.31× (7)
 - Best hours (WAT): 19 5.71× (4), 14 5.57× (3), 0 1× (3), 17 1× (5), 22 1× (3), 8 0.51× (3), 11 0.43× (4)
 - Top hooks: "GTA 6 VS GTA 5 VS GTA 4" (tiktok 80 views); "Don't waste money on car upgrades in GTA 6 yet" (youtube 8677 views); "GTA 6 horses have the exact same physics as RDR2" (youtube 5515 views); "You can actually take your dog on a jet ski in GTA 6" (youtube 2708 views); "The NPC density on Vice Beach is actually insane" (youtube 1458 views)
+
+### 2026-11-28 — 25 posts scored
+- Streamers: CaseOh 0.52× (3)
+- Source types: viral 82.66× (3), guide 49.08× (6), streamer 0.29× (16)
+- Hook styles: tip 6.3× (3), statement 0.41× (20)
+- Length: 21-35s 14.08× (9), ≤20s 0.51× (8), >50s 0.41× (7)
+- Best hours (WAT): 14 42.06× (3), 8 0.52× (4), 10 0.5× (3)
+- Top hooks: "Don't waste money on car upgrades in GTA 6 yet" (youtube 8457 views); "GTA 6 horses have the exact same physics as RDR2" (youtube 5556 views); "You can actually take your dog on a jet ski in GTA 6" (youtube 2708 views); "The NPC density on Vice Beach is actually insane" (youtube 1458 views); "Lacy was bragging about his driving right before this" (youtube 1370 views)

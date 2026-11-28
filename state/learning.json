@@ -1,36 +1,28 @@
 {
-  "updated": "2026-11-27T02:45:50.720Z",
-  "posts": 35,
+  "updated": "2026-11-28T02:35:28.199Z",
+  "posts": 25,
   "platforms": {
-    "tiktok": {
-      "median_engagement": 2,
-      "posts": 4
-    },
     "youtube": {
-      "median_engagement": 205,
-      "posts": 26
-    },
-    "instagram": {
-      "median_engagement": 165,
-      "posts": 5
+      "median_engagement": 25,
+      "posts": 25
     }
   },
   "streamer": {
     "Ludwig": {
       "n": 1,
-      "score": 2.27
+      "score": 13.23
     },
     "Lacy": {
       "n": 1,
-      "score": 3.1
+      "score": 20.05
     },
     "CaseOh": {
       "n": 3,
-      "score": 0.5
+      "score": 0.52
     },
     "CohhCarnage": {
       "n": 1,
-      "score": 0.75
+      "score": 0.77
     },
     "ohnePixel": {
       "n": 1,
@@ -38,171 +30,167 @@
     },
     "Kai Cenat": {
       "n": 1,
-      "score": 0.75
+      "score": 0.76
     },
     "HutchMF": {
       "n": 1,
-      "score": 0.77
+      "score": 0.94
     },
     "vanillamace": {
       "n": 1,
-      "score": 0.75
+      "score": 0.79
     },
     "NickEh30": {
       "n": 1,
-      "score": 0.76
+      "score": 0.83
     },
     "Tminnzy": {
       "n": 1,
       "score": 0.75
     },
     "Maximilian_DOOD": {
-      "n": 1,
-      "score": 0.75
-    }
-  },
-  "source": {
-    "creator": {
-      "n": 13,
+      "n": 2,
       "score": 1
     },
-    "streamer": {
-      "n": 13,
-      "score": 0.2
-    },
-    "guide": {
-      "n": 6,
-      "score": 6.27
-    },
-    "viral": {
-      "n": 3,
-      "score": 10.52
-    }
-  },
-  "hookStyle": {
-    "all-caps": {
-      "n": 14,
-      "score": 1
-    },
-    "statement": {
-      "n": 17,
-      "score": 0.17
-    },
-    "setup-payoff": {
-      "n": 1,
-      "score": 3.1
-    },
-    "tip": {
-      "n": 3,
-      "score": 1.21
-    }
-  },
-  "length": {
-    "≤20s": {
-      "n": 10,
-      "score": 1
-    },
-    "21-35s": {
-      "n": 9,
-      "score": 1.94
-    },
-    ">50s": {
-      "n": 7,
-      "score": 0.31
-    },
-    "36-50s": {
-      "n": 1,
-      "score": 1.38
-    }
-  },
-  "hour": {
-    "0": {
-      "n": 3,
-      "score": 1
-    },
-    "8": {
-      "n": 3,
-      "score": 0.51
-    },
-    "9": {
+    "SypherPK": {
       "n": 1,
       "score": 0.76
     },
+    "Vinesauce": {
+      "n": 1,
+      "score": 0.8
+    }
+  },
+  "source": {
+    "streamer": {
+      "n": 16,
+      "score": 0.29
+    },
+    "guide": {
+      "n": 6,
+      "score": 49.08
+    },
+    "viral": {
+      "n": 3,
+      "score": 82.66
+    }
+  },
+  "hookStyle": {
+    "statement": {
+      "n": 20,
+      "score": 0.41
+    },
+    "setup-payoff": {
+      "n": 1,
+      "score": 20.05
+    },
+    "tip": {
+      "n": 3,
+      "score": 6.3
+    },
+    "all-caps": {
+      "n": 1,
+      "score": 5.36
+    }
+  },
+  "length": {
+    "21-35s": {
+      "n": 9,
+      "score": 14.08
+    },
+    ">50s": {
+      "n": 7,
+      "score": 0.41
+    },
+    "36-50s": {
+      "n": 1,
+      "score": 5.93
+    },
+    "≤20s": {
+      "n": 8,
+      "score": 0.51
+    }
+  },
+  "hour": {
+    "8": {
+      "n": 4,
+      "score": 0.52
+    },
+    "9": {
+      "n": 2,
+      "score": 1
+    },
     "10": {
+      "n": 3,
+      "score": 0.5
+    },
+    "11": {
       "n": 2,
       "score": 0.6
     },
-    "11": {
-      "n": 4,
-      "score": 0.43
-    },
     "12": {
       "n": 1,
-      "score": 0.75
+      "score": 0.76
     },
     "14": {
       "n": 3,
-      "score": 5.57
+      "score": 42.06
     },
     "15": {
       "n": 2,
-      "score": 8.62
+      "score": 66.33
     },
     "17": {
-      "n": 5,
-      "score": 1
+      "n": 2,
+      "score": 149.98
     },
     "18": {
       "n": 2,
-      "score": 1.61
+      "score": 8.89
     },
     "19": {
-      "n": 4,
-      "score": 5.71
+      "n": 2,
+      "score": 31.45
     },
     "20": {
       "n": 1,
-      "score": 2.98
+      "score": 19.03
     },
     "21": {
       "n": 1,
-      "score": 1.1
-    },
-    "22": {
-      "n": 3,
-      "score": 1
+      "score": 3.65
     }
   },
   "best_hooks": [
     {
-      "hook": "GTA 6 VS GTA 5 VS GTA 4",
-      "platform": "tiktok",
-      "views": 80,
-      "score": 90
-    },
-    {
       "hook": "Don't waste money on car upgrades in GTA 6 yet",
       "platform": "youtube",
-      "views": 8677,
-      "score": 52.1
+      "views": 8457,
+      "score": 418.3
     },
     {
       "hook": "GTA 6 horses have the exact same physics as RDR2",
       "platform": "youtube",
-      "views": 5515,
-      "score": 45.2
+      "views": 5556,
+      "score": 373.4
     },
     {
       "hook": "You can actually take your dog on a jet ski in GTA 6",
       "platform": "youtube",
       "views": 2708,
-      "score": 20
+      "score": 164.3
     },
     {
       "hook": "The NPC density on Vice Beach is actually insane",
       "platform": "youtube",
       "views": 1458,
-      "score": 10.1
+      "score": 83.1
+    },
+    {
+      "hook": "Lacy was bragging about his driving right before this",
+      "platform": "youtube",
+      "views": 1370,
+      "score": 77.2
     }
   ]
 }

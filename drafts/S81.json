@@ -1,0 +1,90 @@
+{
+  "id": "S81",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T12:00:00+01:00",
+  "credit": "krysttl",
+  "category": "streamer",
+  "media": "media/edits/S81.mp4",
+  "media_x": "media/edits/S81_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S81.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S81_x.mp4",
+  "hook": "GTA 6 has a secret Saw mission",
+  "captions": {
+    "x": "Krysttl stumbled upon the ultimate horror reference in GTA 6 😱\n\n🎥 krysttl on Twitch",
+    "tiktok": "Krysttl stumbled upon the ultimate horror reference in GTA 6 😱 🎥 krysttl on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Krysttl stumbled upon the ultimate horror reference in GTA 6 😱 🎥 krysttl on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Krysttl stumbled upon the ultimate horror reference in GTA 6 😱\n\n🎥 krysttl on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "A character is knocked out and wakes up in a mysterious red room in GTA 6, startling the streamer.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 23.97,
+        "end": 25.17,
+        "text": "Rise and shine!"
+      },
+      {
+        "start": 26.65,
+        "end": 27.23,
+        "text": "Saw?"
+      },
+      {
+        "start": 27.35,
+        "end": 28.53,
+        "text": "Is this a Saw Easter egg?"
+      },
+      {
+        "start": 30.65,
+        "end": 32.21,
+        "text": "Saw is my favorite horror movie."
+      },
+      {
+        "start": 32.73,
+        "end": 35.53,
+        "text": "You're scared. Confused. Shake it off."
+      },
+      {
+        "start": 35.83,
+        "end": 37.95,
+        "text": "I need you to focus."
+      },
+      {
+        "start": 39.43,
+        "end": 40.75,
+        "text": "Your boss-"
+      }
+    ],
+    "file": "media/raw/tw_RelievedBoxyScallionPeanutButterJellyTime-LhZ0AftoMNvW-Nvy.mp4",
+    "start": 23,
+    "end": 41,
+    "credit": "twitch.tv/krysttl",
+    "caption": "Wait, is this Saw?",
+    "url": "https://www.twitch.tv/krysttl/clip/RelievedBoxyScallionPeanutButterJellyTime-LhZ0AftoMNvW-Nvy",
+    "twitch": "krysttl",
+    "views": 416,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.28,
+        "w": 0.17,
+        "x": 0.81,
+        "y": 0.69
+      }
+    }
+  },
+  "notes": "quality 8/10. A character is knocked out and wakes up in a mysterious red room in GTA 6, startling the streamer. Source: https://www.twitch.tv/krysttl/clip/RelievedBoxyScallionPeanutButterJellyTime-LhZ0AftoMNvW-Nvy (416 views). Change the on-screen hook with: hook S81: NEW TEXT"
+}

@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T18:00:00+00:00",
+  "slot": "2026-11-28T21:00:00+00:00",
   "credit": "Saruei",
   "category": "streamer",
   "media": "media/edits/S82.mp4",
@@ -81,5 +81,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Saruei talks about Thanksgiving and cultural differences while driving through a town in GTA 6. Source: https://www.twitch.tv/saruei/clip/JollyGeniusCiderPunchTrees-TNvVTU1bqAg5n9xw (370 views). Change the on-screen hook with: hook S82: NEW TEXT"
+  "notes": "quality 8/10. Saruei talks about Thanksgiving and cultural differences while driving through a town in GTA 6. Source: https://www.twitch.tv/saruei/clip/JollyGeniusCiderPunchTrees-TNvVTU1bqAg5n9xw (370 views). Change the on-screen hook with: hook S82: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b002ab0bf5e4247614ed0",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T21:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

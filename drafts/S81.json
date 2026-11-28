@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T17:00:00+00:00",
+  "slot": "2026-11-28T20:00:00+00:00",
   "credit": "krysttl",
   "category": "streamer",
   "media": "media/edits/S81.mp4",
@@ -86,5 +86,17 @@
       }
     }
   },
-  "notes": "quality 8/10. A character is knocked out and wakes up in a mysterious red room in GTA 6, startling the streamer. Source: https://www.twitch.tv/krysttl/clip/RelievedBoxyScallionPeanutButterJellyTime-LhZ0AftoMNvW-Nvy (416 views). Change the on-screen hook with: hook S81: NEW TEXT"
+  "notes": "quality 8/10. A character is knocked out and wakes up in a mysterious red room in GTA 6, startling the streamer. Source: https://www.twitch.tv/krysttl/clip/RelievedBoxyScallionPeanutButterJellyTime-LhZ0AftoMNvW-Nvy (416 views). Change the on-screen hook with: hook S81: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b002895c893f3f684b3a7",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T20:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

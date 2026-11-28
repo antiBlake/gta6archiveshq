@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T16:00:00+00:00",
+  "slot": "2026-11-28T19:00:00+00:00",
   "credit": "Chloeyummyyy",
   "category": "streamer",
   "media": "media/edits/S80.mp4",
@@ -61,5 +61,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Chloeyummyyy crashes a plane into a field in GTA 6 and panics hilariously. Source: https://www.twitch.tv/chloeyummyyy/clip/PlacidTalentedRutabagaRlyTho-GVoIrhktBKo4GX4v (443 views). Change the on-screen hook with: hook S80: NEW TEXT"
+  "notes": "quality 8/10. Chloeyummyyy crashes a plane into a field in GTA 6 and panics hilariously. Source: https://www.twitch.tv/chloeyummyyy/clip/PlacidTalentedRutabagaRlyTho-GVoIrhktBKo4GX4v (443 views). Change the on-screen hook with: hook S80: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b0027b0bf5e4247614dee",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T19:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

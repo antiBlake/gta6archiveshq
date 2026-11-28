@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T10:00:00+01:00",
+  "slot": "2026-11-28T16:00:00+00:00",
   "credit": "Stormfall33",
   "category": "streamer",
   "media": "media/edits/S84.mp4",
@@ -50,5 +50,17 @@
       }
     }
   },
-  "notes": "quality 7/10. Stormfall33 attempts a stunt jump on a scooter in GTA 6 but fails and crashes into a canal wall. Source: https://www.twitch.tv/stormfall33/clip/HonestDelightfulPigeonFeelsBadMan-WDRLOhUsGf1rnD6S (374 views). Change the on-screen hook with: hook S84: NEW TEXT"
+  "notes": "quality 7/10. Stormfall33 attempts a stunt jump on a scooter in GTA 6 but fails and crashes into a canal wall. Source: https://www.twitch.tv/stormfall33/clip/HonestDelightfulPigeonFeelsBadMan-WDRLOhUsGf1rnD6S (374 views). Change the on-screen hook with: hook S84: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b002ef8adb18796e855e3",
+      "status": "sending",
+      "dueAt": "2026-11-28T16:24:14.684Z",
+      "mode": "now"
+    }
+  },
+  "x_status": "pending"
 }

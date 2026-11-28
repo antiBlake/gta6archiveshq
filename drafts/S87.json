@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T13:00:00+01:00",
+  "slot": "2026-11-28T18:00:00+00:00",
   "credit": "Loserfruit",
   "category": "streamer",
   "media": "media/edits/S87.mp4",
@@ -71,5 +71,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Loserfruit kicks open a front door to find a fully rendered house interior filled with moving boxes. Source: https://www.twitch.tv/loserfruit/clip/LitigiousFaithfulGarbagePipeHype-7g_Vr9mLIsxIfnzV (309 views). Change the on-screen hook with: hook S87: NEW TEXT"
+  "notes": "quality 8/10. Loserfruit kicks open a front door to find a fully rendered house interior filled with moving boxes. Source: https://www.twitch.tv/loserfruit/clip/LitigiousFaithfulGarbagePipeHype-7g_Vr9mLIsxIfnzV (309 views). Change the on-screen hook with: hook S87: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b002d92f975c0e06b5fd4",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T18:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

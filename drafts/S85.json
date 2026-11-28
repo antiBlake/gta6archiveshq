@@ -6,9 +6,9 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
-  "slot": "2026-11-28T11:00:00+01:00",
+  "slot": "2026-11-28T17:00:00+00:00",
   "credit": "wayneradiotv",
   "category": "streamer",
   "media": "media/edits/S85.mp4",
@@ -85,5 +85,17 @@
       "layout": "full"
     }
   },
-  "notes": "quality 8/10. Wayneradiotv drives a van through a construction site and accidentally hits an NPC worker after jumping a pile of dirt. Source: https://www.twitch.tv/wayneradiotv/clip/EsteemedBlushingDolphinItsBoshyTime-pdt2BztCxHVGYhkf (322 views). Change the on-screen hook with: hook S85: NEW TEXT"
+  "notes": "quality 8/10. Wayneradiotv drives a van through a construction site and accidentally hits an NPC worker after jumping a pile of dirt. Source: https://www.twitch.tv/wayneradiotv/clip/EsteemedBlushingDolphinItsBoshyTime-pdt2BztCxHVGYhkf (322 views). Change the on-screen hook with: hook S85: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0b002cb0bf5e4247614ffe",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T17:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -1,0 +1,80 @@
+{
+  "id": "S86",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "draft",
+  "auto_approved": false,
+  "slot": "2026-11-28T12:00:00+01:00",
+  "credit": "Jynxzi",
+  "category": "streamer",
+  "media": "media/edits/S86.mp4",
+  "media_x": "media/edits/S86_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S86.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S86_x.mp4",
+  "hook": "Jynxzi was not ready for this GTA 6 delivery mission",
+  "captions": {
+    "x": "Jynxzi almost had a heart attack after seeing this NPC at the door. 😂\n\n🎥 Jynxzi on Twitch",
+    "tiktok": "Jynxzi almost had a heart attack after seeing this NPC at the door. 😂 🎥 Jynxzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Jynxzi almost had a heart attack after seeing this NPC at the door. 😂 🎥 Jynxzi on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Jynxzi almost had a heart attack after seeing this NPC at the door. 😂\n\n🎥 Jynxzi on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Jynxzi reacts in shock when a large NPC who appears to be naked opens the door during a delivery mission.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 6.5,
+        "end": 9,
+        "text": "Deliver the farmhouse package to the doorstep."
+      },
+      {
+        "start": 10.5,
+        "end": 11.5,
+        "text": "What? What?"
+      },
+      {
+        "start": 12,
+        "end": 13,
+        "text": "Oh!"
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "text": "Oh my god I thought he was naked!"
+      },
+      {
+        "start": 16,
+        "end": 18.2,
+        "text": "Oh my god I thought he was naked!"
+      }
+    ],
+    "file": "media/raw/tw_SpunkyCulturedOryxPhilosoraptor-dzykvhfI-GZgPr8j.mp4",
+    "start": 6.5,
+    "end": 18.2,
+    "credit": "twitch.tv/jynxzi",
+    "caption": "He thought the NPC was naked",
+    "url": "https://www.twitch.tv/jynxzi/clip/SpunkyCulturedOryxPhilosoraptor-dzykvhfI-GZgPr8j",
+    "twitch": "jynxzi",
+    "views": 318,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.38,
+        "w": 0.22,
+        "x": 0.03,
+        "y": 0.58
+      }
+    }
+  },
+  "notes": "quality 9/10; text flags: possible sexual content. Jynxzi reacts in shock when a large NPC who appears to be naked opens the door during a delivery mission. Source: https://www.twitch.tv/jynxzi/clip/SpunkyCulturedOryxPhilosoraptor-dzykvhfI-GZgPr8j (318 views). Change the on-screen hook with: hook S86: NEW TEXT"
+}

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-28T09:00:00+00:00",
   "credit": "ohnePixel",
@@ -96,5 +96,17 @@
       }
     }
   },
-  "notes": "quality 7/10. ohnePixel expresses his relief that GTA 6 does not feature a tipping mechanic while entering an ice cream parlor. Source: https://www.twitch.tv/ohnepixel/clip/VictoriousSingleSangFreakinStinkin-I-p2E8b0FENVSCc6 (427 views). Change the on-screen hook with: hook S67: NEW TEXT"
+  "notes": "quality 7/10. ohnePixel expresses his relief that GTA 6 does not feature a tipping mechanic while entering an ice cream parlor. Source: https://www.twitch.tv/ohnepixel/clip/VictoriousSingleSangFreakinStinkin-I-p2E8b0FENVSCc6 (427 views). Change the on-screen hook with: hook S67: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0a655d2a2e4f66ca00bbf3",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T09:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

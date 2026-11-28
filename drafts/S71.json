@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-28T13:00:00+00:00",
   "credit": "Joe_Bartolozzi",
@@ -76,5 +76,31 @@
       }
     }
   },
-  "notes": "quality 8/10. Joe Bartolozzi steals car keys from a group of NPCs and runs away while mocking them. Source: https://www.twitch.tv/joe_bartolozzi/clip/NiceEsteemedChowderPermaSmug-HnzatspfVuGomST3 (304 views). Change the on-screen hook with: hook S71: NEW TEXT"
+  "notes": "quality 8/10. Joe Bartolozzi steals car keys from a group of NPCs and runs away while mocking them. Source: https://www.twitch.tv/joe_bartolozzi/clip/NiceEsteemedChowderPermaSmug-HnzatspfVuGomST3 (304 views). Change the on-screen hook with: hook S71: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0a65522a2e4f66ca00bab9",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T13:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "Ccfu5JVdSDU",
+      "url": "https://www.youtube.com/shorts/Ccfu5JVdSDU",
+      "dueAt": "2026-11-28T13:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b0a655870e80ae8f1d53505",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T13:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

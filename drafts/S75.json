@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-28T12:00:00+00:00",
   "credit": "Elina",
@@ -76,5 +76,17 @@
       }
     }
   },
-  "notes": "quality 8/10. Streamer Elina watches as Jason and Lucia walk through a mall in GTA 6 discussing their future relationship. Source: https://www.twitch.tv/elina/clip/HedonisticExcitedDuckStinkyCheese-cSzG1bZFy2JA89i2 (381 views). Change the on-screen hook with: hook S75: NEW TEXT"
+  "notes": "quality 8/10. Streamer Elina watches as Jason and Lucia walk through a mall in GTA 6 discussing their future relationship. Source: https://www.twitch.tv/elina/clip/HedonisticExcitedDuckStinkyCheese-cSzG1bZFy2JA89i2 (381 views). Change the on-screen hook with: hook S75: NEW TEXT",
+  "publish_platforms": [
+    "instagram"
+  ],
+  "buffer": {
+    "instagram": {
+      "id": "6b0a655b41454797eaf25ae6",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T12:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "slot": "2026-11-28T08:00:00+00:00",
   "credit": "IceManIsaac",
   "category": "guide",
@@ -125,5 +125,31 @@
   },
   "notes": "quality 8/10. IceManIsaac explains how holding the duck button while driving helps dodge bullets and avoid police recognition. From IceManIsaac: https://youtu.be/GN-fCSbiv6U?t=146 (found by search). Change the on-screen hook with: hook T20: NEW TEXT",
   "channel_url": "https://www.youtube.com/channel/UCoT7FaR2QO-YSplT4N5UIbg",
-  "auto_approved": true
+  "auto_approved": true,
+  "publish_platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0a654b41454797eaf2592a",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T08:00:00.000Z",
+      "mode": "at"
+    },
+    "youtube": {
+      "direct": true,
+      "videoId": "uFM_4xVuVUg",
+      "url": "https://www.youtube.com/shorts/uFM_4xVuVUg",
+      "dueAt": "2026-11-28T08:00:00.000Z"
+    },
+    "instagram": {
+      "id": "6b0a655023fb5b7700207ada",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T08:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

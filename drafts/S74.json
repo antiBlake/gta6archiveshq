@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "approved",
+  "status": "published_buffer",
   "auto_approved": true,
   "slot": "2026-11-28T10:00:00+00:00",
   "credit": "parkenharbor",
@@ -76,5 +76,24 @@
       }
     }
   },
-  "notes": "quality 8/10. While flying a plane for a drug delivery mission, the pilot suddenly jumps out for no reason, causing parkenharbor to fail the mission. Source: https://www.twitch.tv/parkenharbor/clip/TolerantFlaccidMangoSuperVinlin-_RasnQIY3NJ048SN (711 views). Change the on-screen hook with: hook S74: NEW TEXT"
+  "notes": "quality 8/10. While flying a plane for a drug delivery mission, the pilot suddenly jumps out for no reason, causing parkenharbor to fail the mission. Source: https://www.twitch.tv/parkenharbor/clip/TolerantFlaccidMangoSuperVinlin-_RasnQIY3NJ048SN (711 views). Change the on-screen hook with: hook S74: NEW TEXT",
+  "publish_platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "buffer": {
+    "tiktok": {
+      "id": "6b0a6559eada83daa6c9dcef",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T10:00:00.000Z",
+      "mode": "at"
+    },
+    "instagram": {
+      "id": "6b0a655a70e80ae8f1d53552",
+      "status": "scheduled",
+      "dueAt": "2026-11-28T10:00:00.000Z",
+      "mode": "at"
+    }
+  },
+  "x_status": "pending"
 }

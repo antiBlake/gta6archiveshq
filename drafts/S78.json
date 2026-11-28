@@ -1,0 +1,85 @@
+{
+  "id": "S78",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T09:00:00+01:00",
+  "credit": "BanksAtkin",
+  "category": "streamer",
+  "media": "media/edits/S78.mp4",
+  "media_x": "media/edits/S78_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S78.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S78_x.mp4",
+  "hook": "Rockstar really needs to fix these GTA 6 spawns",
+  "captions": {
+    "x": "BanksAtkin found a plane where it definitely shouldn't be. ✈️\n\n🎥 BanksAtkin on Twitch",
+    "tiktok": "BanksAtkin found a plane where it definitely shouldn't be. ✈️ 🎥 BanksAtkin on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "BanksAtkin found a plane where it definitely shouldn't be. ✈️ 🎥 BanksAtkin on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "BanksAtkin found a plane where it definitely shouldn't be. ✈️\n\n🎥 BanksAtkin on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 7,
+    "confidence": 0.85,
+    "reasons": [],
+    "what": "BanksAtkin discovers a large airplane glitched into the middle of a busy street while playing GTA 6.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 6.4,
+        "end": 8.8,
+        "text": "Why's there a f***ing plane"
+      },
+      {
+        "start": 8.8,
+        "end": 10.2,
+        "text": "in the middle... bro,"
+      },
+      {
+        "start": 10.2,
+        "end": 12,
+        "text": "Rockstar bro, can y'all fix"
+      },
+      {
+        "start": 12,
+        "end": 13.8,
+        "text": "y'all game, bro?"
+      },
+      {
+        "start": 13.8,
+        "end": 15.5,
+        "text": "I got a plane in the"
+      },
+      {
+        "start": 15.5,
+        "end": 17,
+        "text": "middle of my s***."
+      }
+    ],
+    "file": "media/raw/tw_InterestingArbitraryTrayCeilingCat-3QfGX42WbJRVW0Ct.mp4",
+    "start": 0,
+    "end": 17,
+    "credit": "twitch.tv/banksatkin",
+    "caption": "Fix your game Rockstar",
+    "url": "https://www.twitch.tv/banksatkin/clip/InterestingArbitraryTrayCeilingCat-3QfGX42WbJRVW0Ct",
+    "twitch": "banksatkin",
+    "views": 1551,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.25,
+        "w": 0.21,
+        "x": 0.015,
+        "y": 0.065
+      }
+    }
+  },
+  "notes": "quality 7/10. BanksAtkin discovers a large airplane glitched into the middle of a busy street while playing GTA 6. Source: https://www.twitch.tv/banksatkin/clip/InterestingArbitraryTrayCeilingCat-3QfGX42WbJRVW0Ct (1551 views). Change the on-screen hook with: hook S78: NEW TEXT"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "S82",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T13:00:00+01:00",
+  "credit": "Saruei",
+  "category": "streamer",
+  "media": "media/edits/S82.mp4",
+  "media_x": "media/edits/S82_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S82.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S82_x.mp4",
+  "hook": "Saruei explains Thanksgiving to chat",
+  "captions": {
+    "x": "Saruei's take on Thanksgiving while cruising around in GTA 6 🦃\n\n🎥 Saruei on Twitch",
+    "tiktok": "Saruei's take on Thanksgiving while cruising around in GTA 6 🦃 🎥 Saruei on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Saruei's take on Thanksgiving while cruising around in GTA 6 🦃 🎥 Saruei on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Saruei's take on Thanksgiving while cruising around in GTA 6 🦃\n\n🎥 Saruei on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Saruei talks about Thanksgiving and cultural differences while driving through a town in GTA 6.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 3.8,
+        "end": 5.2,
+        "text": "How was Thanksgiving?"
+      },
+      {
+        "start": 5.2,
+        "end": 7.8,
+        "text": "We don't celebrate Thanksgiving in France."
+      },
+      {
+        "start": 8,
+        "end": 9.4,
+        "text": "Twice wouldn't be a problem."
+      },
+      {
+        "start": 9.7,
+        "end": 10.9,
+        "text": "It's an American thing."
+      },
+      {
+        "start": 12,
+        "end": 14.5,
+        "text": "One where we could, you know, put stuff on layaway."
+      },
+      {
+        "start": 14.8,
+        "end": 15.5,
+        "text": "Or, or"
+      }
+    ],
+    "file": "media/raw/tw_JollyGeniusCiderPunchTrees-TNvVTU1bqAg5n9xw.mp4",
+    "start": 3.5,
+    "end": 15.5,
+    "credit": "twitch.tv/saruei",
+    "caption": "We don't celebrate Thanksgiving",
+    "url": "https://www.twitch.tv/saruei/clip/JollyGeniusCiderPunchTrees-TNvVTU1bqAg5n9xw",
+    "twitch": "saruei",
+    "views": 370,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.354,
+        "w": 0.177,
+        "x": 0.778,
+        "y": 0.612
+      }
+    }
+  },
+  "notes": "quality 8/10. Saruei talks about Thanksgiving and cultural differences while driving through a town in GTA 6. Source: https://www.twitch.tv/saruei/clip/JollyGeniusCiderPunchTrees-TNvVTU1bqAg5n9xw (370 views). Change the on-screen hook with: hook S82: NEW TEXT"
+}

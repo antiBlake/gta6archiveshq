@@ -1,0 +1,90 @@
+{
+  "id": "S83",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T14:00:00+01:00",
+  "credit": "Dahlia",
+  "category": "streamer",
+  "media": "media/edits/S83.mp4",
+  "media_x": "media/edits/S83_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S83.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S83_x.mp4",
+  "hook": "This GTA 6 side quest is actually hilarious",
+  "captions": {
+    "x": "Dahlia can't stop laughing during this ridiculous GTA 6 side mission 😂\n\n🎥 Dahlia on Twitch",
+    "tiktok": "Dahlia can't stop laughing during this ridiculous GTA 6 side mission 😂 🎥 Dahlia on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Dahlia can't stop laughing during this ridiculous GTA 6 side mission 😂 🎥 Dahlia on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Dahlia can't stop laughing during this ridiculous GTA 6 side mission 😂\n\n🎥 Dahlia on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 0.95,
+    "reasons": [],
+    "what": "Streamer Dahlia plays a funny slap minigame in GTA 6 where players smack each other.",
+    "model": "gemini-flash-lite-latest",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 0.5,
+        "end": 1.5,
+        "text": "Let's do this!"
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "text": "Wow not this."
+      },
+      {
+        "start": 3,
+        "end": 6.5,
+        "text": "This whole game making me..."
+      },
+      {
+        "start": 6.5,
+        "end": 9.5,
+        "text": "Throw a football at their d***s!"
+      },
+      {
+        "start": 9.5,
+        "end": 12,
+        "text": "Okay, I can't wait for this."
+      },
+      {
+        "start": 13,
+        "end": 17.5,
+        "text": "He pulls out the left! Oh!"
+      },
+      {
+        "start": 18,
+        "end": 21.5,
+        "text": "This is the best quest in the whole game."
+      }
+    ],
+    "file": "media/raw/tw_PoliteComfortableAsteriskGrammarKing-ZCzf5xmg5GY83e18.mp4",
+    "start": 0,
+    "end": 22,
+    "credit": "twitch.tv/dahlia",
+    "caption": "GTA 6 slap fight",
+    "url": "https://www.twitch.tv/dahlia/clip/PoliteComfortableAsteriskGrammarKing-ZCzf5xmg5GY83e18",
+    "twitch": "dahlia",
+    "views": 362,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.283,
+        "w": 0.165,
+        "x": 0.824,
+        "y": 0.528
+      }
+    }
+  },
+  "notes": "quality 8/10. Streamer Dahlia plays a funny slap minigame in GTA 6 where players smack each other. Source: https://www.twitch.tv/dahlia/clip/PoliteComfortableAsteriskGrammarKing-ZCzf5xmg5GY83e18 (362 views). Change the on-screen hook with: hook S83: NEW TEXT"
+}

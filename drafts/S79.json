@@ -1,0 +1,80 @@
+{
+  "id": "S79",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T10:00:00+01:00",
+  "credit": "HasanAbi",
+  "category": "streamer",
+  "media": "media/edits/S79.mp4",
+  "media_x": "media/edits/S79_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S79.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S79_x.mp4",
+  "hook": "Protesters in GTA 6 are actually built different",
+  "captions": {
+    "x": "HasanAbi found out the hard way that you cannot vibe with the local wildlife in GTA 6. 🐻\n\n🎥 HasanAbi on Twitch",
+    "tiktok": "HasanAbi found out the hard way that you cannot vibe with the local wildlife in GTA 6. 🐻 🎥 HasanAbi on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "HasanAbi found out the hard way that you cannot vibe with the local wildlife in GTA 6. 🐻 🎥 HasanAbi on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "HasanAbi found out the hard way that you cannot vibe with the local wildlife in GTA 6. 🐻\n\n🎥 HasanAbi on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 9,
+    "confidence": 1,
+    "reasons": [],
+    "what": "A group of protesters in GTA 6 release a polar bear that immediately mauls them while HasanAbi watches and takes a selfie.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 14.8,
+        "end": 16.5,
+        "text": "Try to vibe with it."
+      },
+      {
+        "start": 16.5,
+        "end": 18.5,
+        "text": "No, even I know you can't"
+      },
+      {
+        "start": 18.5,
+        "end": 20.5,
+        "text": "vibe with a polar bear."
+      },
+      {
+        "start": 20.5,
+        "end": 22.5,
+        "text": "I harbor nothing but love"
+      },
+      {
+        "start": 22.5,
+        "end": 24,
+        "text": "for you."
+      }
+    ],
+    "file": "media/raw/tw_TsundereSpeedyHareResidentSleeper-NVBoCCJtkUVbgTLV.mp4",
+    "start": 14.5,
+    "end": 33.5,
+    "credit": "twitch.tv/hasanabi",
+    "caption": "Don't vibe with polar bears",
+    "url": "https://www.twitch.tv/hasanabi/clip/TsundereSpeedyHareResidentSleeper-NVBoCCJtkUVbgTLV",
+    "twitch": "hasanabi",
+    "views": 733,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.25,
+        "w": 0.21,
+        "x": 0.77,
+        "y": 0.39
+      }
+    }
+  },
+  "notes": "quality 9/10. A group of protesters in GTA 6 release a polar bear that immediately mauls them while HasanAbi watches and takes a selfie. Source: https://www.twitch.tv/hasanabi/clip/TsundereSpeedyHareResidentSleeper-NVBoCCJtkUVbgTLV (733 views). Change the on-screen hook with: hook S79: NEW TEXT"
+}

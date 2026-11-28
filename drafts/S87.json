@@ -1,0 +1,75 @@
+{
+  "id": "S87",
+  "platforms": [
+    "x",
+    "tiktok",
+    "youtube",
+    "instagram"
+  ],
+  "status": "approved",
+  "auto_approved": true,
+  "slot": "2026-11-28T13:00:00+01:00",
+  "credit": "Loserfruit",
+  "category": "streamer",
+  "media": "media/edits/S87.mp4",
+  "media_x": "media/edits/S87_x.mp4",
+  "media_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S87.mp4",
+  "media_x_url": "https://ckuyrxihhvwklrugxsmj.supabase.co/storage/v1/object/public/gta6-clips/2026-11-28/S87_x.mp4",
+  "hook": "The interior accessibility in GTA 6 is actually next level",
+  "captions": {
+    "x": "Loserfruit discovers how many buildings you can actually enter in the new game. 🏠\n\n🎥 Loserfruit on Twitch",
+    "tiktok": "Loserfruit discovers how many buildings you can actually enter in the new game. 🏠 🎥 Loserfruit on Twitch #GTA6 #GTAVI #ViceCity",
+    "youtube": "Loserfruit discovers how many buildings you can actually enter in the new game. 🏠 🎥 Loserfruit on Twitch #GTA6 #GTAVI #ViceCity",
+    "instagram": "Loserfruit discovers how many buildings you can actually enter in the new game. 🏠\n\n🎥 Loserfruit on Twitch\n\n#GTA6 #GTAVI #ViceCity #Leonida #GrandTheftAuto"
+  },
+  "judge": {
+    "quality": 8,
+    "confidence": 1,
+    "reasons": [],
+    "what": "Loserfruit kicks open a front door to find a fully rendered house interior filled with moving boxes.",
+    "model": "gemini-3-flash-preview",
+    "layout": "stack"
+  },
+  "source": {
+    "subs": [
+      {
+        "start": 16.5,
+        "end": 18.2,
+        "text": "Don't wonder who you could've been"
+      },
+      {
+        "start": 18.5,
+        "end": 20,
+        "text": "Be your own CEO"
+      },
+      {
+        "start": 20.5,
+        "end": 22.5,
+        "text": "Your sisters are waiting for you"
+      },
+      {
+        "start": 24.5,
+        "end": 25.5,
+        "text": "Never mind"
+      }
+    ],
+    "file": "media/raw/tw_LitigiousFaithfulGarbagePipeHype-7g_Vr9mLIsxIfnzV.mp4",
+    "start": 13,
+    "end": 28,
+    "credit": "twitch.tv/loserfruit",
+    "caption": "Entering random houses",
+    "url": "https://www.twitch.tv/loserfruit/clip/LitigiousFaithfulGarbagePipeHype-7g_Vr9mLIsxIfnzV",
+    "twitch": "loserfruit",
+    "views": 309,
+    "layout": {
+      "layout": "stack",
+      "cam": {
+        "h": 0.468,
+        "w": 0.252,
+        "x": 0.748,
+        "y": 0.231
+      }
+    }
+  },
+  "notes": "quality 8/10. Loserfruit kicks open a front door to find a fully rendered house interior filled with moving boxes. Source: https://www.twitch.tv/loserfruit/clip/LitigiousFaithfulGarbagePipeHype-7g_Vr9mLIsxIfnzV (309 views). Change the on-screen hook with: hook S87: NEW TEXT"
+}

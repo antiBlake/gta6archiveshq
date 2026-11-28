@@ -6,7 +6,7 @@
     "youtube",
     "instagram"
   ],
-  "status": "draft",
+  "status": "sent",
   "auto_approved": false,
   "slot": "2026-11-28T12:00:00+01:00",
   "credit": "Jynxzi",
@@ -76,5 +76,7 @@
       }
     }
   },
-  "notes": "quality 9/10; text flags: possible sexual content. Jynxzi reacts in shock when a large NPC who appears to be naked opens the door during a delivery mission. Source: https://www.twitch.tv/jynxzi/clip/SpunkyCulturedOryxPhilosoraptor-dzykvhfI-GZgPr8j (318 views). Change the on-screen hook with: hook S86: NEW TEXT"
+  "notes": "quality 9/10; text flags: possible sexual content. Jynxzi reacts in shock when a large NPC who appears to be naked opens the door during a delivery mission. Source: https://www.twitch.tv/jynxzi/clip/SpunkyCulturedOryxPhilosoraptor-dzykvhfI-GZgPr8j (318 views). Change the on-screen hook with: hook S86: NEW TEXT",
+  "sent_at": "28/11/2026, 09:06:22 WAT",
+  "message_id": 129
 }
